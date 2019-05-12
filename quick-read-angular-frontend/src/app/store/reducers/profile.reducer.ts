@@ -1,6 +1,8 @@
 import {EProfileAction, GetAccountsSuccess, ProfileAction} from "../actions/profile.actions";
 import {myAccount} from "../../models/Account";
 
+import * as _ from 'lodash';
+
 export interface IAccountState {
   allAccounts: Array<myAccount>;
   selectedAccount: myAccount
@@ -24,6 +26,7 @@ function getAccounts(state: IAccountState, action: GetAccountsSuccess) {
       selectedAccount: new myAccount()
     };
   }
-  state.allAccounts = action.payload;
-  return state;
+  let newState = _.cloneDeep(state);
+  newState.allAccounts = action.payload;
+  return newState;
 }
