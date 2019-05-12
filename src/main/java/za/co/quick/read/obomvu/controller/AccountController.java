@@ -52,7 +52,11 @@ public class AccountController {
 				.orElseThrow(() -> new ResourceNotFoundException("Account not found for this id :: " + accountId));
 
 		account.setName(accountDetails.getName());
-		account.setAge(accountDetails.getAge());
+		account.setUsername(accountDetails.getUsername());
+		account.setEmail(accountDetails.getEmail());
+		account.setPassword(accountDetails.getPassword());
+		account.setInterests(accountDetails.getInterests());
+
 		final Account updatedAccount = accountRepository.save(account);
 		return ResponseEntity.ok(updatedAccount);
 	}

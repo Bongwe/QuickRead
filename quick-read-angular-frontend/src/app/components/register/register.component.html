@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      Create a new account
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" required="true"
+                 (change)="onChangeName($event.target.value)">
+        </div>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" class="form-control" id="username" required="true"
+                 (change)="onChangeUsername($event.target.value)">
+        </div>
+        <div class="form-group">
+          <label for="registerEmail">Email address:</label>
+          <input type="email" class="form-control" id="registerEmail" required="true"
+                 (change)="onChangeEmail($event.target.value)">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" required="true"
+                 (change)="onChangePassword($event.target.value)">
+        </div>
+        <button type="button" class="btn btn-default" (click)="onSubmit()">Submit</button>
+      </form>
+    </div>
+  </div>
+
+</div>

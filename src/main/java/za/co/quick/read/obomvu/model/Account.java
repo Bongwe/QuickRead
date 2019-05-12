@@ -13,17 +13,24 @@ public class Account {
 
 	private long id;
 	private String name;
-	private int age;
+	private String username;
+	private String email;
+	private String password;
+	private String interests;
 
 	public Account() {
 		
 	}
-	
-	public Account(String name, int age) {
+
+	public Account(long id, String name, String username, String email, String password, String interests) {
+		this.id = id;
 		this.name = name;
-		this.age = age;
+		this.username = username;
+		this.email = email;
+		this.password = password;
+		this.interests = interests;
 	}
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public long getId() {
@@ -41,12 +48,36 @@ public class Account {
 		this.name = name;
 	}
 
-	@Column(name = "age", nullable = false)
-	public int getAge() {
-		return age;
+	@Column(name = "username", nullable = false)
+	public String getUsername() {
+		return username;
 	}
-	public void setAge(int age) {
-		this.age = age;
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	@Column(name = "email", nullable = false)
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	@Column(name = "password", nullable = false)
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	@Column(name = "Interests", nullable = false)
+	public String getInterests() {
+		return interests;
+	}
+	public void setInterests(String interests) {
+		this.interests = interests;
 	}
 
 	@Override
@@ -54,7 +85,10 @@ public class Account {
 		return "Account{" +
 				"id=" + id +
 				", name='" + name + '\'' +
-				", age=" + age +
+				", username='" + username + '\'' +
+				", email='" + email + '\'' +
+				", password='" + password + '\'' +
+				", interests='" + interests + '\'' +
 				'}';
 	}
 }

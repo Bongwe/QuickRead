@@ -36,7 +36,7 @@ public class AccountControllerIntegrationTest {
 
 	}
 
-	@Test
+	/*@Test
 	public void testGetAllAcoounts() {
 		HttpHeaders headers = new HttpHeaders();
 		HttpEntity<String> entity = new HttpEntity<String>(null, headers);
@@ -92,5 +92,5 @@ public class AccountControllerIntegrationTest {
 		} catch (final HttpClientErrorException e) {
 			assertEquals(e.getStatusCode(), HttpStatus.NOT_FOUND);
 		}
-	}
+	}*/
 }

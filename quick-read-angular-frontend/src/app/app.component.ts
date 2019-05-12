@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {GetAccounts} from "./store/actions/profile.actions";
+import {GetAccounts} from "./store/actions/account.actions";
 import {Store} from "@ngrx/store";
 import {IAppState} from "./store/state/app.state";
 

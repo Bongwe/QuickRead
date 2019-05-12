@@ -1,4 +1,7 @@
-export class myAccount {
+export class qrAccount {
   name: string;
-  age: number;
+  username: string;
+  email: string;
+  password: string;
+  interests: string;
 }
