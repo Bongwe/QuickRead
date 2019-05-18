@@ -21,6 +21,7 @@ public class Application {
 			public void addCorsMappings(CorsRegistry registry) {
 				//registry.addMapping("/greeting-javaconfig").allowedOrigins("http://localhost:9000");
 				registry.addMapping("/api/v1/**").allowedOrigins("http://localhost:4200");
+				registry.addMapping("/api/v1/**").allowedOrigins("http://obomvu.eastus.cloudapp.azure.com:8009");
 			}
 		};
 	}
