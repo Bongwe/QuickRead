@@ -10,7 +10,7 @@ export interface IAccountState {
 
 export const initialAccountState: IAccountState = null;
 
-export const profileReducer = (state = initialAccountState, action: ProfileAction): IAccountState => {
+export function profileReducer (state = initialAccountState, action: ProfileAction): IAccountState {
   switch (action.type) {
     case EProfileAction.GetAccountsSuccess:
       return getAccounts(state, action);
