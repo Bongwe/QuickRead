@@ -6,15 +6,16 @@ import {map} from "rxjs/operators";
 @Injectable({providedIn: 'root'})
 
 export class AccountService {
+  baseUrl: string = "http://localhost:8090/api/v1";
 
   constructor(private http: HttpClient){}
 
   getAll() {
-    return this.http.get('http://localhost:8080/api/v1/accounts');
+    return this.http.get(this.baseUrl +  '/accounts');
   }
 
   createAccount(account: qrAccount) {
-    let url = 'http://localhost:8080/api/v1/account';
+    let url = this.baseUrl + '/account';
     return this.http.post<any>(url, account)
       .pipe(
         map(account => {
