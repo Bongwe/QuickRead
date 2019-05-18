@@ -6,7 +6,7 @@ import {map} from "rxjs/operators";
 @Injectable({providedIn: 'root'})
 
 export class AccountService {
-  baseUrl: string = "http://localhost:8090/api/v1";
+  baseUrl: string = "http://obomvu.eastus.cloudapp.azure.com:8090/api/v1";
 
   constructor(private http: HttpClient){}
 
