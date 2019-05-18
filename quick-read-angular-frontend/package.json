@@ -5,8 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "startProduction": "ng serve --configuration=production",
-    "build": "ng build --prod --configuration=production --source-map",
-    "buildProduction": "ng build --prod --configuration=production --source-map",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
