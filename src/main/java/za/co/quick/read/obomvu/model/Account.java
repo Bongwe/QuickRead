@@ -72,7 +72,7 @@ public class Account {
 		this.password = password;
 	}
 
-	@Column(name = "Interests", nullable = false)
+	@Column(name = "interests", nullable = false)
 	public String getInterests() {
 		return interests;
 	}
