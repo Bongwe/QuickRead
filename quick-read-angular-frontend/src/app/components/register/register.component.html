@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4">
-      Create a new account
+      <h3>Create a new account</h3>
     </div>
   </div>
   <div class="row">
@@ -27,9 +27,13 @@
           <input type="password" class="form-control" id="pwd" required="true"
                  (change)="onChangePassword($event.target.value)">
         </div>
-        <button type="button" class="btn btn-default" (click)="onSubmit()">Submit</button>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+        </div>
       </form>
     </div>
+    <div class="col-md-6 pull-right">
+      <img src="../../../assets/img/about_quick_read.png" class="rounded mx-auto d-block" alt="...">
+    </div>
   </div>
-
 </div>

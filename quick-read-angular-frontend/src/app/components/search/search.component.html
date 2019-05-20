@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let book of books" class="col-sm-2 col-md-3">
+      <div class="thumbnail">
+        <img src="../../../assets/img/Untitled.png" alt="...">
+        <div class="caption">
+          <h4>Author: {{book.author}}</h4>
+          <h4>Title: {{book.title}}</h4>
+          <p>{{book.shortSynopses}} <a data-toggle="modal" data-target="#myModal"> Read more...</a></p>
+          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Author: {{book.author}}</h4>
+              <h4 class="modal-title" id="myModalLabel">Title: {{book.title}}</h4>
+            </div>
+            <div class="modal-body">
+              {{book.synopses}}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -14,6 +14,8 @@ import {appReducers} from "./store/reducers/app.reducers";
 import { RegisterComponent } from './components/register/register.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { SearchComponent } from './components/search/search.component';
+import {BookEffects} from "./store/effects/book.effect";
 
 @NgModule({
   declarations: [
@@ -21,14 +23,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ProfileComponent,
     RegisterComponent,
     MenuComponent,
-    NavbarComponent
+    NavbarComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     StoreModule.forRoot(appReducers),
-    EffectsModule.forRoot([AccountEffects]),
+    EffectsModule.forRoot([AccountEffects, BookEffects]),
     StoreDevtoolsModule.instrument()
   ],
   providers: [AccountService],

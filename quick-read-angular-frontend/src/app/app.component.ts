@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {GetAccounts} from "./store/actions/account.actions";
 import {Store} from "@ngrx/store";
 import {IAppState} from "./store/state/app.state";
+import {GetAllBooks} from "./store/actions/book.actions";
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.store.dispatch(new GetAccounts());
+    this.store.dispatch(new GetAllBooks());
   }
 
 }
