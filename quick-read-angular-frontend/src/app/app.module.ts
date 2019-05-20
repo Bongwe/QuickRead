@@ -16,6 +16,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent } from './components/search/search.component';
 import {BookEffects} from "./store/effects/book.effect";
+import { DisplayErrorsComponent } from './components/display-errors/display-errors.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,11 +26,14 @@ import {BookEffects} from "./store/effects/book.effect";
     RegisterComponent,
     MenuComponent,
     NavbarComponent,
-    SearchComponent
+    SearchComponent,
+    DisplayErrorsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     StoreModule.forRoot(appReducers),
     EffectsModule.forRoot([AccountEffects, BookEffects]),

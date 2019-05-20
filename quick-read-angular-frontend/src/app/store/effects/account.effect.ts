@@ -3,6 +3,7 @@ import {Injectable} from "@angular/core";
 import {Effect, Actions, ofType} from "@ngrx/effects";
 import {AccountService} from "../../services/account.service";
 import {
+  CreateAccount,
   EProfileAction,
 } from "../actions/account.actions";
 import {EMPTY, of} from "rxjs";
@@ -29,7 +30,7 @@ export class AccountEffects {
   loadMovies$ = this.actions$
     .pipe(
       ofType(EProfileAction.CreateAccount),
-      mergeMap((accounts: qrAccount) => this.profileService.createAccount(accounts)
+      mergeMap((accounts: CreateAccount) => this.profileService.createAccount(accounts.payload)
         .pipe(
           map(result => ({ type: EProfileAction.CreateAccountSuccess, payload: result })),
           catchError((error: HttpErrorResponse) => of({ type: EProfileAction.CreateAccountError, payload: error}))

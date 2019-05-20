@@ -1,10 +1,12 @@
 import {IAppState} from "../state/app.state";
+import {createSelector} from "@ngrx/store";
+import {IAccountState} from "../reducers/profile.reducer";
 
 export const selectAccounts = (state: IAppState) => state.accounts;
 
 /*
-export const selectAccountList = createSelector(
+export const selectAccountErrors = createSelector(
   selectAccounts,
-  (state: IAccountState) => state.allAccounts
+  (state: IAccountState) => state.accountError
 );
 */

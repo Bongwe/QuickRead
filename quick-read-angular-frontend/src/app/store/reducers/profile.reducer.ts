@@ -13,6 +13,7 @@ export interface IAccountState {
   allAccounts: Array<qrAccount>;
   selectedAccount: qrAccount,
   accountError: string
+  accountSuccess: string
 }
 
 export const initialAccountState: IAccountState = null;
@@ -35,7 +36,8 @@ function getAccounts(state: IAccountState, action: GetAccountsSuccess) {
     state = {
       allAccounts:  new Array<qrAccount>(),
       selectedAccount: new qrAccount(),
-      accountError: String()
+      accountError: null,
+      accountSuccess: null
     };
   }
   let newState = _.cloneDeep(state);
@@ -48,11 +50,14 @@ function createAccount(state: IAccountState, action: CreateAccountSuccess) {
     state = {
       allAccounts:  new Array<qrAccount>(),
       selectedAccount: new qrAccount(),
-      accountError: String()
+      accountError: null,
+      accountSuccess: null
     };
   }
   let newState = _.cloneDeep(state);
   newState.selectedAccount = action.payload;
+  newState.accountSuccess = "Account created successfully";
+  newState.accountError = null;
   return newState;
 }
 
@@ -61,7 +66,8 @@ function createAccountError(state: IAccountState, action: CreateAccountError) {
     state = {
       allAccounts:  new Array<qrAccount>(),
       selectedAccount: new qrAccount(),
-      accountError: String()
+      accountError: null,
+      accountSuccess: null
     };
   }
   let newState = _.cloneDeep(state);
@@ -70,5 +76,6 @@ function createAccountError(state: IAccountState, action: CreateAccountError) {
   } else {
     newState.accountError = action.payload.message;
   }
+  newState.accountSuccess = null;
   return newState;
 }

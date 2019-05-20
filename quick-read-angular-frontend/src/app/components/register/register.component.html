@@ -6,31 +6,36 @@
   </div>
   <div class="row">
     <div class="col-md-4">
-      <form class="form-horizontal">
+
+      <form [formGroup]="registerForm"  (ngSubmit)="onSubmit()">
         <div class="form-group">
           <label for="name">Name:</label>
-          <input type="text" class="form-control" id="name" required="true"
-                 (change)="onChangeName($event.target.value)">
+          <input type="text" formControlName="name" class="form-control" id="name" required="true">
         </div>
         <div class="form-group">
           <label for="username">Username:</label>
-          <input type="text" class="form-control" id="username" required="true"
-                 (change)="onChangeUsername($event.target.value)">
+          <input type="text" formControlName="username" class="form-control" id="username">
         </div>
         <div class="form-group">
           <label for="registerEmail">Email address:</label>
-          <input type="email" class="form-control" id="registerEmail" required="true"
-                 (change)="onChangeEmail($event.target.value)">
+          <input type="email" formControlName="email" class="form-control" id="registerEmail">
         </div>
         <div class="form-group">
           <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd" required="true"
-                 (change)="onChangePassword($event.target.value)">
+          <input type="password" formControlName="password" class="form-control" id="pwd">
         </div>
+
+        <div *ngIf="!registerForm.valid && registerForm.touched && forSubmitted"
+             class="cross-validation-error-message alert alert-danger">
+          All fields are required. <br>
+          Ensure your email is formatted correctly.
+        </div>
+
         <div class="form-group">
-          <button type="button" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
+
     </div>
     <div class="col-md-6 pull-right">
       <img src="../../../assets/img/about_quick_read.png" class="rounded mx-auto d-block" alt="...">
