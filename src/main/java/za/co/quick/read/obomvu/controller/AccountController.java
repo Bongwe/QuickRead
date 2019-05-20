@@ -7,6 +7,7 @@ import java.util.Map;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -40,9 +41,15 @@ public class AccountController {
 		return ResponseEntity.ok().body(account);
 	}
 
-	@PostMapping("/account")
-	public Account createAccount(@Valid @RequestBody Account account) {
-		return accountRepository.save(account);
+	@PostMapping(value = "/account")
+	public ResponseEntity<Account> createAccount(@Valid @RequestBody Account account) {
+		try {
+			@Valid Account save = accountRepository.save(account);
+			return ResponseEntity.ok(save);
+		} catch (Exception error){
+			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.ALREADY_REPORTED);
+			return responseEntity;
+		}
 	}
 
 	@PutMapping("/account/{id}")

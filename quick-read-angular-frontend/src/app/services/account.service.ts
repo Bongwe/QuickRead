@@ -1,7 +1,6 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {qrAccount} from "../models/Account";
-import {map} from "rxjs/operators";
 import {environment} from "../../environments/environment";
 
 @Injectable({providedIn: 'root'})
@@ -16,13 +15,7 @@ export class AccountService {
   }
 
   createAccount(account: qrAccount) {
-    let url = this.baseUrl + '/account';
+    let url = this.baseUrl + '/api/v1/account';
     return this.http.post<any>(url, account)
-      .pipe(
-        map(account => {
-          console.log(account);
-          return account;
-        })
-      );
   }
 }

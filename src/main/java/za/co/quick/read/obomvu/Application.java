@@ -19,7 +19,11 @@ public class Application {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api/v1/**").allowedOrigins("http://localhost:4200", "http://obomvu.eastus.cloudapp.azure.com:8009");
+				registry.addMapping("/api/v1/**").allowedOrigins(
+						"http://localhost:4200",
+						"http://localhost:4200/#",
+						"http://obomvu.eastus.cloudapp.azure.com:8009",
+						"http://obomvu.eastus.cloudapp.azure.com:8009/#");
 			}
 		};
 	}

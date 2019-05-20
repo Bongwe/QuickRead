@@ -1,11 +1,13 @@
-import {switchMap} from "rxjs/operators";
+import {catchError, map, mergeMap} from "rxjs/operators";
 import {Injectable} from "@angular/core";
 import {Effect, Actions, ofType} from "@ngrx/effects";
 import {AccountService} from "../../services/account.service";
-import {Observable, of} from "rxjs";
-import {CreateAccount, EProfileAction, GetAccountsSuccess} from "../actions/account.actions";
+import {
+  EProfileAction,
+} from "../actions/account.actions";
+import {EMPTY, of} from "rxjs";
 import {qrAccount} from "../../models/Account";
-import {Action} from "@ngrx/store/src/models";
+import {HttpErrorResponse} from "@angular/common/http";
 
 @Injectable()
 export class AccountEffects {
@@ -13,24 +15,25 @@ export class AccountEffects {
   constructor(private actions$: Actions, private profileService: AccountService) {}
 
   @Effect()
-  protected fetch$: Observable<Action> = this.actions$
+  fetch$ = this.actions$
     .pipe(
       ofType(EProfileAction.GetAccounts),
-      switchMap(() => this.profileService.getAll()),
-      switchMap((something: qrAccount[])=> {
-        return of(new GetAccountsSuccess(something))
-      })
+      mergeMap(() => this.profileService.getAll()
+        .pipe(
+          map(accounts => ({ type: EProfileAction.GetAccountsSuccess, payload: accounts })),
+          catchError(() => EMPTY)
+        ))
     );
 
   @Effect()
-  protected create$: Observable<Action> = this.actions$
+  loadMovies$ = this.actions$
     .pipe(
       ofType(EProfileAction.CreateAccount),
-      switchMap((createAccount: CreateAccount) => this.profileService.createAccount(createAccount.payload)),
-      switchMap((payload: qrAccount)=> {
-        console.log(payload);
-        return null;
-        //return of(new GetAccountsSuccess(something))
-      })
+      mergeMap((accounts: qrAccount) => this.profileService.createAccount(accounts)
+        .pipe(
+          map(result => ({ type: EProfileAction.CreateAccountSuccess, payload: result })),
+          catchError((error: HttpErrorResponse) => of({ type: EProfileAction.CreateAccountError, payload: error}))
+        ))
     );
+
 }
