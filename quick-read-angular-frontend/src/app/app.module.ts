@@ -18,6 +18,8 @@ import { SearchComponent } from './components/search/search.component';
 import {BookEffects} from "./store/effects/book.effect";
 import { DisplayErrorsComponent } from './components/display-errors/display-errors.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { InterestsComponent } from './components/interests/interests.component';
+import { ProfilePictureComponent } from './components/profile-picture/profile-picture.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     MenuComponent,
     NavbarComponent,
     SearchComponent,
-    DisplayErrorsComponent
+    DisplayErrorsComponent,
+    InterestsComponent,
+    ProfilePictureComponent
   ],
   imports: [
     BrowserModule,

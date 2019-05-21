@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h3>Select a character that best represents you</h3>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-2 col-md-offset-3">
+      <img src="../../../assets/img/opponents/parrot.png"
+           class="img-rounded img-responsive center-block"
+           style="width:60%"
+           id="parrot"
+           #parrot
+           (click)="onSelectPrifilePicture(parrot.id)"
+           alt="Responsive image">
+      <h4><span class="label label-primary">Red parrot</span></h4>
+    </div>
+    <div class="col-md-2">
+      <img src="../../../assets/img/opponents/snake.png"
+           class="img-rounded img-responsive center-block"
+           style="width:60%"
+           id="snake"
+           #snake
+           (click)="onSelectPrifilePicture(snake.id)"
+           alt="Responsive image">
+      <h4><span class="label label-primary">Sick snake</span></h4>
+    </div>
+    <div class="col-md-2">
+      <img src="../../../assets/img/opponents/giraffe.png"
+           class="img-rounded img-responsive center-block"
+           style="width:60%"
+           id="giraffe"
+           #giraffe
+           (click)="onSelectPrifilePicture(giraffe.id)"
+           alt="Responsive image">
+      <h4><span class="label label-primary">Giant giraffe</span></h4>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 col-md-offset-4">
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary  btn-sm btn-block">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
