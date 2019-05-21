@@ -5,22 +5,25 @@
     </div>
   </div>
 
-  <form>
+  <form [formGroup]="interestsForm"  (ngSubmit)="onSubmit()">
     <div class="row">
       <div class="col-md-2 col-md-offset-3">
 
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Classic">
+          <input class="form-check-input" type="checkbox" id="Classic"
+                 (click)="onSelectInterest()" formControlName="Classic">
           <label class="checkboxtext" for="Classic">Classic</label>
         </div>
 
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Crime">
+          <input class="form-check-input" type="checkbox" id="Crime"
+                 formControlName="Crime" (click)="onSelectInterest()">
           <label class="checkboxtext" for="Crime">Crime</label>
         </div>
 
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Fantasy">
+          <input class="form-check-input" type="checkbox" id="Fantasy"
+                 (click)="onSelectInterest()" formControlName="Fantasy">
           <label class="checkboxtext" for="Fantasy">Fantasy</label>
         </div>
 
@@ -28,35 +31,41 @@
 
       <div class="col-md-2">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Mythology">
+          <input class="form-check-input" type="checkbox" value="" id="Mythology"
+                 (click)="onSelectInterest()" formControlName="Mythology">
           <label class="checkboxtext" for="Mythology">Mythology</label>
         </div>
 
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="checkboxtext" for="defaultCheck1">Comics</label>
+          <input class="form-check-input" type="checkbox" value="" id="Thriller"
+                 (click)="onSelectInterest()" formControlName="Thriller">
+          <label class="checkboxtext" for="Thriller">Thriller</label>
         </div>
 
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="checkboxtext" for="defaultCheck1">Paranormal</label>
+          <input class="form-check-input" type="checkbox" value="" id="Fable"
+                 (click)="onSelectInterest()" formControlName="Fable">
+          <label class="checkboxtext" for="Fable">Fable</label>
         </div>
       </div>
 
       <div class="col-md-2">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Comics">
+          <input class="form-check-input" type="checkbox" value="" id="Comics"
+                 (click)="onSelectInterest()" formControlName="Classic">
           <label class="checkboxtext" for="Comics">Comics</label>
         </div>
 
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Paranormal">
+          <input class="form-check-input" type="checkbox" value="" id="Paranormal"
+                 (click)="onSelectInterest()" formControlName="Paranormal">
           <label class="checkboxtext" for="Paranormal">Paranormal</label>
         </div>
 
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Folktale">
-          <label class="checkboxtext" for="Folktale">Folktale</label>
+          <input class="form-check-input" type="checkbox" value="" id="Horror"
+                 (click)="onSelectInterest()" formControlName="Horror">
+          <label class="checkboxtext" for="Horror">Horror</label>
         </div>
       </div>
 
@@ -65,7 +74,7 @@
     <div class="row">
       <div class="col-md-3 col-md-offset-4">
         <div class="form-group">
-          <button type="submit" class="btn btn-primary  btn-sm btn-block">Next</button>
+          <button type="submit" [disabled]="selectedInterests" class="btn btn-primary  btn-sm btn-block">Next</button>
         </div>
       </div>
     </div>

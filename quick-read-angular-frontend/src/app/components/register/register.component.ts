@@ -4,6 +4,9 @@ import {IAppState} from "../../store/state/app.state";
 import {CreateAccount} from "../../store/actions/account.actions";
 import {qrAccount} from "../../models/Account";
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import {Router} from "@angular/router";
+import {selectAccounts} from "../../store/selectors/profile.selectors";
+import {IAccountState} from "../../store/reducers/profile.reducer";
 
 @Component({
   selector: 'app-register',
@@ -19,9 +22,20 @@ export class RegisterComponent implements OnInit {
   registerForm: FormGroup;
   forSubmitted: boolean = false;
 
-  constructor(private store: Store<IAppState>, private formBuilder: FormBuilder) { }
+  selectedInterests: boolean = true;
+
+  constructor(private store: Store<IAppState>,
+              private formBuilder: FormBuilder,
+              private router: Router) { }
 
   ngOnInit() {
+
+    this.store.select(selectAccounts).subscribe((state: IAccountState) =>{
+      if(state && state.accountSuccess !== null){
+        this.selectedInterests = false;
+      }
+    });
+
     this.registerForm = this.formBuilder.group({
       name: ['', Validators.required],
       username: ['', Validators.required],
@@ -39,9 +53,12 @@ export class RegisterComponent implements OnInit {
       newAccount.username = this.registerForm.controls['username'].value;
       newAccount.email = this.registerForm.controls['email'].value;
       newAccount.password = this.registerForm.controls['password'].value;
-      console.log(newAccount);
       this.store.dispatch(new CreateAccount(newAccount));
     }
+  }
+
+  public nextPage(){
+    this.router.navigate(['/interests']);
   }
 
 }
