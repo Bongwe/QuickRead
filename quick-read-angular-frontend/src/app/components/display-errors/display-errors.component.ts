@@ -28,6 +28,9 @@ export class DisplayErrorsComponent implements OnInit {
         this.successMessage = state.accountSuccess;
         this.successFlag = true;
         this.errorFlag = false;
+      } else {
+        this.errorFlag = false;
+        this.successFlag = false;
       }
     });
   }

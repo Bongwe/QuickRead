@@ -9,6 +9,18 @@ export enum EProfileAction {
   CreateAccount = '[Account Component] Create Account',
   CreateAccountSuccess = '[Account Component] Create Account Success ',
   CreateAccountError = '[Account Component] Create Account Error ',
+  ClearAccountNotifications = '[Account Component] Clear Account Notifications',
+  AddAccountInterests = '[Account Component] Add Account Interests',
+}
+
+export class AddAccountInterests implements Action {
+  readonly type = EProfileAction.AddAccountInterests;
+  constructor(public payload: string){
+  }
+}
+
+export class ClearAccountNotifications implements Action {
+  readonly type = EProfileAction.ClearAccountNotifications;
 }
 
 export class GetAccounts implements Action {
@@ -39,4 +51,5 @@ export class CreateAccount implements Action {
   }
 }
 
-export type ProfileAction = GetAccounts | GetAccountsSuccess | CreateAccount | CreateAccountSuccess |CreateAccountError;
+export type ProfileAction = GetAccounts | GetAccountsSuccess | CreateAccount | CreateAccountSuccess
+  |CreateAccountError | ClearAccountNotifications | AddAccountInterests;

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import {Store} from "@ngrx/store";
+import {IAppState} from "../../store/state/app.state";
+import {AddAccountInterests} from "../../store/actions/account.actions";
 
 @Component({
   selector: 'app-interests',
@@ -13,8 +16,11 @@ export class InterestsComponent implements OnInit {
   interestCount: number;
   minInterests: number = 3;
   interestsForm: FormGroup;
+  selectedInterest: string = '';
 
-  constructor(private router: Router, private formBuilder: FormBuilder,) { }
+  constructor(private router: Router,
+              private formBuilder: FormBuilder,
+              private store: Store<IAppState>) { }
 
   ngOnInit() {
     this.interestsForm = this.formBuilder.group({
@@ -30,27 +36,25 @@ export class InterestsComponent implements OnInit {
     });
   }
 
-  public nextPage(){
-    //this.router.navigate(['/profile-picture']);
-  }
-
   public onSelectInterest() {
     this.interestCount++;
   }
 
   public onSubmit(){
-    let selectedInterest: string = '';
     for (const c in this.interestsForm.controls) {
       const value = this.interestsForm.get(c).value;
-      if (value && selectedInterest !== '') {
-        selectedInterest += ',' + c;
+      if (value && this.selectedInterest !== '') {
+        this.selectedInterest += ',' + c;
       } else  if(value) {
-        selectedInterest += c;
+        this.selectedInterest += c;
       }
-      //dispatch something to ad this to the store
-      console.log(selectedInterest);
     }
+    this.nextPage();
+  }
 
+  public nextPage(){
+    this.store.dispatch( new AddAccountInterests(this.selectedInterest) );
+    this.router.navigate(['/profile-picture']);
   }
 
 }

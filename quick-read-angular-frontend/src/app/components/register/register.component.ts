@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
-import {CreateAccount} from "../../store/actions/account.actions";
+import {ClearAccountNotifications, CreateAccount} from "../../store/actions/account.actions";
 import {qrAccount} from "../../models/Account";
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
@@ -58,6 +58,7 @@ export class RegisterComponent implements OnInit {
   }
 
   public nextPage(){
+    this.store.dispatch( new ClearAccountNotifications());
     this.router.navigate(['/interests']);
   }
 
