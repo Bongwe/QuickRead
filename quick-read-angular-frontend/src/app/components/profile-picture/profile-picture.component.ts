@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {profileReducer} from "../../store/reducers/profile.reducer";
+import {AddAccountProfilePicture, ClearAccountNotifications} from "../../store/actions/account.actions";
+import {Store} from "@ngrx/store";
+import {IAppState} from "../../store/state/app.state";
 
 @Component({
   selector: 'app-profile-picture',
@@ -8,12 +10,12 @@ import {profileReducer} from "../../store/reducers/profile.reducer";
 })
 export class ProfilePictureComponent implements OnInit {
 
-  constructor() { }
+  constructor(private store: Store<IAppState>) { }
 
   ngOnInit() {
   }
 
   onSelectPrifilePicture(pictureName:string) {
-    alert(pictureName);
+    this.store.dispatch( new AddAccountProfilePicture(pictureName));
   }
 }

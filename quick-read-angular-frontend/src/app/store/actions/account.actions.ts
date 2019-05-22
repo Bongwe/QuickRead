@@ -3,7 +3,7 @@ import {qrAccount} from "../../models/Account";
 import {HttpErrorResponse} from "@angular/common/http";
 
 export enum EProfileAction {
-  GetAccounts = '[Account Component] Get Accounts',
+  GetAccounts = '[Acc\ount Component] Get Accounts',
   GetAccountsSuccess = '[Account Component] Get Accounts Success',
   GetAccountsError = '[Account Component] Get Accounts Error',
   CreateAccount = '[Account Component] Create Account',
@@ -11,6 +11,13 @@ export enum EProfileAction {
   CreateAccountError = '[Account Component] Create Account Error ',
   ClearAccountNotifications = '[Account Component] Clear Account Notifications',
   AddAccountInterests = '[Account Component] Add Account Interests',
+  AddAccountProfilePicture = '[Account Component] Add Account Profile Picture',
+}
+
+export class AddAccountProfilePicture implements Action {
+  readonly type = EProfileAction.AddAccountProfilePicture;
+  constructor(public payload: string){
+  }
 }
 
 export class AddAccountInterests implements Action {
@@ -52,4 +59,4 @@ export class CreateAccount implements Action {
 }
 
 export type ProfileAction = GetAccounts | GetAccountsSuccess | CreateAccount | CreateAccountSuccess
-  |CreateAccountError | ClearAccountNotifications | AddAccountInterests;
+  |CreateAccountError | ClearAccountNotifications | AddAccountInterests | AddAccountProfilePicture;

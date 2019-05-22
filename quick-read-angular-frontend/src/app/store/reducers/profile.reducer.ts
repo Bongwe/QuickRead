@@ -17,6 +17,7 @@ export interface IAccountState {
   accountError: string
   accountSuccess: string
   interests: string
+  profilePicture: string
 }
 
 export const initialAccountState: IAccountState = null;
@@ -30,13 +31,24 @@ export function profileReducer (state = initialAccountState, action: ProfileActi
     case EProfileAction.ClearAccountNotifications:
       return clearNotifications(state, action);
     case EProfileAction.AddAccountInterests:
-      return addAcoountInterest(state, action);
+      return addAaccountInterest(state, action);
+    case EProfileAction.AddAccountProfilePicture:
+      return addAccountProfilePicture(state, action);
     default:
       return state;
   }
 };
 
-function addAcoountInterest(state: IAccountState, action: AddAccountInterests) {
+function addAccountProfilePicture(state: IAccountState, action: AddAccountInterests) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  newState.profilePicture = action.payload;
+  return newState;
+}
+
+function addAaccountInterest(state: IAccountState, action: AddAccountInterests) {
   if(state == null) {
     state = createEmptyState();
   }
@@ -44,7 +56,6 @@ function addAcoountInterest(state: IAccountState, action: AddAccountInterests) {
   newState.interests = action.payload;
   return newState;
 }
-
 
 function clearNotifications(state: IAccountState, action: ClearAccountNotifications) {
   if(state == null) {
@@ -96,6 +107,7 @@ function createEmptyState() {
     selectedAccount: new qrAccount(),
     accountError: null,
     accountSuccess: null,
-    interests: null
+    interests: null,
+    profilePicture: null
   };
 }
