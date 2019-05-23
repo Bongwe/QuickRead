@@ -15,7 +15,11 @@ export class ProfilePictureComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSelectPrifilePicture(pictureName:string) {
+  onSelectProfilePicture(pictureName:string) {
     this.store.dispatch( new AddAccountProfilePicture(pictureName));
+  }
+
+  onSubmit() {
+    //cal an action to read all information from the store and submit it
   }
 }
