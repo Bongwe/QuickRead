@@ -10,7 +10,6 @@ import {
   GetAccountsSuccess,
   ProfileAction
 } from "../actions/account.actions";
-import {HttpErrorResponse} from "@angular/common/http";
 
 export interface IAccountState {
   allAccounts: Array<qrAccount>;
@@ -35,6 +34,9 @@ export function profileReducer (state = initialAccountState, action: ProfileActi
       return addAaccountInterest(state, action);
     case EProfileAction.AddAccountProfilePicture:
       return addAccountProfilePicture(state, action);
+    case EProfileAction.CreateAccountError:
+      return createAccountError(state, action);
+
     default:
       return state;
   }
