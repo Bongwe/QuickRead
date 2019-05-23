@@ -47,7 +47,7 @@ public class AccountController {
 			@Valid Account save = accountRepository.save(account);
 			return ResponseEntity.ok(save);
 		} catch (Exception error){
-			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.ALREADY_REPORTED);
+			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.CONFLICT);
 			return responseEntity;
 		}
 	}

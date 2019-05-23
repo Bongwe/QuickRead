@@ -6,7 +6,7 @@ CREATE TABLE Account(
 	username VARCHAR(128) NOT NULL,
 	email VARCHAR(128) NOT NULL,
 	password VARCHAR(128) NOT NULL,
-	interests VARCHAR(500) NOT NULL,
+	interests VARCHAR(500) NULL,
 	PRIMARY KEY(email)
 );
 

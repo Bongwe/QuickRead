@@ -10,6 +10,7 @@ import {
   GetAccountsSuccess,
   ProfileAction
 } from "../actions/account.actions";
+import {HttpErrorResponse} from "@angular/common/http";
 
 export interface IAccountState {
   allAccounts: Array<qrAccount>;
@@ -92,7 +93,7 @@ function createAccountError(state: IAccountState, action: CreateAccountError) {
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  if (action.payload.status == 208) {
+  if (action.payload.status === 409) {
     newState.accountError = 'It looks like your email address already exists';
   } else {
     newState.accountError = action.payload.message;
