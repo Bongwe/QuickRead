@@ -2,7 +2,7 @@ import {qrAccount} from "../../models/Account";
 
 import * as _ from 'lodash';
 import {
-  AddAccountInterests,
+  AddAccountInterests, AddAccountProfilePicture,
   ClearAccountNotifications,
   CreateAccountError,
   CreateAccountSuccess,
@@ -39,7 +39,7 @@ export function profileReducer (state = initialAccountState, action: ProfileActi
   }
 };
 
-function addAccountProfilePicture(state: IAccountState, action: AddAccountInterests) {
+function addAccountProfilePicture(state: IAccountState, action: AddAccountProfilePicture) {
   if(state == null) {
     state = createEmptyState();
   }
