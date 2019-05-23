@@ -12,6 +12,11 @@
         {{successMessage}}
       </div>
 
+      <div *ngIf="isNotificationMessage !== false" class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" (click)="resetSuccessFlag()" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        {{notificationMessage}}
+      </div>
+
     </div>
   </div>
 </div>

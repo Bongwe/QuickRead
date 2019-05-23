@@ -22,4 +22,9 @@ export class ProfileComponent implements OnInit {
       }
     });
   }
+
+  updateProfile(){
+
+  }
+
 }
