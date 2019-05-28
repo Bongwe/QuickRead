@@ -7,6 +7,7 @@ import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {selectAccounts} from "../../store/selectors/profile.selectors";
 import {IAccountState} from "../../store/reducers/profile.reducer";
+import * as sha512 from "js-sha512";
 
 @Component({
   selector: 'app-register',
@@ -52,7 +53,7 @@ export class RegisterComponent implements OnInit {
       newAccount.name = this.registerForm.controls['name'].value;
       newAccount.username = this.registerForm.controls['username'].value;
       newAccount.email = this.registerForm.controls['email'].value;
-      newAccount.password = this.registerForm.controls['password'].value;
+      newAccount.password = sha512.sha512(this.registerForm.controls['password'].value);
       this.store.dispatch(new CreateAccount(newAccount));
     }
   }

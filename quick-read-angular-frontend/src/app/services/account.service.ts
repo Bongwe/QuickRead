@@ -18,4 +18,9 @@ export class AccountService {
     let url = this.baseUrl + '/api/v1/account';
     return this.http.post<any>(url, account)
   }
+
+  accountLogin(account: qrAccount) {
+    let url = this.baseUrl + '/api/v1/login';
+    return this.http.post<any>(url, account)
+  }
 }

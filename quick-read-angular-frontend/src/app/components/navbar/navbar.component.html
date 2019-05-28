@@ -13,30 +13,19 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-right form-inline">
+      <form class="navbar-form navbar-right form-inline"
+            [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
           <label for="email">Email: </label>
-          <input type="text" id="email" class="form-control">
+          <input type="text" formControlName="email" id="email" class="form-control">
         </div>
         <div class="form-group">
           <label for="password">Password: </label>
-          <input type="text" id="password" class="form-control">
+          <input type="password" formControlName="password" id="password" class="form-control">
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
       </form>
-      <!--<ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>-->
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

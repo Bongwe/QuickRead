@@ -12,6 +12,27 @@ export enum EProfileAction {
   ClearAccountNotifications = '[Account Component] Clear Account Notifications',
   AddAccountInterests = '[Account Component] Add Account Interests',
   AddAccountProfilePicture = '[Account Component] Add Account Profile Picture',
+  AccountLogin = '[Account Component] Account Login',
+  AccountLoginSuccess = '[Account Component] Account Login Success',
+  AccountLoginError = '[Account Component] Account Login Error',
+}
+
+export class AccountLoginAction implements Action {
+  readonly type = EProfileAction.AccountLogin;
+  constructor(public payload: qrAccount){
+  }
+}
+
+export class AccountLoginSuccessAction implements Action {
+  readonly type = EProfileAction.AccountLoginSuccess;
+  constructor(public payload: qrAccount){
+  }
+}
+
+export class AccountLoginErrorAction implements Action {
+  readonly type = EProfileAction.AccountLoginError;
+  constructor(public payload: HttpErrorResponse){
+  }
 }
 
 export class AddAccountProfilePicture implements Action {
@@ -59,4 +80,5 @@ export class CreateAccount implements Action {
 }
 
 export type ProfileAction = GetAccounts | GetAccountsSuccess | CreateAccount | CreateAccountSuccess
-  |CreateAccountError | ClearAccountNotifications | AddAccountInterests | AddAccountProfilePicture;
+  |CreateAccountError | ClearAccountNotifications | AddAccountInterests | AddAccountProfilePicture
+  | AccountLoginAction | AccountLoginSuccessAction | AccountLoginErrorAction;

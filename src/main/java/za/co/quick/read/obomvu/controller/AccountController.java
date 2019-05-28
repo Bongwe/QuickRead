@@ -1,12 +1,12 @@
 package za.co.quick.read.obomvu.controller;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -48,6 +48,23 @@ public class AccountController {
 			return ResponseEntity.ok(save);
 		} catch (Exception error){
 			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.CONFLICT);
+			return responseEntity;
+		}
+	}
+
+	@PostMapping(value = "/login")
+	public ResponseEntity<Account> accountLogin(@Valid @RequestBody Account account) {
+		try {
+			ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
+					.withMatcher("email", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+					.withMatcher("password", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+					.withIgnorePaths("id");
+
+			Example<Account> example = Example.of(account, ignoringExampleMatcher);
+			Optional<Account> response = accountRepository.findOne(example);
+			return ResponseEntity.ok(response.get());
+		} catch (Exception error){
+			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.BAD_REQUEST);
 			return responseEntity;
 		}
 	}

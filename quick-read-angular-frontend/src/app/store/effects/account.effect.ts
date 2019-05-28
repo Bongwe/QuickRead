@@ -3,6 +3,7 @@ import {Injectable} from "@angular/core";
 import {Effect, Actions, ofType} from "@ngrx/effects";
 import {AccountService} from "../../services/account.service";
 import {
+  AccountLoginAction,
   CreateAccount,
   EProfileAction,
 } from "../actions/account.actions";
@@ -34,6 +35,17 @@ export class AccountEffects {
         .pipe(
           map(result => ({ type: EProfileAction.CreateAccountSuccess, payload: result })),
           catchError((error: HttpErrorResponse) => of({ type: EProfileAction.CreateAccountError, payload: error}))
+        ))
+    );
+
+  @Effect()
+  accountLogin$ = this.actions$
+    .pipe(
+      ofType(EProfileAction.AccountLogin),
+      mergeMap((accounts: AccountLoginAction) => this.profileService.accountLogin(accounts.payload)
+        .pipe(
+          map(result => ({ type: EProfileAction.AccountLoginSuccess, payload: result })),
+          catchError((error: HttpErrorResponse) => of({ type: EProfileAction.AccountLoginError, payload: error}))
         ))
     );
 

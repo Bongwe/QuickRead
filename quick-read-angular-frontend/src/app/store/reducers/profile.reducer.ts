@@ -2,6 +2,7 @@ import {qrAccount} from "../../models/Account";
 
 import * as _ from 'lodash';
 import {
+  AccountLoginAction, AccountLoginErrorAction, AccountLoginSuccessAction,
   AddAccountInterests, AddAccountProfilePicture,
   ClearAccountNotifications,
   CreateAccountError,
@@ -36,7 +37,12 @@ export function profileReducer (state = initialAccountState, action: ProfileActi
       return addAccountProfilePicture(state, action);
     case EProfileAction.CreateAccountError:
       return createAccountError(state, action);
-
+    case EProfileAction.AccountLogin:
+      return accountLogin(state, action);
+    case EProfileAction.AccountLoginSuccess:
+      return accountLoginSuccess(state, action);
+    case EProfileAction.AccountLoginError:
+      return accountLoginError(state, action);
     default:
       return state;
   }
@@ -97,6 +103,38 @@ function createAccountError(state: IAccountState, action: CreateAccountError) {
   let newState = _.cloneDeep(state);
   if (action.payload.status === 409) {
     newState.accountError = 'It looks like your email address already exists';
+  } else {
+    newState.accountError = action.payload.message;
+  }
+  newState.accountSuccess = null;
+  return newState;
+}
+
+function accountLogin(state: IAccountState, action: AccountLoginAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  //do some stsuff
+  return newState;
+}
+
+function accountLoginSuccess(state: IAccountState, action: AccountLoginSuccessAction) {
+    if(state == null) {
+      state = createEmptyState();
+    }
+    let newState = _.cloneDeep(state);
+    newState.selectedAccount = action.payload;
+    return newState;
+}
+
+function accountLoginError(state: IAccountState, action: AccountLoginErrorAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  if (action.payload.status === 400) {
+    newState.accountError = 'Invalid email or password';
   } else {
     newState.accountError = action.payload.message;
   }
