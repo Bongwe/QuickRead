@@ -4,14 +4,30 @@ import {RegisterComponent} from "./components/register/register.component";
 import {SearchComponent} from "./components/search/search.component";
 import {InterestsComponent} from "./components/interests/interests.component";
 import {ProfilePictureComponent} from "./components/profile-picture/profile-picture.component";
+import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
+import {QuickReadGuard} from "./quick-read.guard";
 
 const routes: Routes = [
-  { path: '', component: RegisterComponent },
-  { path: 'search', component: SearchComponent },
-  { path: 'interests', component: InterestsComponent },
-  { path: 'profile-picture', component: ProfilePictureComponent },
-  /*{ path: '',   redirectTo: '/heroes', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent }*/
+  {
+    path: '',
+    component: RegisterComponent,
+  },
+  {
+    path: 'search',
+    component: SearchComponent,
+    canActivate: [QuickReadGuard]
+  },
+  {
+    path: 'interests',
+    component: InterestsComponent,
+    canActivate: [QuickReadGuard]
+  },
+  {
+    path: 'profile-picture',
+    component: ProfilePictureComponent,
+    canActivate: [QuickReadGuard]
+  },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

@@ -20,6 +20,7 @@ import { DisplayErrorsComponent } from './components/display-errors/display-erro
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { InterestsComponent } from './components/interests/interests.component';
 import { ProfilePictureComponent } from './components/profile-picture/profile-picture.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ProfilePictureComponent } from './components/profile-picture/profile-pi
     DisplayErrorsComponent,
     InterestsComponent,
     ProfilePictureComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

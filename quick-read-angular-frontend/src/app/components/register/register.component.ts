@@ -23,7 +23,7 @@ export class RegisterComponent implements OnInit {
   registerForm: FormGroup;
   forSubmitted: boolean = false;
 
-  selectedInterests: boolean = true;
+  selectedInterestsDisable: boolean = true;
 
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
@@ -32,8 +32,9 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
 
     this.store.select(selectAccounts).subscribe((state: IAccountState) =>{
-      if(state && state.accountSuccess !== null){
-        this.selectedInterests = false;
+      if(state && state.accountSuccessMessage !== null){
+        this.selectedInterestsDisable = false;
+        this.registerForm.reset();
       }
     });
 

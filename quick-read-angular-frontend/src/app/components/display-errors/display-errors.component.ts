@@ -26,12 +26,12 @@ export class DisplayErrorsComponent implements OnInit {
 
   ngOnInit() {
     this.store.select(selectAccounts).subscribe((state: IAccountState) =>{
-      if(state && state.accountError){
-        this.errorMessage = state.accountError;
+      if(state && state.accountErrorMessage){
+        this.errorMessage = state.accountErrorMessage;
         this.errorFlag = true;
         this.successFlag = false;
-      } else if (state && state.accountSuccess) {
-        this.successMessage = state.accountSuccess;
+      } else if (state && state.accountSuccessMessage) {
+        this.successMessage = state.accountSuccessMessage;
         this.successFlag = true;
         this.errorFlag = false;
       } else {

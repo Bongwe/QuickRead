@@ -7,6 +7,6 @@ export const selectNotifications = (state: IAppState) => state.notifications;
 /*
 export const selectAccountErrors = createSelector(
   selectAccounts,
-  (state: IAccountState) => state.accountError
+  (state: IAccountState) => state.accountErrorMessage
 );
 */

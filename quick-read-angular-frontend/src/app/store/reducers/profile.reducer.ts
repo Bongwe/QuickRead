@@ -4,7 +4,7 @@ import * as _ from 'lodash';
 import {
   AccountLoginAction, AccountLoginErrorAction, AccountLoginSuccessAction,
   AddAccountInterests, AddAccountProfilePicture,
-  ClearAccountNotifications,
+  ClearAccountNotifications, ClearSelectedAccountAction,
   CreateAccountError,
   CreateAccountSuccess,
   EProfileAction,
@@ -15,8 +15,8 @@ import {
 export interface IAccountState {
   allAccounts: Array<qrAccount>;
   selectedAccount: qrAccount,
-  accountError: string
-  accountSuccess: string
+  accountErrorMessage: string
+  accountSuccessMessage: string
   interests: string
   profilePicture: string
 }
@@ -43,6 +43,8 @@ export function profileReducer (state = initialAccountState, action: ProfileActi
       return accountLoginSuccess(state, action);
     case EProfileAction.AccountLoginError:
       return accountLoginError(state, action);
+    case EProfileAction.ClearSelectedAccount:
+      return clearSelectedAccount(state, action);
     default:
       return state;
   }
@@ -71,8 +73,8 @@ function clearNotifications(state: IAccountState, action: ClearAccountNotificati
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  newState.accountSuccess = null;
-  newState.accountError = null;
+  newState.accountSuccessMessage = null;
+  newState.accountErrorMessage = null;
   return newState;
 }
 
@@ -91,8 +93,8 @@ function createAccount(state: IAccountState, action: CreateAccountSuccess) {
   }
   let newState = _.cloneDeep(state);
   newState.selectedAccount = action.payload;
-  newState.accountSuccess = "Account created successfully";
-  newState.accountError = null;
+  newState.accountSuccessMessage = "Account created successfully";
+  newState.accountErrorMessage = null;
   return newState;
 }
 
@@ -102,11 +104,11 @@ function createAccountError(state: IAccountState, action: CreateAccountError) {
   }
   let newState = _.cloneDeep(state);
   if (action.payload.status === 409) {
-    newState.accountError = 'It looks like your email address already exists';
+    newState.accountErrorMessage = 'It looks like your email address already exists';
   } else {
-    newState.accountError = action.payload.message;
+    newState.accountErrorMessage = action.payload.message;
   }
-  newState.accountSuccess = null;
+  newState.accountSuccessMessage = null;
   return newState;
 }
 
@@ -124,6 +126,7 @@ function accountLoginSuccess(state: IAccountState, action: AccountLoginSuccessAc
       state = createEmptyState();
     }
     let newState = _.cloneDeep(state);
+    //newState.accountSuccessMessage = 'login successful';
     newState.selectedAccount = action.payload;
     return newState;
 }
@@ -134,20 +137,29 @@ function accountLoginError(state: IAccountState, action: AccountLoginErrorAction
   }
   let newState = _.cloneDeep(state);
   if (action.payload.status === 400) {
-    newState.accountError = 'Invalid email or password';
+    newState.accountErrorMessage = 'Invalid email or password';
   } else {
-    newState.accountError = action.payload.message;
+    newState.accountErrorMessage = action.payload.message;
   }
-  newState.accountSuccess = null;
+  newState.accountSuccessMessage = null;
+  return newState;
+}
+
+function clearSelectedAccount(state: IAccountState, action: ClearSelectedAccountAction) {
+  if(state == null) {
+    return state;
+  }
+  let newState = _.cloneDeep(state);
+  newState.selectedAccount = null;
   return newState;
 }
 
 function createEmptyState() {
   return {
     allAccounts:  new Array<qrAccount>(),
-    selectedAccount: new qrAccount(),
-    accountError: null,
-    accountSuccess: null,
+    selectedAccount: null,
+    accountErrorMessage: null,
+    accountSuccessMessage: null,
     interests: null,
     profilePicture: null
   };

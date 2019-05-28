@@ -5,7 +5,9 @@ import {IAppState} from "../../store/state/app.state";
 import {Router} from "@angular/router";
 import {qrAccount} from "../../models/Account";
 import * as sha512 from 'js-sha512';
-import {AccountLoginAction, CreateAccount} from "../../store/actions/account.actions";
+import {AccountLoginAction, ClearSelectedAccountAction, CreateAccount} from "../../store/actions/account.actions";
+import {selectAccounts} from "../../store/selectors/profile.selectors";
+import {IAccountState} from "../../store/reducers/profile.reducer";
 
 @Component({
   selector: 'app-navbar',
@@ -21,6 +23,15 @@ export class NavbarComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit() {
+    this.store.select(selectAccounts).subscribe((state: IAccountState) =>{
+      if(state && state.selectedAccount){
+        //fix this later
+        if(state.accountSuccessMessage == null){
+          this.router.navigate(['/search']);
+        }
+      }
+    });
+
     this.loginForm = this.formBuilder.group({
       email: ['', ],
       password: ['', ],
@@ -33,7 +44,13 @@ export class NavbarComponent implements OnInit {
       loginDetails.email = this.loginForm.controls['email'].value;
       loginDetails.password = sha512.sha512(this.loginForm.controls['password'].value);
       this.store.dispatch(new AccountLoginAction(loginDetails));
+      this.loginForm.reset();
     }
+  }
+
+  public onLogoutClick () {
+    this.store.dispatch(new ClearSelectedAccountAction());
+    this.router.navigate(['/']);
   }
 
 }
