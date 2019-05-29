@@ -24,7 +24,7 @@ export class NavbarComponent implements OnInit {
   loginForm: FormGroup;
   private baseLocation = "../../../assets/img/profilePicture/";
   private tempImg = "temp.png";
-  private imageUrl: string;
+  public imageUrl: string;
 
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
