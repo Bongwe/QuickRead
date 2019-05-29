@@ -15,12 +15,14 @@ import { RegisterComponent } from './components/register/register.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent } from './components/search/search.component';
-import {BookEffects} from "./store/effects/book.effect";
+import {BookEffects} from "./store/effects/books.effect";
 import { DisplayErrorsComponent } from './components/display-errors/display-errors.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { InterestsComponent } from './components/interests/interests.component';
 import { ProfilePictureComponent } from './components/profile-picture/profile-picture.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { SuggestedBooksComponent } from './components/suggested-books/suggested-books.component';
+import { BookShelfComponent } from './components/book-shelf/book-shelf.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     DisplayErrorsComponent,
     InterestsComponent,
     ProfilePictureComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SuggestedBooksComponent,
+    BookShelfComponent
   ],
   imports: [
     BrowserModule,
