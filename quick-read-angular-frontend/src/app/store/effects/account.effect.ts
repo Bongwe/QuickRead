@@ -8,7 +8,6 @@ import {
   EProfileAction,
 } from "../actions/account.actions";
 import {EMPTY, of} from "rxjs";
-import {qrAccount} from "../../models/Account";
 import {HttpErrorResponse} from "@angular/common/http";
 
 @Injectable()
@@ -35,6 +34,17 @@ export class AccountEffects {
         .pipe(
           map(result => ({ type: EProfileAction.CreateAccountSuccess, payload: result })),
           catchError((error: HttpErrorResponse) => of({ type: EProfileAction.CreateAccountError, payload: error}))
+        ))
+    );
+
+  @Effect()
+  updateAccount$ = this.actions$
+    .pipe(
+      ofType(EProfileAction.UpdateAccount),
+      mergeMap((accounts: CreateAccount) => this.profileService.updateAccount(accounts.payload)
+        .pipe(
+          map(result => ({ type: EProfileAction.UpdateAccountSuccess, payload: result })),
+          catchError((error: HttpErrorResponse) => of({ type: EProfileAction.UpdateAccountError, payload: error}))
         ))
     );
 

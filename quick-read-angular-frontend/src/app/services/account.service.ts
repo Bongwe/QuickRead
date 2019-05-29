@@ -19,6 +19,11 @@ export class AccountService {
     return this.http.post<any>(url, account)
   }
 
+  updateAccount(account: qrAccount) {
+    let url = this.baseUrl + '/api/v1/account/?id=' + account.id;
+    return this.http.post<any>(url, account)
+  }
+
   accountLogin(account: qrAccount) {
     let url = this.baseUrl + '/api/v1/login';
     return this.http.post<any>(url, account)

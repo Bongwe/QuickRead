@@ -17,18 +17,20 @@ public class Account {
 	private String email;
 	private String password;
 	private String interests;
+	private String profile_picture;
 
 	public Account() {
 		
 	}
 
-	public Account(long id, String name, String username, String email, String password, String interests) {
+	public Account(long id, String name, String username, String email, String password, String interests, String profile_picture) {
 		this.id = id;
 		this.name = name;
 		this.username = username;
 		this.email = email;
 		this.password = password;
 		this.interests = interests;
+		this.profile_picture = profile_picture;
 	}
 
 	@Id
@@ -80,6 +82,15 @@ public class Account {
 		this.interests = interests;
 	}
 
+	@Column(name = "profile_picture", nullable = false)
+	public String getProfile_picture() {
+		return profile_picture;
+	}
+
+	public void setProfile_picture(String profile_picture) {
+		this.profile_picture = profile_picture;
+	}
+
 	@Override
 	public String toString() {
 		return "Account{" +
@@ -89,6 +100,7 @@ public class Account {
 				", email='" + email + '\'' +
 				", password='" + password + '\'' +
 				", interests='" + interests + '\'' +
+				", profile_picture='" + profile_picture + '\'' +
 				'}';
 	}
 }

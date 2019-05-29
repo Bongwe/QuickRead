@@ -5,6 +5,9 @@ import {HttpErrorResponse} from "@angular/common/http";
 export enum EProfileAction {
   GetAccounts = '[Acc\ount Component] Get Accounts',
   GetAccountsSuccess = '[Account Component] Get Accounts Success',
+  UpdateAccount = '[Account Component] Update account',
+  UpdateAccountSuccess = '[Account Component] Update account success',
+  UpdateAccountError = '[Account Component] Update account error',
   GetAccountsError = '[Account Component] Get Accounts Error',
   CreateAccount = '[Account Component] Create Account',
   CreateAccountSuccess = '[Account Component] Create Account Success ',
@@ -16,12 +19,34 @@ export enum EProfileAction {
   AccountLoginSuccess = '[Account Component] Account Login Success',
   AccountLoginError = '[Account Component] Account Login Error',
   ClearSelectedAccount = '[Account Component] Clear selected account',
+  ClearAccountMessages = '[Account Component] Clear status messages',
+}
+
+export class ClearAccountMessagesAction implements Action {
+  readonly type = EProfileAction.ClearAccountMessages;
+}
+
+export class UpdateAccountSuccessAction implements Action {
+  readonly type = EProfileAction.UpdateAccountSuccess;
+  constructor(public payload: qrAccount){
+  }
+}
+
+export class UpdateAccountErrorAction implements Action {
+  readonly type = EProfileAction.UpdateAccountError;
+  constructor(public payload: qrAccount){
+  }
+}
+
+export class UpdateAccountAction implements Action {
+  readonly type = EProfileAction.UpdateAccount;
+  constructor(public payload: qrAccount){
+  }
 }
 
 export class ClearSelectedAccountAction implements Action {
   readonly type = EProfileAction.ClearSelectedAccount;
 }
-
 
 export class AccountLoginAction implements Action {
   readonly type = EProfileAction.AccountLogin;
@@ -87,4 +112,5 @@ export class CreateAccount implements Action {
 
 export type ProfileAction = GetAccounts | GetAccountsSuccess | CreateAccount | CreateAccountSuccess
   |CreateAccountError | ClearAccountNotifications | AddAccountInterests | AddAccountProfilePicture
-  | AccountLoginAction | AccountLoginSuccessAction | AccountLoginErrorAction | ClearSelectedAccountAction;
+  | AccountLoginAction | AccountLoginSuccessAction | AccountLoginErrorAction | ClearSelectedAccountAction
+  | UpdateAccountAction | UpdateAccountErrorAction | UpdateAccountSuccessAction | ClearAccountMessagesAction;

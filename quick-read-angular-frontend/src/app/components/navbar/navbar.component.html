@@ -23,10 +23,15 @@
           <label for="password">Password: </label>
           <input type="password" formControlName="password" id="password" class="form-control">
         </div>
+
         <button type="submit" id="loginButton" class="btn btn-primary">Login</button>
         <button type="button" id="logoutButton" (click)="onLogoutClick()" class="btn btn-danger">Logout</button>
-      </form>
 
+        <span (click)="onProfilePictureSelect()"
+          class="navbar-brand navbar-right" id="profilePicture">
+          <img alt="Brand" src={{imageUrl}}>
+        </span>
+      </form>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

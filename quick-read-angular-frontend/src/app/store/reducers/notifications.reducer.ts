@@ -42,7 +42,7 @@ function clearNotification(state: INotification, action: ClearNotificationMessag
     state = {
       message: null
     };
-  }
+  } else {}
   let newState = _.cloneDeep(state);
   newState.message = null;
   return newState;

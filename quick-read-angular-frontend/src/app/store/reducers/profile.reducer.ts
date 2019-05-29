@@ -1,15 +1,14 @@
 import {qrAccount} from "../../models/Account";
-
 import * as _ from 'lodash';
 import {
   AccountLoginAction, AccountLoginErrorAction, AccountLoginSuccessAction,
-  AddAccountInterests, AddAccountProfilePicture,
+  AddAccountInterests, AddAccountProfilePicture, ClearAccountMessagesAction,
   ClearAccountNotifications, ClearSelectedAccountAction,
   CreateAccountError,
   CreateAccountSuccess,
   EProfileAction,
   GetAccountsSuccess,
-  ProfileAction
+  ProfileAction, UpdateAccountErrorAction, UpdateAccountSuccessAction
 } from "../actions/account.actions";
 
 export interface IAccountState {
@@ -29,6 +28,10 @@ export function profileReducer (state = initialAccountState, action: ProfileActi
       return getAccounts(state, action);
     case EProfileAction.CreateAccountSuccess:
       return createAccount(state, action);
+    case EProfileAction.UpdateAccountSuccess:
+      return updateAccountSuccess(state, action);
+    case EProfileAction.UpdateAccountError:
+      return updateAccountError(state, action);
     case EProfileAction.ClearAccountNotifications:
       return clearNotifications(state, action);
     case EProfileAction.AddAccountInterests:
@@ -45,10 +48,50 @@ export function profileReducer (state = initialAccountState, action: ProfileActi
       return accountLoginError(state, action);
     case EProfileAction.ClearSelectedAccount:
       return clearSelectedAccount(state, action);
+    case EProfileAction.ClearAccountMessages:
+      return clearAccountMessages(state, action);
     default:
       return state;
   }
 };
+
+/*function updateAccount(state: IAccountState, action: UpdateAccountErrorAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  newState.selectedAccount = action.payload;
+  return newState;
+}*/
+
+function clearAccountMessages(state: IAccountState, action: ClearAccountMessagesAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  newState.accountSuccessMessage = null;
+  newState.accountErrorMessage = null;
+  return newState;
+}
+
+function updateAccountSuccess(state: IAccountState, action: UpdateAccountSuccessAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  newState.selectedAccount = action.payload;
+  newState.accountSuccessMessage = "Account updated successfully";
+  return newState;
+}
+
+function updateAccountError(state: IAccountState, action: UpdateAccountErrorAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  newState.accountSuccessMessage = "Account updated error";
+  return newState;
+}
 
 function addAccountProfilePicture(state: IAccountState, action: AddAccountProfilePicture) {
   if(state == null) {
@@ -126,7 +169,7 @@ function accountLoginSuccess(state: IAccountState, action: AccountLoginSuccessAc
       state = createEmptyState();
     }
     let newState = _.cloneDeep(state);
-    //newState.accountSuccessMessage = 'login successful';
+    newState.accountSuccessMessage = 'successful login';
     newState.selectedAccount = action.payload;
     return newState;
 }
@@ -151,6 +194,7 @@ function clearSelectedAccount(state: IAccountState, action: ClearSelectedAccount
   }
   let newState = _.cloneDeep(state);
   newState.selectedAccount = null;
+  newState.accountSuccessMessage = null;
   return newState;
 }
 
