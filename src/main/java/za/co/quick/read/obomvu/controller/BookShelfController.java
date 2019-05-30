@@ -1,5 +1,6 @@
 package za.co.quick.read.obomvu.controller;
 
+import org.hibernate.annotations.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +23,16 @@ public class BookShelfController {
 
 	@GetMapping("/bookshelfs")
 	public List<BookShelf> getAllBooks() {
+		List<BookShelf> bookShelfs = bookShelfRepository.findAll();
+		/*ArrayList booksDto = new ArrayList();
+		for (BookShelf book: books) {
+			booksDto.add(createBookDTO(book));
+		}*/
+		return bookShelfs;
+	}
+
+	@GetMapping("/bookshelf/{id}")
+	public List<BookShelf> getBooksInBookShelf(@PathVariable(value = "id") Long accountId) {
 		List<BookShelf> bookShelfs = bookShelfRepository.findAll();
 		/*ArrayList booksDto = new ArrayList();
 		for (BookShelf book: books) {

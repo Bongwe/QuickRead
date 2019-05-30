@@ -6,10 +6,8 @@ import {Action} from "@ngrx/store/src/models";
 import {BookService} from "../../services/book.service";
 import {ESuggestedBooksAction, GetAllSuggestedBooksSuccessAction} from "../actions/suggested-books.actions";
 import {Book} from "../../models/Book";
-import {CreateAccount, EProfileAction} from "../actions/account.actions";
 import {HttpErrorResponse} from "@angular/common/http";
-import {BookShelf} from "../../models/BookShelf";
-import {AddToBookShelfAction, EBooksShelfAction} from "../actions/book-shelf.actions";
+import {AddToBookShelfAction, EBooksShelfAction, GetBooksInBookshelfAction} from "../actions/book-shelf.actions";
 
 @Injectable()
 export class BookEffects {
@@ -33,7 +31,18 @@ export class BookEffects {
       mergeMap((action: AddToBookShelfAction) => this.bookService.postSuggestedBook(action.payload)
         .pipe(
           map(result => ({ type: EBooksShelfAction.AddToBookShelfSuccess, payload: result })),
-          catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.AddToBookShelfError, payload: error}))
+          catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.BookShelfError, payload: error}))
+        ))
+    );
+
+  @Effect()
+  booksInbookShelf = this.actions$
+    .pipe(
+      ofType(EBooksShelfAction.GetBooksInBookShelf),
+      mergeMap((action: GetBooksInBookshelfAction) => this.bookService.getBooksInShelf(action.payload)
+        .pipe(
+          map(result => ({ type: EBooksShelfAction.GetBooksInBookShelfSuccess, payload: result })),
+          catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.BookShelfError, payload: error}))
         ))
     );
 }

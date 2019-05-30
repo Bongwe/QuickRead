@@ -5,7 +5,7 @@ import {IAppState} from "../../store/state/app.state";
 import {selectBooks} from "../../store/selectors/book.selectors";
 import {ISuggestedBookState} from "../../store/reducers/suggested-books.reducer";
 import {BookShelf} from "../../models/BookShelf";
-import {AddToBookShelfAction} from "../../store/actions/book-shelf.actions";
+import {AddToBookShelfAction, GetBooksInBookshelfAction} from "../../store/actions/book-shelf.actions";
 import {qrAccount} from "../../models/Account";
 import {selectAccounts} from "../../store/selectors/profile.selectors";
 import {IAccountState} from "../../store/reducers/profile.reducer";
@@ -41,6 +41,7 @@ export class SuggestedBooksComponent implements OnInit {
     bookShelf.book_id = id;
     bookShelf.account_id = this.account.id;
     this.store.dispatch(new AddToBookShelfAction(bookShelf));
+    this.store.dispatch(new GetBooksInBookshelfAction(this.account.id));
   }
 
 }

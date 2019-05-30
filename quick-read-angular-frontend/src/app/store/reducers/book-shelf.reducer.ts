@@ -3,12 +3,14 @@ import {
   AddToBookShelfAction, AddToBookShelfErrorAction,
   AddToBookShelfSuccessAction,
   BookShelfAction,
-  EBooksShelfAction
+  EBooksShelfAction, GetBooksInBookshelfSuccessAction,
 } from "../actions/book-shelf.actions";
+import {Book} from "../../models/Book";
 import {BookShelf} from "../../models/BookShelf";
 
 export interface IBookShelfState {
   bookShelf: Array<BookShelf>;
+  booksInAccount: Array<Book>;
 }
 
 export const initialBookShelfState: IBookShelfState = null;
@@ -19,29 +21,38 @@ export function bookShelfReducer (state = initialBookShelfState, action: BookShe
       return addToBookShelf(state, action);
     case EBooksShelfAction.AddToBookShelfSuccess:
       return addToBookShelfSuccess(state, action);
-    case EBooksShelfAction.AddToBookShelfError:
+    case EBooksShelfAction.BookShelfError:
       return addToBookShelfError(state, action);
+    case EBooksShelfAction.GetBooksInBookShelfSuccess:
+      return getBooksInBookshelf(state, action);
     default:
       return state;
   }
 };
 
-function addToBookShelf(state: IBookShelfState, action: AddToBookShelfAction) {
+function getBooksInBookshelf(state: IBookShelfState, action: GetBooksInBookshelfSuccessAction) {
   if(state == null) {
-    state = {
-      bookShelf:  new Array<BookShelf>(),
-    };
+    state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  newState.bookShelf.push(action.payload);
+  for(let book of action.payload){
+    newState.booksInAccount.push(book);
+  }
+  return newState;
+}
+
+function addToBookShelf(state: IBookShelfState, action: AddToBookShelfAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+    newState.bookShelf.push(action.payload);
   return newState;
 }
 
 function addToBookShelfSuccess(state: IBookShelfState, action: AddToBookShelfSuccessAction) {
   if(state == null) {
-    state = {
-      bookShelf:  new Array<BookShelf>(),
-    };
+    state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
   //newState.bookShelf.push(action.payload);
@@ -50,11 +61,16 @@ function addToBookShelfSuccess(state: IBookShelfState, action: AddToBookShelfSuc
 
 function addToBookShelfError(state: IBookShelfState, action: AddToBookShelfErrorAction) {
   if(state == null) {
-    state = {
-      bookShelf:  new Array<BookShelf>(),
-    };
+    state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
   //newState.bookShelf.push(action.payload);
   return newState;
+}
+
+function createEmptyState() {
+  return {
+    bookShelf: new Array<BookShelf>(),
+    booksInAccount: new Array<Book>()
+  };
 }
