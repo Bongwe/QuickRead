@@ -6,7 +6,6 @@ import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import za.co.quick.read.obomvu.model.Account;
 import za.co.quick.read.obomvu.model.Book;
 import za.co.quick.read.obomvu.model.BookShelf;
 import za.co.quick.read.obomvu.repository.BookRepository;
@@ -62,13 +61,31 @@ public class BookShelfController {
 	}
 
 	@PostMapping(value = "/bookshelf/add")
-	public ResponseEntity<BookShelf> createAccount(@Valid @RequestBody BookShelf account) {
+	public ResponseEntity<BookShelf> createAccount(@Valid @RequestBody BookShelf bookShelf) {
 		try {
-			@Valid BookShelf save = bookShelfRepository.save(account);
+			if(isBookInShelf(bookShelf) == true){
+				return new ResponseEntity("Book already in shelf", HttpStatus.BAD_REQUEST);
+			}
+			@Valid BookShelf save = bookShelfRepository.save(bookShelf);
 			return ResponseEntity.ok(save);
 		} catch (Exception error){
 			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.CONFLICT);
 			return responseEntity;
+		}
+	}
+
+	private boolean isBookInShelf( BookShelf bookShelf) {
+		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
+				.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+				.withMatcher("book_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+				.withIgnorePaths("id");
+
+		Example<BookShelf> example = Example.of(bookShelf, ignoringExampleMatcher);
+		List<BookShelf> results = bookShelfRepository.findAll(example);
+		if(results.isEmpty()){
+			return false;
+		} else {
+			return true;
 		}
 	}
 
