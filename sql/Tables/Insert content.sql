@@ -1,5 +1,5 @@
-UPDATE Book
-SET synopses = 'The Project Gutenberg EBook of Kai Lung’s Golden Hours, by Ernest Bramah
+insert into book (title,author,content)
+values('Kai Lung’s Golden Hours', 'Ernest Bramah', 'The Project Gutenberg EBook of Kai Lung’s Golden Hours, by Ernest Bramah
 
 This eBook is for the use of anyone anywhere at no cost and with
 almost no restrictions whatsoever.  You may copy it, give it away or
@@ -9579,5 +9579,4 @@ Most people start at our Web site which has the main PG search facility:
 This Web site includes information about Project Gutenberg-tm,
 including how to make donations to the Project Gutenberg Literary
 Archive Foundation, how to help produce our new eBooks, and how to
-subscribe to our email newsletter to hear about new eBooks.'
-WHERE ID = 1;
+subscribe to our email newsletter to hear about new eBooks.');
