@@ -15,14 +15,15 @@ export class BookService {
     return this.http.get(this.baseUrl +  '/api/v1/books');
   }
 
-  postSuggestedBook(bookShelf: BookShelf) {
+  postSuggestedBook(bookShelf: BookShelf): Observable<BookShelf> {
     let url = this.baseUrl + '/api/v1/bookshelf/add';
     return this.http.post<any>(url, bookShelf)
   }
 
   getBooksInShelf(accountId: number): Observable<Object> {
     let url = this.baseUrl + '/api/v1/bookshelf/' + accountId;
-    return this.http.get(url);
+    let objectObservable = this.http.get(url);
+    return objectObservable;
   }
 
 }

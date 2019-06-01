@@ -11,7 +11,8 @@ export class AccountService {
   constructor(private http: HttpClient){}
 
   getAll() {
-    return this.http.get(this.baseUrl +  '/api/v1/accounts');
+    const objectObservable = this.http.get(this.baseUrl +  '/api/v1/accounts');
+    return objectObservable;
   }
 
   createAccount(account: qrAccount) {

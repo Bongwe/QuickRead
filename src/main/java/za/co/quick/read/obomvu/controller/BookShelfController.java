@@ -1,18 +1,21 @@
 package za.co.quick.read.obomvu.controller;
 
-import org.hibernate.annotations.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import za.co.quick.read.obomvu.dto.BookDTO;
-import za.co.quick.read.obomvu.exception.ResourceNotFoundException;
+import za.co.quick.read.obomvu.model.Account;
 import za.co.quick.read.obomvu.model.Book;
 import za.co.quick.read.obomvu.model.BookShelf;
+import za.co.quick.read.obomvu.repository.BookRepository;
 import za.co.quick.read.obomvu.repository.BookShelfRepository;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -20,6 +23,8 @@ import java.util.List;
 public class BookShelfController {
 	@Autowired
 	private BookShelfRepository bookShelfRepository;
+	@Autowired
+	private BookRepository bookRepository;
 
 	@GetMapping("/bookshelfs")
 	public List<BookShelf> getAllBooks() {
@@ -32,13 +37,28 @@ public class BookShelfController {
 	}
 
 	@GetMapping("/bookshelf/{id}")
-	public List<BookShelf> getBooksInBookShelf(@PathVariable(value = "id") Long accountId) {
-		List<BookShelf> bookShelfs = bookShelfRepository.findAll();
-		/*ArrayList booksDto = new ArrayList();
-		for (BookShelf book: books) {
-			booksDto.add(createBookDTO(book));
-		}*/
-		return bookShelfs;
+	public ResponseEntity<List<Book>> getBooksInBookShelf(@PathVariable(value = "id") Long accountId) {
+		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
+				.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+				.withIgnorePaths("id");
+		try {
+			BookShelf bookShelf = new BookShelf();
+			bookShelf.setAccount_id(accountId);
+			Example<BookShelf> example = Example.of(bookShelf, ignoringExampleMatcher);
+			List<BookShelf> booksInShelf = bookShelfRepository.findAll(example);
+
+			List<Book> bookList = new ArrayList<>();
+			for(BookShelf bookInShelf: booksInShelf){
+				Optional<Book> bookOptional = bookRepository.findById(bookInShelf.getBook_id());
+				if(bookOptional.isPresent()){
+					bookList.add(bookOptional.get());
+				}
+			}
+			return ResponseEntity.ok(bookList);
+		} catch (Exception error){
+			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.BAD_REQUEST);
+			return responseEntity;
+		}
 	}
 
 	@PostMapping(value = "/bookshelf/add")

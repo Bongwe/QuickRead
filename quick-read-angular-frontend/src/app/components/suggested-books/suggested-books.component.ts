@@ -41,7 +41,7 @@ export class SuggestedBooksComponent implements OnInit {
     bookShelf.book_id = id;
     bookShelf.account_id = this.account.id;
     this.store.dispatch(new AddToBookShelfAction(bookShelf));
-    this.store.dispatch(new GetBooksInBookshelfAction(this.account.id));
+    //this.store.dispatch(new GetBooksInBookshelfAction(this.account.id));
   }
 
 }

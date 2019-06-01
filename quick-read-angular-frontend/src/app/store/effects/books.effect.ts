@@ -8,11 +8,14 @@ import {ESuggestedBooksAction, GetAllSuggestedBooksSuccessAction} from "../actio
 import {Book} from "../../models/Book";
 import {HttpErrorResponse} from "@angular/common/http";
 import {AddToBookShelfAction, EBooksShelfAction, GetBooksInBookshelfAction} from "../actions/book-shelf.actions";
+import {BookShelf} from "../../models/BookShelf";
+import {Store} from "@ngrx/store";
+import {IAppState} from "../state/app.state";
 
 @Injectable()
 export class BookEffects {
 
-  constructor(private actions$: Actions, private bookService: BookService) {}
+  constructor(private store: Store<IAppState>, private actions$: Actions, private bookService: BookService) {}
 
   @Effect()
   protected fetch$: Observable<Action> = this.actions$
@@ -30,7 +33,11 @@ export class BookEffects {
       ofType(EBooksShelfAction.AddToBookShelf),
       mergeMap((action: AddToBookShelfAction) => this.bookService.postSuggestedBook(action.payload)
         .pipe(
-          map(result => ({ type: EBooksShelfAction.AddToBookShelfSuccess, payload: result })),
+          map((bookShelf: BookShelf) => {
+            this.store.dispatch(new GetBooksInBookshelfAction(bookShelf.account_id));
+            return { type: EBooksShelfAction.AddToBookShelfSuccess, payload: bookShelf }
+          }),
+          map((result) => ({ type: EBooksShelfAction.AddToBookShelfSuccess, payload: result })),
           catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.BookShelfError, payload: error}))
         ))
     );
