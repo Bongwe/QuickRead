@@ -21,6 +21,7 @@ export class SuggestedBooksComponent implements OnInit {
 
   books: Book[];
   private account: qrAccount;
+
   constructor(private store: Store<IAppState>) { }
 
   ngOnInit() {
