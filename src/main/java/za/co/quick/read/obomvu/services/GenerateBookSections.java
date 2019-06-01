@@ -3,6 +3,7 @@ package za.co.quick.read.obomvu.services;
 import org.springframework.stereotype.Component;
 import za.co.quick.read.obomvu.model.Book;
 import za.co.quick.read.obomvu.model.BookSection;
+import za.co.quick.read.obomvu.utils.BookStatus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +26,7 @@ public class GenerateBookSections {
             BookSection bookSection = new BookSection();
             bookSection.setContent(buildSection(startIndex,endIndex, content));
             bookSection.setBook_id(book.getId());
+            bookSection.setStatus(BookStatus.Status.UN_READ.toString());
             booksSectionList.add(bookSection);
             startIndex = endIndex;
         }

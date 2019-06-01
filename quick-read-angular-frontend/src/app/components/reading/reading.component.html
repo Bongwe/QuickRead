@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2 col-md-3">
+      <label >Title: {{book?.title}}</label>
+      <label >Title: {{book?.author}}</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 col-md-6">
+      <div *ngFor="let bookSection of bookSections;let index = index" class="col-sm-2 col-md-3">
+          <label >Section {{index + 1}}</label>
+      </div>
+    </div>
+  </div>
+</div>

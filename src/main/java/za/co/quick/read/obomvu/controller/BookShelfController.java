@@ -10,6 +10,7 @@ import za.co.quick.read.obomvu.model.Book;
 import za.co.quick.read.obomvu.model.BookSection;
 import za.co.quick.read.obomvu.model.BookShelf;
 import za.co.quick.read.obomvu.repository.BookRepository;
+import za.co.quick.read.obomvu.repository.BookSectionRepository;
 import za.co.quick.read.obomvu.repository.BookShelfRepository;
 import za.co.quick.read.obomvu.services.GenerateBookSections;
 
@@ -26,6 +27,8 @@ public class BookShelfController {
 	private BookShelfRepository bookShelfRepository;
 	@Autowired
 	private BookRepository bookRepository;
+	@Autowired
+	private BookSectionRepository bookSectionRepository;
 	@Autowired
 	private GenerateBookSections generateBookSections;
 
@@ -67,28 +70,13 @@ public class BookShelfController {
 	@GetMapping("/bookshelf/read/{id}")
 	public ResponseEntity<List<BookSection>> readBook(@PathVariable(value = "id") Long bookId) {
 		try {
-			//create book sections
+			if (!getBooksSections(bookId).isEmpty()) {
+				return ResponseEntity.ok(getBooksSections(bookId));
+			}
 			Optional<Book> bookOptional = bookRepository.findById(bookId);
 			List<BookSection> bookSections = generateBookSections.generateSections(bookOptional.get());
-			//save book sections
-			//return success message
-			/*ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
-					.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
-					.withIgnorePaths("id");
-
-			BookShelf bookShelf = new BookShelf();
-			bookShelf.setAccount_id(accountId);
-			Example<BookShelf> example = Example.of(bookShelf, ignoringExampleMatcher);
-			List<BookShelf> booksInShelf = bookShelfRepository.findAll(example);
-
-			List<Book> bookList = new ArrayList<>();
-			for(BookShelf bookInShelf: booksInShelf){
-				Optional<Book> bookOptional = bookRepository.findById(bookInShelf.getBook_id());
-				if(bookOptional.isPresent()){
-					bookList.add(bookOptional.get());
-				}
-			}*/
-			return ResponseEntity.ok(bookSections);
+			List<BookSection> bookSections1 = bookSectionRepository.saveAll(bookSections);
+			return ResponseEntity.ok(bookSections1);
 		} catch (Exception error){
 			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.BAD_REQUEST);
 			return responseEntity;
@@ -122,6 +110,18 @@ public class BookShelfController {
 		} else {
 			return true;
 		}
+	}
+
+
+	private List<BookSection> getBooksSections(Long book_id) {
+		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
+				.withMatcher("book_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+				.withIgnorePaths("id");
+		BookSection bookSection = new BookSection();
+		bookSection.setBook_id(book_id);
+
+		Example<BookSection> example = Example.of(bookSection, ignoringExampleMatcher);
+		return bookSectionRepository.findAll(example);
 	}
 
 	/*@GetMapping("/book/{id}")

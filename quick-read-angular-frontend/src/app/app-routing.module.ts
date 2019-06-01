@@ -7,6 +7,7 @@ import {ProfilePictureComponent} from "./components/profile-picture/profile-pict
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
 import {QuickReadGuard} from "./quick-read.guard";
 import {ProfileComponent} from "./components/profile/profile.component";
+import {ReadingComponent} from "./components/reading/reading.component";
 
 const routes: Routes = [
   {
@@ -31,6 +32,11 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
+    canActivate: [QuickReadGuard]
+  },
+  {
+    path: 'reading',
+    component: ReadingComponent,
     canActivate: [QuickReadGuard]
   },
   { path: '**', component: PageNotFoundComponent }

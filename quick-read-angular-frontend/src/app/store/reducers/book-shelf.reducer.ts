@@ -95,6 +95,6 @@ function createEmptyState() {
   return {
     bookShelf: new Array<BookShelf>(),
     booksInAccount: new Array<Book>(),
-    bookSections: new Array<BookSection>()
+    bookSections: null
   };
 }

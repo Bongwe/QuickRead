@@ -23,6 +23,7 @@ import { ProfilePictureComponent } from './components/profile-picture/profile-pi
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { SuggestedBooksComponent } from './components/suggested-books/suggested-books.component';
 import { BookShelfComponent } from './components/book-shelf/book-shelf.component';
+import { ReadingComponent } from './components/reading/reading.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { BookShelfComponent } from './components/book-shelf/book-shelf.component
     ProfilePictureComponent,
     PageNotFoundComponent,
     SuggestedBooksComponent,
-    BookShelfComponent
+    BookShelfComponent,
+    ReadingComponent
   ],
   imports: [
     BrowserModule,

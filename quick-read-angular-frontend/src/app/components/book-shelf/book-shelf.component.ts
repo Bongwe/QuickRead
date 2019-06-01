@@ -35,6 +35,11 @@ export class BookShelfComponent implements OnInit {
         this.booksInShelf = state.booksInAccount;
       }
     });
+    this.store.select(selectBookShelf).subscribe((state: IBookShelfState) =>{
+      if(state && state.bookSections){
+        this.router.navigate(['/reading']);
+      }
+    });
     this.store.dispatch(new GetBooksInBookshelfAction(this.accountId));
   }
 
