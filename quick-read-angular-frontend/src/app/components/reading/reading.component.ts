@@ -3,11 +3,10 @@ import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
-import {selectAccounts, selectBookShelf} from "../../store/selectors/profile.selectors";
+import {selectBookShelf} from "../../store/selectors/profile.selectors";
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
 import {Book} from "../../models/Book";
 import {BookSection} from "../../models/BookSection";
-import {ISuggestedBookState} from "../../store/reducers/suggested-books.reducer";
 
 @Component({
   selector: 'app-reading',
@@ -17,7 +16,7 @@ import {ISuggestedBookState} from "../../store/reducers/suggested-books.reducer"
 export class ReadingComponent implements OnInit {
 
   private bookSections: Array<BookSection>;
-  private book: Book;
+  public book: Book;
 
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
