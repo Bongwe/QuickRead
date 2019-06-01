@@ -7,9 +7,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import za.co.quick.read.obomvu.model.Book;
+import za.co.quick.read.obomvu.model.BookSection;
 import za.co.quick.read.obomvu.model.BookShelf;
 import za.co.quick.read.obomvu.repository.BookRepository;
 import za.co.quick.read.obomvu.repository.BookShelfRepository;
+import za.co.quick.read.obomvu.services.GenerateBookSections;
 
 import javax.validation.Valid;
 import java.util.ArrayList;
@@ -24,6 +26,8 @@ public class BookShelfController {
 	private BookShelfRepository bookShelfRepository;
 	@Autowired
 	private BookRepository bookRepository;
+	@Autowired
+	private GenerateBookSections generateBookSections;
 
 	@GetMapping("/bookshelfs")
 	public List<BookShelf> getAllBooks() {
@@ -54,6 +58,37 @@ public class BookShelfController {
 				}
 			}
 			return ResponseEntity.ok(bookList);
+		} catch (Exception error){
+			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.BAD_REQUEST);
+			return responseEntity;
+		}
+	}
+
+	@GetMapping("/bookshelf/read/{id}")
+	public ResponseEntity<List<BookSection>> readBook(@PathVariable(value = "id") Long bookId) {
+		try {
+			//create book sections
+			Optional<Book> bookOptional = bookRepository.findById(bookId);
+			List<BookSection> bookSections = generateBookSections.generateSections(bookOptional.get());
+			//save book sections
+			//return success message
+			/*ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
+					.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+					.withIgnorePaths("id");
+
+			BookShelf bookShelf = new BookShelf();
+			bookShelf.setAccount_id(accountId);
+			Example<BookShelf> example = Example.of(bookShelf, ignoringExampleMatcher);
+			List<BookShelf> booksInShelf = bookShelfRepository.findAll(example);
+
+			List<Book> bookList = new ArrayList<>();
+			for(BookShelf bookInShelf: booksInShelf){
+				Optional<Book> bookOptional = bookRepository.findById(bookInShelf.getBook_id());
+				if(bookOptional.isPresent()){
+					bookList.add(bookOptional.get());
+				}
+			}*/
+			return ResponseEntity.ok(bookSections);
 		} catch (Exception error){
 			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.BAD_REQUEST);
 			return responseEntity;

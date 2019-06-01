@@ -1,6 +1,7 @@
 import { Action } from '@ngrx/store';
 import {Book} from "../../models/Book";
 import {BookShelf} from "../../models/BookShelf";
+import {BookSection} from "../../models/BookSection";
 
 export enum EBooksShelfAction {
   AddToBookShelf = '[Book Shelf Component] Add to book shelf',
@@ -8,6 +9,27 @@ export enum EBooksShelfAction {
   BookShelfError = '[Book Shelf Component] Book shelf error',
   GetBooksInBookShelf = '[Book Shelf Component] Get books in book shelf',
   GetBooksInBookShelfSuccess = '[Book Shelf Component] Get books in book shelf success',
+  ReadBook = '[Book Shelf Component] Read book in book shelf',
+  ReadBookSuccess = '[Book Shelf Component] Read book success in book shelf',
+  ReadBookError = '[Book Shelf Component] Read book error in book shelf',
+}
+
+export class ReadBookSErrorAction implements Action {
+  readonly type = EBooksShelfAction.ReadBookError;
+  constructor(public payload: string){
+  }
+}
+
+export class ReadBookSuccessAction implements Action {
+  readonly type = EBooksShelfAction.ReadBookSuccess;
+  constructor(public payload: Array<BookSection>){
+  }
+}
+
+export class ReadBookAction implements Action {
+  readonly type = EBooksShelfAction.ReadBook;
+  constructor(public payload: number){
+  }
 }
 
 export class GetBooksInBookshelfSuccessAction implements Action {
@@ -37,4 +59,5 @@ export class AddToBookShelfAction implements Action {
 }
 
 export type BookShelfAction = AddToBookShelfAction | AddToBookShelfSuccessAction | AddToBookShelfErrorAction
-  | GetBooksInBookshelfAction | GetBooksInBookshelfSuccessAction;
+  | GetBooksInBookshelfAction | GetBooksInBookshelfSuccessAction | ReadBookAction | ReadBookSErrorAction
+  | ReadBookSuccessAction;

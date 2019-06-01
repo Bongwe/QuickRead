@@ -52,4 +52,16 @@ export class BookEffects {
           catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.BookShelfError, payload: error}))
         ))
     );
+
+  @Effect()
+  readBookInShelf = this.actions$
+    .pipe(
+      ofType(EBooksShelfAction.ReadBook),
+      mergeMap((action: GetBooksInBookshelfAction) => this.bookService.getBookSections(action.payload)
+        .pipe(
+          map(result => ({ type: EBooksShelfAction.ReadBookSuccess, payload: result })),
+          catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.ReadBookError, payload: error}))
+        ))
+    );
+
 }

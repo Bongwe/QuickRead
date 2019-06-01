@@ -6,3 +6,9 @@ CREATE TABLE BOOKSHELF(
 );
 
 select * from BOOKSHELF;
+
+select * from book;
+
+delete from BOOKSHELF;
+
+drop table book_shelf;

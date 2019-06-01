@@ -26,4 +26,10 @@ export class BookService {
     return objectObservable;
   }
 
+  getBookSections(bookId: number): Observable<Object> {
+    let url = this.baseUrl + '/api/v1/bookshelf/read/' + bookId;
+    let objectObservable = this.http.get(url);
+    return objectObservable;
+  }
+
 }

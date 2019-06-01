@@ -6,7 +6,7 @@ import {Router} from "@angular/router";
 import {selectAccounts, selectBookShelf} from "../../store/selectors/profile.selectors";
 import {IAccountState} from "../../store/reducers/profile.reducer";
 import {AccountLoginAction} from "../../store/actions/account.actions";
-import {GetBooksInBookshelfAction} from "../../store/actions/book-shelf.actions";
+import {GetBooksInBookshelfAction, ReadBookAction} from "../../store/actions/book-shelf.actions";
 import {Book} from "../../models/Book";
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
 
@@ -36,5 +36,9 @@ export class BookShelfComponent implements OnInit {
       }
     });
     this.store.dispatch(new GetBooksInBookshelfAction(this.accountId));
+  }
+
+  readBook(bookId: number) {
+    this.store.dispatch(new ReadBookAction(bookId));
   }
 }
