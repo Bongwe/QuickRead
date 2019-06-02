@@ -18,8 +18,7 @@ import {ISectionState} from "../../store/reducers/section.reducer";
 })
 export class ViewSectionsComponent implements OnInit {
 
-  private bookSections: Array<BookSection>;
-  private sectionsInitialised: boolean = false;
+  public bookSections: Array<BookSection>;
   public book: Book;
   public sectionGroups: Array<SectionGroup>;
   public playerImageSrc = "../../../assets/img/opponents/giraffe.png" ;
