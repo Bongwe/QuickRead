@@ -47,7 +47,6 @@ export class ViewSectionsComponent implements OnInit {
   }
 
   readSelectedSection(section: BookSection, index: number) {
-    section.index = index;
     this.store.dispatch(new ReadSectionAction(section));
   }
 

@@ -20,6 +20,7 @@ public class GenerateBookSections {
 
         List<BookSection> booksSectionList = new ArrayList<>();
         int startIndex = 0;
+        Long index = 0L;
         String[] content = book.getContent().split("\\s+");
 
         for(int endIndex = SECTION_LENGHT; endIndex < content.length; endIndex = endIndex + SECTION_LENGHT){
@@ -27,8 +28,10 @@ public class GenerateBookSections {
             bookSection.setContent(buildSection(startIndex,endIndex, content));
             bookSection.setBook_id(book.getId());
             bookSection.setStatus(BookStatus.Status.UN_READ.toString());
+            bookSection.setSection_index(index);
             booksSectionList.add(bookSection);
             startIndex = endIndex;
+            index++;
         }
 
         return booksSectionList;

@@ -25,6 +25,7 @@ import { SuggestedBooksComponent } from './components/suggested-books/suggested-
 import { BookShelfComponent } from './components/book-shelf/book-shelf.component';
 import { ViewSectionsComponent } from './components/view-sections/view-sections.component';
 import { SectionComponent } from './components/section/section.component';
+import {ProgressBarModule} from "angular-progress-bar";
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { SectionComponent } from './components/section/section.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ProgressBarModule,
     AppRoutingModule,
     StoreModule.forRoot(appReducers),
     EffectsModule.forRoot([AccountEffects, BookEffects]),

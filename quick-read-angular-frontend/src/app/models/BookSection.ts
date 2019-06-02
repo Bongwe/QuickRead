@@ -4,5 +4,6 @@ export class BookSection {
   book_id: number;
   status: string;
   content: string;
-  index: number
+  index: number;
+  section_index: number;
 }

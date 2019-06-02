@@ -23,6 +23,7 @@
     "@ngrx/effects": "^7.4.0",
     "@ngrx/store": "^7.4.0",
     "@ngrx/store-devtools": "^7.4.0",
+    "angular-progress-bar": "^1.0.9",
     "bootstrap": "^3.4.1",
     "core-js": "^2.5.4",
     "jquery": "^3.4.1",
