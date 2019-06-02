@@ -1,19 +1,28 @@
 <div class="container">
   <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <progress-bar [progress]=scroll() [color]="'#488aff'">
+      </progress-bar>
+    </div>
+  </div>
+
+  <div class="row">
     <div class="col-md-6 col-md-offset-4">
-      <h4>Title: {{book.title}}</h4>
-      <h4>Author: {{book.author}}</h4>
+      <h5>Title: {{book.title}}</h5>
+      <h5>Author: {{book.author}}</h5>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-8 col-md-offset-2"
+         style="overflow:scroll; height:550px;"
+         id="sectionContent">
       {{currentSection.content}}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <button type="button" (click)="closeSection()" class="btn btn-primary">CLOSE SECTION</button>
-      <button type="button" (click)="nextSection()" class="btn btn-warning">NEXT SECTION</button>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <button type="button" (click)="closeSection()" class="btn btn-primary">CLOSE SECTION</button>
+          <button type="button" (click)="nextSection()" class="btn btn-warning">NEXT SECTION</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

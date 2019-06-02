@@ -46,10 +46,10 @@ import {ProgressBarModule} from "angular-progress-bar";
   ],
   imports: [
     BrowserModule,
+    ProgressBarModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    ProgressBarModule,
     AppRoutingModule,
     StoreModule.forRoot(appReducers),
     EffectsModule.forRoot([AccountEffects, BookEffects]),
