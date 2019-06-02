@@ -5,7 +5,7 @@
       <h4 >Author: {{book?.author}}</h4>
     </div>
   </div>
-  <div *ngFor="let sectionGroup of sectionGroups" class="row">
+  <!--<div *ngFor="let sectionGroup of sectionGroups" class="row">
     <div class="row">
       <div class="col-sm-2 col-md-2  col-md-offset-5">
         <div><label>Name: Muzi</label></div>
@@ -27,13 +27,46 @@
         </span>
       </div>
     </div>
-  </div>
-  <!--<div class="row">
-    <div class="col-sm-2 col-md-6 col-md-offset-3">
-      <div *ngFor="let bookSection of bookSections;let index = index" class="col-sm-2 col-md-3">
-        <img src="../../../assets/img/sectionIcon/sectionIcon.png">
-        <label class="section-label">Section {{index + 1}}</label>
-      </div>
-    </div>
   </div>-->
+  <div class="row">
+    <span *ngFor="let section of bookSections;let index = index">
+      <div *ngIf="index == 0 || (index % 4) == 0" class="row">
+        <div class="col-sm-2 col-md-2  col-md-offset-3">
+          <div><label>Name: Muzi</label></div>
+          <div><label>Health: 50%</label></div>
+          <img [src]=playerImageSrc class="imageSize">
+        </div>
+        <div class="col-sm-2 col-md-2">
+          <div><label>Name: Snake </label></div>
+          <div><label>Health: 25%</label></div>
+          <img [src]=opponentImageSrc class="imageSize">
+        </div>
+      </div>
+      <div (click)="readSelectedSection(section, index)" class="col-sm-2">
+        <label class="section-label">Section {{index + 1}}</label>
+        <img class="section_block" src="../../../assets/img/sectionIcon/sectionIcon.png">
+      </div>
+    </span>
+
+    <!--<div class="row">
+      <div class="col-sm-2 col-md-2  col-md-offset-5">
+        <div><label>Name: Muzi</label></div>
+        <div><label>Health: 50%</label></div>
+        <img [src]=playerImageSrc class="imageSize">
+      </div>
+      <div class="col-sm-2 col-md-2">
+        <div><label>Name: Snake </label></div>
+        <div><label>Health: 25%</label></div>
+        <img [src]=opponentImageSrc class="imageSize">
+      </div>
+    </div>-->
+
+    <!--<div class="row">
+      <div class="col-sm-1 col-md-8 col-md-offset-3">
+          <label class="section-label">Section {{index + 1}}</label>
+          <img  class="section_block" src="../../../assets/img/sectionIcon/sectionIcon.png">
+      </div>
+    </div>-->
+  </div>
+
 </div>

@@ -1,6 +1,5 @@
 import * as _ from 'lodash';
 import {
-  ClearCurrentSection,
   ClearCurrentSectionAction,
   ESectionAction,
   ReadSectionAction,
@@ -10,6 +9,7 @@ import {BookSection} from "../../models/BookSection";
 
 export interface ISectionState {
   currentSection: BookSection;
+  sectionIndex: number;
 }
 
 export const initialSectionState: ISectionState = null;
@@ -27,9 +27,7 @@ export function sectionReducer (state = initialSectionState, action: SectionActi
 
 function clearCurrentSection(state: ISectionState, action: ClearCurrentSectionAction) {
   if(state == null) {
-    state = {
-      currentSection:  null,
-    };
+    state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
   newState.currentSection = null;
@@ -38,12 +36,17 @@ function clearCurrentSection(state: ISectionState, action: ClearCurrentSectionAc
 
 function setCurrentSection(state: ISectionState, action: ReadSectionAction) {
   if(state == null) {
-    state = {
-      currentSection:  null,
-    };
+    state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
   newState.currentSection = action.payload;
   return newState;
+}
+
+function createEmptyState(){
+  return {
+    currentSection:  null,
+    sectionIndex:  null,
+  };
 }
 

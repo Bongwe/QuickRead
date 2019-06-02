@@ -35,12 +35,6 @@ export class ViewSectionsComponent implements OnInit {
     this.store.select(selectBookShelf).subscribe((state: IBookShelfState) =>{
       if(state && state.bookSections){
         this.bookSections = state.bookSections;
-        if(this.sectionsInitialised == false){
-          this.createGroupSections(this.bookSections);
-        }
-        /*if(state.bookSections[0]){
-          this.book = state.booksInAccount.find(a => a.id == state.bookSections[0].book_id);
-        }*/
       }
       if(state && state.selectedBook){
         this.book =  state.selectedBook;
@@ -53,27 +47,9 @@ export class ViewSectionsComponent implements OnInit {
     });
   }
 
-  readSelectedSection(section: BookSection) {
+  readSelectedSection(section: BookSection, index: number) {
+    section.index = index;
     this.store.dispatch(new ReadSectionAction(section));
   }
 
-  private createGroupSections(bookSections: Array<BookSection>) {
-    let count = 0;
-    let sectionGroup = new SectionGroup();
-    sectionGroup.opponent = "snake.png";
-    sectionGroup.opponent = "giraffe.png";
-    this.sectionsInitialised = true;
-    sectionGroup.sections = new Array<BookSection>();
-    for (let bookSection of bookSections) {
-      sectionGroup.sections.push(bookSection);
-      if(count == 3) {
-        this.sectionGroups.push(sectionGroup);
-        count = 0;
-        sectionGroup = new SectionGroup();
-        sectionGroup.sections = new Array<BookSection>();
-      } else {
-        count++;
-      }
-    }
-  }
 }
