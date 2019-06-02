@@ -21,9 +21,9 @@
 
     <div class="row">
       <div class="col-sm-1 col-md-8 col-md-offset-3">
-        <span *ngFor="let sections of sectionGroup.sections;let index = index">
+        <span (click)="readSelectedSection(sections)" *ngFor="let sections of sectionGroup.sections;let index = index">
           <label class="section-label">Section {{index + 1}}</label>
-          <img class="section_block" src="../../../assets/img/sectionIcon/sectionIcon.png">
+          <img  class="section_block" src="../../../assets/img/sectionIcon/sectionIcon.png">
         </span>
       </div>
     </div>

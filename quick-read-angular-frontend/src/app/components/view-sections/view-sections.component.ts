@@ -3,24 +3,26 @@ import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
-import {selectBookShelf} from "../../store/selectors/profile.selectors";
+import {selectBookShelf, selectSection} from "../../store/selectors/profile.selectors";
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
 import {Book} from "../../models/Book";
 import {BookSection} from "../../models/BookSection";
 import {SectionGroup} from "../../models/SectionGroup";
+import {GetBooksInBookshelfAction} from "../../store/actions/book-shelf.actions";
+import {ReadSectionAction} from "../../store/actions/section.actions";
+import {ISectionState} from "../../store/reducers/section.reducer";
 
 @Component({
   selector: 'app-reading',
-  templateUrl: './reading.component.html',
-  styleUrls: ['./reading.component.css']
+  templateUrl: './view-sections.component.html',
+  styleUrls: ['./view-sections.component.css']
 })
-export class ReadingComponent implements OnInit {
+export class ViewSectionsComponent implements OnInit {
 
   private bookSections: Array<BookSection>;
   private sectionsInitialised: boolean = false;
   public book: Book;
   public sectionGroups: Array<SectionGroup>;
-  public sectionCount = 0;
   public playerImageSrc = "../../../assets/img/opponents/giraffe.png" ;
   public opponentImageSrc = "../../../assets/img/opponents/snake.png";
 
@@ -42,6 +44,15 @@ export class ReadingComponent implements OnInit {
         }
       }
     });
+    this.store.select(selectSection).subscribe((state: ISectionState) =>{
+      if(state && state.currentSection){
+        this.router.navigate(['/readSection']);
+      }
+    });
+  }
+
+  readSelectedSection(section: BookSection) {
+    this.store.dispatch(new ReadSectionAction(section));
   }
 
   private createGroupSections(bookSections: Array<BookSection>) {
@@ -63,5 +74,4 @@ export class ReadingComponent implements OnInit {
       }
     }
   }
-
 }

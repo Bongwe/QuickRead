@@ -7,8 +7,9 @@ import {ProfilePictureComponent} from "./components/profile-picture/profile-pict
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
 import {QuickReadGuard} from "./quick-read.guard";
 import {ProfileComponent} from "./components/profile/profile.component";
-import {ReadingComponent} from "./components/reading/reading.component";
+import {ViewSectionsComponent} from "./components/view-sections/view-sections.component";
 import {BookShelfComponent} from "./components/book-shelf/book-shelf.component";
+import {SectionComponent} from "./components/section/section.component";
 
 const routes: Routes = [
   {
@@ -36,13 +37,18 @@ const routes: Routes = [
     canActivate: [QuickReadGuard]
   },
   {
-    path: 'reading',
-    component: ReadingComponent,
+    path: 'viewSections',
+    component: ViewSectionsComponent,
     canActivate: [QuickReadGuard]
   },
   {
     path: 'bookShelf',
     component: BookShelfComponent,
+    canActivate: [QuickReadGuard]
+  },
+  {
+    path: 'readSection',
+    component: SectionComponent,
     canActivate: [QuickReadGuard]
   },
   { path: '**', component: PageNotFoundComponent }
