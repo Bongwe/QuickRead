@@ -17,10 +17,12 @@ import {SectionGroup} from "../../models/SectionGroup";
 export class ReadingComponent implements OnInit {
 
   private bookSections: Array<BookSection>;
+  private sectionsInitialised: boolean = false;
   public book: Book;
   public sectionGroups: Array<SectionGroup>;
   public sectionCount = 0;
-  private sectionsInitialised: boolean = false;
+  public playerImageSrc = "../../../assets/img/opponents/giraffe.png" ;
+  public opponentImageSrc = "../../../assets/img/opponents/snake.png";
 
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
@@ -45,6 +47,8 @@ export class ReadingComponent implements OnInit {
   private createGroupSections(bookSections: Array<BookSection>) {
     let count = 0;
     let sectionGroup = new SectionGroup();
+    sectionGroup.opponent = "snake.png";
+    sectionGroup.opponent = "giraffe.png";
     this.sectionsInitialised = true;
     sectionGroup.sections = new Array<BookSection>();
     for (let bookSection of bookSections) {
