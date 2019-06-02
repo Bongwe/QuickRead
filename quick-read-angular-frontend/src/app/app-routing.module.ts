@@ -8,6 +8,7 @@ import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.
 import {QuickReadGuard} from "./quick-read.guard";
 import {ProfileComponent} from "./components/profile/profile.component";
 import {ReadingComponent} from "./components/reading/reading.component";
+import {BookShelfComponent} from "./components/book-shelf/book-shelf.component";
 
 const routes: Routes = [
   {
@@ -37,6 +38,11 @@ const routes: Routes = [
   {
     path: 'reading',
     component: ReadingComponent,
+    canActivate: [QuickReadGuard]
+  },
+  {
+    path: 'bookShelf',
+    component: BookShelfComponent,
     canActivate: [QuickReadGuard]
   },
   { path: '**', component: PageNotFoundComponent }

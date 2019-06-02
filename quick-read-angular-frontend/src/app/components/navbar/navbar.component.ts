@@ -71,4 +71,12 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['/profile']);
   }
 
+  public onSearchSelect() {
+    this.router.navigate(['/search']);
+  }
+
+  public onBookShelfSelect() {
+    this.router.navigate(['/search']);
+  }
+
 }

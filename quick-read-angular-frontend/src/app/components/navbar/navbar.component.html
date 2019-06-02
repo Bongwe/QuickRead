@@ -13,25 +13,33 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-right form-inline"
+      <form class="navbar-form navbar-left form-inline"
             [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
-          <label for="email">Email: </label>
+          <label for="email">EMAIL: </label>
           <input type="text" formControlName="email" id="email" class="form-control">
         </div>
         <div class="form-group">
-          <label for="password">Password: </label>
+          <label for="password">PASSWORD: </label>
           <input type="password" formControlName="password" id="password" class="form-control">
         </div>
 
-        <button type="submit" id="loginButton" class="btn btn-primary">Login</button>
-        <button type="button" id="logoutButton" (click)="onLogoutClick()" class="btn btn-danger">Logout</button>
-
-        <span (click)="onProfilePictureSelect()"
-          class="navbar-brand navbar-right" id="profilePicture">
-          <img alt="Brand" src={{imageUrl}}>
-        </span>
+        <button type="submit" id="loginButton" class="btn btn-primary">LOGIN</button>
+        <button type="b
+        utton" id="logoutButton" (click)="onLogoutClick()" class="btn btn-danger">LOGOUT</button>
       </form>
+
+      <ul class="nav navbar-right navbar-nav">
+        <!--<li><a (click)="onSearchSelect()">SEARCH <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>-->
+        <li><a (click)="onBookShelfSelect()">BOOK SHELF <span class="glyphicon glyphicon-book" aria-hidden="true"></span></a></li>
+        <li><a (click)="onProfilePictureSelect()">PROFILE</a></li>
+        <form class="navbar-form navbar-right form-inline">
+          <span (click)="onProfilePictureSelect()">
+            <img alt="Brand" src={{imageUrl}}>
+          </span>
+        </form>
+      </ul>
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

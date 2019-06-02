@@ -112,7 +112,6 @@ public class BookShelfController {
 		}
 	}
 
-
 	private List<BookSection> getBooksSections(Long book_id) {
 		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
 				.withMatcher("book_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())

@@ -59,7 +59,10 @@ function getBooksInBookshelf(state: IBookShelfState, action: GetBooksInBookshelf
   }
   let newState = _.cloneDeep(state);
   for(let book of action.payload){
-    newState.booksInAccount.push(book);
+    let result = newState.booksInAccount.find(current => current.id == book.id);
+    if(result == undefined){
+      newState.booksInAccount.push(book);
+    }
   }
   return newState;
 }

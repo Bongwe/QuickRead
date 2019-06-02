@@ -1,15 +1,22 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-2 col-md-3">
-      <label >Title: {{book?.title}}</label>
-      <label >Title: {{book?.author}}</label>
+    <div class="col-sm-2 col-md-3 col-md-offset-4">
+      <h4 >Title: {{book?.title}}</h4>
+      <h4 >Author: {{book?.author}}</h4>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-2 col-md-6">
+  <div *ngFor="let sectionGroup of sectionGroups" class="row">
+    <div *ngFor="let sections of sectionGroup.sections;let index = index" class="col-sm-2 col-md-1">
+      <img src="../../../assets/img/sectionIcon/sectionIcon.png">
+      <label class="section-label">Section {{index + 1}}</label>
+    </div>
+  </div>
+  <!--<div class="row">
+    <div class="col-sm-2 col-md-6 col-md-offset-3">
       <div *ngFor="let bookSection of bookSections;let index = index" class="col-sm-2 col-md-3">
-          <label >Section {{index + 1}}</label>
+        <img src="../../../assets/img/sectionIcon/sectionIcon.png">
+        <label class="section-label">Section {{index + 1}}</label>
       </div>
     </div>
-  </div>
+  </div>-->
 </div>

@@ -6,5 +6,3 @@ CREATE TABLE BOOKSECTION(
 	content text NULL,
 	PRIMARY KEY(id)
 );
-
-drop table BOOKSECTION;
