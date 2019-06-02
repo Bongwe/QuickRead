@@ -51,6 +51,11 @@ const routes: Routes = [
     component: SectionComponent,
     canActivate: [QuickReadGuard]
   },
+  {
+    path: 'viewSections',
+    component: ViewSectionsComponent,
+    canActivate: [QuickReadGuard]
+  },
   { path: '**', component: PageNotFoundComponent }
 ];
 

@@ -1,3 +1,19 @@
-<p>
-  section works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-4">
+      <h4>Title: {{book.title}}</h4>
+      <h4>Author: {{book.author}}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      {{currentSection.content}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <button type="button" (click)="closeSection()" class="btn btn-primary">CLOSE SECTION</button>
+      <button type="button" (click)="nextSection()" class="btn btn-warning">NEXT SECTION</button>
+    </div>
+  </div>
+</div>

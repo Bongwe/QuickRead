@@ -5,8 +5,7 @@ import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
 import {selectAccounts, selectBookShelf} from "../../store/selectors/profile.selectors";
 import {IAccountState} from "../../store/reducers/profile.reducer";
-import {AccountLoginAction} from "../../store/actions/account.actions";
-import {GetBooksInBookshelfAction, ReadBookAction} from "../../store/actions/book-shelf.actions";
+import {GetBooksInBookshelfAction, ReadBookAction, SetSelectedBookAction} from "../../store/actions/book-shelf.actions";
 import {Book} from "../../models/Book";
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
 
@@ -18,7 +17,7 @@ import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
 export class BookShelfComponent implements OnInit {
 
   private accountId: number;
-  public  booksInShelf: Array<Book>;
+  public booksInShelf: Array<Book>;
 
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
@@ -45,5 +44,6 @@ export class BookShelfComponent implements OnInit {
 
   readBook(bookId: number) {
     this.store.dispatch(new ReadBookAction(bookId));
+    this.store.dispatch(new SetSelectedBookAction(bookId));
   }
 }

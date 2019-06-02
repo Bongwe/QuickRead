@@ -1,5 +1,11 @@
 import * as _ from 'lodash';
-import {ESectionAction, ReadSectionAction, SectionAction} from "../actions/section.actions";
+import {
+  ClearCurrentSection,
+  ClearCurrentSectionAction,
+  ESectionAction,
+  ReadSectionAction,
+  SectionAction
+} from "../actions/section.actions";
 import {BookSection} from "../../models/BookSection";
 
 export interface ISectionState {
@@ -12,10 +18,23 @@ export function sectionReducer (state = initialSectionState, action: SectionActi
   switch (action.type) {
     case ESectionAction.ReadSection:
       return setCurrentSection(state, action);
+    case ESectionAction.ClearCurrentSection:
+      return clearCurrentSection(state, action);
     default:
       return state;
   }
 };
+
+function clearCurrentSection(state: ISectionState, action: ClearCurrentSectionAction) {
+  if(state == null) {
+    state = {
+      currentSection:  null,
+    };
+  }
+  let newState = _.cloneDeep(state);
+  newState.currentSection = null;
+  return newState;
+}
 
 function setCurrentSection(state: ISectionState, action: ReadSectionAction) {
   if(state == null) {

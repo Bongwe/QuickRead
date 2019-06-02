@@ -1,9 +1,14 @@
 import * as _ from 'lodash';
 import {
-  AddToBookShelfAction, AddToBookShelfErrorAction,
+  AddToBookShelfAction,
+  AddToBookShelfErrorAction,
   AddToBookShelfSuccessAction,
   BookShelfAction,
-  EBooksShelfAction, GetBooksInBookshelfSuccessAction, ReadBookSErrorAction, ReadBookSuccessAction,
+  EBooksShelfAction,
+  GetBooksInBookshelfSuccessAction,
+  ReadBookSErrorAction,
+  ReadBookSuccessAction,
+  SetSelectedBookAction,
 } from "../actions/book-shelf.actions";
 import {Book} from "../../models/Book";
 import {BookShelf} from "../../models/BookShelf";
@@ -13,6 +18,7 @@ export interface IBookShelfState {
   bookShelf: Array<BookShelf>;
   booksInAccount: Array<Book>;
   bookSections: Array<BookSection>;
+  selectedBook: Book;
 }
 
 export const initialBookShelfState: IBookShelfState = null;
@@ -31,10 +37,24 @@ export function bookShelfReducer (state = initialBookShelfState, action: BookShe
       return readBookSuccess(state, action);
     case EBooksShelfAction.ReadBookError:
       return readBookError(state, action);
+    case EBooksShelfAction.SetSelectedBook:
+      return setSelectedBook(state, action);
     default:
       return state;
   }
 };
+
+
+function setSelectedBook(state: IBookShelfState, action: SetSelectedBookAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  if(state.booksInAccount){
+    newState.selectedBook = state.booksInAccount.find(a => a.id == action.payload);
+  }
+  return newState;
+}
 
 function readBookSuccess(state: IBookShelfState, action: ReadBookSuccessAction) {
   if(state == null) {
@@ -98,6 +118,7 @@ function createEmptyState() {
   return {
     bookShelf: new Array<BookShelf>(),
     booksInAccount: new Array<Book>(),
-    bookSections: null
+    bookSections: null,
+    selectedBook: null
   };
 }

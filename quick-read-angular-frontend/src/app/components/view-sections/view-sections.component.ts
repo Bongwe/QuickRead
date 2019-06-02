@@ -8,7 +8,6 @@ import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
 import {Book} from "../../models/Book";
 import {BookSection} from "../../models/BookSection";
 import {SectionGroup} from "../../models/SectionGroup";
-import {GetBooksInBookshelfAction} from "../../store/actions/book-shelf.actions";
 import {ReadSectionAction} from "../../store/actions/section.actions";
 import {ISectionState} from "../../store/reducers/section.reducer";
 
@@ -39,9 +38,12 @@ export class ViewSectionsComponent implements OnInit {
         if(this.sectionsInitialised == false){
           this.createGroupSections(this.bookSections);
         }
-        if(state.bookSections[0]){
+        /*if(state.bookSections[0]){
           this.book = state.booksInAccount.find(a => a.id == state.bookSections[0].book_id);
-        }
+        }*/
+      }
+      if(state && state.selectedBook){
+        this.book =  state.selectedBook;
       }
     });
     this.store.select(selectSection).subscribe((state: ISectionState) =>{

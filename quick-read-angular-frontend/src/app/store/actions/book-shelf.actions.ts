@@ -12,6 +12,13 @@ export enum EBooksShelfAction {
   ReadBook = '[Book Shelf Component] Read book in book shelf',
   ReadBookSuccess = '[Book Shelf Component] Read book success in book shelf',
   ReadBookError = '[Book Shelf Component] Read book error in book shelf',
+  SetSelectedBook = '[Book Shelf Component] Set selected book',
+}
+
+export class SetSelectedBookAction implements Action {
+  readonly type = EBooksShelfAction.SetSelectedBook;
+  constructor(public payload: number){
+  }
 }
 
 export class ReadBookSErrorAction implements Action {
@@ -60,4 +67,4 @@ export class AddToBookShelfAction implements Action {
 
 export type BookShelfAction = AddToBookShelfAction | AddToBookShelfSuccessAction | AddToBookShelfErrorAction
   | GetBooksInBookshelfAction | GetBooksInBookshelfSuccessAction | ReadBookAction | ReadBookSErrorAction
-  | ReadBookSuccessAction;
+  | ReadBookSuccessAction | SetSelectedBookAction;
