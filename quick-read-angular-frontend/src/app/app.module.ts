@@ -26,6 +26,7 @@ import { BookShelfComponent } from './components/book-shelf/book-shelf.component
 import { ViewSectionsComponent } from './components/view-sections/view-sections.component';
 import { SectionComponent } from './components/section/section.component';
 import {ProgressBarModule} from "angular-progress-bar";
+import {ModalModule} from "ngb-modal";
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import {ProgressBarModule} from "angular-progress-bar";
     BrowserModule,
     ProgressBarModule,
     HttpClientModule,
+    ModalModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
