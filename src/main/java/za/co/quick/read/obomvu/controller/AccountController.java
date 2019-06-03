@@ -17,16 +17,22 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import za.co.quick.read.obomvu.dto.AccountDTO;
 import za.co.quick.read.obomvu.exception.ResourceNotFoundException;
 import za.co.quick.read.obomvu.model.Account;
+import za.co.quick.read.obomvu.model.Settings;
 import za.co.quick.read.obomvu.repository.AccountRepository;
+import za.co.quick.read.obomvu.repository.SettingsRepository;
 
 
 @RestController
 @RequestMapping("/api/v1")
 public class AccountController {
+	public static final long MIN_READ_TIME = 5l;
 	@Autowired
 	private AccountRepository accountRepository;
+	@Autowired
+	private SettingsRepository settingsRepository;
 
 	@GetMapping("/accounts")
 	public List<Account> getAllAccounts() {
@@ -42,10 +48,20 @@ public class AccountController {
 	}
 
 	@PostMapping(value = "/account")
-	public ResponseEntity<Account> createAccount(@Valid @RequestBody Account account) {
+	public ResponseEntity<AccountDTO> createAccount(@Valid @RequestBody Account account) {
 		try {
-			@Valid Account save = accountRepository.save(account);
-			return ResponseEntity.ok(save);
+			Settings settings = new Settings();
+			AccountDTO accountDTO = new AccountDTO();
+
+			@Valid Account savedAccount = accountRepository.save(account);
+			settings.setAccount_id(savedAccount.getId());
+
+			settings.setMin_read_time(MIN_READ_TIME);
+			Settings savedSettings = settingsRepository.save(settings);
+
+			accountDTO.setAccount(savedAccount);
+			accountDTO.setSettings(savedSettings);
+			return ResponseEntity.ok(accountDTO);
 		} catch (Exception error){
 			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.CONFLICT);
 			return responseEntity;
@@ -53,33 +69,46 @@ public class AccountController {
 	}
 
 	@PostMapping(value = "/login")
-	public ResponseEntity<Account> accountLogin(@Valid @RequestBody Account account) {
+	public ResponseEntity<AccountDTO> accountLogin(@Valid @RequestBody Account account) {
 		try {
 			ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
 					.withMatcher("email", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
 					.withMatcher("password", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
 					.withIgnorePaths("id");
 
+			ExampleMatcher ignoringSettingsMatcher = ExampleMatcher.matchingAll()
+					.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+					.withIgnorePaths("id");
+
 			Example<Account> example = Example.of(account, ignoringExampleMatcher);
 			Optional<Account> response = accountRepository.findOne(example);
-			return ResponseEntity.ok(response.get());
+
+			Settings settings = new Settings();
+			settings.setAccount_id(response.get().getId());
+			Example<Settings> settingsExample = Example.of(settings, ignoringSettingsMatcher);
+			Optional<Settings> settingsResponse = settingsRepository.findOne(settingsExample);
+
+			AccountDTO accountDTO = new AccountDTO();
+			accountDTO.setSettings(settingsResponse.get());
+			accountDTO.setAccount(response.get());
+			return ResponseEntity.ok(accountDTO);
 		} catch (Exception error){
 			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.BAD_REQUEST);
 			return responseEntity;
 		}
 	}
 
-	@PutMapping("/account/{id}")
-	public ResponseEntity<Account> updateAccount(@PathVariable(value = "id") Long accountId,
-                                                  @Valid @RequestBody Account accountDetails) throws ResourceNotFoundException {
-		Account account = accountRepository.findById(accountId)
-				.orElseThrow(() -> new ResourceNotFoundException("Account not found for this id :: " + accountId));
+	@PostMapping("/account/update")
+	public ResponseEntity<Account> updateAccount(@Valid @RequestBody Account accountDetails) throws ResourceNotFoundException {
+		Account account = accountRepository.findById(accountDetails.getId())
+				.orElseThrow(() -> new ResourceNotFoundException("Account not found for this id :: " + accountDetails.getId()));
 
 		account.setName(accountDetails.getName());
 		account.setUsername(accountDetails.getUsername());
 		account.setEmail(accountDetails.getEmail());
 		account.setPassword(accountDetails.getPassword());
 		account.setInterests(accountDetails.getInterests());
+		account.setProfile_picture(accountDetails.getProfile_picture());
 
 		final Account updatedAccount = accountRepository.save(account);
 		return ResponseEntity.ok(updatedAccount);

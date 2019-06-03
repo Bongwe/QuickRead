@@ -4,13 +4,16 @@ import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {IAccountState} from "../../store/reducers/profile.reducer";
 import {INotification} from "../../store/reducers/notifications.reducer";
+import {NotificationObj} from "../../models/NotificationObj";
+
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-display-errors',
-  templateUrl: './display-errors.component.html',
-  styleUrls: ['./display-errors.component.css']
+  templateUrl: './notifications.component.html',
+  styleUrls: ['./notifications.component.css']
 })
-export class DisplayErrorsComponent implements OnInit {
+export class NotificationsComponent implements OnInit {
 
   errorMessage: string;
   successMessage: string;
@@ -18,9 +21,7 @@ export class DisplayErrorsComponent implements OnInit {
   errorFlag: boolean = false;
   successFlag: boolean = false;
 
-  notificationMessage: string;
-  isNotificationMessage: boolean = false;
-  notoficationTimeOut: number = 2000;
+  notification: NotificationObj;
 
   constructor(private store: Store<IAppState>) { }
 
@@ -41,12 +42,10 @@ export class DisplayErrorsComponent implements OnInit {
     });
 
     this.store.select(selectNotifications).subscribe((state: INotification) =>{
-      if(state && state.message){
-        this.isNotificationMessage = true;
-        this.notificationMessage = state.message;
+      if(state && state.notification){
+        this.notification = _.cloneDeep(state.notification);
       } else {
-        this.isNotificationMessage = false;
-        this.notificationMessage = null;
+        this.notification = null;
       }
     });
   }
@@ -57,6 +56,10 @@ export class DisplayErrorsComponent implements OnInit {
 
   resetSuccessFlag(){
     this.successFlag = false;
+  }
+
+  clearNotification() {
+    this.notification = null;
   }
 
 }

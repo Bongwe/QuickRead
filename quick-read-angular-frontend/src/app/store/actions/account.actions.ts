@@ -1,9 +1,10 @@
 import { Action } from '@ngrx/store';
 import {qrAccount} from "../../models/Account";
 import {HttpErrorResponse} from "@angular/common/http";
+import {AccountDTO} from "../../models/AccountDTO";
 
 export enum EProfileAction {
-  GetAccounts = '[Acc\ount Component] Get Accounts',
+  GetAccounts = '[Account Component] Get Accounts',
   GetAccountsSuccess = '[Account Component] Get Accounts Success',
   UpdateAccount = '[Account Component] Update account',
   UpdateAccountSuccess = '[Account Component] Update account success',
@@ -34,7 +35,7 @@ export class UpdateAccountSuccessAction implements Action {
 
 export class UpdateAccountErrorAction implements Action {
   readonly type = EProfileAction.UpdateAccountError;
-  constructor(public payload: qrAccount){
+  constructor(public payload: AccountDTO){
   }
 }
 
@@ -88,13 +89,13 @@ export class GetAccounts implements Action {
 
 export class GetAccountsSuccess implements Action {
   public readonly type = EProfileAction.GetAccountsSuccess;
-  constructor(public payload: qrAccount[]){
+  constructor(public payload: AccountDTO[]){
   }
 }
 
 export class CreateAccountSuccess implements Action {
   public readonly type = EProfileAction.CreateAccountSuccess;
-  constructor(public payload: qrAccount){
+  constructor(public payload: AccountDTO){
   }
 }
 
@@ -104,13 +105,13 @@ export class CreateAccountError implements Action {
   }
 }
 
-export class CreateAccount implements Action {
+export class CreateAccountAction implements Action {
   public readonly type = EProfileAction.CreateAccount;
   constructor(public payload: qrAccount){
   }
 }
 
-export type ProfileAction = GetAccounts | GetAccountsSuccess | CreateAccount | CreateAccountSuccess
+export type ProfileAction = GetAccounts | GetAccountsSuccess | CreateAccountAction | CreateAccountSuccess
   |CreateAccountError | ClearAccountNotifications | AddAccountInterests | AddAccountProfilePicture
   | AccountLoginAction | AccountLoginSuccessAction | AccountLoginErrorAction | ClearSelectedAccountAction
   | UpdateAccountAction | UpdateAccountErrorAction | UpdateAccountSuccessAction | ClearAccountMessagesAction;

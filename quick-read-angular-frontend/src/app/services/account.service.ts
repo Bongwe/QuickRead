@@ -1,7 +1,8 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {qrAccount} from "../models/Account";
 import {environment} from "../../environments/environment";
+import {AccountDTO} from "../models/AccountDTO";
+import {qrAccount} from "../models/Account";
 
 @Injectable({providedIn: 'root'})
 
@@ -21,7 +22,7 @@ export class AccountService {
   }
 
   updateAccount(account: qrAccount) {
-    let url = this.baseUrl + '/api/v1/account/?id=' + account.id;
+    let url = this.baseUrl + '/api/v1/account/update';
     return this.http.post<any>(url, account)
   }
 

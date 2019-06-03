@@ -3,13 +3,16 @@ import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
-import {selectBookShelf, selectSection} from "../../store/selectors/profile.selectors";
+import {selectBookShelf, selectSection, selectSettings} from "../../store/selectors/profile.selectors";
 import {ISectionState} from "../../store/reducers/section.reducer";
 import {BookSection} from "../../models/BookSection";
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
 import {Book} from "../../models/Book";
 import {ClearCurrentSectionAction} from "../../store/actions/section.actions";
 import {ModalManager} from "ngb-modal";
+import {ISettingsState} from "../../store/reducers/settings.reducer";
+import * as _ from "lodash";
+import {Settings} from "../../models/Settings";
 
 @Component({
   selector: 'app-section',
@@ -31,6 +34,8 @@ export class SectionComponent implements OnInit,OnDestroy {
   private modalRef;
   @ViewChild('myModal') myModal;
 
+  private settings: Settings;
+
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
               private router: Router,
@@ -50,6 +55,12 @@ export class SectionComponent implements OnInit,OnDestroy {
         this.book =  state.selectedBook;
       }
     });
+
+    this.store.select(selectSettings).subscribe((state: ISettingsState) =>{
+      if(state && state.settings){
+        this.settings = _.cloneDeep(state.settings);
+      }
+    });
   }
 
   ngOnDestroy() {
@@ -58,7 +69,8 @@ export class SectionComponent implements OnInit,OnDestroy {
   }
 
   closeSection() {
-    if(this.currentSeconds >= this.minimumReadTime){
+    if(this.currentSeconds >= (this.minimumReadTime * 60)){
+      // update the state with user progress
       this.store.dispatch(new ClearCurrentSectionAction());
       this.router.navigate(['/viewSections']);
     } else {
@@ -68,11 +80,11 @@ export class SectionComponent implements OnInit,OnDestroy {
   }
 
   getCloseModalMessage() {
-    let minminutesToReadStr = this.minimumReadTime / 60;
+    let less_than_60_seconds = 1;
     this.currentMinutes = this.calculateMinutes(this.currentSeconds);
-    let currentMinStr = (this.currentMinutes < 1) ? 'less than a' : this.currentMinutes;
-    let currentReadingTimeMsg = "You have only been reading for " + currentMinStr + " minutes.";
-    let requiredReadingTimeMsg = "Read for at least " + minminutesToReadStr + " minutes before closing the section."
+    let currentMinStr = (this.currentMinutes < less_than_60_seconds) ? 'less than a' : this.currentMinutes;
+    let currentReadingTimeMsg = "You have only been reading for " + currentMinStr + " minute(s).";
+    let requiredReadingTimeMsg = "Read for at least " + this.settings.min_read_time + " minute(s) before closing the section."
     return currentReadingTimeMsg + '\n' + requiredReadingTimeMsg;
   }
 

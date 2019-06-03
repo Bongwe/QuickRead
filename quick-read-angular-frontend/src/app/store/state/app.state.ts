@@ -3,6 +3,7 @@ import {initialBookState, ISuggestedBookState} from "../reducers/suggested-books
 import {initialNotificationState, INotification} from "../reducers/notifications.reducer";
 import {IBookShelfState, initialBookShelfState} from "../reducers/book-shelf.reducer";
 import {initialSectionState, ISectionState} from "../reducers/section.reducer";
+import {initialSettingsState, ISettingsState} from "../reducers/settings.reducer";
 
 export interface IAppState {
   accounts?: IAccountState;
@@ -10,6 +11,7 @@ export interface IAppState {
   notifications?: INotification;
   bookShelf?: IBookShelfState;
   currentSection?: ISectionState;
+  settings?: ISettingsState;
 };
 
 const initialAppState: IAppState = {
@@ -17,6 +19,7 @@ const initialAppState: IAppState = {
   books: initialBookState,
   notifications: initialNotificationState,
   bookShelf: initialBookShelfState,
-  currentSection: initialSectionState
+  currentSection: initialSectionState,
+  settings: initialSettingsState
 };
 

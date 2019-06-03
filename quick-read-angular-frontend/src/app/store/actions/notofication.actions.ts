@@ -1,4 +1,5 @@
 import { Action } from '@ngrx/store';
+import {NotificationObj} from "../../models/NotificationObj";
 
 export enum ENotificationAction {
   SetNotificationMessage = '[Notification Component] Set notification message',
@@ -7,7 +8,7 @@ export enum ENotificationAction {
 
 export class SetNotificationMessage implements Action {
   public readonly type = ENotificationAction.SetNotificationMessage;
-  constructor(public payload: string){
+  constructor(public payload: NotificationObj){
   }
 }
 

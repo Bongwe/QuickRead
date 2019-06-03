@@ -5,11 +5,13 @@ import {suggestedBooksReducer} from "./suggested-books.reducer";
 import {notificationReducer} from "./notifications.reducer";
 import {bookShelfReducer} from "./book-shelf.reducer";
 import {sectionReducer} from "./section.reducer";
+import {settingsReducer} from "./settings.reducer";
 
 export const appReducers: ActionReducerMap<IAppState, any> = {
   accounts: profileReducer,
   books: suggestedBooksReducer,
   notifications: notificationReducer,
   bookShelf: bookShelfReducer,
-  currentSection: sectionReducer
+  currentSection: sectionReducer,
+  settings: settingsReducer
 };

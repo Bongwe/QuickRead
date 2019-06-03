@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {
   AddAccountProfilePicture, ClearAccountMessagesAction,
   UpdateAccountAction
@@ -12,13 +12,14 @@ import {IAccountState} from "../../store/reducers/profile.reducer";
 
 import * as _ from 'lodash';
 import {Router} from "@angular/router";
+import {NotificationObj} from "../../models/NotificationObj";
 
 @Component({
   selector: 'app-profile-picture',
   templateUrl: './profile-picture.component.html',
   styleUrls: ['./profile-picture.component.css']
 })
-export class ProfilePictureComponent implements OnInit {
+export class ProfilePictureComponent implements OnInit, OnDestroy {
 
   private interests: string;
   private profilePicture: string;
@@ -40,14 +41,26 @@ export class ProfilePictureComponent implements OnInit {
           this.store.dispatch(new ClearAccountMessagesAction());
           this.router.navigate(['/search']);
         } else if (state.accountErrorMessage == this.accountUpdatedError) {
-            this.store.dispatch(new SetNotificationMessage(this.accountUpdatedError));
+          let notification = new NotificationObj();
+          notification.isError = true;
+          notification.isSuccess = false;
+          notification.message = this.accountUpdatedError;
+          this.store.dispatch(new SetNotificationMessage(notification));
         }
       }
     });
   }
 
+  ngOnDestroy(): void {
+    this.store.dispatch( new ClearNotificationMessage());
+  }
+
   onSelectProfilePicture(pictureName:string) {
-    this.store.dispatch( new SetNotificationMessage(pictureName + " was selected to represent you!"));
+    let notification = new NotificationObj();
+    notification.isError = false;
+    notification.isSuccess = true;
+    notification.message = pictureName + " was selected to represent you!";
+    this.store.dispatch( new SetNotificationMessage(notification));
     this.store.dispatch( new AddAccountProfilePicture(pictureName));
   }
 

@@ -6,9 +6,10 @@ import {
   QuickRead_NotificationAction,
   SetNotificationMessage
 } from "../actions/notofication.actions";
+import {NotificationObj} from "../../models/NotificationObj";
 
 export interface INotification {
-  message: string;
+  notification: NotificationObj;
 }
 
 export const initialNotificationState: INotification = null;
@@ -19,8 +20,6 @@ export function notificationReducer (state = initialNotificationState, action: Q
       return setNotification(state, action);
     case ENotificationAction.ClearNotificationMessage:
       return clearNotification(state, action);
-
-
     default:
       return state;
   }
@@ -29,21 +28,21 @@ export function notificationReducer (state = initialNotificationState, action: Q
 function setNotification(state: INotification, action: SetNotificationMessage) {
   if(state == null) {
     state = {
-      message: ''
+      notification: null
     };
   }
   let newState = _.cloneDeep(state);
-  newState.message = action.payload;
+  newState.notification = action.payload;
   return newState;
 }
 
 function clearNotification(state: INotification, action: ClearNotificationMessage) {
   if(state == null) {
     state = {
-      message: null
+      notification: null
     };
-  } else {}
+  }
   let newState = _.cloneDeep(state);
-  newState.message = null;
+  newState.notification = null;
   return newState;
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
-import {ClearAccountNotifications, CreateAccount} from "../../store/actions/account.actions";
+import {ClearAccountNotifications, CreateAccountAction} from "../../store/actions/account.actions";
 import {qrAccount} from "../../models/Account";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
@@ -55,7 +55,7 @@ export class RegisterComponent implements OnInit {
       newAccount.username = this.registerForm.controls['username'].value;
       newAccount.email = this.registerForm.controls['email'].value;
       newAccount.password = sha512.sha512(this.registerForm.controls['password'].value);
-      this.store.dispatch(new CreateAccount(newAccount));
+      this.store.dispatch(new CreateAccountAction(newAccount));
     }
   }
 

@@ -16,7 +16,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent } from './components/search/search.component';
 import {BookEffects} from "./store/effects/books.effect";
-import { DisplayErrorsComponent } from './components/display-errors/display-errors.component';
+import { NotificationsComponent } from './components/notifications/notifications.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { InterestsComponent } from './components/interests/interests.component';
 import { ProfilePictureComponent } from './components/profile-picture/profile-picture.component';
@@ -27,6 +27,7 @@ import { ViewSectionsComponent } from './components/view-sections/view-sections.
 import { SectionComponent } from './components/section/section.component';
 import {ProgressBarModule} from "angular-progress-bar";
 import {ModalModule} from "ngb-modal";
+import {SettingsEffects} from "./store/effects/settings.effect";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import {ModalModule} from "ngb-modal";
     MenuComponent,
     NavbarComponent,
     SearchComponent,
-    DisplayErrorsComponent,
+    NotificationsComponent,
     InterestsComponent,
     ProfilePictureComponent,
     PageNotFoundComponent,
@@ -54,7 +55,7 @@ import {ModalModule} from "ngb-modal";
     ReactiveFormsModule,
     AppRoutingModule,
     StoreModule.forRoot(appReducers),
-    EffectsModule.forRoot([AccountEffects, BookEffects]),
+    EffectsModule.forRoot([AccountEffects, BookEffects, SettingsEffects]),
     StoreDevtoolsModule.instrument()
   ],
   providers: [AccountService],

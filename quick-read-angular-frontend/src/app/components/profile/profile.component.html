@@ -5,7 +5,7 @@
       <img src="../../../assets/img/profilePicture/giraffe.png">
     </div>
     <div class="col-md-3">
-      <h2>Name: Mzwandile</h2>
+      <h4>Name: Mzwandile</h4>
     </div>
   </div>
   <div class="row">
@@ -37,8 +37,14 @@
       <form [formGroup]="settingsForm" (ngSubmit)="onUpdateGameSettings()">
         <div class="form-group">
           <label for="minimum-reading-time">Minimum reading time: </label>
-          <input type="text" formControlName="minReadTime" id="minimum-reading-time" class="form-control input-sm">
+          <select id="minimum-reading-time"
+                  formControlName="minReadTime"
+          #minimum_reading_time
+          (change)="onChangeMinReading(minimum_reading_time.value)">
+            <option [value]=time *ngFor=" let time of readTimeOptions">{{time}}</option>
+          </select>
         </div>
+        <button type="submit" id="gameSettings" class="btn btn-primary">UPDATE SETTINGS</button>
       </form>
     </div>
   </div>

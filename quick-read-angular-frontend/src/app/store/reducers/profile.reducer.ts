@@ -10,9 +10,10 @@ import {
   GetAccountsSuccess,
   ProfileAction, UpdateAccountErrorAction, UpdateAccountSuccessAction
 } from "../actions/account.actions";
+import {AccountDTO} from "../../models/AccountDTO";
 
 export interface IAccountState {
-  allAccounts: Array<qrAccount>;
+  allAccounts: Array<AccountDTO>;
   selectedAccount: qrAccount,
   accountErrorMessage: string
   accountSuccessMessage: string
@@ -35,7 +36,7 @@ export function profileReducer (state = initialAccountState, action: ProfileActi
     case EProfileAction.ClearAccountNotifications:
       return clearNotifications(state, action);
     case EProfileAction.AddAccountInterests:
-      return addAaccountInterest(state, action);
+      return addAccountInterest(state, action);
     case EProfileAction.AddAccountProfilePicture:
       return addAccountProfilePicture(state, action);
     case EProfileAction.CreateAccountError:
@@ -54,15 +55,6 @@ export function profileReducer (state = initialAccountState, action: ProfileActi
       return state;
   }
 };
-
-/*function updateAccount(state: IAccountState, action: UpdateAccountErrorAction) {
-  if(state == null) {
-    state = createEmptyState();
-  }
-  let newState = _.cloneDeep(state);
-  newState.selectedAccount = action.payload;
-  return newState;
-}*/
 
 function clearAccountMessages(state: IAccountState, action: ClearAccountMessagesAction) {
   if(state == null) {
@@ -102,7 +94,7 @@ function addAccountProfilePicture(state: IAccountState, action: AddAccountProfil
   return newState;
 }
 
-function addAaccountInterest(state: IAccountState, action: AddAccountInterests) {
+function addAccountInterest(state: IAccountState, action: AddAccountInterests) {
   if(state == null) {
     state = createEmptyState();
   }
@@ -135,7 +127,7 @@ function createAccount(state: IAccountState, action: CreateAccountSuccess) {
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  newState.selectedAccount = action.payload;
+  newState.selectedAccount = action.payload.account;
   newState.accountSuccessMessage = "Account created successfully";
   newState.accountErrorMessage = null;
   return newState;
@@ -200,7 +192,7 @@ function clearSelectedAccount(state: IAccountState, action: ClearSelectedAccount
 
 function createEmptyState() {
   return {
-    allAccounts:  new Array<qrAccount>(),
+    allAccounts:  new Array<AccountDTO>(),
     selectedAccount: null,
     accountErrorMessage: null,
     accountSuccessMessage: null,

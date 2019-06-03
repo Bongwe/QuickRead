@@ -4,16 +4,20 @@ import {Effect, Actions, ofType} from "@ngrx/effects";
 import {AccountService} from "../../services/account.service";
 import {
   AccountLoginAction,
-  CreateAccount,
+  CreateAccountAction,
   EProfileAction,
 } from "../actions/account.actions";
 import {EMPTY, of} from "rxjs";
 import {HttpErrorResponse} from "@angular/common/http";
+import {SetSettingsSuccessAction} from "../actions/settings.actions";
+import {AccountDTO} from "../../models/AccountDTO";
+import {Store} from "@ngrx/store";
+import {IAppState} from "../state/app.state";
 
 @Injectable()
 export class AccountEffects {
 
-  constructor(private actions$: Actions, private profileService: AccountService) {}
+  constructor(private store: Store<IAppState>,private actions$: Actions, private profileService: AccountService) {}
 
   @Effect()
   fetch$ = this.actions$
@@ -30,9 +34,12 @@ export class AccountEffects {
   loadMovies$ = this.actions$
     .pipe(
       ofType(EProfileAction.CreateAccount),
-      mergeMap((accounts: CreateAccount) => this.profileService.createAccount(accounts.payload)
+      mergeMap((accounts: CreateAccountAction) => this.profileService.createAccount(accounts.payload)
         .pipe(
-          map(result => ({ type: EProfileAction.CreateAccountSuccess, payload: result })),
+            map((result: AccountDTO) => {
+              this.store.dispatch(new SetSettingsSuccessAction(result.settings));
+              return {type: EProfileAction.CreateAccountSuccess, payload: result}
+            }),
           catchError((error: HttpErrorResponse) => of({ type: EProfileAction.CreateAccountError, payload: error}))
         ))
     );
@@ -41,7 +48,7 @@ export class AccountEffects {
   updateAccount$ = this.actions$
     .pipe(
       ofType(EProfileAction.UpdateAccount),
-      mergeMap((accounts: CreateAccount) => this.profileService.updateAccount(accounts.payload)
+      mergeMap((accounts: CreateAccountAction) => this.profileService.updateAccount(accounts.payload)
         .pipe(
           map(result => ({ type: EProfileAction.UpdateAccountSuccess, payload: result })),
           catchError((error: HttpErrorResponse) => of({ type: EProfileAction.UpdateAccountError, payload: error}))
@@ -54,7 +61,10 @@ export class AccountEffects {
       ofType(EProfileAction.AccountLogin),
       mergeMap((accounts: AccountLoginAction) => this.profileService.accountLogin(accounts.payload)
         .pipe(
-          map(result => ({ type: EProfileAction.AccountLoginSuccess, payload: result })),
+          map((result: AccountDTO) => {
+            this.store.dispatch(new SetSettingsSuccessAction(result.settings));
+            return {type: EProfileAction.AccountLoginSuccess, payload: result.account}
+          }),
           catchError((error: HttpErrorResponse) => of({ type: EProfileAction.AccountLoginError, payload: error}))
         ))
     );

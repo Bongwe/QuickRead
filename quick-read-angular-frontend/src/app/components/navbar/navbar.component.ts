@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup} from "@angular/forms";
 import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {Router} from "@angular/router";
@@ -9,7 +9,6 @@ import {
   AccountLoginAction,
   ClearAccountMessagesAction,
   ClearSelectedAccountAction,
-  CreateAccount
 } from "../../store/actions/account.actions";
 import {selectAccounts} from "../../store/selectors/profile.selectors";
 import {IAccountState} from "../../store/reducers/profile.reducer";
