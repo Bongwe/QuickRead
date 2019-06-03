@@ -23,10 +23,11 @@ export class SectionComponent implements OnInit,OnDestroy {
   private timeOutHandle;
   private scrollResult = "0";
 
-  public currentTime: number = 0;
-  public minimumTimeToRead = 10;
-  public modalMessage: string;
+  public currentSeconds: number = 0;
+  public currentMinutes: number = 0;
+  public minimumReadTime = 600; //600 seconds is 10 minutes
 
+  public modalMessage: string;
   private modalRef;
   @ViewChild('myModal') myModal;
 
@@ -56,36 +57,32 @@ export class SectionComponent implements OnInit,OnDestroy {
     clearInterval(this.timeOutHandle);
   }
 
-  scroll = (): string => {
-    if(event){
-      let winScroll = event.srcElement.scrollTop;
-      let height = event.srcElement.scrollHeight - event.srcElement.clientHeight;
-      let scrolled = (winScroll / height) * 100;
-      this.scrollResult = scrolled.toPrecision(1);
-    }
-    return this.scrollResult;
-  };
-
   closeSection() {
-    if(this.currentTime >= this.minimumTimeToRead){
+    if(this.currentSeconds >= this.minimumReadTime){
       this.store.dispatch(new ClearCurrentSectionAction());
       this.router.navigate(['/viewSections']);
     } else {
-      let currentReadingTimeMsg = "You have only been reading for " + this.currentTime + " minutes.";
-      let requiredReadingTimeMsg = "Read for at least " + this.minimumTimeToRead + " minutes before closing the section."
-      this.modalMessage = currentReadingTimeMsg + '\n' + requiredReadingTimeMsg;
+      this.modalMessage = this.getCloseModalMessage();
       this.openModal();
     }
   }
 
-  nextSection() {
-
+  getCloseModalMessage() {
+    let minminutesToReadStr = this.minimumReadTime / 60;
+    this.currentMinutes = this.calculateMinutes(this.currentSeconds);
+    let currentMinStr = (this.currentMinutes < 1) ? 'less than a' : this.currentMinutes;
+    let currentReadingTimeMsg = "You have only been reading for " + currentMinStr + " minutes.";
+    let requiredReadingTimeMsg = "Read for at least " + minminutesToReadStr + " minutes before closing the section."
+    return currentReadingTimeMsg + '\n' + requiredReadingTimeMsg;
   }
 
-  startTimer() {
-    this.timeOutHandle = setInterval(() => {
-        this.currentTime++;
-    },1000)
+  calculateMinutes(seconds: number): number{
+    let minute = seconds / 60;
+    return Math.trunc(minute);
+  }
+
+  nextSection() {
+
   }
 
   openModal(){
@@ -106,5 +103,22 @@ export class SectionComponent implements OnInit,OnDestroy {
     this.modalService.close(this.modalRef);
     //or this.modalRef.close();
   }
+
+  startTimer() {
+    this.timeOutHandle = setInterval(() => {
+        this.currentSeconds++;
+      console.log(this.currentSeconds);
+    },1000)
+  }
+
+  scroll = (): string => {
+    if(event){
+      let winScroll = event.srcElement.scrollTop;
+      let height = event.srcElement.scrollHeight - event.srcElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      this.scrollResult = scrolled.toPrecision(1);
+    }
+    return this.scrollResult;
+  };
 
 }

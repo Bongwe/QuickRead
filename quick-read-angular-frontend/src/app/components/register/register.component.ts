@@ -3,7 +3,7 @@ import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {ClearAccountNotifications, CreateAccount} from "../../store/actions/account.actions";
 import {qrAccount} from "../../models/Account";
-import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {selectAccounts} from "../../store/selectors/profile.selectors";
 import {IAccountState} from "../../store/reducers/profile.reducer";
