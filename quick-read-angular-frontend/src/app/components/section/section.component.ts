@@ -81,6 +81,10 @@ export class SectionComponent implements OnInit,OnDestroy {
     }*/
   }
 
+  nextSection(){
+
+  }
+
   getMinimumTimeMessage() {
     let currentMinStr = (this.currentMinutes < 60) ? 'less than a' :this.getCurrentTimeInMinutes(this.currentSeconds);
     let currentReadingTimeMsg = "You have only been reading for " + currentMinStr + " minute(s).";

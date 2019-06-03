@@ -50,4 +50,8 @@ export class ViewSectionsComponent implements OnInit {
     this.store.dispatch(new ReadSectionAction(section));
   }
 
+  getSectionIconImage(section: BookSection) {
+    return "../../../assets/img/sectionIcon/" + section.status_picture;
+  }
+
 }

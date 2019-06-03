@@ -29,6 +29,7 @@ public class GenerateBookSections {
             bookSection.setBook_id(book.getId());
             bookSection.setStatus(BookStatus.Status.UN_READ.toString());
             bookSection.setSection_index(index);
+            bookSection.setStatus_picture("sectionIcon.png");
             booksSectionList.add(bookSection);
             startIndex = endIndex;
             index++;
