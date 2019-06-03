@@ -25,6 +25,7 @@ export class SectionComponent implements OnInit,OnDestroy {
 
   public book: Book;
   public currentSection: BookSection;
+  public previousSection: BookSection;
   private timeOutHandle;
   private scrollResult = "0";
 
@@ -143,14 +144,10 @@ export class SectionComponent implements OnInit,OnDestroy {
 
   onSectionComplete() {
     this.currentSection.status = BookStatus.COMPLETE;
-    this.currentSection.status_picture = "sectionDoneIcon.png";
+    this.currentSection.status_picture = "sectionCompleteIcon.png";
+    this.store.dispatch(new UpdateSectionAction(this.currentSection));
     this.store.dispatch(new ClearCurrentSectionAction());
-    alert("display the opponent fighting message");
-  }
-
-  closeSewctionCompleteModal(){
-    //this.store.dispatch(new ClearCurrentSectionAction());
-    //this.router.navigate(['/viewSections']);
+    this.closeSectionCompleteModal();
   }
 
   startTimer() {

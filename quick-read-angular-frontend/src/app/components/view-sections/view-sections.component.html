@@ -29,3 +29,21 @@
 
   </div>
 </div>
+
+<div class="row">
+  <modal #inaccessibleSection>
+    <modal-header>
+      <h4>Inaccessible section</h4>
+    </modal-header>
+    <modal-content>
+      <div class="row">
+        <div class="col-md-12">
+          You need to complete Section {{previousSection?.section_index}} before moving to Section {{currentSection?.section_index}}
+        </div>
+      </div>
+    </modal-content>
+    <modal-footer>
+      <button class="btn btn-primary" (click)="closeModal()">OK</button>
+    </modal-footer>
+  </modal>
+</div>
