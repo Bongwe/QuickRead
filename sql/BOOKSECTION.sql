@@ -1,8 +1,0 @@
-CREATE TABLE BOOKSECTION(
-	id INT NOT NULL IDENTITY(1,1),
-	opponent_id INT NULL,
-	book_id INT NULL,
-	status VARCHAR(128) NOT NULL,
-	content text NULL,
-	PRIMARY KEY(id)
-);

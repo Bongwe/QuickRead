@@ -13,6 +13,8 @@ import {ModalManager} from "ngb-modal";
 import {ISettingsState} from "../../store/reducers/settings.reducer";
 import * as _ from "lodash";
 import {Settings} from "../../models/Settings";
+import {BookStatus} from "../../models/BookStatus";
+import {UpdateSectionAction} from "../../store/actions/book-shelf.actions";
 
 @Component({
   selector: 'app-section',
@@ -21,18 +23,20 @@ import {Settings} from "../../models/Settings";
 })
 export class SectionComponent implements OnInit,OnDestroy {
 
-  public currentSection: BookSection;
   public book: Book;
+  public currentSection: BookSection;
   private timeOutHandle;
   private scrollResult = "0";
 
   public currentSeconds: number = 0;
   public currentMinutes: number = 0;
-  public minimumReadTime = 600; //600 seconds is 10 minutes
+  public bookSectionCompleteMessage:string = "How much progress have you made with this section of the book?";
 
   public modalMessage: string;
   private modalRef;
+  private sectionCompleteModalRef;
   @ViewChild('myModal') myModal;
+  @ViewChild('sectionStatus') sectionCompleteModal;
 
   private settings: Settings;
 
@@ -55,7 +59,6 @@ export class SectionComponent implements OnInit,OnDestroy {
         this.book =  state.selectedBook;
       }
     });
-
     this.store.select(selectSettings).subscribe((state: ISettingsState) =>{
       if(state && state.settings){
         this.settings = _.cloneDeep(state.settings);
@@ -66,35 +69,27 @@ export class SectionComponent implements OnInit,OnDestroy {
   ngOnDestroy() {
     window.removeEventListener('scroll', this.scroll, true);
     clearInterval(this.timeOutHandle);
+    this.store.dispatch(new ClearCurrentSectionAction());
   }
 
   closeSection() {
-    if(this.currentSeconds >= (this.minimumReadTime * 60)){
-      // update the state with user progress
-      this.store.dispatch(new ClearCurrentSectionAction());
-      this.router.navigate(['/viewSections']);
-    } else {
-      this.modalMessage = this.getCloseModalMessage();
+    //if(this.currentSeconds >= (this.settings.min_read_time * 60)) {
+      this.openReadingCompleteModal();
+    /*} else {
+      this.modalMessage = this.getMinimumTimeMessage();
       this.openModal();
-    }
+    }*/
   }
 
-  getCloseModalMessage() {
-    let less_than_60_seconds = 1;
-    this.currentMinutes = this.calculateMinutes(this.currentSeconds);
-    let currentMinStr = (this.currentMinutes < less_than_60_seconds) ? 'less than a' : this.currentMinutes;
+  getMinimumTimeMessage() {
+    let currentMinStr = (this.currentMinutes < 60) ? 'less than a' :this.getCurrentTimeInMinutes(this.currentSeconds);
     let currentReadingTimeMsg = "You have only been reading for " + currentMinStr + " minute(s).";
     let requiredReadingTimeMsg = "Read for at least " + this.settings.min_read_time + " minute(s) before closing the section."
     return currentReadingTimeMsg + '\n' + requiredReadingTimeMsg;
   }
 
-  calculateMinutes(seconds: number): number{
-    let minute = seconds / 60;
-    return Math.trunc(minute);
-  }
-
-  nextSection() {
-
+  getCurrentTimeInMinutes(seconds: number) {
+    return Math.trunc( seconds / 60);
   }
 
   openModal(){
@@ -111,14 +106,52 @@ export class SectionComponent implements OnInit,OnDestroy {
     })
   }
 
+  openReadingCompleteModal() {
+    this.sectionCompleteModalRef = this.modalService.open(this.sectionCompleteModal, {
+      size: "md",
+      modalClass: 'sectionStatus',
+      hideCloseButton: false,
+      centered: false,
+      backdrop: true,
+      animation: true,
+      keyboard: false,
+      closeOnOutsideClick: true,
+      backdropClass: "modal-backdrop"
+    })
+  }
+
   closeModal(){
     this.modalService.close(this.modalRef);
     //or this.modalRef.close();
   }
 
+  closeSectionCompleteModal() {
+    this.modalService.close(this.sectionCompleteModalRef);
+  }
+
+  onSectionInProgress() {
+    this.currentSection.status = BookStatus.IN_PROGRESS;
+    this.currentSection.status_picture = "sectionInProgressIcon.png";
+    this.store.dispatch(new UpdateSectionAction(this.currentSection));
+    this.store.dispatch(new ClearCurrentSectionAction());
+    this.closeSectionCompleteModal();
+  }
+
+  onSectionComplete() {
+    this.currentSection.status = BookStatus.COMPLETE;
+    this.currentSection.status_picture = "sectionDoneIcon.png";
+    this.store.dispatch(new ClearCurrentSectionAction());
+    alert("display the opponent fighting message");
+  }
+
+  closeSewctionCompleteModal(){
+    //this.store.dispatch(new ClearCurrentSectionAction());
+    //this.router.navigate(['/viewSections']);
+  }
+
   startTimer() {
     this.timeOutHandle = setInterval(() => {
-        this.currentSeconds++;
+      this.currentSeconds++;
       console.log(this.currentSeconds);
     },1000)
   }

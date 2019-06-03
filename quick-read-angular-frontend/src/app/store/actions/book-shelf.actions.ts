@@ -2,6 +2,7 @@ import { Action } from '@ngrx/store';
 import {Book} from "../../models/Book";
 import {BookShelf} from "../../models/BookShelf";
 import {BookSection} from "../../models/BookSection";
+import {HttpErrorResponse} from "@angular/common/http";
 
 export enum EBooksShelfAction {
   AddToBookShelf = '[Book Shelf Component] Add to book shelf',
@@ -13,6 +14,27 @@ export enum EBooksShelfAction {
   ReadBookSuccess = '[Book Shelf Component] Read book success in book shelf',
   ReadBookError = '[Book Shelf Component] Read book error in book shelf',
   SetSelectedBook = '[Book Shelf Component] Set selected book',
+  UpdateSection = '[Book Shelf Component] Update current section',
+  UpdateSectionSuccess = '[Book Shelf Component] Update current section success',
+  UpdateSectionError = '[Book Shelf Component] Update current section error',
+}
+
+export class UpdateSectionAction implements Action {
+  readonly type = EBooksShelfAction.UpdateSection;
+  constructor(public payload: BookSection){
+  }
+}
+
+export class UpdateSectionSuccessAction implements Action {
+  readonly type = EBooksShelfAction.UpdateSectionSuccess;
+  constructor(public payload: BookSection){
+  }
+}
+
+export class UpdateSectionErrorAction implements Action {
+  readonly type = EBooksShelfAction.UpdateSectionError;
+  constructor(public payload: HttpErrorResponse){
+  }
 }
 
 export class SetSelectedBookAction implements Action {
@@ -67,4 +89,5 @@ export class AddToBookShelfAction implements Action {
 
 export type BookShelfAction = AddToBookShelfAction | AddToBookShelfSuccessAction | AddToBookShelfErrorAction
   | GetBooksInBookshelfAction | GetBooksInBookshelfSuccessAction | ReadBookAction | ReadBookSErrorAction
-  | ReadBookSuccessAction | SetSelectedBookAction;
+  | ReadBookSuccessAction | SetSelectedBookAction | UpdateSectionAction | UpdateSectionSuccessAction
+  | UpdateSectionErrorAction;

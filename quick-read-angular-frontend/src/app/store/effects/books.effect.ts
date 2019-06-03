@@ -7,15 +7,24 @@ import {BookService} from "../../services/book.service";
 import {ESuggestedBooksAction, GetAllSuggestedBooksSuccessAction} from "../actions/suggested-books.actions";
 import {Book} from "../../models/Book";
 import {HttpErrorResponse} from "@angular/common/http";
-import {AddToBookShelfAction, EBooksShelfAction, GetBooksInBookshelfAction} from "../actions/book-shelf.actions";
+import {
+  AddToBookShelfAction,
+  EBooksShelfAction,
+  GetBooksInBookshelfAction,
+  UpdateSectionAction
+} from "../actions/book-shelf.actions";
 import {BookShelf} from "../../models/BookShelf";
 import {Store} from "@ngrx/store";
 import {IAppState} from "../state/app.state";
+import {SectionService} from "../../services/section.service";
 
 @Injectable()
 export class BookEffects {
 
-  constructor(private store: Store<IAppState>, private actions$: Actions, private bookService: BookService) {}
+  constructor(private store: Store<IAppState>,
+              private actions$: Actions,
+              private sectionService: SectionService,
+              private bookService: BookService) {}
 
   @Effect()
   protected fetch$: Observable<Action> = this.actions$
@@ -64,4 +73,14 @@ export class BookEffects {
         ))
     );
 
+  @Effect()
+  updateSection = this.actions$
+    .pipe(
+      ofType(EBooksShelfAction.UpdateSection),
+      mergeMap((bookSection: UpdateSectionAction) => this.sectionService.updateSection(bookSection.payload)
+        .pipe(
+          map(result => ({ type: EBooksShelfAction.UpdateSectionSuccess, payload: result })),
+          catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.UpdateSectionError, payload: error}))
+        ))
+    );
 }

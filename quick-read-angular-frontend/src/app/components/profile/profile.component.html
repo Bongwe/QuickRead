@@ -36,7 +36,7 @@
       <h2>Game settings</h2>
       <form [formGroup]="settingsForm" (ngSubmit)="onUpdateGameSettings()">
         <div class="form-group">
-          <label for="minimum-reading-time">Minimum reading time: </label>
+          <label for="minimum-reading-time">Minimum reading time (Minutes): </label>
           <select id="minimum-reading-time"
                   formControlName="minReadTime"
           #minimum_reading_time

@@ -6,4 +6,5 @@ export class BookSection {
   content: string;
   index: number;
   section_index: number;
+  status_picture: string;
 }

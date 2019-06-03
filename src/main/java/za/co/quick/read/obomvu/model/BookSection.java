@@ -12,17 +12,19 @@ public class BookSection {
     private Long section_index;
     private String status;
     private String content;
+    private String status_picture;
 
     public BookSection() {
     }
 
-    public BookSection(Long id, Long opponent_id, Long book_id, Long section_index, String status, String content) {
+    public BookSection(Long id, Long opponent_id, Long book_id, Long section_index, String status, String content, String status_picture) {
         this.id = id;
         this.opponent_id = opponent_id;
         this.book_id = book_id;
         this.section_index = section_index;
         this.status = status;
         this.content = content;
+        this.status_picture = status_picture;
     }
 
     @Id
@@ -80,6 +82,15 @@ public class BookSection {
         this.section_index = section_index;
     }
 
+    @Column(name = "status_picture", nullable = true)
+    public String getStatus_picture() {
+        return status_picture;
+    }
+
+    public void setStatus_picture(String status_picture) {
+        this.status_picture = status_picture;
+    }
+
     @Override
     public String toString() {
         return "BookSection{" +
@@ -89,6 +100,7 @@ public class BookSection {
                 ", section_index=" + section_index +
                 ", status='" + status + '\'' +
                 ", content='" + content + '\'' +
+                ", status_picture='" + status_picture + '\'' +
                 '}';
     }
 }

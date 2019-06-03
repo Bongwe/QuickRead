@@ -8,7 +8,7 @@ import {
   GetBooksInBookshelfSuccessAction,
   ReadBookSErrorAction,
   ReadBookSuccessAction,
-  SetSelectedBookAction,
+  SetSelectedBookAction, UpdateSectionErrorAction, UpdateSectionSuccessAction,
 } from "../actions/book-shelf.actions";
 import {Book} from "../../models/Book";
 import {BookShelf} from "../../models/BookShelf";
@@ -39,11 +39,32 @@ export function bookShelfReducer (state = initialBookShelfState, action: BookShe
       return readBookError(state, action);
     case EBooksShelfAction.SetSelectedBook:
       return setSelectedBook(state, action);
+    case EBooksShelfAction.UpdateSectionSuccess:
+      return updateSectionSucess(state, action);
+    case EBooksShelfAction.UpdateSectionError:
+      return updateSectionError(state, action);
     default:
       return state;
   }
 };
 
+function updateSectionSucess(state: IBookShelfState, action: UpdateSectionSuccessAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  newState.bookSections[action.payload.section_index] = action.payload;
+  return newState;
+}
+
+function updateSectionError(state: IBookShelfState, action: UpdateSectionErrorAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  //newState.currentSection = null;
+  return newState;
+}
 
 function setSelectedBook(state: IBookShelfState, action: SetSelectedBookAction) {
   if(state == null) {
