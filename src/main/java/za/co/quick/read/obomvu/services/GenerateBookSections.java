@@ -22,8 +22,12 @@ public class GenerateBookSections {
         int startIndex = 0;
         Long index = 0L;
         String[] content = book.getContent().split("\\s+");
+        int sectionLength  = SECTION_LENGHT;
+        if(content.length < sectionLength){
+            sectionLength = content.length;
+        }
 
-        for(int endIndex = SECTION_LENGHT; endIndex < content.length; endIndex = endIndex + SECTION_LENGHT){
+        for(int endIndex = sectionLength; endIndex <= content.length; endIndex = endIndex + SECTION_LENGHT){
             BookSection bookSection = new BookSection();
             bookSection.setContent(buildSection(startIndex,endIndex, content));
             bookSection.setBook_id(book.getId());
