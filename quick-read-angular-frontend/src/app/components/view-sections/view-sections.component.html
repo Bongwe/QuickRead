@@ -1,33 +1,54 @@
 <div class="container">
 
-  <div class="row">
-    <div class="col-sm-2 col-md-3 col-md-offset-4">
+  <div class="row" id="info_row">
+    <div class="col-md-3 col-md-offset-2">
       <h4 >Title: {{book?.title}}</h4>
       <h4 >Author: {{book?.author}}</h4>
+    </div>
+    <div class="col-md-3 col-md-offset-3">
+      <h4>Book reading progress</h4>
+      <progress-bar [progress]=bookSectionCompleteness [color]="'#d1a800'">
+      </progress-bar>
     </div>
   </div>
 
   <div class="row">
-    <span *ngFor="let section of bookSections;let index = index">
-      <div *ngIf="index == 0 || (index % 4) == 0" class="row">
-        <div class="col-sm-2 col-md-2  col-md-offset-3">
-          <div><label>Name: Muzi</label></div>
-          <div><label>Health: 50%</label></div>
-          <img [src]=playerImageSrc class="imageSize">
-        </div>
-        <div class="col-sm-2 col-md-2">
-          <div><label>Name: Snake </label></div>
-          <div><label>Health: 25%</label></div>
-          <img [src]=opponentImageSrc class="imageSize">
-        </div>
-      </div>
-      <div (click)="readSelectedSection(section, index)" class="col-sm-2">
-        <label class="section-label">Section {{index + 1}}</label>
-        <img class="section_block" [src]=getSectionIconImage(section) >
-      </div>
-    </span>
+    <div class="col-md-8 col-md-offset-3">
+      <span *ngFor="let section of bookSections;let index = index">
 
+        <div *ngIf="index == 0 || (index % 4) == 0" class="row">
+          <div class="col-md-6">
+            <div class="col-md-3">
+              <img [src]=playerImageSrc class="imageSize">
+            </div>
+            <div class="col-md-8">
+              <div><label>Name: Muzi</label></div>
+              <progress-bar [progress]="100" [color]="'#d9534f'">
+              </progress-bar>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="col-md-3">
+              <img [src]=opponentImageSrc class="imageSize">
+            </div>
+            <div class="col-md-8">
+              <div><label>Name: Snake </label></div>
+              <progress-bar [progress]="30" [color]="'#d9534f'">
+              </progress-bar>
+            </div>
+          </div>
+        </div>
+
+        <div (click)="readSelectedSection(section, index)" class="col-md-2">
+          <label class="section-label">Section {{index + 1}}</label>
+          <img class="section_block" [src]=getSectionIconImage(section) >
+        </div>
+
+      </span>
+    </div>
   </div>
+
 </div>
 
 <div class="row">
@@ -44,6 +65,27 @@
     </modal-content>
     <modal-footer>
       <button class="btn btn-primary" (click)="closeModal()">OK</button>
+    </modal-footer>
+  </modal>
+</div>
+
+
+<div class="row">
+  <modal #bookCompleteMessage>
+    <modal-header>
+      <h4>Book complete</h4>
+    </modal-header>
+    <modal-content>
+      <div class="row">
+        <div class="col-md-12">
+          &#11088; &#11088; &#11088;Well done!
+          You defeated your opponents and completed the book!
+          Awesome work and keep reading! &#11088; &#11088; &#11088;
+        </div>
+      </div>
+    </modal-content>
+    <modal-footer>
+      <button class="btn btn-primary" (click)="closeBookCompleteModal()">Close</button>
     </modal-footer>
   </modal>
 </div>

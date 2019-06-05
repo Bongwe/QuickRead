@@ -44,8 +44,8 @@ export function accountReducer (state = initialAccountState, action: ProfileActi
       return accountLoginSuccess(state, action);
     case EProfileAction.AccountLoginError:
       return accountLoginError(state, action);
-    case EProfileAction.ClearSelectedAccount:
-      return clearSelectedAccount(state, action);
+    case EProfileAction.ClearAccount:
+      return clearAccount(state, action);
     default:
       return state;
   }
@@ -155,13 +155,8 @@ function accountLoginError(state: IAccountState, action: AccountLoginErrorAction
   return newState;
 }
 
-function clearSelectedAccount(state: IAccountState, action: ClearSelectedAccountAction) {
-  if(state == null) {
-    return state;
-  }
-  let newState = _.cloneDeep(state);
-  newState.selectedAccount = null;
-  return newState;
+function clearAccount(state: IAccountState, action: ClearSelectedAccountAction) {
+  return null;
 }
 
 function createEmptyState() {

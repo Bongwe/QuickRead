@@ -7,7 +7,6 @@ import {selectBookShelf, selectSection} from "../../store/selectors/profile.sele
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
 import {Book} from "../../models/Book";
 import {BookSection} from "../../models/BookSection";
-import {SectionGroup} from "../../models/SectionGroup";
 import {ReadSectionAction} from "../../store/actions/section.actions";
 import {ISectionState} from "../../store/reducers/section.reducer";
 import {BookStatus} from "../../models/BookStatus";
@@ -22,21 +21,23 @@ export class ViewSectionsComponent implements OnInit {
 
   public bookSections: Array<BookSection>;
   public book: Book;
-  public sectionGroups: Array<SectionGroup>;
   public playerImageSrc = "../../../assets/img/opponents/giraffe.png" ;
   public opponentImageSrc = "../../../assets/img/opponents/snake.png";
-
   public currentSection: BookSection;
   public previousSection: BookSection;
 
+  public bookSectionCompleteness: number = 0;
+  public totalCompletedSections: number = 0;
+
   @ViewChild('inaccessibleSection') inaccessibleSection;
+  @ViewChild('bookCompleteMessage') bookCompleteMessage;
   private modalRef;
+  private bookCompleteModalRef;
 
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
               private modalService: ModalManager,
               private router: Router) {
-    this.sectionGroups = new Array<SectionGroup>();
   }
 
   ngOnInit() {
@@ -44,15 +45,37 @@ export class ViewSectionsComponent implements OnInit {
       if(state && state.bookSections){
         this.bookSections = state.bookSections;
       }
+
       if(state && state.selectedBook){
         this.book =  state.selectedBook;
       }
     });
+
     this.store.select(selectSection).subscribe((state: ISectionState) =>{
       if(state && state.currentSection){
         this.router.navigate(['/readSection']);
       }
     });
+
+    let completePercent = this.calculateSectionCompleteness();
+
+    if(completePercent >= 100) {
+      this.openBooksCompleteModal();
+    }
+  }
+
+  calculateSectionCompleteness(): number {
+    if(this.bookSections){
+      for(let index = 0; this.bookSections && index < this.bookSections.length; index++){
+        if(this.bookSections[index].status == BookStatus.COMPLETE){
+          this.totalCompletedSections++;
+        }
+      }
+      this.bookSectionCompleteness = this.totalCompletedSections / this.bookSections.length;
+      this.bookSectionCompleteness = this.bookSectionCompleteness * 100;
+      return this.bookSectionCompleteness;
+    }
+    return 0;
   }
 
   readSelectedSection(section: BookSection, index: number) {
@@ -86,8 +109,26 @@ export class ViewSectionsComponent implements OnInit {
     })
   }
 
+  openBooksCompleteModal(){
+    this.bookCompleteModalRef = this.modalService.open(this.bookCompleteMessage, {
+      size: "md",
+      modalClass: 'bookCompleteMessage',
+      hideCloseButton: false,
+      centered: false,
+      backdrop: true,
+      animation: true,
+      keyboard: false,
+      closeOnOutsideClick: true,
+      backdropClass: "modal-backdrop"
+    })
+  }
+
   closeModal(){
     this.modalService.close(this.modalRef);
+  }
+
+  closeBookCompleteModal(){
+    this.modalService.close(this.bookCompleteModalRef);
   }
 
 }

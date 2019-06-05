@@ -37,12 +37,5 @@ function setNotification(state: INotification, action: SetNotificationMessageAct
 }
 
 function clearNotification(state: INotification, action: ClearNotificationMessageAction) {
-  if(state == null) {
-    state = {
-      notification: null
-    };
-  }
-  let newState = _.cloneDeep(state);
-  newState.notification = null;
-  return newState;
+  return null;
 }

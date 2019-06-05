@@ -3,7 +3,7 @@ import {
   AddToBookShelfAction,
   AddToBookShelfErrorAction,
   AddToBookShelfSuccessAction,
-  BookShelfAction,
+  BookShelfAction, ClearBookShelfAction, ClearSectionsAction,
   EBooksShelfAction,
   GetBooksInBookshelfSuccessAction,
   ReadBookSErrorAction,
@@ -40,15 +40,34 @@ export function bookShelfReducer (state = initialBookShelfState, action: BookShe
     case EBooksShelfAction.SetSelectedBook:
       return setSelectedBook(state, action);
     case EBooksShelfAction.UpdateSectionSuccess:
-      return updateSectionSucess(state, action);
+      return updateSectionSuccess(state, action);
     case EBooksShelfAction.UpdateSectionError:
       return updateSectionError(state, action);
+    case EBooksShelfAction.ClearSections:
+      return clearSections(state, action);
+    case EBooksShelfAction.ClearBookShelf:
+      return clearBookShelf(state, action);
     default:
       return state;
   }
 };
 
-function updateSectionSucess(state: IBookShelfState, action: UpdateSectionSuccessAction) {
+
+function clearBookShelf(state: IBookShelfState, action: ClearBookShelfAction) {
+  return null;
+}
+
+
+function clearSections(state: IBookShelfState, action: ClearSectionsAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  newState.bookSections = null;
+  return newState;
+}
+
+function updateSectionSuccess(state: IBookShelfState, action: UpdateSectionSuccessAction) {
   if(state == null) {
     state = createEmptyState();
   }

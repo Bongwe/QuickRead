@@ -17,6 +17,16 @@ export enum EBooksShelfAction {
   UpdateSection = '[Book Shelf Component] Update current section',
   UpdateSectionSuccess = '[Book Shelf Component] Update current section success',
   UpdateSectionError = '[Book Shelf Component] Update current section error',
+  ClearSections = '[Book Shelf Component] Clear sections',
+  ClearBookShelf = '[Book Shelf Component] Clear book shelf',
+}
+
+export class ClearBookShelfAction implements Action {
+  readonly type = EBooksShelfAction.ClearBookShelf;
+}
+
+export class ClearSectionsAction implements Action {
+  readonly type = EBooksShelfAction.ClearSections;
 }
 
 export class UpdateSectionAction implements Action {
@@ -90,4 +100,4 @@ export class AddToBookShelfAction implements Action {
 export type BookShelfAction = AddToBookShelfAction | AddToBookShelfSuccessAction | AddToBookShelfErrorAction
   | GetBooksInBookshelfAction | GetBooksInBookshelfSuccessAction | ReadBookAction | ReadBookSErrorAction
   | ReadBookSuccessAction | SetSelectedBookAction | UpdateSectionAction | UpdateSectionSuccessAction
-  | UpdateSectionErrorAction;
+  | UpdateSectionErrorAction | ClearSectionsAction | ClearBookShelfAction;

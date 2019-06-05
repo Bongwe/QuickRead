@@ -5,8 +5,14 @@ import {HttpErrorResponse} from "@angular/common/http";
 export enum ESettingsAction {
   SetSettings = '[Settings Component] Set settings',
   SetSettingsSuccess = '[Settings Component] Set settings success',
-  SetSettingsError = '[Settings Component] Set settings error'
+  SetSettingsError = '[Settings Component] Set settings error',
+  ClearSettings = '[Settings Component] Clear settings'
 }
+
+export class ClearSettingsAction implements Action {
+  readonly type = ESettingsAction.ClearSettings;
+}
+
 
 export class SetSettingsAction implements Action {
   readonly type = ESettingsAction.SetSettings;
@@ -26,4 +32,4 @@ export class SetSettingsErrorAction implements Action {
   }
 }
 
-export type SettingsAction = SetSettingsAction | SetSettingsSuccessAction | SetSettingsErrorAction;
+export type SettingsAction = SetSettingsAction | SetSettingsSuccessAction | SetSettingsErrorAction | ClearSettingsAction;

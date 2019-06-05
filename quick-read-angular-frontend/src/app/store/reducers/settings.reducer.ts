@@ -1,5 +1,6 @@
 import {Settings} from "../../models/Settings";
 import {
+  ClearSettingsAction,
   ESettingsAction,
   SetSettingsErrorAction,
   SetSettingsSuccessAction,
@@ -16,27 +17,20 @@ export const initialSettingsState: ISettingsState = null;
 
 export function settingsReducer (state = initialSettingsState, action: SettingsAction): ISettingsState {
   switch (action.type) {
-    /*case ESettingsAction.SetSettings:
-      return setSettings(state, action);*/
     case ESettingsAction.SetSettingsSuccess:
       return setSettingsSuccess(state, action);
     case ESettingsAction.SetSettingsError:
       return setSettingsError(state, action);
+    case ESettingsAction.ClearSettings:
+      return clearSettings(state, action);
     default:
       return state;
   }
 };
 
-/*
-function setSettings(state: ISettingsState, action: SetSettingsAction) {
-  if(state == null) {
-    state = createEmptyState();
-  }
-  let newState = _.cloneDeep(state);
-  newState.settings = action.payload;
-  return newState;
+function clearSettings(state: ISettingsState, action: ClearSettingsAction) {
+ return null;
 }
-*/
 
 function setSettingsSuccess(state: ISettingsState, action: SetSettingsSuccessAction) {
   if(state == null) {

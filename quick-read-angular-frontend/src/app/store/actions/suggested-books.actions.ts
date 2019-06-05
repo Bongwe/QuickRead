@@ -5,6 +5,11 @@ export enum ESuggestedBooksAction {
   GetAllSuggestedBooks = '[Suggested Books Component] Get all suggested books',
   GetAllSuggestedBooksSuccess = '[Suggested Books Component] Get all suggested books success',
   GetAllSuggestedBooksError = '[Suggested Books Component] Get all suggested books Error',
+  ClearSuggestedBooks= '[Suggested Books Component] Clear suggested books',
+}
+
+export class ClearSuggestedBooksAction implements Action {
+  readonly type = ESuggestedBooksAction.ClearSuggestedBooks;
 }
 
 export class GetAllSuggestedBooksAction implements Action {
@@ -17,4 +22,4 @@ export class GetAllSuggestedBooksSuccessAction implements Action {
   }
 }
 
-export type SuggestedBookAction = GetAllSuggestedBooksSuccessAction | GetAllSuggestedBooksAction;
+export type SuggestedBookAction = GetAllSuggestedBooksSuccessAction | GetAllSuggestedBooksAction | ClearSuggestedBooksAction;

@@ -18,7 +18,7 @@ export enum EProfileAction {
   AccountLogin = '[Account Component] Account Login',
   AccountLoginSuccess = '[Account Component] Account Login Success',
   AccountLoginError = '[Account Component] Account Login Error',
-  ClearSelectedAccount = '[Account Component] Clear selected account',
+  ClearAccount = '[Account Component] Clear selected account',
 }
 
 export class UpdateAccountSuccessAction implements Action {
@@ -40,7 +40,7 @@ export class UpdateAccountAction implements Action {
 }
 
 export class ClearSelectedAccountAction implements Action {
-  readonly type = EProfileAction.ClearSelectedAccount;
+  readonly type = EProfileAction.ClearAccount;
 }
 
 export class AccountLoginAction implements Action {

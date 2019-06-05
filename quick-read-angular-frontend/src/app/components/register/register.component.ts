@@ -9,6 +9,7 @@ import {selectAccounts} from "../../store/selectors/profile.selectors";
 import {IAccountState} from "../../store/reducers/account.reducer";
 import * as sha512 from "js-sha512";
 import {ClearNotificationMessageAction} from "../../store/actions/notofication.actions";
+import {GetAllSuggestedBooksAction} from "../../store/actions/suggested-books.actions";
 
 @Component({
   selector: 'app-register',
@@ -31,7 +32,7 @@ export class RegisterComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit() {
-
+    this.store.dispatch(new GetAllSuggestedBooksAction());
     this.store.select(selectAccounts).subscribe((state: IAccountState) =>{
       if(state && state.selectedAccount !== null){
         this.selectedInterestsDisable = false;

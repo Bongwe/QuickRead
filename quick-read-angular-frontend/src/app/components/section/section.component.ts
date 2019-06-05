@@ -87,7 +87,7 @@ export class SectionComponent implements OnInit,OnDestroy {
   }
 
   getMinimumTimeMessage() {
-    let currentMinStr = (this.currentMinutes < 60) ? 'less than a' :this.getCurrentTimeInMinutes(this.currentSeconds);
+    let currentMinStr = (this.currentSeconds < 60) ? 'less than a' :this.getCurrentTimeInMinutes(this.currentSeconds);
     let currentReadingTimeMsg = "You have only been reading for " + currentMinStr + " minute(s).";
     let requiredReadingTimeMsg = "Read for at least " + this.settings.min_read_time + " minute(s) before closing the section."
     return currentReadingTimeMsg + '\n' + requiredReadingTimeMsg;

@@ -1,6 +1,7 @@
 import * as _ from 'lodash';
 import {Book} from "../../models/Book";
 import {
+  ClearSuggestedBooksAction,
   ESuggestedBooksAction,
   GetAllSuggestedBooksSuccessAction, SuggestedBookAction
 } from "../actions/suggested-books.actions";
@@ -15,10 +16,16 @@ export function suggestedBooksReducer (state = initialBookState, action: Suggest
   switch (action.type) {
     case ESuggestedBooksAction.GetAllSuggestedBooksSuccess:
       return getBooks(state, action);
+    case ESuggestedBooksAction.ClearSuggestedBooks:
+      return clearSuggestedBooks(state, action);
     default:
       return state;
   }
 };
+
+function clearSuggestedBooks(state: ISuggestedBookState, action: ClearSuggestedBooksAction) {
+  return null;
+}
 
 function getBooks(state: ISuggestedBookState, action: GetAllSuggestedBooksSuccessAction) {
   if(state == null) {
