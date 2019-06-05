@@ -1,10 +1,10 @@
 
 import * as _ from 'lodash';
 import {
-  ClearNotificationMessage,
+  ClearNotificationMessageAction,
   ENotificationAction,
   QuickRead_NotificationAction,
-  SetNotificationMessage
+  SetNotificationMessageAction
 } from "../actions/notofication.actions";
 import {NotificationObj} from "../../models/NotificationObj";
 
@@ -25,7 +25,7 @@ export function notificationReducer (state = initialNotificationState, action: Q
   }
 };
 
-function setNotification(state: INotification, action: SetNotificationMessage) {
+function setNotification(state: INotification, action: SetNotificationMessageAction) {
   if(state == null) {
     state = {
       notification: null
@@ -36,7 +36,7 @@ function setNotification(state: INotification, action: SetNotificationMessage) {
   return newState;
 }
 
-function clearNotification(state: INotification, action: ClearNotificationMessage) {
+function clearNotification(state: INotification, action: ClearNotificationMessageAction) {
   if(state == null) {
     state = {
       notification: null

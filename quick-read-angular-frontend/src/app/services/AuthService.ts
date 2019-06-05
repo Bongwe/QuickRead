@@ -2,7 +2,7 @@ import {Injectable} from "@angular/core";
 import {Store} from "@ngrx/store";
 import {IAppState} from "../store/state/app.state";
 import {selectAccounts} from "../store/selectors/profile.selectors";
-import {IAccountState} from "../store/reducers/profile.reducer";
+import {IAccountState} from "../store/reducers/account.reducer";
 
 @Injectable({providedIn: 'root'})
 

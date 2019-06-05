@@ -2,17 +2,16 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {selectAccounts, selectSettings} from "../../store/selectors/profile.selectors";
-import {IAccountState} from "../../store/reducers/profile.reducer";
+import {IAccountState} from "../../store/reducers/account.reducer";
 import {qrAccount} from "../../models/Account";
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {Router} from "@angular/router";
 
 import * as _ from 'lodash';
-import {ClearAccountMessagesAction} from "../../store/actions/account.actions";
 import {SetSettingsAction} from "../../store/actions/settings.actions";
 import {Settings} from "../../models/Settings";
 import {ISettingsState} from "../../store/reducers/settings.reducer";
-import {ClearNotificationMessage} from "../../store/actions/notofication.actions";
+import {ClearNotificationMessageAction} from "../../store/actions/notofication.actions";
 
 @Component({
   selector: 'app-profile',
@@ -70,7 +69,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.store.dispatch( new ClearNotificationMessage());
+    this.store.dispatch( new ClearNotificationMessageAction());
   }
 
 }

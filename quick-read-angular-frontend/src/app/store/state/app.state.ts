@@ -1,4 +1,4 @@
-import {IAccountState, initialAccountState} from "../reducers/profile.reducer";
+import {IAccountState, initialAccountState} from "../reducers/account.reducer";
 import {initialBookState, ISuggestedBookState} from "../reducers/suggested-books.reducer";
 import {initialNotificationState, INotification} from "../reducers/notifications.reducer";
 import {IBookShelfState, initialBookShelfState} from "../reducers/book-shelf.reducer";

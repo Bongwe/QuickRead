@@ -19,7 +19,7 @@ import {BookEffects} from "./store/effects/books.effect";
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { InterestsComponent } from './components/interests/interests.component';
-import { ProfilePictureComponent } from './components/profile-picture/profile-picture.component';
+import { AvatarComponent } from './components/profile-picture/avatar.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { SuggestedBooksComponent } from './components/suggested-books/suggested-books.component';
 import { BookShelfComponent } from './components/book-shelf/book-shelf.component';
@@ -39,7 +39,7 @@ import {SettingsEffects} from "./store/effects/settings.effect";
     SearchComponent,
     NotificationsComponent,
     InterestsComponent,
-    ProfilePictureComponent,
+    AvatarComponent,
     PageNotFoundComponent,
     SuggestedBooksComponent,
     BookShelfComponent,

@@ -74,12 +74,12 @@ export class SectionComponent implements OnInit,OnDestroy {
   }
 
   closeSection() {
-    //if(this.currentSeconds >= (this.settings.min_read_time * 60)) {
+    if(this.currentSeconds >= (this.settings.min_read_time * 60)) {
       this.openReadingCompleteModal();
-    /*} else {
+    } else {
       this.modalMessage = this.getMinimumTimeMessage();
       this.openModal();
-    }*/
+    }
   }
 
   nextSection(){

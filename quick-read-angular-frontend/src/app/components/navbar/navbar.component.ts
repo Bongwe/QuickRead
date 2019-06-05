@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
@@ -7,23 +7,28 @@ import {qrAccount} from "../../models/Account";
 import * as sha512 from 'js-sha512';
 import {
   AccountLoginAction,
-  ClearAccountMessagesAction,
   ClearSelectedAccountAction,
 } from "../../store/actions/account.actions";
-import {selectAccounts} from "../../store/selectors/profile.selectors";
-import {IAccountState} from "../../store/reducers/profile.reducer";
+import {selectAccounts, selectNotifications} from "../../store/selectors/profile.selectors";
+import {IAccountState} from "../../store/reducers/account.reducer";
+import {ClearNotificationMessageAction} from "../../store/actions/notofication.actions";
+import {INotification} from "../../store/reducers/notifications.reducer";
+
+import * as _ from 'lodash';
+import {SUCCESSFUL_LOGIN} from "../../models/Messages";
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit, OnDestroy {
 
   loginForm: FormGroup;
   private baseLocation = "../../../assets/img/profilePicture/";
   private tempImg = "temp.png";
   public imageUrl: string;
+  public selectedAccount: qrAccount;
 
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
@@ -33,15 +38,19 @@ export class NavbarComponent implements OnInit {
     this.imageUrl = this.baseLocation + this.tempImg;
     this.store.select(selectAccounts).subscribe((state: IAccountState) =>{
       if(state && state.selectedAccount){
+        this.selectedAccount = _.cloneDeep(state.selectedAccount);
         if(state.selectedAccount.profile_picture == undefined){
           this.imageUrl = this.baseLocation + this.tempImg;
         } else {
           this.imageUrl = this.baseLocation + '' + state.selectedAccount.profile_picture;
         }
-        if(state.accountSuccessMessage == 'successful login'){
-          this.store.dispatch(new ClearAccountMessagesAction());
-          this.router.navigate(['/search']);
-        }
+      }
+    });
+
+    this.store.select(selectNotifications).subscribe((state: INotification) =>{
+      if(state && state.notification && state.notification.message == SUCCESSFUL_LOGIN) {
+        this.store.dispatch(new ClearNotificationMessageAction());
+        this.router.navigate(['/search']);
       }
     });
 
@@ -49,6 +58,10 @@ export class NavbarComponent implements OnInit {
       email: ['', ],
       password: ['', ],
     });
+  }
+
+  ngOnDestroy(): void {
+    this.store.dispatch(new ClearNotificationMessageAction());
   }
 
   public onSubmit() {
@@ -68,10 +81,6 @@ export class NavbarComponent implements OnInit {
 
   public onProfilePictureSelect() {
     this.router.navigate(['/profile']);
-  }
-
-  public onSearchSelect() {
-    this.router.navigate(['/search']);
   }
 
   public onBookShelfSelect() {

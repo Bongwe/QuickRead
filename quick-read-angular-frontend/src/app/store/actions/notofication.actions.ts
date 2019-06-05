@@ -6,16 +6,16 @@ export enum ENotificationAction {
   ClearNotificationMessage = '[Notification Component] Clear notification message',
 }
 
-export class SetNotificationMessage implements Action {
+export class SetNotificationMessageAction implements Action {
   public readonly type = ENotificationAction.SetNotificationMessage;
   constructor(public payload: NotificationObj){
   }
 }
 
-export class ClearNotificationMessage implements Action {
+export class ClearNotificationMessageAction implements Action {
   public readonly type = ENotificationAction.ClearNotificationMessage;
   constructor(){
   }
 }
 
-export type QuickRead_NotificationAction = SetNotificationMessage | ClearNotificationMessage;
+export type QuickRead_NotificationAction = SetNotificationMessageAction | ClearNotificationMessageAction;

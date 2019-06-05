@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
-import {ClearAccountNotifications, CreateAccountAction} from "../../store/actions/account.actions";
+import {CreateAccountAction} from "../../store/actions/account.actions";
 import {qrAccount} from "../../models/Account";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {selectAccounts} from "../../store/selectors/profile.selectors";
-import {IAccountState} from "../../store/reducers/profile.reducer";
+import {IAccountState} from "../../store/reducers/account.reducer";
 import * as sha512 from "js-sha512";
+import {ClearNotificationMessageAction} from "../../store/actions/notofication.actions";
 
 @Component({
   selector: 'app-register',
@@ -32,9 +33,11 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
 
     this.store.select(selectAccounts).subscribe((state: IAccountState) =>{
-      if(state && state.accountSuccessMessage !== null){
+      if(state && state.selectedAccount !== null){
         this.selectedInterestsDisable = false;
-        this.registerForm.reset();
+        if(this.registerForm){
+          this.registerForm.reset();
+        }
       }
     });
 
@@ -60,7 +63,7 @@ export class RegisterComponent implements OnInit {
   }
 
   public nextPage(){
-    this.store.dispatch( new ClearAccountNotifications());
+    this.store.dispatch( new ClearNotificationMessageAction());
     this.router.navigate(['/interests']);
   }
 

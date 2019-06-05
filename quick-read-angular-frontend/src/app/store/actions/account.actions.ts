@@ -13,18 +13,12 @@ export enum EProfileAction {
   CreateAccount = '[Account Component] Create Account',
   CreateAccountSuccess = '[Account Component] Create Account Success ',
   CreateAccountError = '[Account Component] Create Account Error ',
-  ClearAccountNotifications = '[Account Component] Clear Account Notifications',
   AddAccountInterests = '[Account Component] Add Account Interests',
   AddAccountProfilePicture = '[Account Component] Add Account Profile Picture',
   AccountLogin = '[Account Component] Account Login',
   AccountLoginSuccess = '[Account Component] Account Login Success',
   AccountLoginError = '[Account Component] Account Login Error',
   ClearSelectedAccount = '[Account Component] Clear selected account',
-  ClearAccountMessages = '[Account Component] Clear status messages',
-}
-
-export class ClearAccountMessagesAction implements Action {
-  readonly type = EProfileAction.ClearAccountMessages;
 }
 
 export class UpdateAccountSuccessAction implements Action {
@@ -79,10 +73,6 @@ export class AddAccountInterests implements Action {
   }
 }
 
-export class ClearAccountNotifications implements Action {
-  readonly type = EProfileAction.ClearAccountNotifications;
-}
-
 export class GetAccounts implements Action {
   readonly type = EProfileAction.GetAccounts;
 }
@@ -112,6 +102,6 @@ export class CreateAccountAction implements Action {
 }
 
 export type ProfileAction = GetAccounts | GetAccountsSuccess | CreateAccountAction | CreateAccountSuccess
-  |CreateAccountError | ClearAccountNotifications | AddAccountInterests | AddAccountProfilePicture
+  |CreateAccountError | AddAccountInterests | AddAccountProfilePicture
   | AccountLoginAction | AccountLoginSuccessAction | AccountLoginErrorAction | ClearSelectedAccountAction
-  | UpdateAccountAction | UpdateAccountErrorAction | UpdateAccountSuccessAction | ClearAccountMessagesAction;
+  | UpdateAccountAction | UpdateAccountErrorAction | UpdateAccountSuccessAction;

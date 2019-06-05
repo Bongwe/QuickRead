@@ -13,6 +13,9 @@ import {SetSettingsSuccessAction} from "../actions/settings.actions";
 import {AccountDTO} from "../../models/AccountDTO";
 import {Store} from "@ngrx/store";
 import {IAppState} from "../state/app.state";
+import {SetNotificationMessageAction} from "../actions/notofication.actions";
+import {NotificationObj} from "../../models/NotificationObj";
+import {SUCCESSFUL_LOGIN} from "../../models/Messages";
 
 @Injectable()
 export class AccountEffects {
@@ -38,9 +41,13 @@ export class AccountEffects {
         .pipe(
             map((result: AccountDTO) => {
               this.store.dispatch(new SetSettingsSuccessAction(result.settings));
+              this.store.dispatch(new SetNotificationMessageAction(new NotificationObj("Account created successfully", true)));
               return {type: EProfileAction.CreateAccountSuccess, payload: result}
             }),
-          catchError((error: HttpErrorResponse) => of({ type: EProfileAction.CreateAccountError, payload: error}))
+          catchError((error) => {
+            this.store.dispatch(new SetNotificationMessageAction(new NotificationObj('It looks like your email address already exists', false, true)));
+            return of({type: EProfileAction.CreateAccountError, payload: error});
+          })
         ))
     );
 
@@ -50,7 +57,11 @@ export class AccountEffects {
       ofType(EProfileAction.UpdateAccount),
       mergeMap((accounts: CreateAccountAction) => this.profileService.updateAccount(accounts.payload)
         .pipe(
-          map(result => ({ type: EProfileAction.UpdateAccountSuccess, payload: result })),
+          //map(result => ({ type: EProfileAction.UpdateAccountSuccess, payload: result })),
+          map((result: AccountDTO) => {
+            this.store.dispatch(new SetNotificationMessageAction(new NotificationObj('Account updated successfully', true)));
+            return { type: EProfileAction.UpdateAccountSuccess, payload: result }
+          }),
           catchError((error: HttpErrorResponse) => of({ type: EProfileAction.UpdateAccountError, payload: error}))
         ))
     );
@@ -63,9 +74,13 @@ export class AccountEffects {
         .pipe(
           map((result: AccountDTO) => {
             this.store.dispatch(new SetSettingsSuccessAction(result.settings));
+            this.store.dispatch(new SetNotificationMessageAction(new NotificationObj(SUCCESSFUL_LOGIN, true)));
             return {type: EProfileAction.AccountLoginSuccess, payload: result.account}
           }),
-          catchError((error: HttpErrorResponse) => of({ type: EProfileAction.AccountLoginError, payload: error}))
+          catchError((error) => {
+            this.store.dispatch(new SetNotificationMessageAction(new NotificationObj('Invalid email or password', false, true)));
+            return of({type: EProfileAction.AccountLoginError, payload: error});
+          })
         ))
     );
 

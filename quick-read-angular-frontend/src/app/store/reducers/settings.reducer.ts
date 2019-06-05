@@ -1,13 +1,12 @@
 import {Settings} from "../../models/Settings";
 import {
-  ESettingsAction, SetSettingsAction,
+  ESettingsAction,
   SetSettingsErrorAction,
   SetSettingsSuccessAction,
   SettingsAction
 } from "../actions/settings.actions";
 
 import * as _ from 'lodash';
-import {SetNotificationMessage} from "../actions/notofication.actions";
 
 export interface ISettingsState {
   settings: Settings;

@@ -2,8 +2,7 @@ import {qrAccount} from "../../models/Account";
 import * as _ from 'lodash';
 import {
   AccountLoginAction, AccountLoginErrorAction, AccountLoginSuccessAction,
-  AddAccountInterests, AddAccountProfilePicture, ClearAccountMessagesAction,
-  ClearAccountNotifications, ClearSelectedAccountAction,
+  AddAccountInterests, AddAccountProfilePicture, ClearSelectedAccountAction,
   CreateAccountError,
   CreateAccountSuccess,
   EProfileAction,
@@ -11,19 +10,19 @@ import {
   ProfileAction, UpdateAccountErrorAction, UpdateAccountSuccessAction
 } from "../actions/account.actions";
 import {AccountDTO} from "../../models/AccountDTO";
+import {SetNotificationMessageAction} from "../actions/notofication.actions";
+import {NotificationObj} from "../../models/NotificationObj";
 
 export interface IAccountState {
   allAccounts: Array<AccountDTO>;
   selectedAccount: qrAccount,
-  accountErrorMessage: string
-  accountSuccessMessage: string
   interests: string
   profilePicture: string
 }
 
 export const initialAccountState: IAccountState = null;
 
-export function profileReducer (state = initialAccountState, action: ProfileAction): IAccountState {
+export function accountReducer (state = initialAccountState, action: ProfileAction): IAccountState {
   switch (action.type) {
     case EProfileAction.GetAccountsSuccess:
       return getAccounts(state, action);
@@ -33,8 +32,6 @@ export function profileReducer (state = initialAccountState, action: ProfileActi
       return updateAccountSuccess(state, action);
     case EProfileAction.UpdateAccountError:
       return updateAccountError(state, action);
-    case EProfileAction.ClearAccountNotifications:
-      return clearNotifications(state, action);
     case EProfileAction.AddAccountInterests:
       return addAccountInterest(state, action);
     case EProfileAction.AddAccountProfilePicture:
@@ -49,22 +46,10 @@ export function profileReducer (state = initialAccountState, action: ProfileActi
       return accountLoginError(state, action);
     case EProfileAction.ClearSelectedAccount:
       return clearSelectedAccount(state, action);
-    case EProfileAction.ClearAccountMessages:
-      return clearAccountMessages(state, action);
     default:
       return state;
   }
 };
-
-function clearAccountMessages(state: IAccountState, action: ClearAccountMessagesAction) {
-  if(state == null) {
-    state = createEmptyState();
-  }
-  let newState = _.cloneDeep(state);
-  newState.accountSuccessMessage = null;
-  newState.accountErrorMessage = null;
-  return newState;
-}
 
 function updateAccountSuccess(state: IAccountState, action: UpdateAccountSuccessAction) {
   if(state == null) {
@@ -72,7 +57,6 @@ function updateAccountSuccess(state: IAccountState, action: UpdateAccountSuccess
   }
   let newState = _.cloneDeep(state);
   newState.selectedAccount = action.payload;
-  newState.accountSuccessMessage = "Account updated successfully";
   return newState;
 }
 
@@ -81,7 +65,6 @@ function updateAccountError(state: IAccountState, action: UpdateAccountErrorActi
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  newState.accountSuccessMessage = "Account updated error";
   return newState;
 }
 
@@ -103,16 +86,6 @@ function addAccountInterest(state: IAccountState, action: AddAccountInterests) {
   return newState;
 }
 
-function clearNotifications(state: IAccountState, action: ClearAccountNotifications) {
-  if(state == null) {
-    state = createEmptyState();
-  }
-  let newState = _.cloneDeep(state);
-  newState.accountSuccessMessage = null;
-  newState.accountErrorMessage = null;
-  return newState;
-}
-
 function getAccounts(state: IAccountState, action: GetAccountsSuccess) {
   if(state == null) {
     state = createEmptyState();
@@ -128,8 +101,6 @@ function createAccount(state: IAccountState, action: CreateAccountSuccess) {
   }
   let newState = _.cloneDeep(state);
   newState.selectedAccount = action.payload.account;
-  newState.accountSuccessMessage = "Account created successfully";
-  newState.accountErrorMessage = null;
   return newState;
 }
 
@@ -138,12 +109,14 @@ function createAccountError(state: IAccountState, action: CreateAccountError) {
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  if (action.payload.status === 409) {
-    newState.accountErrorMessage = 'It looks like your email address already exists';
-  } else {
-    newState.accountErrorMessage = action.payload.message;
+  if (action.payload.status !== 409) {
+    this.store.dispatch(new SetNotificationMessageAction(new NotificationObj(action.payload.message)));
   }
-  newState.accountSuccessMessage = null;
+  /*if (action.payload.status === 409) {
+    this.store.dispatch(new SetNotificationMessageAction(new NotificationObj('It looks like your email address already exists', true)));
+  } else {
+    this.store.dispatch(new SetNotificationMessageAction(new NotificationObj(action.payload.message)));
+  }*/
   return newState;
 }
 
@@ -152,7 +125,6 @@ function accountLogin(state: IAccountState, action: AccountLoginAction) {
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  //do some stsuff
   return newState;
 }
 
@@ -161,7 +133,7 @@ function accountLoginSuccess(state: IAccountState, action: AccountLoginSuccessAc
       state = createEmptyState();
     }
     let newState = _.cloneDeep(state);
-    newState.accountSuccessMessage = 'successful login';
+    /*this.store.dispatch(new SetNotificationMessageAction(new NotificationObj('Successful login', true)));*/
     newState.selectedAccount = action.payload;
     return newState;
 }
@@ -171,12 +143,15 @@ function accountLoginError(state: IAccountState, action: AccountLoginErrorAction
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  if (action.payload.status === 400) {
-    newState.accountErrorMessage = 'Invalid email or password';
-  } else {
-    newState.accountErrorMessage = action.payload.message;
+  if (action.payload.status !== 400) {
+    this.store.dispatch(new SetNotificationMessageAction(new NotificationObj(action.payload.message, false, true)));
+
   }
-  newState.accountSuccessMessage = null;
+  /*if (action.payload.status === 400) {
+    this.store.dispatch(new SetNotificationMessageAction(new NotificationObj('Invalid email or password', false, true)));
+  } else {
+    this.store.dispatch(new SetNotificationMessageAction(new NotificationObj(action.payload.message, false, true)));
+  }*/
   return newState;
 }
 
@@ -186,7 +161,6 @@ function clearSelectedAccount(state: IAccountState, action: ClearSelectedAccount
   }
   let newState = _.cloneDeep(state);
   newState.selectedAccount = null;
-  newState.accountSuccessMessage = null;
   return newState;
 }
 
@@ -194,8 +168,6 @@ function createEmptyState() {
   return {
     allAccounts:  new Array<AccountDTO>(),
     selectedAccount: null,
-    accountErrorMessage: null,
-    accountSuccessMessage: null,
     interests: null,
     profilePicture: null
   };

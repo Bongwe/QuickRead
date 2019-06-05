@@ -4,7 +4,7 @@ import {IAppState} from "../../store/state/app.state";
 import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
 import {selectAccounts, selectBookShelf} from "../../store/selectors/profile.selectors";
-import {IAccountState} from "../../store/reducers/profile.reducer";
+import {IAccountState} from "../../store/reducers/account.reducer";
 import {GetBooksInBookshelfAction, ReadBookAction, SetSelectedBookAction} from "../../store/actions/book-shelf.actions";
 import {Book} from "../../models/Book";
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";

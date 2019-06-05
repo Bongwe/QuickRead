@@ -5,7 +5,7 @@ import {EMPTY, of} from "rxjs";
 import {HttpErrorResponse} from "@angular/common/http";
 import {ESettingsAction, SetSettingsAction, SetSettingsSuccessAction} from "../actions/settings.actions";
 import {SettingsService} from "../../services/settings.service";
-import {SetNotificationMessage} from "../actions/notofication.actions";
+import {SetNotificationMessageAction} from "../actions/notofication.actions";
 import {AccountDTO} from "../../models/AccountDTO";
 import {EProfileAction} from "../actions/account.actions";
 import {Store} from "@ngrx/store";
@@ -29,7 +29,7 @@ export class SettingsEffects {
             notification.isError = false;
             notification.isSuccess = true;
             notification.message = "Game settings updated successfully";
-            this.store.dispatch(new SetNotificationMessage(notification));
+            this.store.dispatch(new SetNotificationMessageAction(notification));
             return {type: ESettingsAction.SetSettingsSuccess, payload: settings}
           }),
           catchError((error: HttpErrorResponse) => of({ type: ESettingsAction.SetSettingsError, payload: error}))
