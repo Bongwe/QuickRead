@@ -29,7 +29,7 @@ import {ClearSettingsAction} from "../../store/actions/settings.actions";
 export class NavbarComponent implements OnInit, OnDestroy {
 
   loginForm: FormGroup;
-  private baseLocation = "../../../assets/img/profilePicture/";
+  private baseLocation = "../../../assets/img/opponents2/avatar/";
   private tempImg = "temp.png";
   public imageUrl: string;
   public selectedAccount: qrAccount;

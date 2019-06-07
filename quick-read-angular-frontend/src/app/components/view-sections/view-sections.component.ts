@@ -21,8 +21,8 @@ export class ViewSectionsComponent implements OnInit {
 
   public bookSections: Array<BookSection>;
   public book: Book;
-  public playerImageSrc = "../../../assets/img/opponents/giraffe.png" ;
-  public opponentImageSrc = "../../../assets/img/opponents/snake.png";
+  public playerImageSrc = "../../../assets/img/opponents2/greedy-reaper.png" ;
+  public opponentImageSrc = "../../../assets/img/opponents2/pumped-pumpkin.png";
   public currentSection: BookSection;
   public previousSection: BookSection;
 
