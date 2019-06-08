@@ -21,7 +21,7 @@ import za.co.quick.read.obomvu.model.Account;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class AccountControllerIntegrationTest {
-	@Autowired
+	/*@Autowired
 	private TestRestTemplate restTemplate;
 
 	@LocalServerPort
@@ -34,7 +34,7 @@ public class AccountControllerIntegrationTest {
 	@Test
 	public void contextLoads() {
 
-	}
+	}*/
 
 	/*@Test
 	public void testGetAllAcoounts() {

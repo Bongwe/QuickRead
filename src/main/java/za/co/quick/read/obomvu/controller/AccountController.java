@@ -29,6 +29,7 @@ import za.co.quick.read.obomvu.repository.SettingsRepository;
 @RequestMapping("/api/v1")
 public class AccountController {
 	public static final long MIN_READ_TIME = 5l;
+	public static final String READ_EVERY = "DAY";
 	@Autowired
 	private AccountRepository accountRepository;
 	@Autowired
@@ -57,6 +58,7 @@ public class AccountController {
 			settings.setAccount_id(savedAccount.getId());
 
 			settings.setMin_read_time(MIN_READ_TIME);
+			settings.setRead_every(READ_EVERY);
 			Settings savedSettings = settingsRepository.save(settings);
 
 			accountDTO.setAccount(savedAccount);

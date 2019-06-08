@@ -3,7 +3,13 @@ import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
-import {selectAccounts, selectBookShelf, selectSection} from "../../store/selectors/app.selectors";
+import {
+  selectAccounts,
+  selectBookShelf,
+  selectGameState,
+  selectSection,
+  selectSettings
+} from "../../store/selectors/app.selectors";
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
 import {Book} from "../../models/Book";
 import {BookSection} from "../../models/BookSection";
@@ -16,6 +22,12 @@ import {UpdateGameStateAction} from "../../store/actions/gameState.actions";
 import {GameState} from "../../models/GameState";
 import {IAccountState} from "../../store/reducers/account.reducer";
 import {qrAccount} from "../../models/Account";
+import {IGameState} from "../../store/reducers/gameState.reducer";
+
+import * as moment from 'moment';
+import {Settings} from "../../models/Settings";
+import {ISettingsState} from "../../store/reducers/settings.reducer";
+import {READ_EVERY_DAY, READ_EVERY_MINUTE} from "../../models/Messages";
 
 @Component({
   selector: 'app-reading',
@@ -35,6 +47,8 @@ export class ViewSectionsComponent implements OnInit {
   public totalCompletedSections: number = 0;
 
   public selectedAccount: qrAccount;
+  public gameState: GameState;
+  public settings: Settings;
 
   @ViewChild('inaccessibleSection') inaccessibleSection;
   @ViewChild('bookCompleteMessage') bookCompleteMessage;
@@ -48,9 +62,20 @@ export class ViewSectionsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.store.select(selectGameState).subscribe((state: IGameState) =>{
+      if(state && state.gameState){
+        this.gameState = state.gameState;
+      }
+    });
     this.store.select(selectAccounts).subscribe((state: IAccountState) =>{
       if(state && state.selectedAccount){
         this.selectedAccount = state.selectedAccount;
+      }
+    });
+
+    this.store.select(selectSettings).subscribe((state: ISettingsState) =>{
+      if(state && state.settings){
+       this.settings = state.settings;
       }
     });
 
@@ -62,6 +87,8 @@ export class ViewSectionsComponent implements OnInit {
       if(state && state.selectedBook){
         this.book =  state.selectedBook;
       }
+      this.manageGameSate(this.gameState);
+
     });
 
     this.store.select(selectSection).subscribe((state: ISectionState) =>{
@@ -94,9 +121,11 @@ export class ViewSectionsComponent implements OnInit {
   readSelectedSection(section: BookSection, groupIndex: number, sectionIndex: number) {
     let prevIndex = section.section_index - 1;
     this.currentSection = section;
-    let gameSate = new GameState();
 
-    gameSate.lastRead = new Date();
+    let gameSate = new GameState();
+    gameSate.day =  moment().day(); //day of the week
+    gameSate.minute =  moment().minute();
+    gameSate.second =  moment().second();
     gameSate.account_id = this.selectedAccount.id;
     this.store.dispatch(new UpdateGameStateAction(gameSate));
 
@@ -157,5 +186,43 @@ export class ViewSectionsComponent implements OnInit {
 
   enemyImageSrc(avatar: string) {
     return this.opponentImageSrc + avatar;
+  }
+
+  private manageGameSate(gameState: GameState) {
+
+    if(gameState){
+      if(this.settings && this.settings.read_every == READ_EVERY_DAY) {
+        if(this.isReadingEveryDay()) {
+          this.dealDamageToOpponent();
+        } else{
+          this.dealDamageToUser();
+        }
+      } else if (this.settings && this.settings.read_every == READ_EVERY_MINUTE) {
+        this.isReadingEveryMinute();
+        if(this.isReadingEveryDay()) {
+          this.dealDamageToOpponent();
+        } else{
+          this.dealDamageToUser();
+        }
+      }
+    }
+  }
+
+  private isReadingEveryDay() {
+    let currentDay = moment().day();
+    return this.gameState.day - currentDay == (currentDay - 1) || this.gameState.day - currentDay == 0;
+  }
+
+  private isReadingEveryMinute() {
+    let currentMinute = moment().minute();
+    return this.gameState.minute - currentMinute == (currentMinute - 1) || this.gameState.minute - currentMinute == 0;
+  }
+
+  private dealDamageToOpponent() {
+
+  }
+
+  private dealDamageToUser() {
+
   }
 }

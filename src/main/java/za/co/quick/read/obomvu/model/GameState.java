@@ -1,14 +1,16 @@
 package za.co.quick.read.obomvu.model;
 
 import javax.persistence.*;
-import java.sql.Date;
 
 @Entity
 @Table(name = "GAMESTATE")
 public class GameState {
     private Long id;
     private Long account_id;
-    private Date lastRead;
+    private Long day; // day of the week
+    private Long hour;
+    private Long minute;
+    private Long second;
 
     public GameState() {
     }
@@ -32,13 +34,40 @@ public class GameState {
         this.account_id = account_id;
     }
 
-    @Column(name = "lastRead", nullable = true)
-    public Date getLastRead() {
-        return lastRead;
+    @Column(name = "day", nullable = false)
+    public Long getDay() {
+        return day;
     }
 
-    public void setLastRead(Date lastRead) {
-        this.lastRead = lastRead;
+    public void setDay(Long day) {
+        this.day = day;
+    }
+
+    @Column(name = "hour", nullable = false)
+    public Long getHour() {
+        return hour;
+    }
+
+    public void setHour(Long hour) {
+        this.hour = hour;
+    }
+
+    @Column(name = "minute", nullable = false)
+    public Long getMinute() {
+        return minute;
+    }
+
+    public void setMinute(Long minute) {
+        this.minute = minute;
+    }
+
+    @Column(name = "second", nullable = false)
+    public Long getSecond() {
+        return second;
+    }
+
+    public void setSecond(Long second) {
+        this.second = second;
     }
 
     @Override
@@ -46,7 +75,10 @@ public class GameState {
         return "GameState{" +
                 "id=" + id +
                 ", account_id=" + account_id +
-                ", lastRead=" + lastRead +
+                ", day=" + day +
+                ", hour=" + hour +
+                ", minute=" + minute +
+                ", second=" + second +
                 '}';
     }
 }

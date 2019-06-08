@@ -1,8 +1,9 @@
 import * as _ from 'lodash';
 import {GameState} from "../../models/GameState";
 import {
+  ClearGameStateAction,
   EGameStateAction,
-  GameStateAction,
+  GameStateAction, GetGameStateAction, GetGameStateErrorAction,
   UpdateGameStateErrorAction,
   UpdateGameStateSuccessAction
 } from "../actions/gameState.actions";
@@ -21,19 +22,34 @@ export function gameStateReducer (state = initialGameState, action: GameStateAct
       return updateGameStateSuccess(state, action);
     case EGameStateAction.UpdateGameStateError:
       return updateGameStateError(state, action);
+    case EGameStateAction.GetGameState:
+      return getGameState(state, action);
+    case EGameStateAction.GetGameStateError:
+      return getGameStateError(state, action);
+    case EGameStateAction.ClearGameState:
+      return clearGameState(state, action);
     default:
       return state;
   }
 };
 
-/*function updateGameState(state: IGameState, action: UpdateGameStateAction) {
+function getGameStateError(state: IGameState, action: GetGameStateErrorAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  //newState.gameState = action.payload;
+  return newState;
+}
+
+function getGameState(state: IGameState, action: GetGameStateAction) {
   if(state == null) {
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
   newState.gameState = action.payload;
   return newState;
-}*/
+}
 
 function updateGameStateSuccess(state: IGameState, action: UpdateGameStateSuccessAction) {
   if(state == null) {
@@ -49,8 +65,15 @@ function updateGameStateError(state: IGameState, action: UpdateGameStateErrorAct
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  //newState.gameState = action.payload;
+  /*if(action.payload.status == 409){
+
+  }*/
+  newState.gameState = null;
   return newState;
+}
+
+function clearGameState(state: IGameState, action: ClearGameStateAction) {
+  return null;
 }
 
 function createEmptyState(){

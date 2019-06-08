@@ -24,6 +24,8 @@ export class ProfileComponent implements OnInit, OnDestroy {
   public updateForm: FormGroup;
   public settingsForm: FormGroup;
   public readTimeOptions = [1,5,10,15,20,25,30];
+  public readFrequencyOptions = ["DAY","MINUTE"];
+  public avatarImgSrc = "../../../assets/img/opponents2/avatar/";
 
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
@@ -47,6 +49,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
         this.settings = _.cloneDeep(state.settings);
         this.settingsForm = this.formBuilder.group({
           minReadTime: [this.settings.min_read_time, null],
+          readFrequency: [this.settings.read_every, null],
         });
       }
     });
@@ -59,6 +62,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
   onUpdateGameSettings(){
     let settings = new Settings();
     settings.min_read_time = this.settingsForm.controls['minReadTime'].value;
+    settings.read_every = this.settingsForm.controls['readFrequency'].value;
     settings.account_id = this.settings.account_id;
     settings.id = this.settings.id;
     this.store.dispatch(new SetSettingsAction(settings));
@@ -68,8 +72,15 @@ export class ProfileComponent implements OnInit, OnDestroy {
     this.settingsForm.controls['minReadTime'].setValue(minReadingTime) ;
   }
 
+  onChangeReadingFrequency(readFrequency: string){
+    this.settingsForm.controls['readFrequency'].setValue(readFrequency) ;
+  }
+
   ngOnDestroy(): void {
     this.store.dispatch( new ClearNotificationMessageAction());
   }
 
+  getAvatarSrc(): string {
+    return this.avatarImgSrc + this.selectedAccount.profile_picture;
+  }
 }

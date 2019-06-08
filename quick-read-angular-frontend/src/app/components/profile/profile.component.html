@@ -2,7 +2,7 @@
 
   <div class="row">
     <div class="col-md-1">
-      <img src="../../../assets/img/profilePicture/giraffe.png">
+      <img [src]=getAvatarSrc()>
     </div>
     <div class="col-md-3">
       <h4>Name: Mzwandile</h4>
@@ -42,6 +42,15 @@
           #minimum_reading_time
           (change)="onChangeMinReading(minimum_reading_time.value)">
             <option [value]=time *ngFor=" let time of readTimeOptions">{{time}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="read-frequency">Read every: </label>
+          <select id="read-frequency"
+                  formControlName="readFrequency"
+                  #readFrequency
+                  (change)="onChangeReadingFrequency(readFrequency.value)">
+            <option [value]=frequency *ngFor=" let frequency of readFrequencyOptions">{{frequency}}</option>
           </select>
         </div>
         <button type="submit" id="gameSettings" class="btn btn-primary">UPDATE SETTINGS</button>

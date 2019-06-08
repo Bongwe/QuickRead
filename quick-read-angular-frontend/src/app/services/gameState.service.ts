@@ -23,4 +23,9 @@ export class GameStateService {
     let url = this.baseUrl + '/api/v1/gameState/update';
     return this.http.post<any>(url, gameState)
   }
+
+  getGameState(gameState: GameState): Observable<GameState> {
+    let url = this.baseUrl + '/api/v1/gameState/get';
+    return this.http.post<any>(url, gameState)
+  }
 }

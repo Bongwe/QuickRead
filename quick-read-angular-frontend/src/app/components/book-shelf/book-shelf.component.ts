@@ -3,11 +3,13 @@ import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
-import {selectAccounts, selectBookShelf} from "../../store/selectors/app.selectors";
+import {selectAccounts, selectBookShelf, selectGameState} from "../../store/selectors/app.selectors";
 import {IAccountState} from "../../store/reducers/account.reducer";
 import {GetBooksInBookshelfAction, ReadBookAction, SetSelectedBookAction} from "../../store/actions/book-shelf.actions";
 import {Book} from "../../models/Book";
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
+import {GameState} from "../../models/GameState";
+import {GetGameStateAction} from "../../store/actions/gameState.actions";
 
 @Component({
   selector: 'app-book-shelf',
@@ -24,6 +26,7 @@ export class BookShelfComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit() {
+
     this.store.select(selectAccounts).subscribe((state: IAccountState) =>{
       if(state && state.selectedAccount){
         this.accountId = state.selectedAccount.id;
@@ -40,6 +43,9 @@ export class BookShelfComponent implements OnInit {
       }
     });
     this.store.dispatch(new GetBooksInBookshelfAction(this.accountId));
+    let gameSate = new GameState();
+    gameSate.account_id = this.accountId;
+    this.store.dispatch(new GetGameStateAction(gameSate));
   }
 
   readBook(bookId: number) {

@@ -6,14 +6,12 @@ import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import za.co.quick.read.obomvu.dto.SectionDTO;
 import za.co.quick.read.obomvu.model.*;
 import za.co.quick.read.obomvu.repository.*;
-import za.co.quick.read.obomvu.services.GenerateBookSections;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalTime;
+import java.util.Date;
 import java.util.Optional;
 
 
@@ -23,22 +21,49 @@ public class GameStateController {
 	@Autowired
 	private GameStateRepository gameStateRepository;
 
+	@PostMapping(value = "gameState/get")
+	public ResponseEntity<GameState> getGameState(@RequestBody GameState gameState) {
+		try {
+			if(isGameState(gameState) == null){
+				ResponseEntity responseEntity = new ResponseEntity("No game state", HttpStatus.BAD_REQUEST);
+				return responseEntity;
+			} else {
+				GameState gameState1 = isGameState(gameState);
+				return ResponseEntity.ok(gameState1);
+			}
+		} catch (Exception error){
+				ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.CONFLICT);
+			return responseEntity;
+		}
+	}
+
 	@PostMapping(value = "/gameState/update")
 	public ResponseEntity<GameState> updateGameState(@Valid @RequestBody GameState gameState) {
 		try {
-			Optional<GameState> savedGameState = gameStateRepository.findById(gameState.getId());
-			if(savedGameState == null){
+			if(isGameState(gameState) == null){
 				@Valid GameState save = gameStateRepository.save(gameState);
 				return ResponseEntity.ok(save);
 			} else {
-				gameState.setId(savedGameState.get().getId());
-				@Valid GameState save = gameStateRepository.save(gameState);
-				return ResponseEntity.ok(save);
+				GameState gameState1 = isGameState(gameState);
+				return ResponseEntity.ok(gameState1);
 			}
 		} catch (Exception error){
 			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.CONFLICT);
 			return responseEntity;
 		}
+	}
+
+	private GameState isGameState(GameState gameState) {
+		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
+				.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+				.withIgnorePaths("id");
+
+		Example<GameState> example = Example.of(gameState, ignoringExampleMatcher);
+		Optional<GameState> savedGameState = gameStateRepository.findOne(example);
+		if(!savedGameState.isPresent()){
+			return null;
+		}
+		return savedGameState.get();
 	}
 
 }

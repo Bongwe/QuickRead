@@ -33,6 +33,24 @@ export class GameStateEffects {
         ))
     );
 
+  @Effect()
+  getGameState$ = this.actions$
+    .pipe(
+      ofType(EGameStateAction.GetGameState),
+      mergeMap((updateGameStateAction: UpdateGameStateAction) => this.gameStateService.getGameState(updateGameStateAction.payload)
+        .pipe(
+          map((gameState: GameState) => {
+            /*let notification = new NotificationObj();
+            notification.isError = false;
+            notification.isSuccess = true;
+            notification.message = "Game settings updated successfully";
+            this.store.dispatch(new SetNotificationMessageAction(notification));*/
+            return {type: EGameStateAction.GetGameState, payload: gameState}
+          }),
+          catchError((error: HttpErrorResponse) => of({ type: EGameStateAction.GetGameStateError, payload: error}))
+        ))
+    );
+
 }
 
 

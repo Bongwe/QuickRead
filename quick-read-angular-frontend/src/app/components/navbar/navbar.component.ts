@@ -20,6 +20,7 @@ import {ClearCurrentSectionAction} from "../../store/actions/section.actions";
 import {ClearBookShelfAction, ClearSectionsAction} from "../../store/actions/book-shelf.actions";
 import {ClearSuggestedBooksAction} from "../../store/actions/suggested-books.actions";
 import {ClearSettingsAction} from "../../store/actions/settings.actions";
+import {ClearGameStateAction, UpdateGameStateErrorAction} from "../../store/actions/gameState.actions";
 
 @Component({
   selector: 'app-navbar',
@@ -92,6 +93,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
     this.store.dispatch(new ClearSuggestedBooksAction());
     this.store.dispatch(new ClearBookShelfAction());
     this.store.dispatch(new ClearSettingsAction());
+    this.store.dispatch(new ClearGameStateAction());
     this.router.navigate(['/']);
   }
 

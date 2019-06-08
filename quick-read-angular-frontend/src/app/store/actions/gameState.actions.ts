@@ -5,7 +5,26 @@ import {HttpErrorResponse} from "@angular/common/http";
 export enum EGameStateAction {
   UpdateGameState = '[GameState Component] Update game state',
   UpdateGameStateSuccess = '[GameState Component] Update game state success',
-  UpdateGameStateError = '[GameState Component] Update game state error'
+  UpdateGameStateError = '[GameState Component] Update game state error',
+  GetGameState = '[GameState Component] Get game state',
+  GetGameStateError = '[GameState Component] Get game state error',
+  ClearGameState = '[GameState Component] Get game clear state'
+}
+
+export class ClearGameStateAction implements Action {
+  readonly type = EGameStateAction.ClearGameState;
+}
+
+export class GetGameStateErrorAction implements Action {
+  readonly type = EGameStateAction.GetGameStateError;
+  constructor(public payload: GameState){
+  }
+}
+
+export class GetGameStateAction implements Action {
+  readonly type = EGameStateAction.GetGameState;
+  constructor(public payload: GameState){
+  }
 }
 
 export class UpdateGameStateAction implements Action {
@@ -26,4 +45,5 @@ export class UpdateGameStateErrorAction implements Action {
   }
 }
 
-export type GameStateAction = UpdateGameStateAction | UpdateGameStateErrorAction | UpdateGameStateSuccessAction;
+export type GameStateAction = UpdateGameStateAction | UpdateGameStateErrorAction | UpdateGameStateSuccessAction
+  | GetGameStateAction | GetGameStateErrorAction | ClearGameStateAction;

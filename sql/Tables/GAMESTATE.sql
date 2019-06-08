@@ -1,12 +1,17 @@
-CREATE TABLE BOOKSECTION(
+CREATE TABLE GAMESTATE(
 	id INT NOT NULL IDENTITY(1,1),
-	opponent_id INT NULL,
-	book_id INT NULL,
-	section_index INT NULL,
-	status VARCHAR(128) NOT NULL,
-	content text NULL,
-	status_picture text NULL,
+	account_id INT NOT NULL,
+	day INT NULL,
+	month INT NULL,
+	year INT NULL,
+	hour INT NULL,
+	minute INT NULL,
+	second INT NULL,
 	PRIMARY KEY(id)
 );
 
-drop table BOOKSECTION;
+drop table GAMESTATE;
+
+delete from GAMESTATE;
+
+select * from GAMESTATE;

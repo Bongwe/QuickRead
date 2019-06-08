@@ -9,14 +9,9 @@ public class Settings {
     private Long id;
     private Long min_read_time;
     private Long account_id;
+    private String read_every;
 
     public Settings() {
-    }
-
-    public Settings(Long id, Long min_read_time, Long account_id) {
-        this.id = id;
-        this.min_read_time = min_read_time;
-        this.account_id = account_id;
     }
 
     @Id
@@ -47,12 +42,29 @@ public class Settings {
         this.account_id = account_id;
     }
 
+    @Column(name = "read_every", nullable = true)
+    public String getRead_every() {
+        return read_every;
+    }
+
+    public void setRead_every(String read_every) {
+        this.read_every = read_every;
+    }
+
+    public Settings(Long id, Long min_read_time, Long account_id, String read_every) {
+        this.id = id;
+        this.min_read_time = min_read_time;
+        this.account_id = account_id;
+        this.read_every = read_every;
+    }
+
     @Override
     public String toString() {
         return "Settings{" +
                 "id=" + id +
                 ", min_read_time=" + min_read_time +
                 ", account_id=" + account_id +
+                ", read_every='" + read_every + '\'' +
                 '}';
     }
 }
