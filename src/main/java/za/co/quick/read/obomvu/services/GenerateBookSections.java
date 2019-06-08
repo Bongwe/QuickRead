@@ -12,6 +12,7 @@ import za.co.quick.read.obomvu.repository.SelectedOpponentRepository;
 import za.co.quick.read.obomvu.utils.BookStatus;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 @Component
@@ -104,8 +105,9 @@ public class GenerateBookSections {
         int opponentCount = 0;
         List<SectionDTO> sectionGroups = new ArrayList<>();
         SectionDTO sectionDTO = new SectionDTO();
-
-        for(BookSection bookSection: bookSections){
+        Iterator<BookSection> iterator = bookSections.iterator();
+        while(iterator.hasNext()){
+            BookSection bookSection = iterator.next();
             if(sectionCount == SECTIONS_PER_GROUP){
                 sectionDTO.setOpponent(selectedOpponents.get(opponentCount));
                 sectionGroups.add(sectionDTO);
@@ -113,7 +115,13 @@ public class GenerateBookSections {
                 sectionDTO = new SectionDTO();
                 sectionCount = 0;
             }
-            sectionDTO.getSectionList().add(bookSection);
+            if(sectionCount < SECTIONS_PER_GROUP && !iterator.hasNext()){
+                sectionDTO.getSectionList().add(bookSection);
+                sectionDTO.setOpponent(selectedOpponents.get(opponentCount));
+                sectionGroups.add(sectionDTO);
+            } else {
+                sectionDTO.getSectionList().add(bookSection);
+            }
             sectionCount++;
         }
         return sectionGroups;

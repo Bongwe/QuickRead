@@ -9,7 +9,7 @@ import {
   GetAccountsSuccess,
   ProfileAction, UpdateAccountErrorAction, UpdateAccountSuccessAction
 } from "../actions/account.actions";
-import {AccountDTO} from "../../models/AccountDTO";
+import {AccountDTO} from "../../models/dto/AccountDTO";
 import {SetNotificationMessageAction} from "../actions/notofication.actions";
 import {NotificationObj} from "../../models/NotificationObj";
 

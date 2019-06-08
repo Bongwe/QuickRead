@@ -12,12 +12,12 @@ import {
 } from "../actions/book-shelf.actions";
 import {Book} from "../../models/Book";
 import {BookShelf} from "../../models/BookShelf";
-import {BookSection} from "../../models/BookSection";
+import {SectionDTO} from "../../models/dto/SectionDTO";
 
 export interface IBookShelfState {
   bookShelf: Array<BookShelf>;
   booksInAccount: Array<Book>;
-  bookSections: Array<BookSection>;
+  bookSections: Array<SectionDTO>;
   selectedBook: Book;
 }
 
@@ -72,7 +72,7 @@ function updateSectionSuccess(state: IBookShelfState, action: UpdateSectionSucce
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  newState.bookSections[action.payload.section_index] = action.payload;
+  //newState.bookSections[action.payload.section_index] = action.payload;
   return newState;
 }
 

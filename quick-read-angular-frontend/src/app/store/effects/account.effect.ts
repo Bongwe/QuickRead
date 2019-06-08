@@ -10,7 +10,7 @@ import {
 import {EMPTY, of} from "rxjs";
 import {HttpErrorResponse} from "@angular/common/http";
 import {SetSettingsSuccessAction} from "../actions/settings.actions";
-import {AccountDTO} from "../../models/AccountDTO";
+import {AccountDTO} from "../../models/dto/AccountDTO";
 import {Store} from "@ngrx/store";
 import {IAppState} from "../state/app.state";
 import {SetNotificationMessageAction} from "../actions/notofication.actions";

@@ -1,7 +1,7 @@
 import { Action } from '@ngrx/store';
 import {qrAccount} from "../../models/Account";
 import {HttpErrorResponse} from "@angular/common/http";
-import {AccountDTO} from "../../models/AccountDTO";
+import {AccountDTO} from "../../models/dto/AccountDTO";
 
 export enum EProfileAction {
   GetAccounts = '[Account Component] Get Accounts',

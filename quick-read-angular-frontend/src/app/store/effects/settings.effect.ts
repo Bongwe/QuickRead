@@ -6,7 +6,7 @@ import {HttpErrorResponse} from "@angular/common/http";
 import {ESettingsAction, SetSettingsAction, SetSettingsSuccessAction} from "../actions/settings.actions";
 import {SettingsService} from "../../services/settings.service";
 import {SetNotificationMessageAction} from "../actions/notofication.actions";
-import {AccountDTO} from "../../models/AccountDTO";
+import {AccountDTO} from "../../models/dto/AccountDTO";
 import {EProfileAction} from "../actions/account.actions";
 import {Store} from "@ngrx/store";
 import {IAppState} from "../state/app.state";

@@ -11,6 +11,7 @@ import {ReadSectionAction} from "../../store/actions/section.actions";
 import {ISectionState} from "../../store/reducers/section.reducer";
 import {BookStatus} from "../../models/BookStatus";
 import {ModalManager} from "ngb-modal";
+import {SectionDTO} from "../../models/dto/SectionDTO";
 
 @Component({
   selector: 'app-reading',
@@ -19,7 +20,7 @@ import {ModalManager} from "ngb-modal";
 })
 export class ViewSectionsComponent implements OnInit {
 
-  public bookSections: Array<BookSection>;
+  public bookSections: Array<SectionDTO>;
   public book: Book;
   public playerImageSrc = "../../../assets/img/opponents2/greedy-reaper.png" ;
   public opponentImageSrc = "../../../assets/img/opponents2/pumped-pumpkin.png";
@@ -65,7 +66,7 @@ export class ViewSectionsComponent implements OnInit {
   }
 
   calculateSectionCompleteness(): number {
-    if(this.bookSections){
+    /*if(this.bookSections){
       for(let index = 0; this.bookSections && index < this.bookSections.length; index++){
         if(this.bookSections[index].status == BookStatus.COMPLETE){
           this.totalCompletedSections++;
@@ -74,12 +75,12 @@ export class ViewSectionsComponent implements OnInit {
       this.bookSectionCompleteness = this.totalCompletedSections / this.bookSections.length;
       this.bookSectionCompleteness = this.bookSectionCompleteness * 100;
       return this.bookSectionCompleteness;
-    }
+    }*/
     return 0;
   }
 
   readSelectedSection(section: BookSection, index: number) {
-    let prevIndex = section.section_index - 1;
+    /*let prevIndex = section.section_index - 1;
     this.currentSection = section;
     if(prevIndex == -1){
       this.store.dispatch(new ReadSectionAction(section));
@@ -88,7 +89,7 @@ export class ViewSectionsComponent implements OnInit {
     } else {
       this.previousSection = this.bookSections[prevIndex];
       this.openModal();
-    }
+    }*/
   }
 
   getSectionIconImage(section: BookSection) {

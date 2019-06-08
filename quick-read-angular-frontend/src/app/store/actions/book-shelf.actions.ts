@@ -3,6 +3,7 @@ import {Book} from "../../models/Book";
 import {BookShelf} from "../../models/BookShelf";
 import {BookSection} from "../../models/BookSection";
 import {HttpErrorResponse} from "@angular/common/http";
+import {SectionDTO} from "../../models/dto/SectionDTO";
 
 export enum EBooksShelfAction {
   AddToBookShelf = '[Book Shelf Component] Add to book shelf',
@@ -61,7 +62,7 @@ export class ReadBookSErrorAction implements Action {
 
 export class ReadBookSuccessAction implements Action {
   readonly type = EBooksShelfAction.ReadBookSuccess;
-  constructor(public payload: Array<BookSection>){
+  constructor(public payload: Array<SectionDTO>){
   }
 }
 
