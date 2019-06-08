@@ -7,7 +7,18 @@ CREATE TABLE OPPONENT(
 	PRIMARY KEY(id)
 );
 
+CREATE TABLE SELECTEDOPPONENT(
+	id INT NOT NULL IDENTITY(1,1),
+	book_id INT NOT NULL,
+	health INT NULL,
+	name  VARCHAR(128) NULL,
+	avatar VARCHAR(128) NULL,
+	power VARCHAR(128) NULL,
+	PRIMARY KEY(id)
+);
+
 drop table OPPONENT;
+drop table SELECTEDOPPONENT;
 
 INSERT INTO OPPONENT (health, name, avatar)
 VALUES (100,'Evil Igor','evil-igor.png');
@@ -34,3 +45,4 @@ INSERT INTO OPPONENT (health, name, avatar)
 VALUES (100,'Zulu Zombie','zulu-zombie.png');
 
 select * from OPPONENT;
+select * from SELECTEDOPPONENT;

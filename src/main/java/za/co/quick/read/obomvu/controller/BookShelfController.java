@@ -6,12 +6,15 @@ import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import za.co.quick.read.obomvu.dto.SectionDTO;
 import za.co.quick.read.obomvu.model.Book;
 import za.co.quick.read.obomvu.model.BookSection;
 import za.co.quick.read.obomvu.model.BookShelf;
+import za.co.quick.read.obomvu.model.SelectedOpponent;
 import za.co.quick.read.obomvu.repository.BookRepository;
 import za.co.quick.read.obomvu.repository.BookSectionRepository;
 import za.co.quick.read.obomvu.repository.BookShelfRepository;
+import za.co.quick.read.obomvu.repository.SelectedOpponentRepository;
 import za.co.quick.read.obomvu.services.GenerateBookSections;
 
 import javax.validation.Valid;
@@ -31,6 +34,8 @@ public class BookShelfController {
 	private BookSectionRepository bookSectionRepository;
 	@Autowired
 	private GenerateBookSections generateBookSections;
+	@Autowired
+	private SelectedOpponentRepository selectedOpponentRepository;
 
 	@GetMapping("/bookshelfs")
 	public List<BookShelf> getAllBooks() {
@@ -68,17 +73,28 @@ public class BookShelfController {
 	}
 
 	@GetMapping("/bookshelf/read/{id}")
-	public ResponseEntity<List<BookSection>> readBook(@PathVariable(value = "id") Long bookId) {
+	public ResponseEntity<List<SectionDTO>> readBook(@PathVariable(value = "id") Long bookId) {
 		try {
 			if (!getBooksSections(bookId).isEmpty()) {
-				return ResponseEntity.ok(getBooksSections(bookId));
+				List<BookSection> booksSections = getBooksSections(bookId);
+				List<SelectedOpponent> selectedOpponentList = getSelectedOpponents(bookId);
+				List<SectionDTO> sectionDTOList = generateBookSections.generateSectionGroups(booksSections, selectedOpponentList);
+				return ResponseEntity.ok(sectionDTOList);
 			}
 			Optional<Book> bookOptional = bookRepository.findById(bookId);
 			List<BookSection> bookSections = generateBookSections.generateSections(bookOptional.get());
-			List<BookSection> bookSections1 = bookSectionRepository.saveAll(bookSections);
-			return ResponseEntity.ok(bookSections1);
+
+			List<SelectedOpponent> selectedOpponents = generateBookSections.generateOpponents(bookSections);
+			List<SelectedOpponent> savedSelectedOpponents = selectedOpponentRepository.saveAll(selectedOpponents);
+
+			List<BookSection> updatedBookSections = generateBookSections.updateSectionsWithOpponentIds(bookSections, savedSelectedOpponents);
+			List<BookSection> savedBookSections = bookSectionRepository.saveAll(updatedBookSections);
+
+			List<SectionDTO> sectionDTOList = generateBookSections.generateSectionGroups(savedBookSections, savedSelectedOpponents);
+
+			return ResponseEntity.ok(sectionDTOList);
 		} catch (Exception error){
-			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.BAD_REQUEST);
+				ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.BAD_REQUEST);
 			return responseEntity;
 		}
 	}
@@ -116,12 +132,48 @@ public class BookShelfController {
 		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
 				.withMatcher("book_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
 				.withIgnorePaths("id");
+
 		BookSection bookSection = new BookSection();
 		bookSection.setBook_id(book_id);
 
 		Example<BookSection> example = Example.of(bookSection, ignoringExampleMatcher);
 		return bookSectionRepository.findAll(example);
 	}
+
+	private List<SelectedOpponent> getSelectedOpponents(Long bookId) {
+		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
+				.withMatcher("book_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+				.withIgnorePaths("id");
+
+		SelectedOpponent selectedOpponent = new SelectedOpponent();
+		selectedOpponent.setBook_id(bookId);
+
+		Example<SelectedOpponent> example = Example.of(selectedOpponent, ignoringExampleMatcher);
+		return selectedOpponentRepository.findAll(example);
+
+	}
+
+	/*private List<SectionDTO> generateSectionDTO(List<BookSection> allSections) {
+		List<SectionDTO> sectionDTOList = new ArrayList<>();
+
+		ExampleMatcher ignoringMatcherOpponent = ExampleMatcher.matchingAll()
+				.withMatcher("book_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+				.withMatcher("id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase());
+
+		SelectedOpponent selectedOpponent = new SelectedOpponent();
+		Example<SelectedOpponent> opponentExample = Example.of(selectedOpponent, ignoringMatcherOpponent);
+		List<SelectedOpponent> allOpponents = selectedOpponentRepository.findAll(opponentExample);
+
+		for(BookSection section  : allSections) {
+			SectionDTO newSectionDTO = new SectionDTO();
+			SelectedOpponent selectedOpponent1 = allOpponents.get(section.getOpponent_id().intValue());
+			newSectionDTO.setSection(section);
+			newSectionDTO.setOpponent(selectedOpponent1);
+			sectionDTOList.add(newSectionDTO);
+		}
+
+		return sectionDTOList;
+	}*/
 
 	/*@GetMapping("/book/{id}")
 	public ResponseEntity<BookDTO> getAccountById(@PathVariable(value = "id") Long bookId)

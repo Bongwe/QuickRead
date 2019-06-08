@@ -3,9 +3,10 @@ package za.co.quick.read.obomvu.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "OPPONENT")
+@Table(name = "SELECTEDOPPONENT")
 public class SelectedOpponent {
     private Long id;
+    private Long book_id;
     private Long health;
     private String name;
     private String avatar;
@@ -19,6 +20,15 @@ public class SelectedOpponent {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    @Column(name = "book_id", nullable = false)
+    public Long getBook_id() {
+        return book_id;
+    }
+
+    public void setBook_id(Long book_id) {
+        this.book_id = book_id;
     }
 
     @Column(name = "health", nullable = true)
