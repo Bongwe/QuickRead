@@ -14,36 +14,39 @@
 
   <div class="row">
     <div class="col-md-8 col-md-offset-3">
-      <span *ngFor="let section of bookSections;let index = index">
+      <span *ngFor="let sectionGroups of bookSections;let groupIndex = index">
 
-        <div *ngIf="index == 0 || (index % 4) == 0" class="row">
-          <div class="col-md-6">
-            <div class="col-md-3">
-              <img [src]=playerImageSrc class="imageSize">
+        <div class="row">
+            <div class="col-md-6">
+              <div class="col-md-3">
+                <img [src]=playerImageSrc class="imageSize">
+              </div>
+              <div class="col-md-8">
+                <div><label>Name: Muzi</label></div>
+                <progress-bar [progress]="100" [color]="'#d9534f'">
+                </progress-bar>
+              </div>
             </div>
-            <div class="col-md-8">
-              <div><label>Name: Muzi</label></div>
-              <progress-bar [progress]="100" [color]="'#d9534f'">
-              </progress-bar>
-            </div>
-          </div>
 
-          <div class="col-md-6">
-            <div class="col-md-3">
-              <img [src]=opponentImageSrc class="imageSize">
+            <div class="col-md-6">
+              <div class="col-md-3">
+                <img [src]=enemyImageSrc(sectionGroups.opponent.avatar) class="imageSize">
+              </div>
+              <div class="col-md-8">
+                <div><label>Name: {{sectionGroups.opponent.name}}</label></div>
+                <progress-bar [progress]="sectionGroups.opponent.health" [color]="'#d9534f'">
+                </progress-bar>
+              </div>
             </div>
-            <div class="col-md-8">
-              <div><label>Name: Snake </label></div>
-              <progress-bar [progress]="30" [color]="'#d9534f'">
-              </progress-bar>
-            </div>
-          </div>
         </div>
 
-        <div (click)="readSelectedSection(section, index)" class="col-md-2">
-          <label class="section-label">Section {{index + 1}}</label>
-          <img class="section_block" [src]=getSectionIconImage(section) >
-        </div>
+        <span *ngFor="let section of sectionGroups.sectionList;let sectionIndex = index">
+
+          <div (click)="readSelectedSection(section, groupIndex, sectionIndex)" class="col-md-2">
+            <label class="section-label">Section {{section.section_index + 1}}</label>
+            <img class="section_block" [src]=getSectionIconImage(section) >
+          </div>
+        </span>
 
       </span>
     </div>
@@ -59,7 +62,7 @@
     <modal-content>
       <div class="row">
         <div class="col-md-12">
-          You need to complete Section {{previousSection?.section_index}} before moving to Section {{currentSection?.section_index}}
+          You need to complete the previous section before completing this section.
         </div>
       </div>
     </modal-content>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {selectNotifications} from "../../store/selectors/profile.selectors";
+import {selectNotifications} from "../../store/selectors/app.selectors";
 import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {INotification} from "../../store/reducers/notifications.reducer";

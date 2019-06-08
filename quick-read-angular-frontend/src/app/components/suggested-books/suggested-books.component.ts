@@ -7,7 +7,7 @@ import {ISuggestedBookState} from "../../store/reducers/suggested-books.reducer"
 import {BookShelf} from "../../models/BookShelf";
 import {AddToBookShelfAction, GetBooksInBookshelfAction} from "../../store/actions/book-shelf.actions";
 import {qrAccount} from "../../models/Account";
-import {selectAccounts} from "../../store/selectors/profile.selectors";
+import {selectAccounts} from "../../store/selectors/app.selectors";
 import {IAccountState} from "../../store/reducers/account.reducer";
 
 import * as _ from 'lodash';

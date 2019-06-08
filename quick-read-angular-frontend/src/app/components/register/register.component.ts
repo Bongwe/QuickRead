@@ -5,7 +5,7 @@ import {CreateAccountAction} from "../../store/actions/account.actions";
 import {qrAccount} from "../../models/Account";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
-import {selectAccounts} from "../../store/selectors/profile.selectors";
+import {selectAccounts} from "../../store/selectors/app.selectors";
 import {IAccountState} from "../../store/reducers/account.reducer";
 import * as sha512 from "js-sha512";
 import {ClearNotificationMessageAction} from "../../store/actions/notofication.actions";

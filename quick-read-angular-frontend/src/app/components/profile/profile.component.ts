@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
-import {selectAccounts, selectSettings} from "../../store/selectors/profile.selectors";
+import {selectAccounts, selectSettings} from "../../store/selectors/app.selectors";
 import {IAccountState} from "../../store/reducers/account.reducer";
 import {qrAccount} from "../../models/Account";
 import {FormBuilder, FormGroup} from "@angular/forms";

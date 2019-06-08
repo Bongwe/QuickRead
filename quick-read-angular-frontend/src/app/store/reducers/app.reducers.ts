@@ -6,6 +6,7 @@ import {notificationReducer} from "./notifications.reducer";
 import {bookShelfReducer} from "./book-shelf.reducer";
 import {sectionReducer} from "./section.reducer";
 import {settingsReducer} from "./settings.reducer";
+import {gameStateReducer} from "./gameState.reducer";
 
 export const appReducers: ActionReducerMap<IAppState, any> = {
   accounts: accountReducer,
@@ -13,5 +14,6 @@ export const appReducers: ActionReducerMap<IAppState, any> = {
   notifications: notificationReducer,
   bookShelf: bookShelfReducer,
   currentSection: sectionReducer,
-  settings: settingsReducer
+  settings: settingsReducer,
+  gameState: gameStateReducer
 };

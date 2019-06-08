@@ -3,7 +3,7 @@ import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
-import {selectBookShelf, selectSection, selectSettings} from "../../store/selectors/profile.selectors";
+import {selectBookShelf, selectSection, selectSettings} from "../../store/selectors/app.selectors";
 import {ISectionState} from "../../store/reducers/section.reducer";
 import {BookSection} from "../../models/BookSection";
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
@@ -74,16 +74,17 @@ export class SectionComponent implements OnInit,OnDestroy {
   }
 
   closeSection() {
-    if(this.currentSeconds >= (this.settings.min_read_time * 60)) {
-      this.openReadingCompleteModal();
+    if(this.currentSeconds >= (this.settings.min_read_time * 60) || this.currentSection.status == BookStatus.COMPLETE) {
+      if( this.currentSection.status == BookStatus.COMPLETE){
+        this.store.dispatch(new UpdateSectionAction(this.currentSection));
+        this.store.dispatch(new ClearCurrentSectionAction());
+      } else {
+        this.openReadingCompleteModal();
+      }
     } else {
       this.modalMessage = this.getMinimumTimeMessage();
       this.openModal();
     }
-  }
-
-  nextSection(){
-
   }
 
   getMinimumTimeMessage() {

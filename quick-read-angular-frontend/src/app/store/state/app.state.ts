@@ -4,6 +4,7 @@ import {initialNotificationState, INotification} from "../reducers/notifications
 import {IBookShelfState, initialBookShelfState} from "../reducers/book-shelf.reducer";
 import {initialSectionState, ISectionState} from "../reducers/section.reducer";
 import {initialSettingsState, ISettingsState} from "../reducers/settings.reducer";
+import {gameStateReducer, IGameState, initialGameState} from "../reducers/gameState.reducer";
 
 export interface IAppState {
   accounts?: IAccountState;
@@ -12,6 +13,7 @@ export interface IAppState {
   bookShelf?: IBookShelfState;
   currentSection?: ISectionState;
   settings?: ISettingsState;
+  gameState?: IGameState
 };
 
 const initialAppState: IAppState = {
@@ -20,6 +22,7 @@ const initialAppState: IAppState = {
   notifications: initialNotificationState,
   bookShelf: initialBookShelfState,
   currentSection: initialSectionState,
-  settings: initialSettingsState
+  settings: initialSettingsState,
+  gameState: initialGameState
 };
 

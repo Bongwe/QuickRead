@@ -9,7 +9,7 @@ import {
   AccountLoginAction,
   ClearSelectedAccountAction,
 } from "../../store/actions/account.actions";
-import {selectAccounts, selectNotifications} from "../../store/selectors/profile.selectors";
+import {selectAccounts, selectNotifications} from "../../store/selectors/app.selectors";
 import {IAccountState} from "../../store/reducers/account.reducer";
 import {ClearNotificationMessageAction} from "../../store/actions/notofication.actions";
 import {INotification} from "../../store/reducers/notifications.reducer";

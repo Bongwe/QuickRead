@@ -3,7 +3,7 @@ import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
-import {selectBookShelf, selectSection} from "../../store/selectors/profile.selectors";
+import {selectAccounts, selectBookShelf, selectSection} from "../../store/selectors/app.selectors";
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
 import {Book} from "../../models/Book";
 import {BookSection} from "../../models/BookSection";
@@ -12,6 +12,10 @@ import {ISectionState} from "../../store/reducers/section.reducer";
 import {BookStatus} from "../../models/BookStatus";
 import {ModalManager} from "ngb-modal";
 import {SectionDTO} from "../../models/dto/SectionDTO";
+import {UpdateGameStateAction} from "../../store/actions/gameState.actions";
+import {GameState} from "../../models/GameState";
+import {IAccountState} from "../../store/reducers/account.reducer";
+import {qrAccount} from "../../models/Account";
 
 @Component({
   selector: 'app-reading',
@@ -23,12 +27,14 @@ export class ViewSectionsComponent implements OnInit {
   public bookSections: Array<SectionDTO>;
   public book: Book;
   public playerImageSrc = "../../../assets/img/opponents2/greedy-reaper.png" ;
-  public opponentImageSrc = "../../../assets/img/opponents2/pumped-pumpkin.png";
+  public opponentImageSrc = "../../../assets/img/opponents2/";
   public currentSection: BookSection;
   public previousSection: BookSection;
 
   public bookSectionCompleteness: number = 0;
   public totalCompletedSections: number = 0;
+
+  public selectedAccount: qrAccount;
 
   @ViewChild('inaccessibleSection') inaccessibleSection;
   @ViewChild('bookCompleteMessage') bookCompleteMessage;
@@ -42,6 +48,12 @@ export class ViewSectionsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.store.select(selectAccounts).subscribe((state: IAccountState) =>{
+      if(state && state.selectedAccount){
+        this.selectedAccount = state.selectedAccount;
+      }
+    });
+
     this.store.select(selectBookShelf).subscribe((state: IBookShelfState) =>{
       if(state && state.bookSections){
         this.bookSections = state.bookSections;
@@ -79,17 +91,28 @@ export class ViewSectionsComponent implements OnInit {
     return 0;
   }
 
-  readSelectedSection(section: BookSection, index: number) {
-    /*let prevIndex = section.section_index - 1;
+  readSelectedSection(section: BookSection, groupIndex: number, sectionIndex: number) {
+    let prevIndex = section.section_index - 1;
     this.currentSection = section;
+    let gameSate = new GameState();
+
+    gameSate.lastRead = new Date();
+    gameSate.account_id = this.selectedAccount.id;
+    this.store.dispatch(new UpdateGameStateAction(gameSate));
+
     if(prevIndex == -1){
       this.store.dispatch(new ReadSectionAction(section));
-    } else if(prevIndex >= 0 && this.bookSections[prevIndex].status == BookStatus.COMPLETE){
-      this.store.dispatch(new ReadSectionAction(section));
-    } else {
-      this.previousSection = this.bookSections[prevIndex];
-      this.openModal();
-    }*/
+    } else if(prevIndex >= 0 ) {
+      let sectionDTO = this.bookSections[groupIndex].sectionList;
+      if(sectionDTO[prevIndex].status == BookStatus.COMPLETE){
+        this.store.dispatch(new ReadSectionAction(section));
+      } else {
+        //not using this now no need to display detail
+        //let sectionDTO = this.bookSections[groupIndex].sectionList;
+        //this.previousSection = sectionDTO[prevIndex];
+        this.openModal();
+      }
+    }
   }
 
   getSectionIconImage(section: BookSection) {
@@ -132,4 +155,7 @@ export class ViewSectionsComponent implements OnInit {
     this.modalService.close(this.bookCompleteModalRef);
   }
 
+  enemyImageSrc(avatar: string) {
+    return this.opponentImageSrc + avatar;
+  }
 }

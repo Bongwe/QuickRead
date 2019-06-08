@@ -28,6 +28,7 @@ import { SectionComponent } from './components/section/section.component';
 import {ProgressBarModule} from "angular-progress-bar";
 import {ModalModule} from "ngb-modal";
 import {SettingsEffects} from "./store/effects/settings.effect";
+import {GameStateEffects} from "./store/effects/gameState.effect";
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import {SettingsEffects} from "./store/effects/settings.effect";
     ReactiveFormsModule,
     AppRoutingModule,
     StoreModule.forRoot(appReducers),
-    EffectsModule.forRoot([AccountEffects, BookEffects, SettingsEffects]),
+    EffectsModule.forRoot([AccountEffects, BookEffects, SettingsEffects, GameStateEffects]),
     StoreDevtoolsModule.instrument()
   ],
   providers: [AccountService],

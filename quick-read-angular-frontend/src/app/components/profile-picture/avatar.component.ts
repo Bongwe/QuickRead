@@ -6,7 +6,7 @@ import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {ClearNotificationMessageAction, SetNotificationMessageAction} from "../../store/actions/notofication.actions";
 import {qrAccount} from "../../models/Account";
-import {selectAccounts, selectNotifications} from "../../store/selectors/profile.selectors";
+import {selectAccounts, selectNotifications} from "../../store/selectors/app.selectors";
 import {IAccountState} from "../../store/reducers/account.reducer";
 
 import * as _ from 'lodash';
