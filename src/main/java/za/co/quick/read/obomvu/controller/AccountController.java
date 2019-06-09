@@ -28,7 +28,7 @@ import za.co.quick.read.obomvu.repository.SettingsRepository;
 @RestController
 @RequestMapping("/api/v1")
 public class AccountController {
-	public static final long MIN_READ_TIME = 5l;
+	public static final long MIN_READ_TIME = 1;
 	public static final String READ_EVERY = "DAY";
 	@Autowired
 	private AccountRepository accountRepository;
