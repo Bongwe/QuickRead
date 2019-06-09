@@ -45,7 +45,7 @@ export class GameStateEffects {
             notification.isSuccess = true;
             notification.message = "Game settings updated successfully";
             this.store.dispatch(new SetNotificationMessageAction(notification));*/
-            return {type: EGameStateAction.GetGameState, payload: gameState}
+            return {type: EGameStateAction.GetGameStateSuccess, payload: gameState}
           }),
           catchError((error: HttpErrorResponse) => of({ type: EGameStateAction.GetGameStateError, payload: error}))
         ))

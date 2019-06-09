@@ -10,7 +10,7 @@ import {HttpErrorResponse} from "@angular/common/http";
 import {
   AddToBookShelfAction,
   EBooksShelfAction,
-  GetBooksInBookshelfAction,
+  GetBooksInBookshelfAction, UpdateOpponentAction,
   UpdateSectionAction
 } from "../actions/book-shelf.actions";
 import {BookShelf} from "../../models/BookShelf";
@@ -81,6 +81,17 @@ export class BookEffects {
         .pipe(
           map(result => ({ type: EBooksShelfAction.UpdateSectionSuccess, payload: result })),
           catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.UpdateSectionError, payload: error}))
+        ))
+    );
+
+  @Effect()
+  updateOpponent = this.actions$
+    .pipe(
+      ofType(EBooksShelfAction.UpdateOpponent),
+      mergeMap((updateOpponentAction: UpdateOpponentAction) => this.sectionService.updateOpponent(updateOpponentAction.payload)
+        .pipe(
+          map(result => ({ type: EBooksShelfAction.UpdateOpponentSuccess, payload: result })),
+          catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.UpdateOpponentError, payload: error}))
         ))
     );
 }

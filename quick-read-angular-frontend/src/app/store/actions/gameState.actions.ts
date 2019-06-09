@@ -7,8 +7,15 @@ export enum EGameStateAction {
   UpdateGameStateSuccess = '[GameState Component] Update game state success',
   UpdateGameStateError = '[GameState Component] Update game state error',
   GetGameState = '[GameState Component] Get game state',
+  GetGameStateSuccess = '[GameState Component] Get game state success',
   GetGameStateError = '[GameState Component] Get game state error',
   ClearGameState = '[GameState Component] Get game clear state'
+}
+
+export class GetGameStateSuccessAction implements Action {
+  readonly type = EGameStateAction.GetGameStateSuccess;
+  constructor(public payload: GameState){
+  }
 }
 
 export class ClearGameStateAction implements Action {
@@ -46,4 +53,4 @@ export class UpdateGameStateErrorAction implements Action {
 }
 
 export type GameStateAction = UpdateGameStateAction | UpdateGameStateErrorAction | UpdateGameStateSuccessAction
-  | GetGameStateAction | GetGameStateErrorAction | ClearGameStateAction;
+  | GetGameStateAction | GetGameStateErrorAction | ClearGameStateAction | GetGameStateSuccessAction;

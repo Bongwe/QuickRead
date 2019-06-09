@@ -10,8 +10,6 @@ import za.co.quick.read.obomvu.model.*;
 import za.co.quick.read.obomvu.repository.*;
 
 import javax.validation.Valid;
-import java.time.LocalTime;
-import java.util.Date;
 import java.util.Optional;
 
 
@@ -56,7 +54,9 @@ public class GameStateController {
 	private GameState isGameState(GameState gameState) {
 		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
 				.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
-				.withIgnorePaths("id");
+				.withIgnorePaths("day")
+				.withIgnorePaths("minute")
+				.withIgnorePaths("second");
 
 		Example<GameState> example = Example.of(gameState, ignoringExampleMatcher);
 		Optional<GameState> savedGameState = gameStateRepository.findOne(example);

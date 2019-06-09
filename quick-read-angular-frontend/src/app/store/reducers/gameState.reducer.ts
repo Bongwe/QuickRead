@@ -3,7 +3,7 @@ import {GameState} from "../../models/GameState";
 import {
   ClearGameStateAction,
   EGameStateAction,
-  GameStateAction, GetGameStateAction, GetGameStateErrorAction,
+  GameStateAction, GetGameStateAction, GetGameStateErrorAction, GetGameStateSuccessAction,
   UpdateGameStateErrorAction,
   UpdateGameStateSuccessAction
 } from "../actions/gameState.actions";
@@ -24,6 +24,8 @@ export function gameStateReducer (state = initialGameState, action: GameStateAct
       return updateGameStateError(state, action);
     case EGameStateAction.GetGameState:
       return getGameState(state, action);
+    case EGameStateAction.GetGameStateSuccess:
+      return getGameStateSuccess(state, action);
     case EGameStateAction.GetGameStateError:
       return getGameStateError(state, action);
     case EGameStateAction.ClearGameState:
@@ -33,12 +35,22 @@ export function gameStateReducer (state = initialGameState, action: GameStateAct
   }
 };
 
+function getGameStateSuccess(state: IGameState, action: GetGameStateSuccessAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  newState.gameState = action.payload;
+  return newState;
+}
+
 function getGameStateError(state: IGameState, action: GetGameStateErrorAction) {
   if(state == null) {
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  //newState.gameState = action.payload;
+  //an error was thrown in the backend
+  newState.gameState = null;
   return newState;
 }
 

@@ -43,9 +43,10 @@ export class BookShelfComponent implements OnInit {
       }
     });
     this.store.dispatch(new GetBooksInBookshelfAction(this.accountId));
-    let gameSate = new GameState();
-    gameSate.account_id = this.accountId;
-    this.store.dispatch(new GetGameStateAction(gameSate));
+
+    let gameState = new GameState();
+    gameState.account_id = this.accountId;
+    this.store.dispatch(new GetGameStateAction(gameState));
   }
 
   readBook(bookId: number) {

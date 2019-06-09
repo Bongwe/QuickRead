@@ -28,6 +28,9 @@ import * as moment from 'moment';
 import {Settings} from "../../models/Settings";
 import {ISettingsState} from "../../store/reducers/settings.reducer";
 import {READ_EVERY_DAY, READ_EVERY_MINUTE} from "../../models/Messages";
+import {SelectedOpponent} from "../../models/SelectedOpponent";
+import {UpdateOpponentAction} from "../../store/actions/book-shelf.actions";
+import {UpdateAccountAction} from "../../store/actions/account.actions";
 
 @Component({
   selector: 'app-reading',
@@ -38,7 +41,8 @@ export class ViewSectionsComponent implements OnInit {
 
   public bookSections: Array<SectionDTO>;
   public book: Book;
-  public playerImageSrc = "../../../assets/img/opponents2/greedy-reaper.png" ;
+  public playerImageSrc;
+  public playerImageSrBase = "../../../assets/img/opponents2/" ;
   public opponentImageSrc = "../../../assets/img/opponents2/";
   public currentSection: BookSection;
   public previousSection: BookSection;
@@ -49,11 +53,16 @@ export class ViewSectionsComponent implements OnInit {
   public selectedAccount: qrAccount;
   public gameState: GameState;
   public settings: Settings;
+  public currentOpponent: SelectedOpponent;
 
   @ViewChild('inaccessibleSection') inaccessibleSection;
   @ViewChild('bookCompleteMessage') bookCompleteMessage;
+  @ViewChild('dealPlayerDamage') dealPlayerDamage;
+  @ViewChild('dealOpponentDamage') dealOpponentDamage;
   private modalRef;
   private bookCompleteModalRef;
+  private dealOpponentDamageModalRef;
+  private dealPlayerDamageModalRef;
 
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
@@ -70,12 +79,18 @@ export class ViewSectionsComponent implements OnInit {
     this.store.select(selectAccounts).subscribe((state: IAccountState) =>{
       if(state && state.selectedAccount){
         this.selectedAccount = state.selectedAccount;
+        this.playerImageSrc = this.playerImageSrBase + this.selectedAccount.profile_picture;
       }
     });
-
     this.store.select(selectSettings).subscribe((state: ISettingsState) =>{
       if(state && state.settings){
        this.settings = state.settings;
+      }
+    });
+
+    this.store.select(selectSection).subscribe((state: ISectionState) =>{
+      if(state && state.currentSection){
+        this.currentSection = state.currentSection;
       }
     });
 
@@ -83,62 +98,50 @@ export class ViewSectionsComponent implements OnInit {
       if(state && state.bookSections){
         this.bookSections = state.bookSections;
       }
-
       if(state && state.selectedBook){
         this.book =  state.selectedBook;
       }
-      this.manageGameSate(this.gameState);
-
     });
 
-    this.store.select(selectSection).subscribe((state: ISectionState) =>{
-      if(state && state.currentSection){
-        this.router.navigate(['/readSection']);
-      }
-    });
+    this.currentOpponent = this.getCurrentOpponent();
 
     let completePercent = this.calculateSectionCompleteness();
 
     if(completePercent >= 100) {
       this.openBooksCompleteModal();
     }
+    this.manageGameSate();
   }
 
   calculateSectionCompleteness(): number {
-    /*if(this.bookSections){
-      for(let index = 0; this.bookSections && index < this.bookSections.length; index++){
-        if(this.bookSections[index].status == BookStatus.COMPLETE){
-          this.totalCompletedSections++;
+    if (this.bookSections) {
+      for(let sectionGroup of this.bookSections) {
+        for(let section of sectionGroup.sectionList){
+          if(section.status == BookStatus.COMPLETE){
+            this.totalCompletedSections++;
+          }
         }
       }
       this.bookSectionCompleteness = this.totalCompletedSections / this.bookSections.length;
       this.bookSectionCompleteness = this.bookSectionCompleteness * 100;
       return this.bookSectionCompleteness;
-    }*/
+    }
     return 0;
   }
 
   readSelectedSection(section: BookSection, groupIndex: number, sectionIndex: number) {
     let prevIndex = section.section_index - 1;
-    this.currentSection = section;
-
-    let gameSate = new GameState();
-    gameSate.day =  moment().day(); //day of the week
-    gameSate.minute =  moment().minute();
-    gameSate.second =  moment().second();
-    gameSate.account_id = this.selectedAccount.id;
-    this.store.dispatch(new UpdateGameStateAction(gameSate));
-
     if(prevIndex == -1){
+      this.updateGameState();
       this.store.dispatch(new ReadSectionAction(section));
+      this.router.navigate(['/readSection']);
     } else if(prevIndex >= 0 ) {
       let sectionDTO = this.bookSections[groupIndex].sectionList;
       if(sectionDTO[prevIndex].status == BookStatus.COMPLETE){
+        this.updateGameState();
         this.store.dispatch(new ReadSectionAction(section));
+        this.router.navigate(['/readSection']);
       } else {
-        //not using this now no need to display detail
-        //let sectionDTO = this.bookSections[groupIndex].sectionList;
-        //this.previousSection = sectionDTO[prevIndex];
         this.openModal();
       }
     }
@@ -176,6 +179,33 @@ export class ViewSectionsComponent implements OnInit {
     })
   }
 
+  openDealOpponentDamageModal(){
+    this.dealOpponentDamageModalRef = this.modalService.open(this.dealOpponentDamage, {
+      size: "md",
+      modalClass: 'dealOpponentDamage',
+      hideCloseButton: false,
+      centered: false,
+      backdrop: true,
+      animation: true,
+      keyboard: false,
+      closeOnOutsideClick: true,
+      backdropClass: "modal-backdrop"
+    })
+  }
+  openDealPlayerDamage(){
+    this.dealPlayerDamageModalRef = this.modalService.open(this.dealPlayerDamage, {
+      size: "md",
+      modalClass: 'dealPlayerDamage',
+      hideCloseButton: false,
+      centered: false,
+      backdrop: true,
+      animation: true,
+      keyboard: false,
+      closeOnOutsideClick: true,
+      backdropClass: "modal-backdrop"
+    })
+  }
+
   closeModal(){
     this.modalService.close(this.modalRef);
   }
@@ -184,25 +214,31 @@ export class ViewSectionsComponent implements OnInit {
     this.modalService.close(this.bookCompleteModalRef);
   }
 
+  closeDealPlayerDamageModal(){
+    this.modalService.close(this.dealPlayerDamageModalRef);
+  }
+
+  closeOpponentDamageModal(){
+    this.modalService.close(this.dealOpponentDamageModalRef);
+  }
+
   enemyImageSrc(avatar: string) {
     return this.opponentImageSrc + avatar;
   }
 
-  private manageGameSate(gameState: GameState) {
-
-    if(gameState){
+  private manageGameSate() {
+    if(this.gameState){
       if(this.settings && this.settings.read_every == READ_EVERY_DAY) {
         if(this.isReadingEveryDay()) {
           this.dealDamageToOpponent();
         } else{
-          this.dealDamageToUser();
+          //this.dealDamageToPlayer();
         }
       } else if (this.settings && this.settings.read_every == READ_EVERY_MINUTE) {
-        this.isReadingEveryMinute();
-        if(this.isReadingEveryDay()) {
+        if(this.isReadingEveryMinute()) {
           this.dealDamageToOpponent();
         } else{
-          this.dealDamageToUser();
+          //this.dealDamageToPlayer();
         }
       }
     }
@@ -215,14 +251,53 @@ export class ViewSectionsComponent implements OnInit {
 
   private isReadingEveryMinute() {
     let currentMinute = moment().minute();
-    return this.gameState.minute - currentMinute == (currentMinute - 1) || this.gameState.minute - currentMinute == 0;
+    return currentMinute >= (this.gameState.minute) && currentMinute <= (this.gameState.minute + 1);
+
   }
 
   private dealDamageToOpponent() {
+    let dealtDamage = false;
 
+    for(let index = 0; index < this.bookSections.length && dealtDamage == false; index++) {
+      for(let section of this.bookSections[index].sectionList) {
+        if(this.currentSection && this.currentSection.id == section.id && section.status === BookStatus.COMPLETE){
+          this.bookSections[index].opponent.health = this.bookSections[index].opponent.health - 25;
+          this.store.dispatch(new UpdateOpponentAction(this.bookSections[index].opponent));
+          this.openDealOpponentDamageModal();
+          dealtDamage = true;
+          break;
+        }
+      }
+    }
   }
 
-  private dealDamageToUser() {
+  private updateGameState(): void {
+    let gameSate = new GameState();
+    gameSate.day =  moment().day(); //day of the week
+    gameSate.minute =  moment().minute();
+    gameSate.second =  moment().second();
+    gameSate.account_id = this.selectedAccount.id;
+    this.store.dispatch(new UpdateGameStateAction(gameSate));
+  }
 
+  private dealDamageToPlayer() {
+    this.selectedAccount.health = this.selectedAccount.health - 25;
+    this.store.dispatch(new UpdateAccountAction(this.selectedAccount));
+    this.openDealPlayerDamage();
+  }
+
+  getPlayerHealth() {
+    return this.selectedAccount.health;
+  }
+
+  private getCurrentOpponent(): SelectedOpponent {
+    for(let index = 0; index < this.bookSections.length; index++) {
+      for(let section of this.bookSections[index].sectionList) {
+        if(section.status === BookStatus.IN_PROGRESS || section.status === BookStatus.UN_READ){
+          return this.bookSections[index].opponent;
+        }
+      }
+    }
+    return null;
   }
 }

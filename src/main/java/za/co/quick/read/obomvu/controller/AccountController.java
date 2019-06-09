@@ -54,6 +54,8 @@ public class AccountController {
 			Settings settings = new Settings();
 			AccountDTO accountDTO = new AccountDTO();
 
+			account.setHealth(100);
+
 			@Valid Account savedAccount = accountRepository.save(account);
 			settings.setAccount_id(savedAccount.getId());
 
@@ -76,7 +78,8 @@ public class AccountController {
 			ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
 					.withMatcher("email", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
 					.withMatcher("password", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
-					.withIgnorePaths("id");
+					.withIgnorePaths("id")
+					.withIgnorePaths("health");
 
 			ExampleMatcher ignoringSettingsMatcher = ExampleMatcher.matchingAll()
 					.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
@@ -111,6 +114,7 @@ public class AccountController {
 		account.setPassword(accountDetails.getPassword());
 		account.setInterests(accountDetails.getInterests());
 		account.setProfile_picture(accountDetails.getProfile_picture());
+		account.setHealth(accountDetails.getHealth());
 
 		final Account updatedAccount = accountRepository.save(account);
 		return ResponseEntity.ok(updatedAccount);

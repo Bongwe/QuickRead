@@ -4,6 +4,7 @@ import {BookShelf} from "../../models/BookShelf";
 import {BookSection} from "../../models/BookSection";
 import {HttpErrorResponse} from "@angular/common/http";
 import {SectionDTO} from "../../models/dto/SectionDTO";
+import {SelectedOpponent} from "../../models/SelectedOpponent";
 
 export enum EBooksShelfAction {
   AddToBookShelf = '[Book Shelf Component] Add to book shelf',
@@ -20,6 +21,27 @@ export enum EBooksShelfAction {
   UpdateSectionError = '[Book Shelf Component] Update current section error',
   ClearSections = '[Book Shelf Component] Clear sections',
   ClearBookShelf = '[Book Shelf Component] Clear book shelf',
+  UpdateOpponent = '[Section Component] Update opponent',
+  UpdateOpponentSuccess = '[Section Component] Update opponent success',
+  UpdateOpponentError = '[Section Component] Update opponent health error',
+}
+
+export class UpdateOpponentSuccessAction implements Action {
+  readonly type = EBooksShelfAction.UpdateOpponentSuccess;
+  constructor(public payload: SelectedOpponent){
+  }
+}
+
+export class UpdateOpponentErrorAction implements Action {
+  readonly type = EBooksShelfAction.UpdateOpponentError;
+  constructor(public payload: HttpErrorResponse){
+  }
+}
+
+export class UpdateOpponentAction implements Action {
+  readonly type = EBooksShelfAction.UpdateOpponent;
+  constructor(public payload: SelectedOpponent){
+  }
 }
 
 export class ClearBookShelfAction implements Action {
@@ -101,4 +123,5 @@ export class AddToBookShelfAction implements Action {
 export type BookShelfAction = AddToBookShelfAction | AddToBookShelfSuccessAction | AddToBookShelfErrorAction
   | GetBooksInBookshelfAction | GetBooksInBookshelfSuccessAction | ReadBookAction | ReadBookSErrorAction
   | ReadBookSuccessAction | SetSelectedBookAction | UpdateSectionAction | UpdateSectionSuccessAction
-  | UpdateSectionErrorAction | ClearSectionsAction | ClearBookShelfAction;
+  | UpdateSectionErrorAction | ClearSectionsAction | ClearBookShelfAction | UpdateOpponentSuccessAction
+  | UpdateOpponentErrorAction | UpdateOpponentAction;

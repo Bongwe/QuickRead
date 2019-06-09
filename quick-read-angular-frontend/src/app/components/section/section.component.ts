@@ -70,14 +70,15 @@ export class SectionComponent implements OnInit,OnDestroy {
   ngOnDestroy() {
     window.removeEventListener('scroll', this.scroll, true);
     clearInterval(this.timeOutHandle);
-    this.store.dispatch(new ClearCurrentSectionAction());
+    //this.store.dispatch(new ClearCurrentSectionAction());
   }
 
   closeSection() {
     if(this.currentSeconds >= (this.settings.min_read_time * 60) || this.currentSection.status == BookStatus.COMPLETE) {
-      if( this.currentSection.status == BookStatus.COMPLETE){
+    //if(true){
+    if( this.currentSection.status == BookStatus.COMPLETE){
         this.store.dispatch(new UpdateSectionAction(this.currentSection));
-        this.store.dispatch(new ClearCurrentSectionAction());
+        //this.store.dispatch(new ClearCurrentSectionAction());
       } else {
         this.openReadingCompleteModal();
       }
@@ -139,7 +140,7 @@ export class SectionComponent implements OnInit,OnDestroy {
     this.currentSection.status = BookStatus.IN_PROGRESS;
     this.currentSection.status_picture = "sectionInProgressIcon.png";
     this.store.dispatch(new UpdateSectionAction(this.currentSection));
-    this.store.dispatch(new ClearCurrentSectionAction());
+    //this.store.dispatch(new ClearCurrentSectionAction());
     this.closeSectionCompleteModal();
   }
 
@@ -147,7 +148,7 @@ export class SectionComponent implements OnInit,OnDestroy {
     this.currentSection.status = BookStatus.COMPLETE;
     this.currentSection.status_picture = "sectionCompleteIcon.png";
     this.store.dispatch(new UpdateSectionAction(this.currentSection));
-    this.store.dispatch(new ClearCurrentSectionAction());
+    //this.store.dispatch(new ClearCurrentSectionAction());
     this.closeSectionCompleteModal();
   }
 

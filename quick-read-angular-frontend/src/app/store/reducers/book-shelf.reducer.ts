@@ -3,12 +3,18 @@ import {
   AddToBookShelfAction,
   AddToBookShelfErrorAction,
   AddToBookShelfSuccessAction,
-  BookShelfAction, ClearBookShelfAction, ClearSectionsAction,
+  BookShelfAction,
+  ClearBookShelfAction,
+  ClearSectionsAction,
   EBooksShelfAction,
   GetBooksInBookshelfSuccessAction,
   ReadBookSErrorAction,
   ReadBookSuccessAction,
-  SetSelectedBookAction, UpdateSectionErrorAction, UpdateSectionSuccessAction,
+  SetSelectedBookAction,
+  UpdateOpponentErrorAction,
+  UpdateOpponentSuccessAction,
+  UpdateSectionErrorAction,
+  UpdateSectionSuccessAction,
 } from "../actions/book-shelf.actions";
 import {Book} from "../../models/Book";
 import {BookShelf} from "../../models/BookShelf";
@@ -47,16 +53,42 @@ export function bookShelfReducer (state = initialBookShelfState, action: BookShe
       return clearSections(state, action);
     case EBooksShelfAction.ClearBookShelf:
       return clearBookShelf(state, action);
+    case EBooksShelfAction.UpdateOpponentSuccess:
+      return updateOpponentSuccess(state, action);
+    case EBooksShelfAction.UpdateOpponentError:
+      return updateOpponentError(state, action);
     default:
       return state;
   }
 };
 
+function updateOpponentSuccess(state: IBookShelfState, action: UpdateOpponentSuccessAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  for(let sectionGroups of newState.bookSections){
+    for (let section of sectionGroups.sectionList){
+      if(section.id === action.payload.id){
+        sectionGroups.opponent = action.payload;
+      }
+    }
+  }
+  return newState;
+}
+
+function updateOpponentError(state: IBookShelfState, action: UpdateOpponentErrorAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  //newState.bookSections = null;
+  return newState;
+}
 
 function clearBookShelf(state: IBookShelfState, action: ClearBookShelfAction) {
   return null;
 }
-
 
 function clearSections(state: IBookShelfState, action: ClearSectionsAction) {
   if(state == null) {

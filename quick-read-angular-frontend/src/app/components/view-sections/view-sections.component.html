@@ -22,8 +22,8 @@
                 <img [src]=playerImageSrc class="imageSize">
               </div>
               <div class="col-md-8">
-                <div><label>Name: Muzi</label></div>
-                <progress-bar [progress]="100" [color]="'#d9534f'">
+                <div><label>Name: {{this.selectedAccount.name}}</label></div>
+                <progress-bar [progress]=getPlayerHealth() [color]="'#d9534f'">
                 </progress-bar>
               </div>
             </div>
@@ -34,7 +34,7 @@
               </div>
               <div class="col-md-8">
                 <div><label>Name: {{sectionGroups.opponent.name}}</label></div>
-                <progress-bar [progress]="sectionGroups.opponent.health" [color]="'#d9534f'">
+                <progress-bar [progress]=sectionGroups.opponent.health [color]="'#d9534f'">
                 </progress-bar>
               </div>
             </div>
@@ -89,6 +89,46 @@
     </modal-content>
     <modal-footer>
       <button class="btn btn-primary" (click)="closeBookCompleteModal()">Close</button>
+    </modal-footer>
+  </modal>
+</div>
+
+<div class="row">
+  <modal #dealPlayerDamage>
+    <modal-header>
+      <h4>Section reading incomplete</h4>
+    </modal-header>
+    <modal-content>
+      <div class="row">
+        <div class="col-md-12">
+          {{this.currentOpponent.name}} attacks {{this.selectedAccount.name}} and lands a spinning kick!
+          {{this.selectedAccount.name}} takes 25% damage
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </div>
+      </div>
+    </modal-content>
+    <modal-footer>
+      <button class="btn btn-primary" (click)="closeDealPlayerDamageModal()">Close</button>
+    </modal-footer>
+  </modal>
+</div>
+
+<div class="row">
+  <modal #dealOpponentDamage>
+    <modal-header>
+      <h4>Section reading complete</h4>
+    </modal-header>
+    <modal-content>
+      <div class="row">
+        <div class="col-md-12">
+          {{this.selectedAccount.name}} hits {{this.currentOpponent.name}} with a double punch combination attack!
+          {{this.selectedAccount.name}} deals 25% damage to {{this.currentOpponent.name}}
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </div>
+      </div>
+    </modal-content>
+    <modal-footer>
+      <button class="btn btn-primary" (click)="closeOpponentDamageModal()">Close</button>
     </modal-footer>
   </modal>
 </div>

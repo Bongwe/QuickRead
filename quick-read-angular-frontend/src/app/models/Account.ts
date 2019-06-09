@@ -1,5 +1,6 @@
 export class qrAccount {
   id: number;
+  health: number;
   name: string;
   username: string;
   email: string;

@@ -12,6 +12,7 @@ import javax.persistence.Table;
 public class Account {
 
 	private long id;
+	private long health;
 	private String name;
 	private String username;
 	private String email;
@@ -23,8 +24,9 @@ public class Account {
 		
 	}
 
-	public Account(long id, String name, String username, String email, String password, String interests, String profile_picture) {
+	public Account(long id, long health, String name, String username, String email, String password, String interests, String profile_picture) {
 		this.id = id;
+		this.health = health;
 		this.name = name;
 		this.username = username;
 		this.email = email;
@@ -89,6 +91,15 @@ public class Account {
 
 	public void setProfile_picture(String profile_picture) {
 		this.profile_picture = profile_picture;
+	}
+
+	@Column(name = "health", nullable = false)
+	public long getHealth() {
+		return health;
+	}
+
+	public void setHealth(long health) {
+		this.health = health;
 	}
 
 	@Override

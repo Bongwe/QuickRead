@@ -2,6 +2,7 @@ BEGIN TRAN
 
 CREATE TABLE Account(
 	id INT NOT NULL IDENTITY(1,1),
+	health INT NULL,
 	name VARCHAR(128) NOT NULL,
 	username VARCHAR(128) NOT NULL,
 	email VARCHAR(128) NOT NULL,
@@ -11,6 +12,7 @@ CREATE TABLE Account(
 	PRIMARY KEY(email)
 );
 
+drop table Account;
 ALTER TABLE Account
 ALTER COLUMN interests VARCHAR(500);
 
