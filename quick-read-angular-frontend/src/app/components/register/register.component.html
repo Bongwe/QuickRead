@@ -45,3 +45,21 @@
     </div>
   </div>
 </div>
+
+<div class="row">
+  <modal #myModal>
+    <modal-header>
+      <h4>{{modalHeader}}</h4>
+    </modal-header>
+    <modal-content>
+      <div class="row">
+        <div class="col-md-12">
+          {{modalContent}}
+        </div>
+      </div>
+    </modal-content>
+    <modal-footer>
+      <button class="btn btn-primary" (click)="nextPage()">Next</button>
+    </modal-footer>
+  </modal>
+</div>
