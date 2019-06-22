@@ -6,6 +6,7 @@ import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import za.co.quick.read.obomvu.dto.BookDTO;
 import za.co.quick.read.obomvu.dto.SectionDTO;
 import za.co.quick.read.obomvu.model.Book;
 import za.co.quick.read.obomvu.model.BookSection;
@@ -48,7 +49,7 @@ public class BookShelfController {
 	}
 
 	@GetMapping("/bookshelf/{id}")
-	public ResponseEntity<List<Book>> getBooksInBookShelf(@PathVariable(value = "id") Long accountId) {
+	public ResponseEntity<List<BookDTO>> getBooksInBookShelf(@PathVariable(value = "id") Long accountId) {
 		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
 				.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
 				.withIgnorePaths("id");
@@ -58,11 +59,12 @@ public class BookShelfController {
 			Example<BookShelf> example = Example.of(bookShelf, ignoringExampleMatcher);
 			List<BookShelf> booksInShelf = bookShelfRepository.findAll(example);
 
-			List<Book> bookList = new ArrayList<>();
+			List<BookDTO> bookList = new ArrayList<>();
 			for(BookShelf bookInShelf: booksInShelf){
 				Optional<Book> bookOptional = bookRepository.findById(bookInShelf.getBook_id());
 				if(bookOptional.isPresent()){
-					bookList.add(bookOptional.get());
+
+					bookList.add(createBookDTO(bookOptional.get()));
 				}
 			}
 			return ResponseEntity.ok(bookList);
@@ -70,6 +72,19 @@ public class BookShelfController {
 			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.BAD_REQUEST);
 			return responseEntity;
 		}
+	}
+
+	private BookDTO createBookDTO (Book book) {
+		BookDTO bookDTO = new BookDTO();
+		bookDTO.setId(book.getId());
+		bookDTO.setAuthor(book.getAuthor());
+		bookDTO.setTitle(book.getTitle());
+		bookDTO.setBook_section_id(book.getBook_section_id());
+		bookDTO.setComplete_percent(book.getComplete_percent());
+		bookDTO.setSynopses(book.getSynopses());
+		bookDTO.setPlayer_id(book.getPlayer_id());
+		bookDTO.setShortSynopses(book.getSynopses().substring(0,140));
+		return bookDTO;
 	}
 
 	@GetMapping("/bookshelf/read/{id}")
