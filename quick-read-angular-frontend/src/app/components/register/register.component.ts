@@ -45,8 +45,9 @@ export class RegisterComponent implements OnInit {
       if(state && state.selectedAccount !== null){
         if(this.registrationComplete == true){
           this.openModal();
+          this.registrationComplete = false;
         }
-          //this.selectedInterestsDisable = false;
+          this.selectedInterestsDisable = false;
         if(this.registerForm){
           this.registerForm.reset();
         }
