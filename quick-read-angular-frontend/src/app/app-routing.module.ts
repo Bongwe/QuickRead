@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {RegisterComponent} from "./components/register/register.component";
 import {SearchComponent} from "./components/search/search.component";
 import {InterestsComponent} from "./components/interests/interests.component";
-import {AvatarComponent} from "./components/profile-picture/avatar.component";
+import {AvatarComponent} from "./components/avatar/avatar.component";
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
 import {QuickReadGuard} from "./quick-read.guard";
 import {ProfileComponent} from "./components/profile/profile.component";

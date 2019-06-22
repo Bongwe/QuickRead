@@ -19,7 +19,7 @@ import {BookEffects} from "./store/effects/books.effect";
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { InterestsComponent } from './components/interests/interests.component';
-import { AvatarComponent } from './components/profile-picture/avatar.component';
+import { AvatarComponent } from './components/avatar/avatar.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { SuggestedBooksComponent } from './components/suggested-books/suggested-books.component';
 import { BookShelfComponent } from './components/book-shelf/book-shelf.component';

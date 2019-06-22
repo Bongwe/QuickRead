@@ -45,7 +45,6 @@ export class RegisterComponent implements OnInit {
       if(state && state.selectedAccount !== null){
         if(this.registrationComplete == true){
           this.openModal();
-
         }
           //this.selectedInterestsDisable = false;
         if(this.registerForm){
@@ -97,9 +96,9 @@ export class RegisterComponent implements OnInit {
   }
 
   public nextPage(){
+    this.closeModal();
     this.store.dispatch( new ClearNotificationMessageAction());
     this.router.navigate(['/interests']);
-    this.closeModal();
   }
 
 }
