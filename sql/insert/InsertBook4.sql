@@ -1,4 +1,5 @@
-The Project Gutenberg EBook of ''''Me-Smith'''', by Caroline Lockhart
+INSERT INTO book ( title, author,content)
+VALUES ('Me-Smith','Caroline Lockhart', 'The Project Gutenberg EBook of ''Me-Smith'', by Caroline Lockhart
 
 This eBook is for the use of anyone anywhere at no cost and with
 almost no restrictions whatsoever.  You may copy it, give it away or
@@ -6,7 +7,7 @@ re-use it under the terms of the Project Gutenberg License included
 with this eBook or online at www.gutenberg.org
 
 
-Title: ''''Me-Smith''''
+Title: ''Me-Smith''
 
 Author: Caroline Lockhart
 
@@ -17,7 +18,7 @@ Release Date: December 8, 2008 [EBook #27438]
 Language: English
 
 
-*** START OF THIS PROJECT GUTENBERG EBOOK ''''ME-SMITH'''' ***
+*** START OF THIS PROJECT GUTENBERG EBOOK ''ME-SMITH'' ***
 
 
 
@@ -29,8 +30,8 @@ Proofreading Team at http://www.pgdp.net
 
 
 
-[Illustration: "THAT LOOK IN YOUR EYES--THAT LOOK AS IF YOU HADN''''T
-NOTHIN'''' TO HIDE--IS IT TRUE?" Page 59]
+[Illustration: "THAT LOOK IN YOUR EYES--THAT LOOK AS IF YOU HADN''T
+NOTHIN'' TO HIDE--IS IT TRUE?" Page 59]
 
 
 
@@ -83,7 +84,7 @@ CHAPTER                                            PAGE
      X.  Mother Love and Savage Passion Conflict    130
     XI.  The Best Horse                             142
    XII.  Smith Gets "Hunks"                         156
-  XIII.  Susie''''s Indian Blood                       162
+  XIII.  Susie''s Indian Blood                       162
    XIV.  The Slayer of Mastodons                    169
     XV.  Where a Man Gets a Thirst                  190
    XVI.  Tinhorn Frank Smells Money                 205
@@ -103,9 +104,9 @@ LIST OF ILLUSTRATIONS
                                                          PAGE
 
 "That Look in Your Eyes--That Look as if You
-Hadn''''t Nothin'''' to Hide--is it True?"             Frontispiece
+Hadn''t Nothin'' to Hide--is it True?"             Frontispiece
 
-"She''''s a Game Kid, All Right," Said Smith
+"She''s a Game Kid, All Right," Said Smith
 to Himself at the Top of the Hill.                         22
 
 It Meant Death--but it was Wet!--it was Water!            196
@@ -150,10 +151,10 @@ confidently toward him. He had dismounted and pretended to be cinching his
 saddle. When the dude was close enough Smith had thrown down on him with
 his gun.
 
-"Feller," he had said, "I guess I''''ll have to trade horses with you. And
-fall off quick, for I''''m in kind of a hurry."
+"Feller," he had said, "I guess I''ll have to trade horses with you. And
+fall off quick, for I''m in kind of a hurry."
 
-The grin widened as he thought of the dude''''s surprised eyes and the dude''''s
+The grin widened as he thought of the dude''s surprised eyes and the dude''s
 face as he dropped out of the saddle without a word. Smith had stood his
 victim with his hands above his head while he pulled the saddle from his
 horse and threw it upon his own. The dude rode a saddle with a double
@@ -171,19 +172,19 @@ shaking voice.
 
 The answer had pleased Smith.
 
-"You ain''''t losin'''' none on this deal," he had then volunteered. "This horse
+"You ain''t losin'' none on this deal," he had then volunteered. "This horse
 that you just traded for is a looker when he is rested, and he can run
 like hell. You can go your pile on him. Just burn out that lazy S brand
 and run on your own. You can hold him easy, then. I like a feller that
-rides a double-rigged saddle in a single-rigged country. S''''long, and keep
-your hands up till I''''m out of range."
+rides a double-rigged saddle in a single-rigged country. S''long, and keep
+your hands up till I''m out of range."
 
 "Thank you," the dude had replied feebly.
 
 When Smith had ridden for a half a mile he had turned to look behind him.
 The dude was still standing with his hands high above his head.
 
-"I wonder if he''''s there yet?" The man on horseback grinned.
+"I wonder if he''s there yet?" The man on horseback grinned.
 
 He reached in the pocket of his mackinaw coat and took out a handful of
 sugar.
@@ -191,7 +192,7 @@ sugar.
 "You can travel longer on it nor anything," he muttered.
 
 He congratulated himself that he had filled his pocket from the
-booze-clerk''''s sugar-bowl before the mix came. The act was characteristic
+booze-clerk''s sugar-bowl before the mix came. The act was characteristic
 of him, as was the forethought which had sent him to the door to pick the
 best saddle-horse at the hitching-post, before the lead began to fly.
 
@@ -219,7 +220,7 @@ his shoulders, stood in an attitude of listening, carelessly holding a
 cheap, single-barrelled shotgun. He had heard the horse sliding down the
 trail and was waiting for it to appear on the bench above.
 
-The stranger took in the details of the Indian''''s costume, but his eye
+The stranger took in the details of the Indian''s costume, but his eye
 rested longest upon the gay blanket. He might need a blanket with that
 snow in the air. It looked like a good blanket. It seemed to be thick and
 was undoubtedly warm.
@@ -240,14 +241,14 @@ water.
 Before he turned to go, the stranger again touched his breast and raised
 his hand above his heart to reiterate his friendship. He took a half-dozen
 steps, then whirled on his heel. As he did so, he brought his rifle on a
-line with the Indian''''s back, which was toward him. Simultaneously with the
+line with the Indian''s back, which was toward him. Simultaneously with the
 report, the Indian fell on his back on the side of the gulch. He drew up
 his leg, and the stranger, thinking he had raised it for a gun-rest,
 riddled him with bullets.
 
-The white man''''s bright blue eyes gleamed; the pupils were like pin-points.
+The white man''s bright blue eyes gleamed; the pupils were like pin-points.
 The grin which disclosed his protruding teeth was like the snarl of a dog
-before it snaps. The expression of the man''''s face was that of animal
+before it snaps. The expression of the man''s face was that of animal
 ferocity, pure and simple. He edged up cautiously, but there was no
 further movement from the Indian. He had been dead when he fell. The white
 man gave a short laugh when he realized that the raising of the leg had
@@ -256,7 +257,7 @@ was soiling it, he tore it from the limp, unresisting shoulders, and
 rubbed it in the dirt to obliterate the stain. He cursed when he saw that
 a bullet had torn in it two jagged, tell-tale holes.
 
-He glanced at the Indian''''s moccasins, then, stooping, ripped one off. He
+He glanced at the Indian''s moccasins, then, stooping, ripped one off. He
 examined it with interest. It was a Cree moccasin. The Indian was far from
 home. He examined the centre seam: yes, it was sewed with deer-sinew.
 
@@ -264,17 +265,17 @@ home. He examined the centre seam: yes, it was sewed with deer-sinew.
 of the Cree moccasin. The Piegans make better." He tossed it from him
 contemptuously and picked up the shotgun.
 
-"No good." He threw it down and straightened the Indian''''s head with the
+"No good." He threw it down and straightened the Indian''s head with the
 toe of his boot. "I despises to lie cramped up, myself."
 
-Returning to his horse, he removed his saddle, and folded the Indian''''s
+Returning to his horse, he removed his saddle, and folded the Indian''s
 blanket inside of his own. Then he recinched his saddle, and turned his
-horse''''s head to the southeast, where "the full-blood--the woman, the fat
+horse''s head to the southeast, where "the full-blood--the woman, the fat
 woman--lived in a log cabin by running water."
 
 He glanced over his shoulder as he spurred his horse to a gallop.
 
-"I''''m a killer, me--Smith," he said, and grinned.
+"I''m a killer, me--Smith," he said, and grinned.
 
 
 
@@ -285,7 +286,7 @@ ON THE ALKALI HILL
 
 
 There was at least an hour and a half of daylight left when Smith struck a
-wagon-road. He looked each way doubtfully. The woman''''s house was quite as
+wagon-road. He looked each way doubtfully. The woman''s house was quite as
 likely to be to the right as to the left; there was no way of telling.
 While he hesitated, his horse lifted its ears. Smith also thought he heard
 voices. Swinging his horse to the right, he rode to the edge of the bench
@@ -321,7 +322,7 @@ spectacles.
 "Oscar Tubbs," he demanded, "why did you not tell me that you were about
 to back the wagon?"
 
-"I would have did it if I had knowed myself that the team were goin'''' to
+"I would have did it if I had knowed myself that the team were goin'' to
 back," replied Tubbs, in the conciliatory tone of one who addresses the
 man who pays him his wages.
 
@@ -329,14 +330,14 @@ The man in spectacles groaned. "Three inexcusable errors in one sentence.
 Oscar Tubbs, you are hopeless!"
 
 "Yep," replied that person resignedly; "nobody never could learn me
-nothin''''. Onct I knowed----"
+nothin''. Onct I knowed----"
 
 "Stop! We have no time for a reminiscence. Have you any reason to believe
 that we can get up this hill to-night?"
 
-"No chanst of it. These buzzard-heads has drawed every poun'''' they kin
-pull. But I has some reason to believe that if you don''''t hist your hoofs
-out''''n that mud-hole, you''''ll bog down. You''''re up to your pant-leg now. Onct
+"No chanst of it. These buzzard-heads has drawed every poun'' they kin
+pull. But I has some reason to believe that if you don''t hist your hoofs
+out''n that mud-hole, you''ll bog down. You''re up to your pant-leg now. Onct
 I knowed----"
 
 The little man threw out his hand in a restraining gesture, and Tubbs,
@@ -345,10 +346,10 @@ leg while he pulled the other out of the mud with a long, sucking sound.
 
 "What for an outfit is that, anyhow?" mused Smith, watching the
 proceedings with some interest. "He looks like one of them bug-hunters.
-He''''s got a pair of shoulders on him like a drink of water, and his legs
-look like the runnin''''-gears of a katydid."
+He''s got a pair of shoulders on him like a drink of water, and his legs
+look like the runnin''-gears of a katydid."
 
-So intently were they all engaged in watching the man''''s struggles that no
+So intently were they all engaged in watching the man''s struggles that no
 one observed a girl on a galloping horse until she was almost upon them.
 She sat her sturdy, spirited pony like a cowboy. She was about sixteen,
 with a suggestion of boyishness in her appearance. Her brown hair, worn in
@@ -358,11 +359,11 @@ skin. She was slight to scrawniness, and, one might have thought,
 insufficiently clad for the time of year.
 
 "Bogged down, pardner?" she inquired in a friendly voice, as she rode up
-behind and drew rein. "I''''ve been in that soap-hole myself. Here, ketch to
-my pommel, and I''''ll snake you out."
+behind and drew rein. "I''ve been in that soap-hole myself. Here, ketch to
+my pommel, and I''ll snake you out."
 
 Smiling dubiously he gripped the pommel. The pony had sunk to its knees,
-and as it leaped to free itself the little man''''s legs fairly snapped in
+and as it leaped to free itself the little man''s legs fairly snapped in
 the air.
 
 "I thank you, Miss," he said, removing his plaid travelling cap as he
@@ -378,8 +379,8 @@ the hill. Night is almost upon us, and our next camping spot is several
 miles beyond."
 
 "This is the worst grade in the country," replied the girl. "A team that
-can haul a load up here can go anywhere. What''''s the matter with that
-fellow up there? Why don''''t he help?"--pointing to Smith.
+can haul a load up here can go anywhere. What''s the matter with that
+fellow up there? Why don''t he help?"--pointing to Smith.
 
 "He has made no offer of assistance."
 
@@ -392,17 +393,17 @@ they first come out."
 employ, I shall make a deduction from your wages. I warn you--I warn you
 in the presence of this witness. My overwrought nerves can endure no more.
 Between your inexpiable English and your inopportune reminiscences, I am a
-nervous wreck!" The little man''''s voice ended on high C.
+nervous wreck!" The little man''s voice ended on high C.
 
 "All right, Doc, suit yourself," replied Tubbs, temporarily subdued.
 
-"And in Heaven''''s name, I entreat, I implore, do not call me ''''Doc''''!"
+"And in Heaven''s name, I entreat, I implore, do not call me ''Doc''!"
 
 "Sorry I spoke, Cap."
 
 The little man threw up both hands in exasperation.
 
-"Say, Mister," said the girl curtly to Tubbs, "if you''''ll take that hundred
+"Say, Mister," said the girl curtly to Tubbs, "if you''ll take that hundred
 and seventy pounds of yourn off the wagon and get some rocks and block the
 wheels, I guess my cayuse can help some." As she spoke, she began
 uncoiling the rawhide riata which was tied to her saddle.
@@ -411,22 +412,22 @@ uncoiling the rawhide riata which was tied to her saddle.
 you to put yourself in peril." The little man was watching her
 preparations with troubled eyes.
 
-"No peril at all. It''''s easy. Croppy can pull like the devil. Wait till you
+"No peril at all. It''s easy. Croppy can pull like the devil. Wait till you
 see him lay down on the rope. That yap up there at the top of the hill
 could have done this for you long ago. Here, Windy"--addressing
 Tubbs--"tie this rope to the X, and make a knot that will hold."
 
-[Illustration: "SHE''''S A GAME KID, ALL RIGHT," SAID SMITH TO HIMSELF AT
+[Illustration: "SHE''S A GAME KID, ALL RIGHT," SAID SMITH TO HIMSELF AT
 THE TOP OF THE HILL.]
 
-The girl''''s words and manner inspired confidence. Interest and relief were
+The girl''s words and manner inspired confidence. Interest and relief were
 in the face of the little man standing at the side of the road.
 
-"Now, Windy, hand me the rope. I''''ll take three turns around my
-saddle-horn, and when I say ''''go'''' you see that your team get down in their
+"Now, Windy, hand me the rope. I''ll take three turns around my
+saddle-horn, and when I say ''go'' you see that your team get down in their
 collars."
 
-"She''''s a game kid, all right," said Smith to himself at the top of the
+"She''s a game kid, all right," said Smith to himself at the top of the
 hill.
 
 When the sorrel pony at the head of the team felt the rope grow taut on
@@ -447,13 +448,13 @@ making inarticulate sounds. At last the rear wheels of the wagon lurched
 over the hill and stood on level ground, while the horses, with spreading
 legs and heaving sides, gasped for breath.
 
-"Awful tired, ain''''t you, Mister?" the girl asked dryly, of the stranger on
+"Awful tired, ain''t you, Mister?" the girl asked dryly, of the stranger on
 horseback, as she recoiled her rope with supple wrist and tied it again to
 the saddle by the buckskin thongs.
 
 "Plumb worn to a frazzle," Smith replied with cool impudence, as he looked
 her over in much the same manner as he would have eyed a heifer on the
-range. "I was whipped for working when I was a boy, and I''''ve always
+range. "I was whipped for working when I was a boy, and I''ve always
 remembered."
 
 "It must be quite a ride--from the brush back there in Missouri where you
@@ -472,7 +473,7 @@ grandmother?"
 
 He eyed her angrily, but checked the reply on his tongue.
 
-"Say, girl, can you tell me where I can find that fat Injun woman''''s tepee
+"Say, girl, can you tell me where I can find that fat Injun woman''s tepee
 who lives around here?"
 
 "You mean my mother?"
@@ -485,37 +486,37 @@ He looked at her with new interest.
 
 "Is your mother a widder?"
 
-"Lookin'''' for widders?"
+"Lookin'' for widders?"
 
 "I likes widders. It happens frequent that widders are sociable
 inclined--especially if they are hard up," he added insolently.
 
-"Oh, you''''re ridin'''' the grub-line?" Her insolence equalled his own.
+"Oh, you''re ridin'' the grub-line?" Her insolence equalled his own.
 
 "Not yet;" and he took from his pocket a thick roll of banknotes.
 
-"Blood money? Some sheep-herder''''s month''''s pay, I guess."
+"Blood money? Some sheep-herder''s month''s pay, I guess."
 
-"You''''re a good guesser."
+"You''re a good guesser."
 
-"Not very--you''''re easy."
+"Not very--you''re easy."
 
-The girl''''s dislike for Smith was as unreasoning and violent as was her
+The girl''s dislike for Smith was as unreasoning and violent as was her
 liking for the excitable little man whom she had helped up the hill, and
-whose wagon was now rumbling close at her horse''''s heels.
+whose wagon was now rumbling close at her horse''s heels.
 
 They all travelled together in silence until, after a mile and a half on
 the flat, the road sloped gradually toward a creek shadowed by willows. On
 the opposite side of the creek were a ranch-house, stables, and corrals,
-the extent of which brought a glint of surprise to Smith''''s eyes.
+the extent of which brought a glint of surprise to Smith''s eyes.
 
-"That''''s where the widder lives who might be sociable inclined if she was
-hard up," said the girl, with a sneer which made Smith''''s fingers itch to
-choke her. "Couldn''''t coax you to stop, could I?"
+"That''s where the widder lives who might be sociable inclined if she was
+hard up," said the girl, with a sneer which made Smith''s fingers itch to
+choke her. "Couldn''t coax you to stop, could I?"
 
 "I aims to stay," Smith replied coolly.
 
-"Sure--it won''''t cost you nothin''''."
+"Sure--it won''t cost you nothin''."
 
 The girl waited for the wagon, and, with a change of manner in marked
 contrast to her impudent attitude toward Smith, invited the little man to
@@ -523,7 +524,7 @@ spend the night at the ranch.
 
 "We should not be intruders?" he asked doubtfully.
 
-"You won''''t feel lonesome," she answered with a laugh. "We keep a kind of
+"You won''t feel lonesome," she answered with a laugh. "We keep a kind of
 free hotel."
 
 "Colonel, I cakalate we better lay over here," broke in Tubbs.
@@ -538,7 +539,7 @@ woman, large-hipped, full-busted--in appearance a typical blanket
 squaw--stood in the doorway. Her thick hair was braided Indian fashion,
 her fingers adorned with many rings. The wide girdle about her waist was
 studded with brass nail-heads, while gaily-beaded moccasins covered her
-short, broad feet. Her eyes were soft and luminous, like an animal''''s when
+short, broad feet. Her eyes were soft and luminous, like an animal''s when
 it is content; but there was savage passion too in their dark depths.
 
 "This is my mother," said the girl briefly. "I am Susie MacDonald."
@@ -549,7 +550,7 @@ The little man concealed his surprise as best he could, and bowed.
 
 The girl, quick to note his puzzled expression, explained laconically:
 
-"I''''m a breed. My father was a white man. You''''re on the reservation when
+"I''m a breed. My father was a white man. You''re on the reservation when
 you cross the crick."
 
 Recovering himself, the stranger said politely:
@@ -564,7 +565,7 @@ as she waddled down the path.
 
 At the mission the woman had obtained the rudiments of an education.
 There, too, she had learned to cut and make a dress, after a crude,
-laborious fashion, and had acquired the ways of the white people''''s
+laborious fashion, and had acquired the ways of the white people''s
 housekeeping. She was noted for the acumen which she displayed in
 disposing of the crop from her extensive hay-ranch to the neighboring
 white cattlemen; and MacDonald, the big, silent Scotch MacDonald who had
@@ -574,7 +575,7 @@ shrewdness and thrift.
 
 In the corral the Indian woman came upon Smith. He turned his head slowly
 and looked at her. For a second, two, three seconds, or more, they looked
-into each other''''s eyes. His gaze was confident, masterful, compelling;
+into each other''s eyes. His gaze was confident, masterful, compelling;
 hers was wondering, until finally she dropped her eyes in the submissive,
 modest, half-shy way of Indian women.
 
@@ -582,7 +583,7 @@ Smith moistened his short upper lip with the tip of his tongue, while the
 shadow of a smile lurked at the corner of his mouth. He turned to his
 saddle, again, and without speaking, she watched him until he had gone
 into the barn. His saddle lay on the ground, half covering his blankets.
-Something in this heap caught the woman''''s eyes and held them. Swooping
+Something in this heap caught the woman''s eyes and held them. Swooping
 forward, she caught a protruding corner between her thumb and finger and
 pulled a gay, striped blanket from the rest. Lifting it to her nose, she
 smelled it. Smith saw the act as he came out of the door, but there was
@@ -608,7 +609,7 @@ from me the contents of this canvas sack."
 "I broke a horse for that son-of-a-gun onct. He owes me a dollar and six
 bits for the job yet," remarked Tubbs.
 
-The fire of enthusiasm died in McArthur''''s eyes as they rested upon his
+The fire of enthusiasm died in McArthur''s eyes as they rested upon his
 man.
 
 "What for a prospect do you aim to open up in a limestone formation?"
@@ -617,10 +618,10 @@ Smith, tipped on the rear legs of his chair, with his head resting
 comfortably against the unbleached muslin sheeting which lined the walls,
 winked at Tubbs as he asked the question.
 
-"''''What for a prospect''''?" repeated McArthur.
+"''What for a prospect''?" repeated McArthur.
 
-"Yes, ''''prospect''''--that''''s what I said. You say you''''ve got your war-bag full
-of spec''''mens."
+"Yes, ''prospect''--that''s what I said. You say you''ve got your war-bag full
+of spec''mens."
 
 McArthur laughed heartily.
 
@@ -644,12 +645,12 @@ bench in the farthermost corner of the room.
 
 "Oh, my dear sir----"
 
-"Smith''''s my name."
+"Smith''s my name."
 
 "But, Mr. Smith----"
 
-"I trusts no man that ''''Misters'''' me," Smith scowled. "Every time I''''ve ever
-been beat in a deal, it''''s been by some feller that''''s called me ''''Mister.''''
+"I trusts no man that ''Misters'' me," Smith scowled. "Every time I''ve ever
+been beat in a deal, it''s been by some feller that''s called me ''Mister.''
 Jest Smith suits me better."
 
 "Certainly, if you prefer," amicably replied McArthur, although
@@ -664,43 +665,43 @@ emostigite and the ambulatory legs were so perfectly preserved.
 He seemed a singular person, this Smith. McArthur was not sure that he
 fancied him.
 
-"Say, Guv''''ner, what business do you follow, anyhow?" Tubbs asked the
+"Say, Guv''ner, what business do you follow, anyhow?" Tubbs asked the
 question in the tone of one who really wanted to get at the bottom of a
 matter which had troubled him. "Air you a bug-hunter by trade, or what?
-I''''ve hauled you around fer more''''n a month now, and ain''''t figgered it out
-what you''''re after. We''''ve dug up ant-hills and busted open most of the
-rocks between here and the North Fork of Powder River, but I''''ve never seen
-you git anything yet that anybuddy''''d want."
+I''ve hauled you around fer more''n a month now, and ain''t figgered it out
+what you''re after. We''ve dug up ant-hills and busted open most of the
+rocks between here and the North Fork of Powder River, but I''ve never seen
+you git anything yet that anybuddy''d want."
 
-In the beginning of their tour, Tubbs''''s questions and caustic comment
+In the beginning of their tour, Tubbs''s questions and caustic comment
 would have given McArthur offense, but a longer acquaintance had taught
 him that none was intended; that his words were merely those of a man
 entirely without knowledge upon any subject save those which had come
 under his direct observation. While Tubbs frequently exasperated him
 beyond expression, he found at the same time a certain fascination in the
-man''''s incredible ignorance. In many respects his mind was like that of a
-child, and his horizon as narrow as McArthur''''s own, though his companion
+man''s incredible ignorance. In many respects his mind was like that of a
+child, and his horizon as narrow as McArthur''s own, though his companion
 did not suspect it. The little scientist saw life from the viewpoint of a
 small college and a New England village; Tubbs knew only the sage-brush
 plains.
 
 McArthur now replied dryly, but without irritation:
 
-"My real trade--''''job,'''' if you prefer--is anthropology. Strictly speaking,
+"My real trade--''job,'' if you prefer--is anthropology. Strictly speaking,
 I might, I think, be called an anthropologist."
 
-"Gawd, feller!" ejaculated Smith in mock dismay. "Don''''t tip your hand like
-that. I''''m a killer myself, but I plays a lone game. I opens up to no man
-or woman livin''''."
+"Gawd, feller!" ejaculated Smith in mock dismay. "Don''t tip your hand like
+that. I''m a killer myself, but I plays a lone game. I opens up to no man
+or woman livin''."
 
 Tubbs looked slightly ashamed of his employer.
 
 "Pardon me?"
 
-"I say, never give nobody the cinch on you. Many a good man''''s tongue has
+"I say, never give nobody the cinch on you. Many a good man''s tongue has
 hung him."
 
-McArthur studied Smith''''s unsmiling face in perplexity, not at all sure
+McArthur studied Smith''s unsmiling face in perplexity, not at all sure
 that he was not in earnest.
 
 They sat in silence after this, even Tubbs being too hungry to indulge in
@@ -717,16 +718,16 @@ appreciation of its value as an auctioneer.
 Through the dining-room door which opened into the kitchen, he could see
 the kitchen range--a big one--the largest made for private houses. Smith
 liked that. He liked things on a big scale. Besides, it denoted
-generosity, and he had come to regard a woman''''s kitchen as an index to her
+generosity, and he had come to regard a woman''s kitchen as an index to her
 character. He distinctly approved of the big meat-platter upon which the
 Chinese cook was piling steak. He eyed the mongrel dog lying at the Indian
-woman''''s feet, and noted that its sides were distended with food. He was
+woman''s feet, and noted that its sides were distended with food. He was
 prejudiced against, suspicious of, a woman who kept lean dogs.
 
 In the same impersonal way in which he eyed her belongings, he looked at
 the woman who owned it all. She was far too stout to please his taste, but
 he liked her square shoulders and the thickness of them; also her hair,
-which was long for an Indian woman''''s. She was too short in the body. He
+which was long for an Indian woman''s. She was too short in the body. He
 wondered if she rode. He had a peculiar aversion for women short in the
 body who rode on horseback. This woman could love--all Indian women can do
 that, as Smith well knew--love to the end, faithfully, like dogs.
@@ -736,7 +737,7 @@ sneering as he eyed him. He was like a sheep-dog that never had been
 trained. And McArthur? Innocent as a yearling calf, and honest as some
 sky-pilots.
 
-"Glub''''s piled!" yelled the cook from the kitchen door. "Come an'''' git it."
+"Glub''s piled!" yelled the cook from the kitchen door. "Come an'' git it."
 
 Tubbs all but fell off his chair.
 
@@ -760,8 +761,8 @@ cook, too, interested him as he watched him shuffling over the hewn plank
 floor in his straw sandals. A very different type, this swaggering
 Celestial, from the furtive-eyed Chinamen of the east. His tightly coiled
 cue was as smooth and shining as a king-snake, his loose blouse was
-immaculate, and the flippant voice in which he demanded in each person''''s
-ear, "Coffee? Milk?" was like a challenge. Whatever the individual''''s
+immaculate, and the flippant voice in which he demanded in each person''s
+ear, "Coffee? Milk?" was like a challenge. Whatever the individual''s
 choice might be, he got it in a torrent in his stone-china cup.
 
 There was no attempt at conversation, and only the clatter and rattle of
@@ -779,41 +780,41 @@ McArthur could not resist saying indignantly:
 
 "The unfortunate are to be pitied, my dear sir."
 
-"This is jest a mild spasm she''''s havin'''' now. You ought to hear her when
-she''''s warmed up."
+"This is jest a mild spasm she''s havin'' now. You ought to hear her when
+she''s warmed up."
 
 McArthur was about to administer a sharper rebuke when the door opened and
 Susie came out.
 
-"How''''s that for a screech?" she demanded triumphantly.
+"How''s that for a screech?" she demanded triumphantly.
 
-"You''''d sure make a bunch of coyotes take fer home," Meeteetse Ed replied
+"You''d sure make a bunch of coyotes take fer home," Meeteetse Ed replied
 flatteringly.
 
 "You have come in my way not once or twice, but thrice; and now you die!
 Ha! Ha!" Reaching for a spoon, Susie stabbed Meeteetse Ed on the second
 china button of his flannel shirt.
 
-"I''''d rather die than have you laff in my ear like that," declared
+"I''d rather die than have you laff in my ear like that," declared
 Meeteetse.
 
-"Next time I''''m goin'''' to learn a comical piece."
+"Next time I''m goin'' to learn a comical piece."
 
-"Any of ''''em''''s comical enough," replied a husky voice from the far end of
-the table. "I broke somethin'''' inside of me laffin'''' at that one about your
-dyin'''' child."
+"Any of ''em''s comical enough," replied a husky voice from the far end of
+the table. "I broke somethin'' inside of me laffin'' at that one about your
+dyin'' child."
 
-"I don''''t care," Susie answered, unabashed by criticism. "Teacher says I''''ve
+"I don''t care," Susie answered, unabashed by criticism. "Teacher says I''ve
 got quite a strain of pathos in me."
 
-"You ought to do somethin'''' for it," suggested a new voice. "Why don''''t you
-bile up some Oregon grape-root? That''''ll take most anything out of your
+"You ought to do somethin'' for it," suggested a new voice. "Why don''t you
+bile up some Oregon grape-root? That''ll take most anything out of your
 blood."
 
 "Or go to Warm Springs and get your head examined." This voice was
-Smith''''s.
+Smith''s.
 
-"Could they help _you_ any?" The girl''''s eyes narrowed and there was
+"Could they help _you_ any?" The girl''s eyes narrowed and there was
 nothing of the previous good-natured banter in her shrill tones.
 
 Smith flushed under the shout of mocking laughter which followed. He tried
@@ -830,52 +831,52 @@ home of the mammoth dinosaur?"
 Too late he realized that the question was ill-advised. As might be
 expected, it was Tubbs who broke the awkward silence.
 
-"Didn''''t look to me, as I rid along, that it ever were the home of
-anybuddy. A homestid''''s no good if you can''''t git water on it."
+"Didn''t look to me, as I rid along, that it ever were the home of
+anybuddy. A homestid''s no good if you can''t git water on it."
 
 McArthur hesitated, then explained: "The dinosaur was a prehistoric
 reptile," adding modestly, "I once had the pleasure of helping to restore
 an armored dinosaur."
 
-"If ever I gits a rope on one of them things, I''''ll box him up and ship him
+"If ever I gits a rope on one of them things, I''ll box him up and ship him
 on to you," said Tubbs generously. Then he inquired as an afterthought:
 "Would he snap or chaw me up a-tall?"
 
-"What''''s a prehysteric reptile?" interrupted Susie.
+"What''s a prehysteric reptile?" interrupted Susie.
 
 "This particular reptile was a big snake, with feet, that lived here when
-this country was a marsh," McArthur explained simply, for Susie''''s
+this country was a marsh," McArthur explained simply, for Susie''s
 benefit.
 
 The guests exchanged incredulous glances, but it was Meeteetse Ed who
 laughed explosively and said:
 
-"Why, Mister, they ain''''t been a sixteenth of an inch of standin'''' water on
+"Why, Mister, they ain''t been a sixteenth of an inch of standin'' water on
 this hull reserve in twenty year."
 
-"Better haul in your horns, feller, when you''''re talkin'''' to a real prairie
-man." Smith''''s contemptuous tone nettled McArthur, but Susie retorted for
+"Better haul in your horns, feller, when you''re talkin'' to a real prairie
+man." Smith''s contemptuous tone nettled McArthur, but Susie retorted for
 him.
 
-"Feller," mocked Susie, "looks like you''''re mixed. You mean when he''''s
-talkin'''' to a Yellow-back. No real prairie man packs a chip on his shoulder
+"Feller," mocked Susie, "looks like you''re mixed. You mean when he''s
+talkin'' to a Yellow-back. No real prairie man packs a chip on his shoulder
 all the time. That buttermilk you was raised on back there in Missoury has
 soured you some."
 
-Again an angry flush betrayed Smith''''s feeling.
+Again an angry flush betrayed Smith''s feeling.
 
-"A Yellow-back," Susie explained with gusto in response to McArthur''''s
+"A Yellow-back," Susie explained with gusto in response to McArthur''s
 puzzled look, "is one of these ducks that reads books with
-buckskin-colored covers, until he gets to thinkin'''' that he''''s a Bad Man
+buckskin-colored covers, until he gets to thinkin'' that he''s a Bad Man
 himself. This here country is all tunnelled over with the graves of
-Yellow-backs what couldn''''t make their bluffs stick; fellers that just knew
-enough to start rows and couldn''''t see ''''em through."
+Yellow-backs what couldn''t make their bluffs stick; fellers that just knew
+enough to start rows and couldn''t see ''em through."
 
-"Generally," said Smith evenly, as he stared unblinkingly into Susie''''s
-eyes, "when I starts rows, I sees ''''em through."
+"Generally," said Smith evenly, as he stared unblinkingly into Susie''s
+eyes, "when I starts rows, I sees ''em through."
 
 "And any time," Susie answered, staring back at him, "that you start a row
-on _this_ ranch, you''''ve _got_ to see it through."
+on _this_ ranch, you''ve _got_ to see it through."
 
 The grub-liners raised their eyes in surprise, for there was unmistakable
 ill-feeling in her voice. It was unlike her, this antagonistic attitude
@@ -895,75 +896,75 @@ But the mere presence of this new-comer seemed to fill her with
 resentment, making of her an irrepressible young shrew who gloated openly
 in his angry confusion.
 
-"Speakin'''' of Yellow-backs," said Meeteetse, with the candid intent of
-being tactful, "reminds me of a song a pardner of mine wrote up about ''''em
-once. Comical? _T''''--t''''--t''''--!_" He wagged his head as if he had no words
+"Speakin'' of Yellow-backs," said Meeteetse, with the candid intent of
+being tactful, "reminds me of a song a pardner of mine wrote up about ''em
+once. Comical? _T''--t''--t''--!_" He wagged his head as if he had no words
 in which to describe its incomparable humor. "He had another song that was
-a reg''''lar tear-starter: ''''Whar the Silver Colorady Wends Its Way.'''' Ever
-hear it? It''''s about a feller that buried his wife by the silver Colorady,
+a reg''lar tear-starter: ''Whar the Silver Colorady Wends Its Way.'' Ever
+hear it? It''s about a feller that buried his wife by the silver Colorady,
 and turned outlaw. This pardner of mine used to beller every time he sung
-it. He cried like he was a Mormon, and he hadn''''t no more wife than a jack
+it. He cried like he was a Mormon, and he hadn''t no more wife than a jack
 rabbit."
 
-"Some songs is touchin''''," agreed Arkansaw Red.
+"Some songs is touchin''," agreed Arkansaw Red.
 
 "This was," declared Meeteetse. "How she faded day by day, till a pale,
-white corp'''' she lay! If I hadn''''t got this cold on me----"
+white corp'' she lay! If I hadn''t got this cold on me----"
 
-"I hate to see you sufferin'''', Meeteetse, but if it keeps you from
-warblin''''----"
+"I hate to see you sufferin'', Meeteetse, but if it keeps you from
+warblin''----"
 
-He ignored Susie''''s implication, and went on serenely:
+He ignored Susie''s implication, and went on serenely:
 
-"Looks like it''''s settled on me for life, and it all comes of tryin'''' not to
+"Looks like it''s settled on me for life, and it all comes of tryin'' not to
 be a hog."
 
-"I hope it''''ll be a lesson to you," said Susie soberly.
+"I hope it''ll be a lesson to you," said Susie soberly.
 
 "That there Bar C cowpuncher, Babe, comes over the other night, and, the
-bunk-house bein'''' full, I offers him half my blankets. I never put in such
-a night since I froze to death on South Pass. For fair, I''''d ruther sleep
-with a two-year-ole steer--couldn''''t kick no worse than that Babe. Why them
-blankets was in the air more''''n half the time, with him pullin'''' his way,
-and me snatchin'''' of ''''em back. Finally I gits a corner of a soogan in my
-teeth, and that way I manages a little sleep. I vows I''''d ruther be a hog
-and git a night''''s rest than take in such a turrible bed-feller as him."
+bunk-house bein'' full, I offers him half my blankets. I never put in such
+a night since I froze to death on South Pass. For fair, I''d ruther sleep
+with a two-year-ole steer--couldn''t kick no worse than that Babe. Why them
+blankets was in the air more''n half the time, with him pullin'' his way,
+and me snatchin'' of ''em back. Finally I gits a corner of a soogan in my
+teeth, and that way I manages a little sleep. I vows I''d ruther be a hog
+and git a night''s rest than take in such a turrible bed-feller as him."
 
-Apropos of the restless Babe, one James Padden observed: "They say he''''s
-licked more''''n half the Bar C outfit."
+Apropos of the restless Babe, one James Padden observed: "They say he''s
+licked more''n half the Bar C outfit."
 
-"Lick ''''em!" exclaimed Meeteetse, with enthusiasm. "Why, he could eat ''''em!
+"Lick ''em!" exclaimed Meeteetse, with enthusiasm. "Why, he could eat ''em!
 He jest tapped me an easy one and nigh busted my jaw. If he ever reely
-hit you with that fist of his''''n, it ud sink in up to the elbow. I ast him
-once: ''''Babe,'''' I says, ''''how big are you anyhow?'''' ''''Big?'''' he says surprised.
-''''I ain''''t big. I''''m the runt of the family. Pa was thirty-two inches between
-the eyes, and they fed him with a shovel.''''"
+hit you with that fist of his''n, it ud sink in up to the elbow. I ast him
+once: ''Babe,'' I says, ''how big are you anyhow?'' ''Big?'' he says surprised.
+''I ain''t big. I''m the runt of the family. Pa was thirty-two inches between
+the eyes, and they fed him with a shovel.''"
 
 Susie giggled at some thought, and then inquired:
 
-"Did anybody ever see that horse he''''s huntin''''? He says it''''s a two-year-old
-filly that he thinks the world of. It''''s brown, with a star in its
+"Did anybody ever see that horse he''s huntin''? He says it''s a two-year-old
+filly that he thinks the world of. It''s brown, with a star in its
 forehead, and one hip is knocked down. He never hunts anywhere except on
-that road past the school-house, and he stops at the pump each way--goin''''
-and comin''''. I never saw anybody with such a thirst. He looks in the window
-while he''''s drinkin'''', and swallows a gallon of water at a time, and don''''t
+that road past the school-house, and he stops at the pump each way--goin''
+and comin''. I never saw anybody with such a thirst. He looks in the window
+while he''s drinkin'', and swallows a gallon of water at a time, and don''t
 know it."
 
 "Love is a turrible disease." Tubbs spoke with the emphasis of conviction.
-"It''''s worse''''n lump-jaw er blackleg. It''''s dum nigh as bad as glanders. It''''s
-ketchin'''', too, and I holds that anybody that''''s got it bad ought to be
+"It''s worse''n lump-jaw er blackleg. It''s dum nigh as bad as glanders. It''s
+ketchin'', too, and I holds that anybody that''s got it bad ought to be
 dipped and quarantined. I knowed a feller over in Judith Basin what
 suffered agonies with it for two months, then shot hisself. There was
-seven of ''''em tyin'''' their horses to the same Schoolmarm''''s hitchin''''-post."
+seven of ''em tyin'' their horses to the same Schoolmarm''s hitchin''-post."
 
-"Take a long-geared Schoolmarm in a woolly Tam-o''''-shanter, and she''''s a
-reg''''lar storm-centre," vouchsafed the husky voice of "Banjo" Johnson.
+"Take a long-geared Schoolmarm in a woolly Tam-o''-shanter, and she''s a
+reg''lar storm-centre," vouchsafed the husky voice of "Banjo" Johnson.
 
 "They is! They is!" declared Meeteetse, with more feeling than the
 occasion seemed to warrant.
 
 The knob of a door adjoining the dining-room turned, and the grub-liners
-straightened in their chairs. Susie''''s eyes danced with mischief as she
+straightened in their chairs. Susie''s eyes danced with mischief as she
 leaned toward Meeteetse and asked innocently:
 
 "They is _what_?"
@@ -979,13 +980,13 @@ his knife in his mouth with painful results.
 The young woman who seated herself in one of the two unoccupied chairs was
 not of the far West. Her complexion alone testified to this fact, for the
 fineness and whiteness of it were conspicuous in a country where the
-winter''''s wind and burning suns of summer tan the skins of men and women
+winter''s wind and burning suns of summer tan the skins of men and women
 alike until they resemble leather in color and in texture. Had this young
 woman possessed no other good feature, her markedly fine complexion alone
 would have saved her from plainness. But her thick brown hair, glossy, and
 growing prettily about her temples, was equally attractive to the men who
 had been used to seeing only the straight, black hair of the Indian women,
-and Susie''''s sun-bleached pigtail, which, as Meeteetse took frequent
+and Susie''s sun-bleached pigtail, which, as Meeteetse took frequent
 occasion to remind her, looked like a hair-cinch. Her eyes, set rather too
 far apart for beauty, were round, with pupils which dilated until they all
 but covered the blue iris; the eyes of an emotional nature, an imaginative
@@ -1000,7 +1001,7 @@ that was desirable in young ladyhood; each individual humbly admitting
 that while he never before had met a real lady, he knew one when he saw
 her.
 
-The young woman returned McArthur''''s bow with a friendly smile, his action
+The young woman returned McArthur''s bow with a friendly smile, his action
 having at once placed him as being "different." Noting the fact, the
 grub-liners resolved not to be outdone in future in a mere matter of
 bows.
@@ -1008,18 +1009,18 @@ bows.
 While nearly every arm was outstretched with an offer of food, Susie
 leaned forward and whispered ostentatiously behind her hand to Smith:
 
-"Don''''t you make any cracks. That''''s the Schoolmarm."
+"Don''t you make any cracks. That''s the Schoolmarm."
 
-"I''''ve been around the world some," Smith replied curtly.
+"I''ve been around the world some," Smith replied curtly.
 
-"The south side of Billings ain''''t the world."
+"The south side of Billings ain''t the world."
 
 It was only a random shot, as she did not know Billings or any other town
-save by hearsay, but it made a bull''''s-eye. Susie knew it by the startled
+save by hearsay, but it made a bull''s-eye. Susie knew it by the startled
 look which she surprised from him, and Smith could have throttled her as
 she snickered.
 
-"Mister McArthur and Mister Tubbs, I''''ll make you acquainted with Miss
+"Mister McArthur and Mister Tubbs, I''ll make you acquainted with Miss
 Marshall."
 
 With elaborate formality of tone and manner, Susie pointed at each
@@ -1039,9 +1040,9 @@ Smith in turn looked expectantly at Susie, who met his eyes with a mocking
 grin.
 
 "Anything I can reach for you, Mister Smith?" she inquired. "Looks like
-you''''re waitin'''' for something."
+you''re waitin'' for something."
 
-Smith''''s face and the red table-cloth were much the same shade as he
+Smith''s face and the red table-cloth were much the same shade as he
 looked annihilation at the little half-breed imp.
 
 Each time that Dora Marshall raised her eyes, they met those of Smith.
@@ -1063,8 +1064,8 @@ him they had in them all the vicious meanness of an outlaw bronco. His
 expression then held nothing but sullen vindictiveness, while every trait
 of a surly nature was suggested by his voice and manner.
 
-During the Schoolmarm''''s covert study of him, he laughed unexpectedly at
-one of Meeteetse Ed''''s sallies. The effect was little short of marvellous;
+During the Schoolmarm''s covert study of him, he laughed unexpectedly at
+one of Meeteetse Ed''s sallies. The effect was little short of marvellous;
 it completely transformed him. An unlooked-for dimple deepened in one
 cheek, his eyes sparkled, his entire countenance radiated for a moment a
 kind of boyish good-nature which was indescribably winning. In the brief
@@ -1078,29 +1079,29 @@ usual candor as she eyed him:
 Contributing but little toward the conversation, and that little chiefly
 in the nature of flings at Susie, Smith was yet the dominant figure at the
 table. While he antagonized, he interested, and although his insolence was
-no match for Susie''''s self-assured impudence, he still impressed his
+no match for Susie''s self-assured impudence, he still impressed his
 individuality upon every person present.
 
-He was studied by other eyes than Dora''''s and Susie''''s. Not one of the looks
+He was studied by other eyes than Dora''s and Susie''s. Not one of the looks
 which he had given the former had escaped the Indian woman. With the
-Schoolmarm''''s coming, she had seen herself ignored, and her face had grown
-as sullen as Smith''''s own, while the smouldering glow in her dark eyes
+Schoolmarm''s coming, she had seen herself ignored, and her face had grown
+as sullen as Smith''s own, while the smouldering glow in her dark eyes
 betrayed jealous resentment.
 
 "Have a cookie?" urged Susie hospitably, thrusting a plate toward Tubbs.
-"Ling makes these ''''specially for White Antelope."
+"Ling makes these ''specially for White Antelope."
 
-"No, thanks, I''''ve et hearty," declared Tubbs, while McArthur shuddered.
-"I''''ve had thousands."
+"No, thanks, I''ve et hearty," declared Tubbs, while McArthur shuddered.
+"I''ve had thousands."
 
 "Why, where is White Antelope?" Susie looked in surprise at the vacant
 chair, and asked the question of her mother.
 
-Involuntarily Smith''''s eyes and those of the Indian woman met. He read
+Involuntarily Smith''s eyes and those of the Indian woman met. He read
 correctly all that they contained, but he did not remove his own until her
 eyelids slowly dropped, and with a peculiar doggedness she drawled:
 
-"He go way for l''''il visit; ''''bout two, t''''ree sleeps maybe."
+"He go way for l''il visit; ''bout two, t''ree sleeps maybe."
 
 
 
@@ -1118,36 +1119,36 @@ In spite of her surprised protest, he gently took the bucket from her
 hand.
 
 "Look at that dude," said Smith contemptuously, viewing the incident
-through the living-room window. "Queerin'''' hisself right along. No more
-_sabe_ than a cotton-tail rabbit. That''''s the worse thing he could do.
-Feller"--turning to Tubbs--"if you want to make a winnin'''' with a woman,
+through the living-room window. "Queerin'' hisself right along. No more
+_sabe_ than a cotton-tail rabbit. That''s the worse thing he could do.
+Feller"--turning to Tubbs--"if you want to make a winnin'' with a woman,
 you never want to fetch and carry for her."
 
-"I knows it," acquiesced Tubbs. "Onct I was a reg''''lar doormat fer one, and
+"I knows it," acquiesced Tubbs. "Onct I was a reg''lar doormat fer one, and
 I only got stomped on fer it."
 
 "I can wrangle Injuns to a fare-ye-well," Smith continued. "Over on the
 Blackfoot I was the most notorious Injun wrangler that ever jumped up;
 and, feller, on the square, I never run an errant for one in my life."
 
-"It''''s wrong," agreed Tubbs.
+"It''s wrong," agreed Tubbs.
 
-"There''''s that dude tryin'''' to make a stand-in, and spilin'''' his own game
-all the time by talkin''''. You can''''t say he talks, neither; he just opens
+"There''s that dude tryin'' to make a stand-in, and spilin'' his own game
+all the time by talkin''. You can''t say he talks, neither; he just opens
 his mouth and lets it say what it damn pleases. Is them real words he gets
-off, or does he make ''''em up as he goes along?"
+off, or does he make ''em up as he goes along?"
 
 "Search me."
 
-"I''''ll tip you off, feller: if ever you want to make a strong play at an
-Injun woman, you don''''t want to shoot off your mouth none. Keep still and
-move around just so, and pretty soon she''''ll throw you the sign. Did you
-ever notice a dog trottin'''' down the street, passin'''' everybody up till all
+"I''ll tip you off, feller: if ever you want to make a strong play at an
+Injun woman, you don''t want to shoot off your mouth none. Keep still and
+move around just so, and pretty soon she''ll throw you the sign. Did you
+ever notice a dog trottin'' down the street, passin'' everybody up till all
 to once it takes a sniff, turns around, and follers some feller off?
-That''''s an Injun woman."
+That''s an Injun woman."
 
-"I never had no luck with squaws, and the likes o'''' that," Tubbs confessed.
-"They''''re turrible hands to git off together and poke fun at you."
+"I never had no luck with squaws, and the likes o'' that," Tubbs confessed.
+"They''re turrible hands to git off together and poke fun at you."
 
 As McArthur and the Indian woman came in from the kitchen, he was saying
 earnestly to her:
@@ -1158,9 +1159,9 @@ if you could possibly accommodate my man and me with board, you may not be
 conferring a favor only upon me, but indirectly, perhaps, upon the world
 of science. I have with me my own bath-tub and pneumatic mattress."
 
-Tubbs, seeing the Indian woman''''s puzzled expression, explained:
+Tubbs, seeing the Indian woman''s puzzled expression, explained:
 
-"He means we''''ll sleep ourselves if you will eat us."
+"He means we''ll sleep ourselves if you will eat us."
 
 The woman nodded.
 
@@ -1174,18 +1175,18 @@ investigations.
 should be the happiest man in the world," declared McArthur, clasping his
 fingers in ecstasy at the thought of such unparalleled bliss.
 
-"What did I tell you?" said Smith, accompanying Tubbs to the corral. "He''''s
-tryin'''' to win himself a home."
+"What did I tell you?" said Smith, accompanying Tubbs to the corral. "He''s
+tryin'' to win himself a home."
 
 "Looks that way," Tubbs agreed. "These here bug-hunters is deep."
 
 The saddle blanket which Tubbs pulled from their wagon and threw upon the
-ground, with McArthur''''s saddle, caught Smith''''s eye instantly, because of
+ground, with McArthur''s saddle, caught Smith''s eye instantly, because of
 the similarity in color and markings to that which he had folded so
 carefully inside his own. This was newer, it had no disfiguring holes, or
 black stain in the corner.
 
-"What''''s the use of takin'''' chances?" he asked himself as he looked it
+"What''s the use of takin'' chances?" he asked himself as he looked it
 over.
 
 While Tubbs was catching the horse in the corral, Smith deftly exchanged
@@ -1197,19 +1198,19 @@ dishes for the cook. She came into the living-room when he beckoned to
 her, with the towel in her hand. Taking it from her, he wadded it up and
 threw it back into the kitchen.
 
-"Don''''t you know any better not to spoil a cook like that, woman?" he
+"Don''t you know any better not to spoil a cook like that, woman?" he
 asked, smiling down upon her. "You never want to touch a dish for a cook.
-Row with ''''em, work ''''em over, keep ''''em down--but don''''t humor ''''em. You can''''t
-treat a cook like a real man. Ev''''ry reg''''lar cook has a screw loose or he
-wouldn''''t be a cook. Cookin'''' ain''''t no man''''s job. I never had no use for
-reg''''lar cooks--me, Smith.
+Row with ''em, work ''em over, keep ''em down--but don''t humor ''em. You can''t
+treat a cook like a real man. Ev''ry reg''lar cook has a screw loose or he
+wouldn''t be a cook. Cookin'' ain''t no man''s job. I never had no use for
+reg''lar cooks--me, Smith.
 
 "All you women need ribbing up once in awhile," he added, as, laying his
 hand lightly on her arm, he let it slide its length until it touched her
 fingers. He gave them a gentle pressure and resumed his seat against the
 wall.
 
-The woman''''s eyes glowed as she looked at him. His authoritative attitude
+The woman''s eyes glowed as she looked at him. His authoritative attitude
 appealed to her whose ancestors had dressed game, tanned hides, and
 dragged wood for their masters for countless generations. The growing
 passion in her eyes did not escape Smith.
@@ -1217,7 +1218,7 @@ passion in her eyes did not escape Smith.
 In the long silence which followed he looked at her steadily; finally he
 said:
 
-"Well, I guess I''''ll saddle up. You look ''''just so'''' to me, woman--but I got
+"Well, I guess I''ll saddle up. You look ''just so'' to me, woman--but I got
 to go."
 
 She laid down the rags of her mat and "threw him the sign" for which he
@@ -1234,7 +1235,7 @@ She arose and walked to his side.
 
 He felt a sudden and violent dislike for her flabby, swaying hips, her
 heavy step, as she moved toward him. He knew that the game was won, and
-won so easily it was a school-boy''''s play.
+won so easily it was a school-boy''s play.
 
 "Why you go?" she demanded, and the disappointment in her eyes was so
 intense as to resemble fear. "What you do dere?"
@@ -1250,13 +1251,13 @@ She shook her head.
 The woman stared at him uncomprehendingly.
 
 "Down there on the border," he explained, "you buy the horses on the
-Mexico side. You buy ''''em when the Mexican boss is asleep in his ''''dobe, so
-there''''s no kick about the price. You swim ''''em across the Rio Grande and
-sell ''''em to the Americano waitin'''' on the other side."
+Mexico side. You buy ''em when the Mexican boss is asleep in his ''dobe, so
+there''s no kick about the price. You swim ''em across the Rio Grande and
+sell ''em to the Americano waitin'' on the other side."
 
 "You buy de wet horse?"
 
-"No, by Gawd,--I wet ''''em!"
+"No, by Gawd,--I wet ''em!"
 
 "Why you steal?"
 
@@ -1272,7 +1273,7 @@ He laughed.
 had too much. Gold is hell to pack," he added reminiscently.
 
 "I have de fine hay-ranch, white man, de best on de reservation. Two, four
-t''''ousand dollars I have when de hay is sold. De ranch is big"--her arms
+t''ousand dollars I have when de hay is sold. De ranch is big"--her arms
 swept the horizon to show its extent. "You stay here and make de bargain
 with de cattlemen, and I give you so much"--she measured a third of her
 hand with her forefinger. "If dat is not enough, I give you so much"--she
@@ -1289,7 +1290,7 @@ beneath them.
 Smith, who had arisen, slipped his arm about her ample waist. She pulled
 aside his Mackinaw coat and laid her head upon his breast.
 
-"The white man''''s heart is strong," she said softly.
+"The white man''s heart is strong," she said softly.
 
 "It beats for you, Little Fawn;" and he ran out his tongue in derision.
 
@@ -1299,60 +1300,60 @@ his face with dog-like devotion. It was there Susie saw her when she
 returned from school earlier in the afternoon than usual, and was beckoned
 into the kitchen by Ling.
 
-"He''''s makin'''' a mash," said Ling laconically, as he jerked his thumb toward
+"He''s makin'' a mash," said Ling laconically, as he jerked his thumb toward
 the open door of the living-room.
 
-All the girlish vivacity seemed to go out of Susie''''s face in her first
+All the girlish vivacity seemed to go out of Susie''s face in her first
 swift glance. It hardened in mingled shame and anger.
 
-"Mother," she said sharply, "you promised me that you wouldn''''t sit on the
+"Mother," she said sharply, "you promised me that you wouldn''t sit on the
 floor like an Injun."
 
-"We''''re gettin'''' sociable," said Smith mockingly.
+"We''re gettin'' sociable," said Smith mockingly.
 
 The woman glanced at Smith, and hesitated, but finally got up and seated
 herself on the bench.
 
-"Why don''''t you try bein'''' ''''sociable'''' with the Schoolmarm?" Susie sneered.
+"Why don''t you try bein'' ''sociable'' with the Schoolmarm?" Susie sneered.
 
 "Maybe I will."
 
-"And _maybe_ you won''''t get passed up like a white chip!"
+"And _maybe_ you won''t get passed up like a white chip!"
 
-"Oh, I dunno. I''''ve made some winnings."
+"Oh, I dunno. I''ve made some winnings."
 
-"I can tell that by your eyes. You got ''''em bloodshot, I reckon, hangin''''
-over the fire in squaw camps. White men can''''t stand smoke like Injuns."
+"I can tell that by your eyes. You got ''em bloodshot, I reckon, hangin''
+over the fire in squaw camps. White men can''t stand smoke like Injuns."
 
 This needle-tongued girl jabbed the truth into him in a way which
 maddened him, but he said conciliatingly:
 
-"We don''''t want to quarrel, kid."
+"We don''t want to quarrel, kid."
 
-"You mean _you_ don''''t." Susie slammed the door behind her.
+"You mean _you_ don''t." Susie slammed the door behind her.
 
-The child''''s taunt reawakened his interest in the Schoolmarm. He thought of
+The child''s taunt reawakened his interest in the Schoolmarm. He thought of
 her riding home alone, and grew restless. Besides, the dulness began to
 bore him.
 
-"I''''ll saddle up, Prairie Flower, and look over the ranch. When I come back
-I''''ll let you know if it''''s worth my while to stay."
+"I''ll saddle up, Prairie Flower, and look over the ranch. When I come back
+I''ll let you know if it''s worth my while to stay."
 
 Tubbs was sitting on the wagon-tongue, mending harness, when Smith went
 out,
 
-"Aimin'''' to quit the flat?" inquired Tubbs.
+"Aimin'' to quit the flat?" inquired Tubbs.
 
-"Feller, didn''''t that habit of askin'''' questions ever git you in trouble?"
+"Feller, didn''t that habit of askin'' questions ever git you in trouble?"
 
 "Well I guess _so_," Tubbs replied candidly. "See that scar under my
 eye?"
 
-"I''''d invite you along to tell me about it," said Smith sardonically,
-"only, the fact is, feller, I''''m goin'''' down the road to make medicine with
+"I''d invite you along to tell me about it," said Smith sardonically,
+"only, the fact is, feller, I''m goin'' down the road to make medicine with
 the Schoolmarm."
 
-Tubbs''''s eyes widened.
+Tubbs''s eyes widened.
 
 "Gosh!" he ejaculated enviously. "I wisht I had your gall."
 
@@ -1363,24 +1364,24 @@ attached to a hair watch-chain.
 
 "Huh?"
 
-"I say, if it was only two o''''clock, or three, I wouldn''''t go."
+"I say, if it was only two o''clock, or three, I wouldn''t go."
 
-"You wouldn''''t? I''''ll tell you about me: I''''d go if it was twelve o''''clock at
+"You wouldn''t? I''ll tell you about me: I''d go if it was twelve o''clock at
 night and twenty below zero to ride home with that lady."
 
 "Feller," said Smith, in a paternal tone, "you never want to make a break
-at a woman before four o''''clock in the afternoon. You might just as well go
+at a woman before four o''clock in the afternoon. You might just as well go
 and lay down under a bush in the shade from a little after daylight until
-about this time. You wouldn''''t hunt deer or elk in the middle of the day,
-would you? No, nor women--all same kind of huntin''''. They''''ll turn you down
+about this time. You wouldn''t hunt deer or elk in the middle of the day,
+would you? No, nor women--all same kind of huntin''. They''ll turn you down
 sure; white or red--no difference."
 
 "Is that so?" said Tubbs, in the awed voice of one who sits at the feet of
 a master.
 
-"When the moon''''s out and the lamps are lit, they''''ll empty their sack and
-tell you the story of their lives. I don''''t want to toot my horn none, but
-I''''ve wrangled around some. I''''ve hunted big game and humans. Their habits,
+"When the moon''s out and the lamps are lit, they''ll empty their sack and
+tell you the story of their lives. I don''t want to toot my horn none, but
+I''ve wrangled around some. I''ve hunted big game and humans. Their habits,
 feller, is much the same."
 
 While Smith was galloping down the road toward the school-house, Susie was
@@ -1389,26 +1390,26 @@ from a knoll near the house.
 
 "Mother," she said abruptly, "I feel queer here." She laid both hands on
 her flat, childish breast and hunched her shoulders. "I feel like
-something is goin'''' to happen."
+something is goin'' to happen."
 
 "What happen, you think?" her mother asked listlessly.
 
-"It''''s something about White Antelope, I know."
+"It''s something about White Antelope, I know."
 
 The woman looked up quickly.
 
 "He go visit Bear Chief, maybe." There was an odd note in her voice.
 
-"He wouldn''''t go away and stay like this without telling you or me. He
-never did before. He knows I would worry; besides, he didn''''t take a horse,
+"He wouldn''t go away and stay like this without telling you or me. He
+never did before. He knows I would worry; besides, he didn''t take a horse,
 and he never would walk ten miles when there are horses to ride. His gun
-isn''''t here, so he must have gone hunting, but he wouldn''''t stay all night
-hunting rabbits; and he couldn''''t be lost, when he knows the country as
+isn''t here, so he must have gone hunting, but he wouldn''t stay all night
+hunting rabbits; and he couldn''t be lost, when he knows the country as
 well as you or me."
 
 "He go to visit," the Indian woman insisted doggedly.
 
-"If he isn''''t home to-morrow, I''''m goin'''' to hunt him, but I know something''''s
+"If he isn''t home to-morrow, I''m goin'' to hunt him, but I know something''s
 wrong."
 
 
@@ -1439,14 +1440,14 @@ an added zest.
 Dora Marshall, engrossed in thought, did not see Smith until he pulled his
 hat-brim in salutation and said:
 
-"You''''re a thinker, I take it."
+"You''re a thinker, I take it."
 
 "I find my work here absorbing," she replied, coloring under his steady
 look.
 
 He turned his horse and swung it into the road beside her.
 
-"I was just millin'''' around and thought I''''d ride down the road and meet
+"I was just millin'' around and thought I''d ride down the road and meet
 you." Further than this brief explanation, he did not seem to feel it
 incumbent upon him to make conversation. Apparently entirely at his ease
 in the silence which followed, he turned his head often and stared at her
@@ -1454,41 +1455,41 @@ with a frank interest which he made no effort to conceal. Finally he
 shifted his weight to one stirrup and, turning in his saddle so that he
 faced her, he asked bluntly:
 
-"That look in your eyes--that look as if you hadn''''t nothin'''' to hide--is it
+"That look in your eyes--that look as if you hadn''t nothin'' to hide--is it
 true? Is it natural, as you might say, or do you just put it on?"
 
 Her astonished expression led him to explain.
 
-"It''''s like lookin'''' down deep into water that''''s so clear you can see the
-sand shinin'''' in the bottom; one of these places where there''''s no mud or
-black spots; nothin'''' you can''''t see or understand. _Sabe_ what I mean?"
+"It''s like lookin'' down deep into water that''s so clear you can see the
+sand shinin'' in the bottom; one of these places where there''s no mud or
+black spots; nothin'' you can''t see or understand. _Sabe_ what I mean?"
 
 Since she did not answer, he continued:
 
-"I''''ve met up with women before now that had that same look, but only at
-first. It didn''''t last; they could put it on and take it off like they did
+"I''ve met up with women before now that had that same look, but only at
+first. It didn''t last; they could put it on and take it off like they did
 their hats."
 
-"I don''''t know that I am quite sure what you mean," the girl replied,
+"I don''t know that I am quite sure what you mean," the girl replied,
 embarrassed by the personal nature of his questions and comments; "but if
 you mean to imply that I affect this or that expression, for a purpose,
 you misjudge me."
 
-"I was just askin''''," said Smith.
+"I was just askin''," said Smith.
 
 "I think I am always honest of purpose," the girl went on slowly, "and
-when one is that, I think it shows in one''''s eyes. To be sure, I often fall
+when one is that, I think it shows in one''s eyes. To be sure, I often fall
 short of my intentions. I mean to do right, and almost as frequently do
 wrong."
 
 "You do?" He eyed her with quick intentness.
 
-"Yes, don''''t you? Don''''t all of us?"
+"Yes, don''t you? Don''t all of us?"
 
 "I does what I aims to do," he replied ambiguously.
 
 So she--this girl with eyes like two deep springs--did wrong--frequently.
-He pondered the admission for a long time. Smith''''s exact ideas of right
+He pondered the admission for a long time. Smith''s exact ideas of right
 and wrong would have been difficult to define; the dividing line, if there
 were any, was so vague that it had never served as the slightest
 restraint. "To do what you aim to do, and make a clean get-away"--that was
@@ -1516,11 +1517,11 @@ Smith always remembered with satisfaction that he had left her in Red
 Lodge with only the price of a telegram to her husband, in her shabby
 purse.
 
-"I like your style, girl." His eyes swept Dora Marshall''''s figure as he
+"I like your style, girl." His eyes swept Dora Marshall''s figure as he
 spoke.
 
 There was a difference in his tone, a familiarity in his glance, which
-sent the color flying to the Schoolmarm''''s cheeks.
+sent the color flying to the Schoolmarm''s cheeks.
 
 "I think we could hit it off--you and me--if we got sociable."
 
@@ -1538,7 +1539,7 @@ as he phrased it to himself--than he had thought, or had he really
 misunderstood her? Surprising as was the feeling, he hoped some way, that
 it was the latter. He looked at her again before he answered gently:
 
-"I didn''''t mean to make you hot none, Miss. I''''m ignorant in handlin'''' words.
+"I didn''t mean to make you hot none, Miss. I''m ignorant in handlin'' words.
 I only meant to say that I hoped you and me would be good friends."
 
 His explanation cleared her face instantly.
@@ -1546,7 +1547,7 @@ His explanation cleared her face instantly.
 "I am sorry if I misunderstood you; but one or two unpleasant experiences
 in this country have made me quick--too quick, perhaps--to take offense."
 
-"There''''s lots just lookin'''' for game like you. No better nor brutes," said
+"There''s lots just lookin'' for game like you. No better nor brutes," said
 Smith virtuously, entirely sincere in his sudden indignation against these
 licentious characters.
 
@@ -1571,16 +1572,16 @@ She asked him to loop her latigo, which was trailing, and his hand shook
 as he fumbled with the leather strap.
 
 "Gawd!" he swore in bewilderment as he returned to his own horse, wiping
-his forehead with the back of his gauntlet, "what feelin'''' is this workin''''
-on me? Am I gettin'''' locoed, me--Smith?"
+his forehead with the back of his gauntlet, "what feelin'' is this workin''
+on me? Am I gettin'' locoed, me--Smith?"
 
-"I''''m glad I''''ve found a friend like you," said the Schoolmarm impulsively.
+"I''m glad I''ve found a friend like you," said the Schoolmarm impulsively.
 "One needs friends in a country like this."
 
 "A friend!" It sounded like a jest to Smith. "A friend!" he repeated with
 an odd laugh. Then he raised his hand, as one takes an oath, and whatever
-of whiteness was left in Smith''''s soul illumined his face as he added:
-"Yes, to a killin'''' finish."
+of whiteness was left in Smith''s soul illumined his face as he added:
+"Yes, to a killin'' finish."
 
 If Smith had met Dora among many, the result might have been the same in
 the end, but here, in the isolation, she seemed from the first the centre
@@ -1601,7 +1602,7 @@ result of the latter the Schoolmarm cherished a fine belief in her worldly
 wisdom, whereas, in a measure, her lack of it was one of her charms.
 Susie, in her way, was wiser.
 
-The Schoolmarm''''s attitude toward her daily life was the natural outcome of
+The Schoolmarm''s attitude toward her daily life was the natural outcome of
 a romantic nature and an imaginative mind. She saw herself as the heroine
 of an absorbing story, the living of which story she enjoyed to the
 utmost, while every incident and every person contributed to its interest.
@@ -1625,63 +1626,63 @@ exactly the sort to misunderstand and to be misunderstood, a combination
 sometimes quite as dangerous in its results, and as provocative of
 trouble, as the intrigues of a designing woman.
 
-"I reckon you think I''''m kind of a mounted bum, a grub-liner, or something
+"I reckon you think I''m kind of a mounted bum, a grub-liner, or something
 like that," said Smith after a time.
 
 "To be frank, I _have_ wondered who you are."
 
 "Have you? Have you, honest?" asked Smith delightedly.
 
-"Well--you''''re different, you know. I can''''t explain just how, but you are
+"Well--you''re different, you know. I can''t explain just how, but you are
 not like the others who come and go at the ranch."
 
-"No," Smith replied with some irony; "I''''m not like that there Tubbs." He
-added laconically, "I''''m no angel, me--Smith."
+"No," Smith replied with some irony; "I''m not like that there Tubbs." He
+added laconically, "I''m no angel, me--Smith."
 
-The Schoolmarm laughed. Smith''''s denial was so obviously superfluous.
+The Schoolmarm laughed. Smith''s denial was so obviously superfluous.
 
-"There was a time when I''''d do ''''most any old thing," he went on, unmindful
+"There was a time when I''d do ''most any old thing," he went on, unmindful
 of her amusement. "It was only a few years ago that there was no law north
 of Cheyenne, and a feller got what he wanted with his gun. I got my share.
-I come from a country where they sleep between sheets, but I got a lickin''''
-that wasn''''t comin'''' to me, and I quit the flat when I was thirteen. I''''ve
-been out amongst ''''em since."
+I come from a country where they sleep between sheets, but I got a lickin''
+that wasn''t comin'' to me, and I quit the flat when I was thirteen. I''ve
+been out amongst ''em since."
 
-The desire to reform somebody, which lies dormant in every woman''''s bosom,
-began to stir in the Schoolmarm''''s.
+The desire to reform somebody, which lies dormant in every woman''s bosom,
+began to stir in the Schoolmarm''s.
 
-"But you--you wouldn''''t ''''do any old thing'''' now, would you?"
+"But you--you wouldn''t ''do any old thing'' now, would you?"
 
 Smith hesitated, and a variety of expressions succeeded one another upon
 his face. It was an awkward moment, for, under the uplifting influence of
 the feeling which possessed him, he had an odd desire to tell this girl
 only the truth.
 
-"I wouldn''''t do some of the things I used to do," he replied evasively.
+"I wouldn''t do some of the things I used to do," he replied evasively.
 
 The Schoolmarm beamed encouragement.
 
-"I''''m glad of that."
+"I''m glad of that."
 
-"I used to kill Injuns for fifty dollars a head, but I wouldn''''t do it
-now," he said virtuously, adding: "I''''d get my neck stretched."
+"I used to kill Injuns for fifty dollars a head, but I wouldn''t do it
+now," he said virtuously, adding: "I''d get my neck stretched."
 
-"You''''ve killed people--Indians--for money!" The Schoolmarm looked at him,
+"You''ve killed people--Indians--for money!" The Schoolmarm looked at him,
 wide-eyed with horror.
 
-"They was clutterin'''' up the range," Smith explained patiently, "and the
-cattlemen needed it for their stock. I''''d ''''a'''' killed ''''em for nothin'''', but
-when ''''twas offered, I might as well get the bounty."
+"They was clutterin'' up the range," Smith explained patiently, "and the
+cattlemen needed it for their stock. I''d ''a'' killed ''em for nothin'', but
+when ''twas offered, I might as well get the bounty."
 
 The Schoolmarm scarcely knew what to say; his explanation seemed so
 entirely satisfactory to himself.
 
-"I''''m glad those dreadful days have gone."
+"I''m glad those dreadful days have gone."
 
-"They''''re gone all right," Smith answered sourly. "They make dum near as
-much fuss over an Injun as a white man now, and what with jumpin'''' up
-deputies at every turn in the road, ''''tain''''t safe. Why, I heard a judge say
-a while back that killin'''' an Injun was pure murder."
+"They''re gone all right," Smith answered sourly. "They make dum near as
+much fuss over an Injun as a white man now, and what with jumpin'' up
+deputies at every turn in the road, ''tain''t safe. Why, I heard a judge say
+a while back that killin'' an Injun was pure murder."
 
 "I appreciate your confidence--your telling me of your life," said the
 Schoolmarm, in lieu of something better.
@@ -1689,21 +1690,21 @@ Schoolmarm, in lieu of something better.
 She found him a difficult person with whom to converse. They seemed to
 have no common meeting-ground, yet, while he constantly startled and
 shocked, he also fascinated her. In one of those illuminating flashes to
-which the Schoolmarm was subject, she saw herself as Smith''''s guiding-star,
+which the Schoolmarm was subject, she saw herself as Smith''s guiding-star,
 leading him to the triumphant finish of the career which she believed his
 unique but strong personality made possible.
 
-It was Smith''''s turn to look at her. Did she think he had told her of his
-life? The unexpected dimple deepened in Smith''''s cheek, and as he laughed
+It was Smith''s turn to look at her. Did she think he had told her of his
+life? The unexpected dimple deepened in Smith''s cheek, and as he laughed
 the Schoolmarm, again noting the effect of it, could not in her heart
 believe that he was as black as he had painted himself.
 
-"I wisht our trails had crossed sooner, but, anyhow, I''''m on the square
-with you, girl. And if ever you ketch me ''''talkin'''' crooked,'''' as the Injuns
-say, I''''ll give you my whole outfit--horse, saddle, blankets, guns, even my
+"I wisht our trails had crossed sooner, but, anyhow, I''m on the square
+with you, girl. And if ever you ketch me ''talkin'' crooked,'' as the Injuns
+say, I''ll give you my whole outfit--horse, saddle, blankets, guns, even my
 dog-gone shirt. Excuse me."
 
-The Schoolmarm glowed. Her woman''''s influence for good was having its
+The Schoolmarm glowed. Her woman''s influence for good was having its
 effect! This was a step in the right direction--a long step. He would be
 "on the square" with her--she liked the way he phrased it. Already her
 mind was busy with air-castles for Smith, which would have made that
@@ -1713,21 +1714,21 @@ from her question:
 "Would you like to study, to learn from books, if you had the
 opportunity?"
 
-"I learned my letters spellin'''' out the brands on cattle," he said frankly,
-"and that, with bein'''' able to write my name on the business end of a
+"I learned my letters spellin'' out the brands on cattle," he said frankly,
+"and that, with bein'' able to write my name on the business end of a
 check, and common, everyday words, has always been enough to see me
 through."
 
-"But when one has naturally a good mind, like yours, don''''t you think it is
+"But when one has naturally a good mind, like yours, don''t you think it is
 almost wicked not to use it?"
 
-"I got a mind all right," Smith replied complacently. "I''''m kind of a
-head-worker in my way, but steady thinkin'''' makes me sicker nor a pup. I
-got a headache for two days spellin'''' out a description of myself that the
+"I got a mind all right," Smith replied complacently. "I''m kind of a
+head-worker in my way, but steady thinkin'' makes me sicker nor a pup. I
+got a headache for two days spellin'' out a description of myself that the
 sheriff of Choteau County spread around the country on handbills. It was
-plumb insultin'''', as I figgered it out, callin'''' attention to my eyes and
+plumb insultin'', as I figgered it out, callin'' attention to my eyes and
 ears and busted thumb. I sent word to him that I felt hos-tile over it.
-Sheriffs''''ll go too far if you don''''t tell ''''em where to get off at once in
+Sheriffs''ll go too far if you don''t tell ''em where to get off at once in
 awhile."
 
 The Schoolmarm ignored the handbill episode and went on:
@@ -1736,10 +1737,10 @@ The Schoolmarm ignored the handbill episode and went on:
 
 "The worst handicap I has to complain of," said Smith grimly, "is the
 habit people has got into of sending money-orders through the mail,
-instead of the cash. It keeps money out of circulation, besides bein''''
-discouragin'''' and puttin'''' many a hard-workin'''' hold-up on the bum."
+instead of the cash. It keeps money out of circulation, besides bein''
+discouragin'' and puttin'' many a hard-workin'' hold-up on the bum."
 
-"But," she persisted, the real meaning of Smith''''s observations entirely
+"But," she persisted, the real meaning of Smith''s observations entirely
 escaping her, "even the rudiments of an education would be such a help to
 you, opening up many avenues that now are closed to you. What I want to
 say is this: that if you intend to stop for a time at the ranch, I will be
@@ -1756,14 +1757,14 @@ Dora flushed hotly.
 
 "I am interested," she replied.
 
-"That''''ll do for now;" and Smith wondered if the lump in his throat was
+"That''ll do for now;" and Smith wondered if the lump in his throat was
 going to choke him. "Will I join that night-school of yours? _Will_ I?
 Watch me! Say," he burst out with a kind of boyish impulsiveness, "if ever
-you see me doin'''' anything I oughtn''''t, like settin'''' down when I ought to
-stand up, or standin'''' up when I ought to set down, will you just rope me
-and take a turn around a snubbin''''-post and jerk me off my feet?"
+you see me doin'' anything I oughtn''t, like settin'' down when I ought to
+stand up, or standin'' up when I ought to set down, will you just rope me
+and take a turn around a snubbin''-post and jerk me off my feet?"
 
-"We''''ll get along famously if you really want to improve yourself!"
+"We''ll get along famously if you really want to improve yourself!"
 exclaimed the Schoolmarm, her eyes shining with enthusiasm. "If you really
 and truly want to learn."
 
@@ -1773,19 +1774,19 @@ would have done dressmaking or taken in washing, had she bid him.
 Once more the world looked big, alluring, and as full of untried
 possibilities as when he had "quit the flat" at thirteen.
 
-"Have you noticed me doin'''' anything that isn''''t manners?" he asked in
-humble anxiety. "Don''''t be afraid of hurtin'''' my feelin''''s," he urged, "for I
-ain''''t none."
+"Have you noticed me doin'' anything that isn''t manners?" he asked in
+humble anxiety. "Don''t be afraid of hurtin'' my feelin''s," he urged, "for I
+ain''t none."
 
 "If you honestly want me to tell you things, I will; but it seems so--so
 queer upon such a very short acquaintance."
 
-"Shucks! What''''s the use of wastin'''' time pretendin'''' to get acquainted, when
-you''''re acquainted as soon as you look at each other? What''''s the use of
-sashayin'''' around the bush when you meet up with somebody you like? You
+"Shucks! What''s the use of wastin'' time pretendin'' to get acquainted, when
+you''re acquainted as soon as you look at each other? What''s the use of
+sashayin'' around the bush when you meet up with somebody you like? You
 just cut loose on me, girl."
 
-"It''''s only a little thing, in a way, and not in itself important perhaps;
+"It''s only a little thing, in a way, and not in itself important perhaps;
 yet it would be, too, if circumstances should take you into the world. It
 might make a bad impression upon strangers."
 
@@ -1797,10 +1798,10 @@ within the last twenty-four hours, which might prejudice strangers.
 "that you held your fork as though you were afraid it would get away from
 you. Like this"--she illustrated with her fist.
 
-"Like a ranch-hand holdin'''' onto a pitch-fork," Smith suggested, relieved.
+"Like a ranch-hand holdin'' onto a pitch-fork," Smith suggested, relieved.
 
 "Something," she laughed. "It should be like this. Anyway," she declared
-encouragingly, "you don''''t eat with your knife."
+encouragingly, "you don''t eat with your knife."
 
 Smith beamed.
 
@@ -1809,11 +1810,11 @@ Smith beamed.
 "Naturally, in a land of sword-swallowers, I would;" the Schoolmarm made a
 wry face.
 
-"Once I run with a high-stepper from Bowlin'''' Green, Kentucky, and she told
-me better nor that," he explained. "She said nothin'''' give a feller away
-like his habit of handlin'''' tools at the table. She was a lady all right,
+"Once I run with a high-stepper from Bowlin'' Green, Kentucky, and she told
+me better nor that," he explained. "She said nothin'' give a feller away
+like his habit of handlin'' tools at the table. She was a lady all right,
 but she got the dope habit and threw the lamp at me. The way I quit her
-didn''''t trouble _me_. None of ''''em ever had any holt on me when it come to a
+didn''t trouble _me_. None of ''em ever had any holt on me when it come to a
 show-down; but you, girl, _you_----"
 
 "Look!"
@@ -1824,7 +1825,7 @@ him two other riders quirted their horses in hot pursuit.
 
 "Is it a race--for fun?"
 
-"I don''''t think it," Smith replied dryly, noting the direction from which
+"I don''t think it," Smith replied dryly, noting the direction from which
 they came. "It looks like business."
 
 He knew that the two behind were Indians. He could tell by the way they
@@ -1835,18 +1836,18 @@ ranch-house. With one hand McArthur was clinging to the saddle-horn, and
 with the other was clinging quite as tightly to what at a distance
 appeared to be a carbine.
 
-"He''''s pulled his gun--why don''''t he use it?" Smith quickened his horse''''s
+"He''s pulled his gun--why don''t he use it?" Smith quickened his horse''s
 gait.
 
-He knew that the Indians had learned White Antelope''''s fate. That was a
+He knew that the Indians had learned White Antelope''s fate. That was a
 lucky swap Smith had made that morning. He congratulated himself that he
-had not "taken chances." He wondered how effective McArthur''''s denial would
+had not "taken chances." He wondered how effective McArthur''s denial would
 prove in the face of the evidence furnished by the saddle-blanket.
-Personally, Smith regarded the bug-hunter''''s chances as slim.
+Personally, Smith regarded the bug-hunter''s chances as slim.
 
-"They''''ll get him in the corral," he observed.
+"They''ll get him in the corral," he observed.
 
-"Oh, it''''s Mr. McArthur!" Dora cried in distress.
+"Oh, it''s Mr. McArthur!" Dora cried in distress.
 
 Smith looked at her in quick jealousy.
 
@@ -1856,9 +1857,9 @@ unobserved.
 "Come," she urged. "The Indians are angry, and he may need us."
 
 Hatless, breathless, pale, McArthur rolled out of his saddle and thrust a
-long, bleached bone into Tubbs''''s hand.
+long, bleached bone into Tubbs''s hand.
 
-"Keep it!" he gasped. "Protect it! It may be--I don''''t say it is, but it
+"Keep it!" he gasped. "Protect it! It may be--I don''t say it is, but it
 _may_ be--a portion of the paroccipital bone of an Ichthyopterygian!" Then
 he turned and faced his pursuers.
 
@@ -1887,19 +1888,19 @@ all--"I had but found the corpse myself when these men rode up. The Indian
 was cold; he certainly had been dead for hours. Besides," he demanded,
 "what possible motive could I have?"
 
-"Them as likes lettin'''' blood don''''t need a motive." The sneering voice was
-Smith''''s.
+"Them as likes lettin'' blood don''t need a motive." The sneering voice was
+Smith''s.
 
 "But you, sir, met us on the hill. You know the direction from which we
 came."
 
-"It''''s easy enough to circle."
+"It''s easy enough to circle."
 
 "But why should I go back?" cried McArthur.
 
-"They say there''''s that that draws folks back for another look."
+"They say there''s that that draws folks back for another look."
 
-Smith''''s insinuations, the stand he took, had its effect upon the Indians,
+Smith''s insinuations, the stand he took, had its effect upon the Indians,
 who, hot for revenge, needed only this to confirm their suspicions. One of
 the Indians on horseback began to uncoil his rawhide saddle-rope. All save
 McArthur understood the significance of the action. They meant to tie him
@@ -1926,33 +1927,33 @@ the murmurs came loudest--from the white grub-liners, who were eager for
 excitement.
 
 "Who are you," she cried, "that you should be so quick to accuse this
-stranger? You, Arkansaw Red, that skipped from Kansas for killin'''' a
+stranger? You, Arkansaw Red, that skipped from Kansas for killin'' a
 nigger! You, Jim Padden, that shot a sheep-herder in cold blood! You,
-Banjo Johnson, that''''s hidin'''' out this minute! Don''''t you all be so darned
-anxious to hang another man, when there''''s a rope waitin'''' somewhere for
+Banjo Johnson, that''s hidin'' out this minute! Don''t you all be so darned
+anxious to hang another man, when there''s a rope waitin'' somewhere for
 your own necks!
 
 "And lemme tell you"--she took a step toward them. "The man that lifts a
 finger to take this bug-hunter to the Agency can take his blankets along
-at the same time, for there''''ll never be a bunk or a seat at the table for
-him on this ranch as long as he lives. Where''''s your proof against this
-bug-hunter? You can''''t drag a man off without something against him--just
+at the same time, for there''ll never be a bunk or a seat at the table for
+him on this ranch as long as he lives. Where''s your proof against this
+bug-hunter? You can''t drag a man off without something against him--just
 because you want to _hang_ somebody!"
 
 Some sound from Smith attracted her attention; she wheeled upon him, and,
 with her thin arm outstretched as she pointed at him in scorn, she cried
 shrilly:
 
-"Why, I''''d sooner think _you_ did it, than him!"
+"Why, I''d sooner think _you_ did it, than him!"
 
 There was not so much as the flicker of an eyelid from Smith.
 
-"I know you''''d _sooner_ think I did it than him," he said, playing upon the
-word. "You''''d like to see _me_ get my neck stretched."
+"I know you''d _sooner_ think I did it than him," he said, playing upon the
+word. "You''d like to see _me_ get my neck stretched."
 
 His bravado, his very insolence, was his protection.
 
-"And maybe I''''ll have the chanst!" she retorted furiously.
+"And maybe I''ll have the chanst!" she retorted furiously.
 
 Turning from him to the Indians, her voice dropped, the harsh language
 taking on the soft accent of the squaws as she spoke to them in their own
@@ -1970,8 +1971,8 @@ had the big fever. He was like no one else to me except my father. He was
 wise and good.
 
 "I could kill with my own hand the man who killed White Antelope. I want
-his blood as much as you. I''''d like to see a stake driven through his
-black heart on White Antelope''''s grave. But let us not be too quick because
+his blood as much as you. I''d like to see a stake driven through his
+black heart on White Antelope''s grave. But let us not be too quick because
 the hate is hot in us. My heart tells me that the white man talks
 straight. Let us wait--wait until we find the right one, and when we do we
 will punish in our own way. You hear? _In our own way!_"
@@ -1979,16 +1980,16 @@ will punish in our own way. You hear? _In our own way!_"
 Smith understood something of her plea, and for the second time he paid
 her courage tribute.
 
-"She''''s a game kid all right," he said to himself, and a half-formed plan
+"She''s a game kid all right," he said to himself, and a half-formed plan
 for utilizing her gameness began to take definite shape.
 
 That she had won, he knew before Running Rabbit recoiled his rope. After a
-moment''''s talk among themselves, the Indians went to hitch the horses to
-the wagon, to bring White Antelope''''s body home.
+moment''s talk among themselves, the Indians went to hitch the horses to
+the wagon, to bring White Antelope''s body home.
 
 Smith was well aware that he had only to point to the saddle blanket, the
-barest edge of which showed beneath the leather skirts of McArthur''''s
-saddle, to make Susie''''s impassioned defense in vain. Why he did not, he
+barest edge of which showed beneath the leather skirts of McArthur''s
+saddle, to make Susie''s impassioned defense in vain. Why he did not, he
 was not himself sure. Perhaps it was because he liked the feeling of
 power, of knowing that he held the life of the despised bug-hunter in the
 hollow of his hand; or perhaps it was because it would serve his purpose
@@ -2037,7 +2038,7 @@ beef."
 "He is a dog on the trail, that white man, when his cattle are stolen,"
 Yellow Bird replied doubtfully.
 
-"I''''ve killed dogs--me, Smith--when they got in my way. Yellow Bird, are
+"I''ve killed dogs--me, Smith--when they got in my way. Yellow Bird, are
 you a woman, that you are afraid?"
 
 "Wolf Robe, who stole only a calf, sits like this"--Yellow Bird looked at
@@ -2055,40 +2056,40 @@ the squaw.
 
 "Liver. A two-year ole."
 
-The squaw''''s eyes sparkled. Ah, this was as it should be! Her man provided
+The squaw''s eyes sparkled. Ah, this was as it should be! Her man provided
 for her; he brought her meat to eat. He was clever and brave, for it was
-other men''''s meat he brought her to eat. MacDonald had killed only his own
+other men''s meat he brought her to eat. MacDonald had killed only his own
 cattle, and secretly it had shamed her, for she mistook his honesty for
 lack of courage. To steal was legitimate; it was brave; something to be
 told among friends at night, and laughed over. Susie, she had observed
-with regret, was honest, like her father. She patted the back of Smith''''s
+with regret, was honest, like her father. She patted the back of Smith''s
 hand, and looked at him with dog-like, adoring eyes as they stood in the
 log meat-house, where fresh quarters hung.
 
-"I''''d do more nor this for you, Prairie Flower;" and, laying his hand upon
+"I''d do more nor this for you, Prairie Flower;" and, laying his hand upon
 her shoulder, he pressed it with his finger-tips.
 
-"Say, but that''''s great liver!" Tubbs reached half the length of the table
-and helped himself a third time. "That''''d make a man fight his grandmother.
+"Say, but that''s great liver!" Tubbs reached half the length of the table
+and helped himself a third time. "That''d make a man fight his grandmother.
 Who butchered it?"
 
 "Me," Smith answered.
 
 "It tastes like slow elk," said Susie.
 
-"Maybe you oughtn''''t to eat it till you''''re showed the hide," Smith
+"Maybe you oughtn''t to eat it till you''re showed the hide," Smith
 suggested.
 
-"Maybe I oughtn''''t," Susie retorted. "I didn''''t see any fresh hide a-hangin''''
+"Maybe I oughtn''t," Susie retorted. "I didn''t see any fresh hide a-hangin''
 on the fence. We _always_ hangs _our_ hides."
 
-"I _never_ hangs _my_ hides. I cuts ''''em up in strips and braids ''''em into
-throw-ropes. It''''s safer."
+"I _never_ hangs _my_ hides. I cuts ''em up in strips and braids ''em into
+throw-ropes. It''s safer."
 
 The grub-liners laughed at the inference which Smith so coolly implied.
 
-The finding of White Antelope''''s body, and its subsequent burial, had
-delayed the opening of Dora''''s night-school, so Smith, for reasons of his
+The finding of White Antelope''s body, and its subsequent burial, had
+delayed the opening of Dora''s night-school, so Smith, for reasons of his
 own, had spent much of his time in the bunk-house, covertly studying the
 grub-liners, who passed the hours exchanging harrowing experiences of
 their varied careers.
@@ -2112,9 +2113,9 @@ flowed in her veins, and that this blood, with its accompanying traits and
 characteristics, must be reckoned with.
 
 As a matter of fact, Susie was suspicious, unforgiving, with all the
-Indians'''' sensitiveness to and fear of ridicule. She meant never again to
+Indians'' sensitiveness to and fear of ridicule. She meant never again to
 entertain the Schoolmarm by her ignorant questions, although she yearned
-with all a young girl''''s yearning for some one in whom to confide--some one
+with all a young girl''s yearning for some one in whom to confide--some one
 with whom she could discuss the future which she often questioned and
 secretly dreaded.
 
@@ -2122,7 +2123,7 @@ With real adroitness Susie had tested McArthur, searching his face for the
 glimmer of amusement which would have destroyed irredeemably any chance of
 real comradeship between them. But invariably McArthur had answered her
 questions gravely; and when her tears had fallen fast and hot at White
-Antelope''''s grave, she had known, with an intuition both savage and
+Antelope''s grave, she had known, with an intuition both savage and
 childish, that his sympathy was sincere. She had felt, too, the
 genuineness of his interest when, later, she had repeated to him many of
 the stories White Antelope had told her of the days when he and her father
@@ -2147,7 +2148,7 @@ McArthur, puffing on the briar-wood pipe which he was seldom without,
 waited with interest, but without showing curiosity, for he felt that, in
 a way, this was a critical moment in their friendship.
 
-"If you didn''''t see me here on the reservation, would you know I was
+"If you didn''t see me here on the reservation, would you know I was
 Injun?" Susie demanded, facing him.
 
 McArthur regarded her critically.
@@ -2155,142 +2156,142 @@ McArthur regarded her critically.
 "You have certain characteristics--your rather high cheek-bones, for
 instance--and your skin has a peculiar tint."
 
-"I got an awful complexion on me," Susie agreed, "but I''''m goin'''' to fix
+"I got an awful complexion on me," Susie agreed, "but I''m goin'' to fix
 that."
 
 "Then, your movements and gestures----"
 
-"That''''s from talkin'''' signs, maybe. I can talk signs so fast that the
+"That''s from talkin'' signs, maybe. I can talk signs so fast that the
 full-bloods themselves have to ask me to slow up. But, now, if you saw me
 with my hair frizzled--all curled up, like, and pegged down on top of my
 head--and a red silk dress on me with a long skirt, and shiny shoes coming
 to a point, and a white hat with birds and flowers staked out on it, and
 maybe kid gloves on my hands--would you know right off it was me? Would
-you say, ''''Why, there''''s that Susie MacDonald--that breed young un from the
-reservation''''?"
+you say, ''Why, there''s that Susie MacDonald--that breed young un from the
+reservation''?"
 
-"No," declared McArthur firmly; "I certainly never should say, ''''Why,
-there''''s that Susie MacDonald--that breed young un from the reservation.''''
-As a matter of fact," he went on gravely, "I should probably say, ''''What a
+"No," declared McArthur firmly; "I certainly never should say, ''Why,
+there''s that Susie MacDonald--that breed young un from the reservation.''
+As a matter of fact," he went on gravely, "I should probably say, ''What a
 pity that a young lady so intelligent and high-spirited should frizz her
-hair''''!"
+hair''!"
 
 "Would you?" insisted Susie delightedly.
 
 "Undoubtedly," McArthur replied, with satisfying emphasis.
 
-"And how long do you think it would take me to stop slingin'''' the buckskin
-and learn to talk like you?--to say big words without bitin'''' my tongue and
-gettin'''' red in the face?"
+"And how long do you think it would take me to stop slingin'' the buckskin
+and learn to talk like you?--to say big words without bitin'' my tongue and
+gettin'' red in the face?"
 
 "Do I use large words frequently?" McArthur asked in real surprise.
 
 "Whoppers!" said Susie.
 
-"I do it unconsciously." McArthur''''s tone was apologetic.
+"I do it unconsciously." McArthur''s tone was apologetic.
 
 "Sure, I know it."
 
 "I shrink from appearing pedantic," said McArthur, half to himself.
 
-"So do I," Susie declared mischievously. "I don''''t know what it is, but I
+"So do I," Susie declared mischievously. "I don''t know what it is, but I
 shrink from it. Do you think I could learn big words?"
 
 "Of course." McArthur wondered where all these questions led.
 
-"Did you ever notice that I''''m kind of polite sometimes?"
+"Did you ever notice that I''m kind of polite sometimes?"
 
 "Frequently."
 
-"That I say ''''If you please'''' and ''''Thank you,'''' and did you notice the other
+"That I say ''If you please'' and ''Thank you,'' and did you notice the other
 morning when I asked Old Man Rulison how his ribs was getting along that
 Arkansaw Red kicked in, and said I was sorry the accident happened?"
 
 McArthur nodded.
 
-"Well, I didn''''t mean it." She giggled. "That was just my manners that I
-was practisin'''' on him. He was onery, and only got what was comin'''' to him;
-but if you''''re goin'''' to be polite, seems like you dassn''''t tell the truth.
-But Miss Marshall says that ''''Thank you,'''' ''''If you please,'''' and ''''Good
-morning, how''''s your ribs?'''' are kind of pass-words out in the world that
+"Well, I didn''t mean it." She giggled. "That was just my manners that I
+was practisin'' on him. He was onery, and only got what was comin'' to him;
+but if you''re goin'' to be polite, seems like you dassn''t tell the truth.
+But Miss Marshall says that ''Thank you,'' ''If you please,'' and ''Good
+morning, how''s your ribs?'' are kind of pass-words out in the world that
 help you along."
 
-"Yes, Susie; that''''s true."
+"Yes, Susie; that''s true."
 
-"So I''''m tryin'''' to catch onto all I can, because"--her eyes dilated, and
-she lowered her voice--"I''''m goin'''' out in the world pretty soon."
+"So I''m tryin'' to catch onto all I can, because"--her eyes dilated, and
+she lowered her voice--"I''m goin'' out in the world pretty soon."
 
 "To school?"
 
 She shook her head.
 
-"I''''m goin'''' to hunt up Dad''''s relations; and when I find ''''em, I don''''t want
-''''em to be ashamed of me, and of him for marryin'''' into the Injuns."
+"I''m goin'' to hunt up Dad''s relations; and when I find ''em, I don''t want
+''em to be ashamed of me, and of him for marryin'' into the Injuns."
 
 "They need never be ashamed of you, Susie."
 
-"Honest? Honest, don''''t you think so?" She looked at him wistfully. "I''''d
-try awful hard not to make breaks," she went on, "and make ''''em feel like
-cachin'''' me in the cellar when they saw company comin''''. It''''s just plumb
+"Honest? Honest, don''t you think so?" She looked at him wistfully. "I''d
+try awful hard not to make breaks," she went on, "and make ''em feel like
+cachin'' me in the cellar when they saw company comin''. It''s just plumb
 awful to be lonesome here, like I am sometimes; to be homesick for
 something or somebody--for other kind of folks besides Injuns and
 grub-liners, and Schoolmarms that look at you as if you was a new, queer
 kind of bug, and laugh at you with their eyes.
 
-"Dad''''s got kin, I know; for lots of times when I would go with him to hunt
-horses, he would say, ''''I''''ll take you back to see them some time, Susie,
-girl.'''' But he never said where ''''back'''' was, so I''''ve got to find out myself.
-Wouldn''''t it be awful, though"--and her chin quivered--"if after I''''d been
-on the trail for days and days, and my ponies were foot-sore, they wasn''''t
+"Dad''s got kin, I know; for lots of times when I would go with him to hunt
+horses, he would say, ''I''ll take you back to see them some time, Susie,
+girl.'' But he never said where ''back'' was, so I''ve got to find out myself.
+Wouldn''t it be awful, though"--and her chin quivered--"if after I''d been
+on the trail for days and days, and my ponies were foot-sore, they wasn''t
 glad to see me when I rode up to the house, but hinted around that
-horse-feed was short and grub was scarce, and they couldn''''t well winter
+horse-feed was short and grub was scarce, and they couldn''t well winter
 me?"
 
-"They wouldn''''t do that," said McArthur reassuringly. "Nobody named
+"They wouldn''t do that," said McArthur reassuringly. "Nobody named
 MacDonald would do that."
 
 Susie began to untie the pasteboard box which contained her treasures.
 
-"Nearly ever since Dad died, I''''ve been getting ready to go. I don''''t mean
-that I would leave Mother for keeps--of course not; but after I''''ve found
-''''em, maybe I can coax ''''em to come and live with us. I used to ask White
+"Nearly ever since Dad died, I''ve been getting ready to go. I don''t mean
+that I would leave Mother for keeps--of course not; but after I''ve found
+''em, maybe I can coax ''em to come and live with us. I used to ask White
 Antelope every question I could think of, but all he knew was that after
-they''''d sold their furs to the Hudson Bay Company, they sometimes went to a
+they''d sold their furs to the Hudson Bay Company, they sometimes went to a
 lodge in Canada called Selkirk, where almost everybody there was named
 MacDonald or MacDougal or Mackenzie or Mac something. Lots of his friends
-there married Sioux and went to the Walla Walla valley, and maybe I''''ll
-have to go there to find somebody who knew him; but first I''''ll go to
+there married Sioux and went to the Walla Walla valley, and maybe I''ll
+have to go there to find somebody who knew him; but first I''ll go to
 Selkirk.
 
-"I''''ll take a good pack-outfit, and Running Rabbit to find trails and
-wrangle horses. See--I''''ve got my trail all marked out on the map."
+"I''ll take a good pack-outfit, and Running Rabbit to find trails and
+wrangle horses. See--I''ve got my trail all marked out on the map."
 
 She unfolded a worn leaf from a school geography.
 
 "It looks as if it was only a sleep or two away, but White Antelope said
 it was the big ride--maybe a hundred sleeps. And lookee"--she unfolded
-fashion plates of several periods. "I''''ve even picked out the clothes I''''ll
+fashion plates of several periods. "I''ve even picked out the clothes I''ll
 buy to put on when I get nearly to the ranch where they live. I can make
-camp, you know, and change my clothes, and then go walkin'''' down the road
-carryin'''' this here parasol and wearin'''' this here white hat and holdin'''' up
+camp, you know, and change my clothes, and then go walkin'' down the road
+carryin'' this here parasol and wearin'' this here white hat and holdin'' up
 this here long skirt like Teacher on Sunday.
 
-"Won''''t they be surprised when they open the door and see me standin'''' on
-the door-step? I''''ll say, ''''How do you do? I''''m Susie MacDonald, your
-relation what''''s come to visit you.'''' I think this would be better than
-showin'''' up with Running Rabbit and the pack-outfit, until I''''d kind of
-broke the news to ''''em. I''''d keep Running Rabbit cached in the brush till I
+"Won''t they be surprised when they open the door and see me standin'' on
+the door-step? I''ll say, ''How do you do? I''m Susie MacDonald, your
+relation what''s come to visit you.'' I think this would be better than
+showin'' up with Running Rabbit and the pack-outfit, until I''d kind of
+broke the news to ''em. I''d keep Running Rabbit cached in the brush till I
 sent for him.
 
-"You see, I''''ve thought about it so much that it seems like it was as good
-as done; but maybe when I start I won''''t find it so easy. I might have to
+"You see, I''ve thought about it so much that it seems like it was as good
+as done; but maybe when I start I won''t find it so easy. I might have to
 ride clear to this Minnesota country, or beyond the big waters to the New
-York or Connecticut country, mightn''''t I?"
+York or Connecticut country, mightn''t I?"
 
 "You might," McArthur replied soberly.
 
-"But I''''d take a lot of jerked elk, and everybody says grub''''s easy to get
-if you have money, I''''d start with about nine ponies in my string, so it
+"But I''d take a lot of jerked elk, and everybody says grub''s easy to get
+if you have money, I''d start with about nine ponies in my string, so it
 looks like I ought to get through?"
 
 She waited anxiously for McArthur to express his opinion.
@@ -2317,7 +2318,7 @@ It was "Babe" from the Bar C ranch; "Baby" Britt, curly-haired,
 pink-cheeked, with one innocent blue eye dark from recent impact with a
 fist, which gave its owner the appearance of a dissipated cherub.
 
-"Evenin''''," he said tremulously, his eyes roving as though in search of
+"Evenin''," he said tremulously, his eyes roving as though in search of
 some one.
 
 "I lost a horse----" he began.
@@ -2327,7 +2328,7 @@ forehead?"
 
 "Yes."
 
-"One white stockin''''?"
+"One white stockin''?"
 
 "Uh-huh."
 
@@ -2345,20 +2346,20 @@ forehead?"
 
 "Saddle-sore?"
 
-"That''''s it. Where did you see him?"
+"That''s it. Where did you see him?"
 
-"I didn''''t see him."
+"I didn''t see him."
 
 "Aw-w-w," rumbled "Babe" in disgust.
 
 "Teacher!"
 
-Dora Marshall''''s door opened in response to Susie''''s lusty call.
+Dora Marshall''s door opened in response to Susie''s lusty call.
 
 "Have you seen a brown horse with a star in its forehead, roached
 mane----"
 
-"Aw, g''''wan, Susie!" In confusion, "Babe" began to remove his spurs,
+"Aw, g''wan, Susie!" In confusion, "Babe" began to remove his spurs,
 thereby serving notice upon the Schoolmarm that he had "come to set a
 spell."
 
@@ -2372,18 +2373,18 @@ It was not easy to carry on a spirited conversation with Mr. Britt. At
 best, his range of topics was limited, and in his present frame of mind he
 was about as vivacious as a deaf mute. He was quite content to sit with
 the high heels of his cowboy boots--from which a faint odor of the stable
-emanated--hung over the rung of his chair, and to watch the Schoolmarm''''s
+emanated--hung over the rung of his chair, and to watch the Schoolmarm''s
 hand plying the needle on that almost sacred sofa-pillow.
 
 "Your work must be very interesting, Mr. Britt," suggested Dora.
 
-"I dunno as ''''tis," replied Mr. Britt.
+"I dunno as ''tis," replied Mr. Britt.
 
-"It''''s so--so picturesque."
+"It''s so--so picturesque."
 
 Mr. Britt considered.
 
-"I shouldn''''t say it was."
+"I shouldn''t say it was."
 
 "But you like it?"
 
@@ -2394,43 +2395,43 @@ another, it was upon knowing how to temper his language to his company.
 
 "Why do you stick to it, then?"
 
-"Don''''t know how to do anything else."
+"Don''t know how to do anything else."
 
-"You don''''t get much time to read, do you?"
+"You don''t get much time to read, do you?"
 
-"Oh, yes; _P''''lice Gazette_ comes reg''''lar."
+"Oh, yes; _P''lice Gazette_ comes reg''lar."
 
 "But you have no church or social privileges?"
 
-"What''''s that?"
+"What''s that?"
 
 "I say, you have no entertainment, no time or opportunity for amusement,
 have you?"
 
 "Oh, my, yes," Mr. Britt declared heartily. "We has a game of stud poker
-nearly every Sunday mornin'''', and races in the afternoon."
+nearly every Sunday mornin'', and races in the afternoon."
 
-"Ain''''t he sparklin''''?" whispered Susie across the room to Dora, who
+"Ain''t he sparklin''?" whispered Susie across the room to Dora, who
 pretended not to hear.
 
 "You are fond of horses?" inquired the Schoolmarm, desperately.
 
-"Oh, I has nothin'''' agin ''''em." He qualified his statement by adding:
+"Oh, I has nothin'' agin ''em." He qualified his statement by adding:
 "Leastways, unless they come from the Buffalo Basin country. Then I shore
-hates ''''em." At last Mr. Britt was upon a subject upon which he could talk
+hates ''em." At last Mr. Britt was upon a subject upon which he could talk
 fluently and for an indefinite length of time. "You take that there
-Buffalo Basin stock," he went on earnestly, "and they''''re nothin'''' but
-inbred cayuse outlaws. They''''re treach''''rous. Oneriest horses that ever
-wore hair. Can''''t gentle ''''em--simply can''''t be done. They''''ve piled me up
-more times than any horses that run. Sunfishers--the hull of ''''em; rare up
-and fall over backwards. ''''Tain''''t pleasant ridin'''' a horse like that. Wheel
-on you quicker''''n a weasel; shy clean acrost the road at nothin'''';
-kick--stand up and strike at you in the corral. It''''s irritatin''''. Hard
-keepers, too. Maybe you''''ve noticed that blue roan I''''m ridin''''. Well, sir,
-the way I''''ve throwed feed into that horse is a scandal, and the more he
+Buffalo Basin stock," he went on earnestly, "and they''re nothin'' but
+inbred cayuse outlaws. They''re treach''rous. Oneriest horses that ever
+wore hair. Can''t gentle ''em--simply can''t be done. They''ve piled me up
+more times than any horses that run. Sunfishers--the hull of ''em; rare up
+and fall over backwards. ''Tain''t pleasant ridin'' a horse like that. Wheel
+on you quicker''n a weasel; shy clean acrost the road at nothin'';
+kick--stand up and strike at you in the corral. It''s irritatin''. Hard
+keepers, too. Maybe you''ve noticed that blue roan I''m ridin''. Well, sir,
+the way I''ve throwed feed into that horse is a scandal, and the more he
 eats the worse he looks. Besides, it spoils them Buffalo Basin
-buzzard-heads to eat. Give ''''em three square meals, and you can''''t hardly
-ride ''''em. They ain''''t stayers, neither; no bottom, seems-like. Forty miles,
+buzzard-heads to eat. Give ''em three square meals, and you can''t hardly
+ride ''em. They ain''t stayers, neither; no bottom, seems-like. Forty miles,
 and that horse of mine is played out. What for a horse is that? Is that a
 horse? Not by a high-kick! Gimme a buckskin with a black line down his
 back, and zebra stripes on his legs--high back, square chest--say, then
@@ -2445,9 +2446,9 @@ Something heavy was thrown against the door, and when Susie opened it a
 roll of roped canvas rolled inside, while the lamplight fell upon the
 grinning faces of two Bar C cowpunchers.
 
-"What''''s that?" The Schoolmarm looked wonderingly at the bundle.
+"What''s that?" The Schoolmarm looked wonderingly at the bundle.
 
-"Aw-w-w!" Mr. Britt replied, in angry confusion. "It''''s my bed. I''''ll put a
+"Aw-w-w!" Mr. Britt replied, in angry confusion. "It''s my bed. I''ll put a
 crimp in them two for this." He shouldered his blankets sheepishly and
 went out.
 
@@ -2471,7 +2472,7 @@ cut out, and with the sight of this significant find, the two cowpunchers,
 their obnoxious joke, even the Schoolmarm, were forgotten; for there was a
 new thief on the range, and a new thief meant excitement and adventure.
 
-Colonel Tolman''''s deep-set eyes glittered when he heard the news. As
+Colonel Tolman''s deep-set eyes glittered when he heard the news. As
 Running Rabbit had said, on the trail of a cattle-thief he was as
 relentless as a bloodhound. He could not eat or sleep in peace until the
 man who had robbed him was behind the bars. The Colonel was an old-time
@@ -2482,9 +2483,9 @@ his medicine without a whimper; but the loss of so much as a yearling calf
 by theft threw him into a rage that was like hysteria.
 
 His hand shook as he sat down at his desk and wrote a note to the
-Stockmen''''s Association, asking for the services of their best detective.
+Stockmen''s Association, asking for the services of their best detective.
 It meant four days of hard riding to deliver the note, but the Colonel put
-it into "Babe''''s" hand as if he were asking him to drop it in the mail-box
+it into "Babe''s" hand as if he were asking him to drop it in the mail-box
 around the corner.
 
 "Go, and git back," were his laconic instructions, and he turned to pace
@@ -2500,20 +2501,20 @@ old cattleman.
 
 "Ralston?" The Colonel rose on his toes a trifle to peer into his face.
 
-"Not Dick Ralston''''s boy?"
+"Not Dick Ralston''s boy?"
 
 The six-foot deputy smiled.
 
 "The same, sir."
 
-The Colonel''''s hand shot out in greeting.
+The Colonel''s hand shot out in greeting.
 
-"Anybody of that name is pretty near like kin to me. Many''''s the time your
+"Anybody of that name is pretty near like kin to me. Many''s the time your
 dad and I have eaten out of the same frying-pan."
 
-"So I''''ve heard him say."
+"So I''ve heard him say."
 
-"Does he know you''''re down here on this job?"
+"Does he know you''re down here on this job?"
 
 The young man shook his head soberly.
 
@@ -2523,50 +2524,50 @@ The Colonel looked at him keenly.
 
 "Had a falling out?"
 
-"No; scarcely that; but we couldn''''t agree exactly upon some things, so I
+"No; scarcely that; but we couldn''t agree exactly upon some things, so I
 struck out for myself when I came home from college."
 
 "No future for you in this sleuthing business," commented the old man
-tersely. "Why didn''''t you go into cattle with your dad?"
+tersely. "Why didn''t you go into cattle with your dad?"
 
-"That''''s where we disagreed, sir. I wanted to buy sheep, and he goes
+"That''s where we disagreed, sir. I wanted to buy sheep, and he goes
 straight into the air at the very word."
 
 The Colonel laughed.
 
 "I can believe that."
 
-"Over there the range is going fast, and it''''s fight and scrap and quarrel
+"Over there the range is going fast, and it''s fight and scrap and quarrel
 all the time to keep the sheep off what little there is left; and then you
 ship and bottom drops out of the market as soon as your cattle are loaded.
-There''''s nothing in it; and while I don''''t like sheep any better than the
-Governor, there''''s no use in hanging on and going broke in cattle because
+There''s nothing in it; and while I don''t like sheep any better than the
+Governor, there''s no use in hanging on and going broke in cattle because
 of a prejudice."
 
-"Dick''''s stubborn,"--the Colonel nodded knowingly--"and I don''''t believe
-he''''ll ever give in."
+"Dick''s stubborn,"--the Colonel nodded knowingly--"and I don''t believe
+he''ll ever give in."
 
-"No; I don''''t think he will, and I''''m sorry for his sake, because he''''s
+"No; I don''t think he will, and I''m sorry for his sake, because he''s
 getting too old to worry."
 
-"Worry? Cattle''''s nothing but worry!--which reminds me of what you are here
+"Worry? Cattle''s nothing but worry!--which reminds me of what you are here
 for."
 
 "Have you any suspicions?"
 
-"No. I don''''t believe I can help you any. The Injuns been good as pie since
-we sent Wolf Robe over the road. Don''''t hardly think it''''s Injuns. Don''''t
+"No. I don''t believe I can help you any. The Injuns been good as pie since
+we sent Wolf Robe over the road. Don''t hardly think it''s Injuns. Don''t
 know what to think. Might be some of these Mormon outfits going north.
 Might be some of these nesters off in the hills. Might be anybody!"
 
 "Is he an old hand?"
 
 "Looks like it. Cuts the brand out and buries the hide." The Colonel began
-pacing the floor. "Cattle-thieves are people that''''s got to be nipped in
+pacing the floor. "Cattle-thieves are people that''s got to be nipped in
 the bud _muy pronto_. There ought to be a lynching on every cattle-range
-once in seven years. It''''s the only way to hold ''''em level. Down there on
-the Rio Grande we rode away and left fourteen of ''''em swinging over the
-bluff. It''''s got to be done in all cattle countries, and since they''''ve
+once in seven years. It''s the only way to hold ''em level. Down there on
+the Rio Grande we rode away and left fourteen of ''em swinging over the
+bluff. It''s got to be done in all cattle countries, and since they''ve
 started in here--well, a hanging is overdue by two years." The Colonel
 ejected his words with the decisive click of a riot-gun.
 
@@ -2574,7 +2575,7 @@ So Dick Ralston, Jr., rode the range for the purpose of getting the lay of
 the country, and, on one pretext or another, visited the squalid homes of
 the nesters, but nowhere found anybody or anything in the least
 suspicious. He learned of the murder of White Antelope, and of the
-"queer-actin''''" bug-hunter and his pal, who had been accused of it. It was
+"queer-actin''" bug-hunter and his pal, who had been accused of it. It was
 rather generally believed that McArthur was a desperado of a new and
 original kind. While it was conceded that he seemed to have no way of
 disposing of the meat, and certainly could not kill a cow and eat it
@@ -2607,99 +2608,99 @@ Indian woman braided rags and darted jealous glances at teacher and pupil.
 Smith, his hair looking like a bunch of tumble-weed in a high wind, hung
 over a book with a look of genuine misery upon his face.
 
-"I didn''''t have any notion there was so much in the world I didn''''t know,"
-he burst out. "I thought when I''''d learnt that if you sprinkle your
+"I didn''t have any notion there was so much in the world I didn''t know,"
+he burst out. "I thought when I''d learnt that if you sprinkle your
 saddle-blanket you can hold the biggest steer that runs, without your
-saddle slippin'''', I''''d learnt about all they was worth knowin''''."
+saddle slippin'', I''d learnt about all they was worth knowin''."
 
-"It''''s tedious," Dora admitted.
+"It''s tedious," Dora admitted.
 
-"Tedious?" echoed Smith in loud pathos. "It''''s hell! Say, I can tie a fancy
-knot in a bridle-rein that can''''t be beat by any puncher in the country,
+"Tedious?" echoed Smith in loud pathos. "It''s hell! Say, I can tie a fancy
+knot in a bridle-rein that can''t be beat by any puncher in the country,
 but _darn_ me if I can see the difference between a adjective and one of
 these here adverbs! Once I thought I knowed something--me, Smith--but say,
-I don''''t know enough to make a mark in the road!"
+I don''t know enough to make a mark in the road!"
 
 Closing his eyes and gritting his teeth, he repeated:
 
-"''''I have had, you have had, he has had.''''"
+"''I have had, you have had, he has had.''"
 
 "If you would have had about six drinks, I think you could git that,"
-observed Tubbs judicially, watching Smith''''s mental suffering with keen
+observed Tubbs judicially, watching Smith''s mental suffering with keen
 interest.
 
-"Don''''t be discouraged," said Dora cheerfully, seating herself beside him.
-"Let''''s take a little review. Do you remember what I told you about this?"
+"Don''t be discouraged," said Dora cheerfully, seating herself beside him.
+"Let''s take a little review. Do you remember what I told you about this?"
 
 She pointed to the letter _a_ marked with the long sound.
 
 Smith ran both hands through his hair, while a wild, panic-stricken look
 came upon his face.
 
-"Dog-gone me! I know it''''s a _a_, but I plumb forget how you called it."
+"Dog-gone me! I know it''s a _a_, but I plumb forget how you called it."
 
 Tubbs unhooked his toes from the chair-legs and walked around to look over
-Smith''''s shoulder.
+Smith''s shoulder.
 
-"Smith, you got a great forgitter," he said sarcastically. "Why don''''t you
+"Smith, you got a great forgitter," he said sarcastically. "Why don''t you
 use your head a little? That there is a Bar A. You ought to have knowed
 that. The Bar A stock run all over the Judith Basin."
 
-"Don''''t you remember I told you that whenever you saw that mark over a
+"Don''t you remember I told you that whenever you saw that mark over a
 letter you should give it the long sound?" explained Dora patiently.
 
-"Like the _a_ in ''''aig,''''" elucidated Tubbs.
+"Like the _a_ in ''aig,''" elucidated Tubbs.
 
-"Like the _a_ in ''''snake,''''" corrected the Schoolmarm.
+"Like the _a_ in ''snake,''" corrected the Schoolmarm.
 
-"Or ''''wake,'''' or ''''skate,'''' or ''''break,''''" said Smith hopefully.
+"Or ''wake,'' or ''skate,'' or ''break,''" said Smith hopefully.
 
 "Fine!" declared the Schoolmarm.
 
 "I knowed that much myself," said Tubbs enviously.
 
-"If you''''ll pardon me, Mr. Tubbs," said Dora, in some irritation, "there
-is no such word as ''''knowed.''''"
+"If you''ll pardon me, Mr. Tubbs," said Dora, in some irritation, "there
+is no such word as ''knowed.''"
 
-"Why don''''t you talk grammatical, Tubbs?" Smith demanded, with alacrity.
+"Why don''t you talk grammatical, Tubbs?" Smith demanded, with alacrity.
 
 "I talks what I knows," said Tubbs, going back to his chair.
 
 "Have you forgotten all I told you about adjectives?"
 
-"Adjectives is words describin'''' things. They''''s two kinds, comparative and
+"Adjectives is words describin'' things. They''s two kinds, comparative and
 superlative," Smith replied promptly. He added. "Adjectives kind of stuck
 in my craw."
 
 "Can you give me examples?" Dora felt encouraged.
 
 "You got a horrible pretty hand," Smith replied, without hesitation.
-"''''Horrible pretty'''' is a adjective describin'''' your hand."
+"''Horrible pretty'' is a adjective describin'' your hand."
 
 Dora burst out laughing, and Tubbs, without knowing why, joined in
 heartily.
 
 "Tubbs," continued Smith, glaring at that person, "has got the horriblest
 mug I ever seen, and if he opens it and laffs like that at me again, I
-aims to break his head. ''''Horriblest'''' is a superlative adjective describin''''
-Tubbs''''s mug."
+aims to break his head. ''Horriblest'' is a superlative adjective describin''
+Tubbs''s mug."
 
-To Smith''''s chagrin and Tubbs''''s delight, Dora explained that "horrible" was
+To Smith''s chagrin and Tubbs''s delight, Dora explained that "horrible" was
 a word which could not be used in conjunction with "pretty," and that its
 superlative was not "horriblest."
 
 Smith buried his head in his hands despondently.
 
-"If I was where I could, I''''d get drunk!"
+"If I was where I could, I''d get drunk!"
 
-"It''''s nothing to feel so badly about," said Dora comfortingly. "Let''''s go
+"It''s nothing to feel so badly about," said Dora comfortingly. "Let''s go
 back to prepositions. Can you define a preposition?"
 
 Smith screwed up his face and groped for words, but before he found them
 Tubbs broke in:
 
 "A preposition is what a feller has to sell that nobody wants," he
-explained glibly. "They''''s copper prepositions, silver-lead prepositions,
+explained glibly. "They''s copper prepositions, silver-lead prepositions,
 and onct I had a oil preposition up in the Swift Current country."
 
 Smith reached inside his coat and pulled out the carved, ivory-handled
@@ -2710,8 +2711,8 @@ table beside his grammar, and looked at Tubbs.
 if you jump into this here game again, I aims to try a chunk of lead on
 you."
 
-"If book-learnin'''' ud ever make me as peevish as it does you," declared
-Tubbs, rising hastily, "I hopes I never knows nothin''''."
+"If book-learnin'' ud ever make me as peevish as it does you," declared
+Tubbs, rising hastily, "I hopes I never knows nothin''."
 
 Tubbs slammed the door behind him as he went to seek more amiable company
 in the bunk-house.
@@ -2731,7 +2732,7 @@ the sight of Smith and the Schoolmarm sitting side by side, she laid down
 her work and slipped out into the star-lit night, closing the door softly
 behind her.
 
-Smith''''s judgment told him that he should end the lesson and go after her,
+Smith''s judgment told him that he should end the lesson and go after her,
 but the spell of love was upon him, overwhelming him, holding him fast in
 delicious thraldom. He had not the strength of will just then to break
 it.
@@ -2770,7 +2771,7 @@ his eyes. The brutal chin was quivering like that of a tender-hearted
 child.
 
 "The man that wrote that was a _chief_," he said huskily. "It hurts me
-here--in my neck." He rubbed the contracted muscles of his throat. "I''''d
+here--in my neck." He rubbed the contracted muscles of his throat. "I''d
 feel like that, girl, if you should die."
 
 He repeated softly, and choked:
@@ -2794,7 +2795,7 @@ vase into the palm of her hand and, closing the other over it, tiptoed
 into the dining-room and stood behind Smith.
 
 Dora and he, engrossed in conversation, paid no attention to her. She put
-her cupped palms close to Smith''''s ear and, shaking them vigorously,
+her cupped palms close to Smith''s ear and, shaking them vigorously,
 shouted:
 
 "Snakes!"
@@ -2808,7 +2809,7 @@ written upon his face.
 The girl herself shrank back at what she had done; then, holding out
 several rattles for inspection, she said:
 
-"Looks like you don''''t care for snakes."
+"Looks like you don''t care for snakes."
 
 "You--you little----"
 
@@ -2816,23 +2817,23 @@ Only Susie guessed the unspeakable epithet he meant to use. Her eyes
 warned him, and, too, he remembered Dora in time. He said instead, with a
 slight laugh of confusion:
 
-"Snakes scares me, and rat-traps goin'''' off."
+"Snakes scares me, and rat-traps goin'' off."
 
 The color had not yet returned to his face when a knock came upon the
 door.
 
-In response to Susie''''s call, a tall stranger stepped inside--a stranger
+In response to Susie''s call, a tall stranger stepped inside--a stranger
 wide of shoulder, and with a kind of grim strength in his young face.
 
 From the unnatural brightness of the eyes of Susie and of Smith, and their
 still tense attitudes, Ralston sensed the fact that something had
-happened. He returned Smith''''s unpleasant look with a gaze as steady as his
+happened. He returned Smith''s unpleasant look with a gaze as steady as his
 own. Then his eyes fell upon Dora and lingered there.
 
 She had sprung to her feet and was still standing. Her cheeks were
 flushed, her eyes luminous, and the soft lamplight burnishing her brown
 hair made the moment one of her best. Smith saw the frank admiration in
-the stranger''''s look.
+the stranger''s look.
 
 "May I stop here to-night?" He addressed Dora.
 
@@ -2841,12 +2842,12 @@ distinguishing definiteness of purpose. Though the quality of his voice,
 its modulation, bespoke the man of poise and education, the accent was
 unmistakably of the West.
 
-"There''''s a bunk-house." It was Smith who answered.
+"There''s a bunk-house." It was Smith who answered.
 
 His unuttered epithet still rankled; Susie turned upon him with insulting
 emphasis:
 
-"And you''''d better get out to it!"
+"And you''d better get out to it!"
 
 "Are you the boss here?" The stranger put the question to Smith with cool
 politeness.
@@ -2868,7 +2869,7 @@ this--gentleman suggests," and withdrew.
 "Good-night," said Dora, gathering up her books; but neither Smith nor
 Susie answered.
 
-With both hands deep in his trousers'''' pockets, Smith was smiling at Susie,
+With both hands deep in his trousers'' pockets, Smith was smiling at Susie,
 with a smile which was little short of devilish; and the girl, throwing a
 last look of defiance at him, also left the room, violently slamming
 behind her the door of the bed-chamber occupied by her mother and
@@ -2881,14 +2882,14 @@ sat on a fallen cottonwood tree.
 
 Smith eyed it, then asked himself contemptuously:
 
-"Ain''''t that pure Injun?"
+"Ain''t that pure Injun?"
 
 Taking his hat, he too stepped into the moonlight.
 
 The woman did not look up at his approach, so he stooped until his cheek
 touched hers.
 
-"What''''s the matter, Prairie Flower?"
+"What''s the matter, Prairie Flower?"
 
 "My heart is under my feet." Her voice was harsh.
 
@@ -2900,7 +2901,7 @@ In the tone one uses to a sulky child, he said:
 
 Smith reached under the blanket and took her hand.
 
-"Why don''''t you marry de white woman?"
+"Why don''t you marry de white woman?"
 
 He pressed her hand tightly against his heart.
 
@@ -2922,7 +2923,7 @@ THE BUG-HUNTER ELUCIDATES
 
 The same instinct which made Ralston recognize Susie as his friend told
 him that Smith was his enemy; though, verily, that person who would have
-construed as evidences of esteem and budding friendship Smith''''s black
+construed as evidences of esteem and budding friendship Smith''s black
 looks when Ralston presumed to talk with Dora, even upon the most ordinary
 topics, would have been dull of comprehension indeed.
 
@@ -2949,7 +2950,7 @@ mother, unless, mayhap, it might have been an offer of payment for the
 same.
 
 Ralston told himself that, since he could remain without comment, the
-ranch was much better situated for his purpose than Colonel Tolman''''s home;
+ranch was much better situated for his purpose than Colonel Tolman''s home;
 but the really convincing point in its favor, though one which he refused
 to recognize as influencing him in the least, was that he was nearer Dora
 by something like eight miles than he would have been at the Bar C. Then,
@@ -2974,7 +2975,7 @@ McArthur in the rôle of desperado seemed preposterous to Ralston; yet he
 remembered that Ben Reed, a graduate of a theological seminary, who could
 talk tears into the eyes of an Apache, was the slickest stock thief west
 of the Mississippi. He was well aware that a pair of mild eyes and gentle,
-ingenuous manners are many a rogue''''s most valuable asset, and though the
+ingenuous manners are many a rogue''s most valuable asset, and though the
 bug-hunter talked frankly of his pilgrimages into the hills, there was
 always a chance that his pursuit was a pose, his zeal counterfeit.
 
@@ -3000,31 +3001,31 @@ remained."
 Meeteetse Ed, whose cheeks were flushed, laid his hot hand upon his
 forehead and declared plaintively as he blinked at McArthur:
 
-"Pardner, I''''m gittin'''' a headache from tryin'''' to see what you''''re talkin''''
+"Pardner, I''m gittin'' a headache from tryin'' to see what you''re talkin''
 about."
 
-"Air you sayin'''' anything a-tall," demanded Old Man Rulison, suspiciously,
-"or air you joshin''''?"
+"Air you sayin'' anything a-tall," demanded Old Man Rulison, suspiciously,
+"or air you joshin''?"
 
-"Them''''s words all right," said Tubbs. "Onct I worked under a section boss
+"Them''s words all right," said Tubbs. "Onct I worked under a section boss
 over on the Great Northern what talked words like them. He believed we
-sprung up from tuds and lizards--and the likes o'''' that. Yes, he did--on
+sprung up from tuds and lizards--and the likes o'' that. Yes, he did--on
 the square."
 
 "There are many believers in the theory of evolution," observed McArthur.
 
-"That''''s it--that''''s the word. That''''s what he was." Then, in the tone of one
-who hands out a clincher, Tubbs demanded: "Look here, Doc, if that''''s so
-why ain''''t all these ponds and cricks around here a-hatchin'''' out children?"
+"That''s it--that''s the word. That''s what he was." Then, in the tone of one
+who hands out a clincher, Tubbs demanded: "Look here, Doc, if that''s so
+why ain''t all these ponds and cricks around here a-hatchin'' out children?"
 
-"Guess that''''ll hold him for a minute," Meeteetse Ed whispered to his
+"Guess that''ll hold him for a minute," Meeteetse Ed whispered to his
 neighbor.
 
 But instead of being covered with confusion by this seemingly unanswerable
 argument, McArthur gazed at Tubbs in genuine pity.
 
 "Let me consider how I can make it quite clear to you. Perhaps," he said
-thoughtfully, "I cannot do better than to give you Herbert Spencer''''s
+thoughtfully, "I cannot do better than to give you Herbert Spencer''s
 definition. Spencer defines evolution, as nearly as I can remember his
 exact words, as an integration of matter and concomita, dissipation of
 motion; during which the matter passes from an indefinite heterogeneity to
@@ -3034,18 +3035,18 @@ evolution----"
 
 Meeteetse Ed fell off his chair in a mock faint and crashed to the floor.
 
-Susie, who had entered, saw McArthur''''s embarrassment, and refused to join
+Susie, who had entered, saw McArthur''s embarrassment, and refused to join
 in the shout of laughter, though her eyes danced.
 
-"Don''''t mind him," she said comfortingly, as she eyed Meeteetse, sprawled
-on his back with his eyes closed. "He''''s afraid he''''ll learn something. He
-used to be a sheep-herder, and I don''''t reckon he''''s got more''''n two hundred
-and fifty words in his whole vocabulary. Why, I''''ll bet he never _heard_ a
-word of more''''n three syllables before. Get up, Meeteetse. Go out in the
-fresh air and build yourself a couple of them sheep-herder''''s monuments.
-It''''ll make you feel better."
+"Don''t mind him," she said comfortingly, as she eyed Meeteetse, sprawled
+on his back with his eyes closed. "He''s afraid he''ll learn something. He
+used to be a sheep-herder, and I don''t reckon he''s got more''n two hundred
+and fifty words in his whole vocabulary. Why, I''ll bet he never _heard_ a
+word of more''n three syllables before. Get up, Meeteetse. Go out in the
+fresh air and build yourself a couple of them sheep-herder''s monuments.
+It''ll make you feel better."
 
-The prostrate humorist revived. Susie''''s jeers had the effect of a bucket
+The prostrate humorist revived. Susie''s jeers had the effect of a bucket
 of ice-water, for he had not been aware that this blot upon his
 escutcheon--the disgraceful epoch in his life when he had earned honest
 money herding sheep--was known.
@@ -3060,22 +3061,22 @@ whenever you feel like it: we kin stand it as long as you kin."
 After McArthur had gone to his pneumatic mattress in the patent tent
 pitched near the bunk-house, Ralston said to Susie:
 
-"You and the bug-hunter are great friends, aren''''t you?"
+"You and the bug-hunter are great friends, aren''t you?"
 
-"You bet! We''''re pardners. Anybody that gets funny with him has got me to
+"You bet! We''re pardners. Anybody that gets funny with him has got me to
 fight."
 
-"Oh, it''''s like that, is it?" Ralston laughed.
+"Oh, it''s like that, is it?" Ralston laughed.
 
-"We''''ve got secrets--the bug-hunter and me."
+"We''ve got secrets--the bug-hunter and me."
 
-"You''''re rather young for secrets, Susie."
+"You''re rather young for secrets, Susie."
 
-"Nobody''''s too young for secrets," she declared. "Haven''''t you any?"
+"Nobody''s too young for secrets," she declared. "Haven''t you any?"
 
 "Sure," Ralston nodded.
 
-"I like you," Susie whispered impulsively. "Let''''s swap secrets."
+"I like you," Susie whispered impulsively. "Let''s swap secrets."
 
 He looked at her and wished he dared. He would have liked to tell her of
 his mission, to ask her help; for he realized that, if she chose, no one
@@ -3091,12 +3092,12 @@ he answered jestingly:
 
 Susie gave him a quick glance.
 
-"Oh, you don''''t look as though you had that kind," and turned away.
+"Oh, you don''t look as though you had that kind," and turned away.
 
 Ralston felt somehow that he had lost an opportunity. He could not rid
 himself of the feeling the entire evening; and he made up his mind to
-cultivate Susie''''s friendship. But it was too late; he had made a mistake
-not unlike Dora''''s. Susie had felt herself rebuffed, and, like the
+cultivate Susie''s friendship. But it was too late; he had made a mistake
+not unlike Dora''s. Susie had felt herself rebuffed, and, like the
 Schoolmarm, Ralston had laughed at her with his eyes. It was a great
 thing--a really sacred thing to Susie--this secret that she had offered
 him. The telling of it to McArthur had been so delightful an experience
@@ -3107,26 +3108,26 @@ company and endeavored to learn something of the workings of her mind, he
 found the same barrier of childish reserve which had balked Dora, and no
 amount of tact or patience seemed able to break it down.
 
-The young deputy sheriff''''s interest in Dora increased in leaps and bounds.
+The young deputy sheriff''s interest in Dora increased in leaps and bounds.
 He experienced an odd but delightful agitation when he saw the sleepy
 white pony plodding down the hill, and the sensation became one easily
-defined each time that he observed Smith''''s horse ambling in the road
-beside hers. The feeling which inspired Tubbs''''s disgruntled comment,
+defined each time that he observed Smith''s horse ambling in the road
+beside hers. The feeling which inspired Tubbs''s disgruntled comment,
 "Smith rides herd on the Schoolmarm like a cow outfit in a bad wolf
-country," found an echo in Ralston''''s own breast. Truly, Smith guarded the
+country," found an echo in Ralston''s own breast. Truly, Smith guarded the
 Schoolmarm with the vigilance of a sheep-dog.
 
 He saw a possible rival in every new-comer, but most of all he feared
 Ralston; for Smith was not too blinded by prejudice to appreciate the fact
-that Ralston was handsome in a strong, man''''s way, younger than himself,
+that Ralston was handsome in a strong, man''s way, younger than himself,
 and possessed of the advantages of education which enabled him to talk
 with Dora upon subjects that left him, Smith, dumb. Such times were
 wormwood and gall to Smith; yet in his heart he never doubted but that he
-would have Dora and her love in the end. Smith''''s faith in himself and his
+would have Dora and her love in the end. Smith''s faith in himself and his
 ability to get what he really desired was sublime. The chasm between
 himself and Dora--the difference of birth and education--meant nothing to
 him. It is doubtful if he recognized it. He would have considered himself
-a king''''s equal; indeed, it would have gone hard with royalty, had royalty
+a king''s equal; indeed, it would have gone hard with royalty, had royalty
 by any chance ordered Smith to saddle his horse. He judged by the
 standards of the plains: namely, gameness, skill, resourcefulness; to him,
 there _were_ no other standards. After all, Dora Marshall was only a
@@ -3134,9 +3135,9 @@ woman--the superior of other women, to be sure, but a woman; and if he
 wanted her--why not?
 
 He would have been amazed, enraged through wounded vanity, if it had been
-possible for him to see himself from Dora''''s point of view: a subject for
+possible for him to see himself from Dora''s point of view: a subject for
 reformation; a test for many trite theories; an erring human to be
-reclaimed by a woman''''s benign influence. Naturally, these thoughts had not
+reclaimed by a woman''s benign influence. Naturally, these thoughts had not
 suggested themselves to Smith.
 
 Ralston looked forward eagerly to the evening meal, since it was almost
@@ -3147,7 +3148,7 @@ her, the look of mutual appreciation which sometimes passed between them
 at a quaint bit of philosophy or naïve remark, started his pulses dancing
 and set the whole world singing a wordless song of joy.
 
-Somehow, eating seemed a vulgar function in the Schoolmarm''''s presence,
+Somehow, eating seemed a vulgar function in the Schoolmarm''s presence,
 and he wished with all his heart that the abominable grammar lessons which
 filled her evenings might some time end; in which case he would be able to
 converse with her when not engaged in rushing bread and meat to and fro.
@@ -3161,7 +3162,7 @@ their heads together over that accursed grammar.
 He commenced to feel a distaste for his bunk-house associates, and took
 to wandering out of doors, pausing most frequently in his meanderings
 just outside the circle of light thrown through the window by the
-dining-room lamp. Dora''''s guilelessness in believing that Smith''''s interest
+dining-room lamp. Dora''s guilelessness in believing that Smith''s interest
 in his lessons was due to a desire for knowledge did not make the
 tableau less tantalizing to Ralston, but it would have been against every
 tenet in his code to suggest to Dora that Smith was not the misguided
@@ -3177,7 +3178,7 @@ kids in Livingston and run off with a biscuit-shooter."
 Dora laughed aloud. The clean-cut and youthful Ralston deserting a wife
 and five children for a "biscuit-shooter" was not a convincing picture.
 That she did not receive his insinuation seriously but added fuel to the
-unreasoning jealousy beginning to flame in Smith''''s breast.
+unreasoning jealousy beginning to flame in Smith''s breast.
 
 Yet Smith treated Ralston with a consideration which was surprising in
 view of the wanton insults he frequently inflicted upon those whom he
@@ -3191,11 +3192,11 @@ would be the last man to accept an affront with meekness.
 Smith did not wish affairs to reach this crisis. He did not want to force
 an issue until he had demonstrated to his own satisfaction that he was the
 better man of the two with words or fists or weapons. But once he found
-the flaw in Ralston''''s armor, he would speedily become the aggressor. Such
-were Smith''''s tactics. He was reckless with caution; daring when it was
+the flaw in Ralston''s armor, he would speedily become the aggressor. Such
+were Smith''s tactics. He was reckless with caution; daring when it was
 safe.
 
-The rôle he was playing gave him no concern. Though the Indian woman''''s
+The rôle he was playing gave him no concern. Though the Indian woman''s
 spells of sullenness irritated him, he conciliated her with endearing
 words, caresses, and the promise of a speedy marriage. He appeased her
 jealousy of Dora by telling her that he studied the foolish book-words
@@ -3213,7 +3214,7 @@ hay; but more than any of them he wanted Dora Marshall. How he was going
 to obtain them all was not then clear to him, but that when the time came
 he could make a way, he never for a moment doubted.
 
-Smith''''s confidence in himself was supreme. If he could have expressed his
+Smith''s confidence in himself was supreme. If he could have expressed his
 belief in words, he might have said that he could control Destiny, shape
 events and his own life as he liked. He had been shot at, pursued by
 posses, all but lynched upon an occasion, and always he had escaped in
@@ -3238,38 +3239,38 @@ very private and confidential to say to Mr. Ralston," she shielded her
 mouth with her hand and said:
 
 "Teacher and I are going fishing. We are going up on the side-hill now to
-catch grasshoppers for bait, and I thought maybe you''''d like to help, and
+catch grasshoppers for bait, and I thought maybe you''d like to help, and
 to fish with us this afternoon." She tittered in his ear.
 
-Susie''''s action conveyed two things to Ralston''''s mind: first, that he had
+Susie''s action conveyed two things to Ralston''s mind: first, that he had
 not been so clever as he had supposed in dissembling his feelings; and
 second, that Susie, recognizing them, was disposed to render him friendly
 aid.
 
-Smith noted Ralston''''s brightening eye with suspicion, jumping to the very
+Smith noted Ralston''s brightening eye with suspicion, jumping to the very
 natural conclusion that only some pleasing information concerning the
 Schoolmarm would account for it. When, a few minutes later, he saw the
 three starting away together, each with a tin or pasteboard box, he
 realized that his surmise was correct.
 
 Glowering, Smith walked restlessly about the house, ignoring the Indian
-woman''''s inquiring, wistful eyes, cursing to himself as he wandered through
+woman''s inquiring, wistful eyes, cursing to himself as he wandered through
 the corrals and stables, hating with a personal hatred everything which
 belonged to Ralston: his gentle-eyed brown mare; his expensive Navajo
 saddle-blanket; his single-rigged saddle; his bridle with the wide cheek
 pieces and the hand-forged bit. It would have been a satisfaction to
 destroy them all. He hated particularly the little brown mare which
-Ralston brushed with such care each morning. Smith''''s mood was black
+Ralston brushed with such care each morning. Smith''s mood was black
 indeed.
 
 But Ralston, as he walked between Dora and Susie to the side-hill where
 the first grasshoppers of spring were always found, felt at peace with all
 the world--even Smith--and it was in his heart to hug the elfish
-half-breed child as she skipped beside him. Dora''''s frequent, bubbling
+half-breed child as she skipped beside him. Dora''s frequent, bubbling
 laughter made him thrill; he longed to shout aloud like a schoolboy given
 an unexpected holiday.
 
-Each time that his eyes sought Dora''''s, shadowed by the wide brim of her
+Each time that his eyes sought Dora''s, shadowed by the wide brim of her
 hat, her eyelids drooped, slowly, reluctantly, as though they fell against
 her will, while the color came and went under her clear skin in a fashion
 which filled him with delighted wonder.
@@ -3288,7 +3289,7 @@ the devilish agility of his August descendant, he is sufficiently alert to
 make his capture no mean feat. It must be borne in mind that the
 grasshopper is not a fool, and that he appears to see best from the rear.
 Though he remains motionless while the enemy is slipping stealthily upon
-him, it by no means follows that he is not aware of said enemy''''s approach.
+him, it by no means follows that he is not aware of said enemy''s approach.
 The grasshopper has a more highly developed sense of humor than any other
 known insect. It is an established fact that after a person has fallen
 upon his face and clawed at the earth where the grasshopper was but is
@@ -3319,7 +3320,7 @@ hill till she was out of sight.
 
 Ralston became aware that no matter in which direction the grasshopper he
 had marked for his own took him, singularly enough he always ended in
-pursuit of Dora''''s. As a matter of fact, her grasshopper looked so much
+pursuit of Dora''s. As a matter of fact, her grasshopper looked so much
 more desirable than his, that he could not well do otherwise than abandon
 the pursuit of his own for hers.
 
@@ -3343,22 +3344,22 @@ determined pursuit.
 The insect sailed far and fast, but they could not lose sight of him, for
 he was like an aeroplane in flight, and when in an ill-advised moment he
 lit to gather himself, they fell upon him tooth and nail--to use a phrase.
-Dora''''s hand closed over the grasshopper, and Ralston''''s closed over Dora''''s,
+Dora''s hand closed over the grasshopper, and Ralston''s closed over Dora''s,
 holding it tight in one confused moment of delicious, tongue-tied
 silence.
 
 Her shoulder touched his, her hair brushed his cheek. He wished that they
 might go on holding down that grasshopper until the end of time. She was
-panting with the exertion, her nose was moist like a baby''''s when it
+panting with the exertion, her nose was moist like a baby''s when it
 sleeps, and he noticed in a swift, sidelong glance that the pupils of her
 eyes all but covered the iris.
 
-"He--he''''s wiggling!" she said tremulously.
+"He--he''s wiggling!" she said tremulously.
 
 "Is he?" Ralston asked fatuously, at a loss for words, but making no move
 to lift his hand.
 
-"And there''''s a cactus in my finger."
+"And there''s a cactus in my finger."
 
 "Let me see it." Immediately his face was full of deep concern.
 
@@ -3374,20 +3375,20 @@ came out easily.
 unabated interest.
 
 "Tra! la! la!" sang Susie from the brow of the hill. "Old Smith is
-comin''''."
+comin''."
 
-Ralston dropped Dora''''s hand, and they both reddened, each wondering how
+Ralston dropped Dora''s hand, and they both reddened, each wondering how
 long Susie had been doing picket duty.
 
-"Out for your failin'''' health, Mister Smith?" inquired Susie, with
+"Out for your failin'' health, Mister Smith?" inquired Susie, with
 solicitude.
 
-"I''''m huntin'''' horses, and hopin'''' to pick up a bunch of ponies cheap," he
+"I''m huntin'' horses, and hopin'' to pick up a bunch of ponies cheap," he
 replied with ugly significance as he rode by.
 
-And while the soft light faded from Ralston''''s eyes, the color leaped to
-his face; unconsciously his fists clenched as he looked after Smith''''s
-vanishing back. It was the latter''''s first overt act of hostility; Ralston
+And while the soft light faded from Ralston''s eyes, the color leaped to
+his face; unconsciously his fists clenched as he looked after Smith''s
+vanishing back. It was the latter''s first overt act of hostility; Ralston
 knew, and perhaps Smith intended it so, that the clash between them must
 now come soon.
 
@@ -3401,7 +3402,7 @@ MOTHER LOVE AND SAVAGE PASSION CONFLICT
 
 It was Sunday, a day later, when Susie came into the living-room and
 noticed her mother sewing muskrat around the top of a moccasin. It was a
-man''''s moccasin. The woman had made no men''''s moccasins since her husband''''s
+man''s moccasin. The woman had made no men''s moccasins since her husband''s
 death. The sight chilled the girl.
 
 "Mother," she asked abruptly, "what do you let that hold-up hang around
@@ -3411,7 +3412,7 @@ here for?"
 
 "That Smith!" Susie spat out the word like something offensive.
 
-The Indian woman avoided the girl''''s eyes.
+The Indian woman avoided the girl''s eyes.
 
 "I like him," she answered.
 
@@ -3420,17 +3421,17 @@ The Indian woman avoided the girl''''s eyes.
 "Maybe he stay all time." Her tone was stubborn, as though she expected
 and was prepared to resist an attack.
 
-"You don''''t--you _can''''t_--mean it!". Susie''''s thin face flushed scarlet with
+"You don''t--you _can''t_--mean it!". Susie''s thin face flushed scarlet with
 shame.
 
 "Sa-ah," the woman nodded, "I mean it;" and Susie, staring at her in a
 kind of terror, saw that she did.
 
 "Oh, Mother! Mother!" she cried passionately, dropping on the floor at the
-woman''''s feet and clasping her arms convulsively about the Indian woman''''s
-knees. "Don''''t--don''''t say that! We''''ve always been a little different from
-the rest. We''''ve always held our heads up. People like us and respect
-us--both Injuns and white. We''''ve never been talked about--you and me--and
+woman''s feet and clasping her arms convulsively about the Indian woman''s
+knees. "Don''t--don''t say that! We''ve always been a little different from
+the rest. We''ve always held our heads up. People like us and respect
+us--both Injuns and white. We''ve never been talked about--you and me--and
 now you are going to spoil it all!"
 
 "I get tied up to him right," defended the woman sullenly.
@@ -3439,34 +3440,34 @@ now you are going to spoil it all!"
 
 "We need good white man to run de ranch."
 
-"But _Smith_--do you think _he''''s_ good? Good! Is a rattlesnake good? Can''''t
+"But _Smith_--do you think _he''s_ good? Good! Is a rattlesnake good? Can''t
 you see what he is, Mother?--you who are smarter than me in seeing through
-people? He''''s mean--onery to the marrow--and some day sure--_sure_--he''''ll
+people? He''s mean--onery to the marrow--and some day sure--_sure_--he''ll
 turn, and strike his fangs into you."
 
 "He no onery," the woman replied, in something like anger.
 
-"It''''s his nature," Susie went on, without heeding her. "He can''''t help it.
-All his thoughts and talk and schemes are about something crooked. Can''''t
-you tell by the things he lets drop that he ought to be in the ''''pen''''? He''''s
-treacherous, ungrateful, a born thief. I saw him take Tubbs''''s halter, and
+"It''s his nature," Susie went on, without heeding her. "He can''t help it.
+All his thoughts and talk and schemes are about something crooked. Can''t
+you tell by the things he lets drop that he ought to be in the ''pen''? He''s
+treacherous, ungrateful, a born thief. I saw him take Tubbs''s halter, and
 there was the regular thief look in his eyes when he cut his own name on
 it. I saw him kick a dog, and he kicked it like a brute. He kicked it in
 the ribs with his toe. Men--decent men--kick a dog with the side of their
 foot. I saw his horse fall with him, and he held it down and beat it on
-the neck with a chain, where it wouldn''''t show. He''''d hold up a bank or rob
-a woman; he''''d kill a man or a prairie-dog, and think no more of the one
+the neck with a chain, where it wouldn''t show. He''d hold up a bank or rob
+a woman; he''d kill a man or a prairie-dog, and think no more of the one
 than the other.
 
 "I tell you, Mother, as sure as I sit here on the floor at your feet,
-begging you, he''''s going to bring us trouble; he''''s going to deal us misery!
+begging you, he''s going to bring us trouble; he''s going to deal us misery!
 I feel it! I _know_ it!"
 
 "You no like de white man."
 
-"That''''s right; I don''''t like the white man. He wants a good place to stay;
+"That''s right; I don''t like the white man. He wants a good place to stay;
 he wants your horses and cattle and hay; and--he wants the Schoolmarm.
-He''''s making a fool of you, Mother."
+He''s making a fool of you, Mother."
 
 "He no make fool of me," she answered complacently. "He make fool of de
 white woman, maybe."
@@ -3481,30 +3482,30 @@ by side on the cottonwood log.
 "He make fool of de white woman," she reiterated stubbornly, but her face
 clouded.
 
-"He makes a fool of himself, but not of her," declared Susie. "He''''s crazy
+"He makes a fool of himself, but not of her," declared Susie. "He''s crazy
 about her--locoed. Everybody sees it except her. Believe me, Mother,
 listen to Susie just this once."
 
 "He like me. I stick to him;" but she went back to her bench. The
-unfamiliar softness of Smith''''s face hurt her.
+unfamiliar softness of Smith''s face hurt her.
 
-The tears filled Susie''''s eyes and ran down her cheeks. Her mother''''s
+The tears filled Susie''s eyes and ran down her cheeks. Her mother''s
 passion for this hateful stranger was stronger than her mother-love, that
 silent, undemonstrative love in which Susie had believed as she believed
 that the sun would rise each morning over there in the Bad Lands, to warm
-her when she was cold. She buried her face in her mother''''s lap and sobbed
+her when she was cold. She buried her face in her mother''s lap and sobbed
 aloud.
 
 The woman had not seen Susie cry since she was a tiny child, save when her
 father and White Antelope died, and the numbed maternal instinct stirred
-in her breast. She laid her dark, ringed fingers upon Susie''''s hair and
+in her breast. She laid her dark, ringed fingers upon Susie''s hair and
 stroked it gently.
 
-"Don''''t cry," she said slowly. "If he make fool of me, if he lie when he
+"Don''t cry," she said slowly. "If he make fool of me, if he lie when he
 say he tie up to me right, if he like de white woman better den me, I kill
 him. I kill him, Susie." She pointed to a bunch of roots and short dried
 stalks which hung from the rafters in one corner of the room. "See--that
-is the love-charm of the Sioux. It was gifted to me by Little Coyote''''s
+is the love-charm of the Sioux. It was gifted to me by Little Coyote''s
 woman--a Mandan. It bring de love, and too much--it kill. If he make fool
 of me, if he not like me better den de white woman, I give him de
 love-charm of de Sioux. I fix him! _I fix him right!_"
@@ -3556,7 +3557,7 @@ He thought of her as the mother of children--his children--bearing his
 name, miniatures of himself and of her. He never had thought of this
 before. He never had met a woman who inspired in him any such desire. He
 followed the thought further. What if he should have a permanent home--a
-ranch that belonged to him exclusively--"Smith''''s Ranch"--where there were
+ranch that belonged to him exclusively--"Smith''s Ranch"--where there were
 white curtains at the windows, and little ones who came tumbling through
 the door to greet him when he rode into the yard? A place where people
 came to visit, people who reckoned him a person of consequence because he
@@ -3581,16 +3582,16 @@ Man." In this he had found glory which satisfied him.
 Smith hesitated; then he burst out:
 
 "Girl, do I stack up different to you nor anybody else? Have you any
-feelin'''' for me at all?"
+feelin'' for me at all?"
 
-"Why, I think I''''ve shown my interest in trying to teach you," she replied,
+"Why, I think I''ve shown my interest in trying to teach you," she replied,
 a little abashed by his vehemence.
 
 "What do you want to teach me for?" he demanded.
 
 "Because," Dora declared, "you have possibilities."
 
-"Why don''''t you teach Meeteetse Ed and Tubbs?"
+"Why don''t you teach Meeteetse Ed and Tubbs?"
 
 Dora laughed aloud.
 
@@ -3599,80 +3600,80 @@ be much more than we see them here. And they are content as they are."
 
 "So was I, girl, until our trails crossed. I could ride without grub all
 day, and sing. I could sleep on a saddle-blanket like a tired pup, with
-only a rock for a wind-break and my saddle for a pillow. Now I can''''t sleep
-in a bed. It''''s horrible--this mixed up feelin''''--half the time wantin'''' to
-holler and laugh and the other half wantin'''' to cry."
+only a rock for a wind-break and my saddle for a pillow. Now I can''t sleep
+in a bed. It''s horrible--this mixed up feelin''--half the time wantin'' to
+holler and laugh and the other half wantin'' to cry."
 
-"I don''''t see why you should feel like that," said Dora gravely. "You are
-getting along. It''''s slow, but you''''re learning."
+"I don''t see why you should feel like that," said Dora gravely. "You are
+getting along. It''s slow, but you''re learning."
 
-"Oh, yes, I''''m learnin''''," Smith answered grimly--"fast."
+"Oh, yes, I''m learnin''," Smith answered grimly--"fast."
 
 He saw her wondering look and went on fiercely.
 
-"Girl, don''''t you see what I mean? Don''''t you _sabe_? My feelin'''' for you is
-more nor friendship. I can''''t tell you how I feel. It''''s nothin'''' I ever had
-before, but I''''ve heard of it a-plenty. It''''s love--that''''s what it is! I''''ve
+"Girl, don''t you see what I mean? Don''t you _sabe_? My feelin'' for you is
+more nor friendship. I can''t tell you how I feel. It''s nothin'' I ever had
+before, but I''ve heard of it a-plenty. It''s love--that''s what it is! I''ve
 seen it, too, a-plenty.
 
-"There''''s two things in the world a feller''''ll go through hell for--just
-two: love and gold. I don''''t mean money, but gold--the pure stuff. They''''ll
-waller through snow-drifts, they''''ll swim rivers with the ice runnin'''',
-they''''ll crawl through canyons and over trails on their hands and knees,
-they''''ll starve and they''''ll freeze, they''''ll work till the blood runs from
-their blistered hands, they''''ll kill their horses and their pardners, for
-gold! And they''''ll do it for love. Yes, I''''ve seen it a-plenty, me--Smith.
+"There''s two things in the world a feller''ll go through hell for--just
+two: love and gold. I don''t mean money, but gold--the pure stuff. They''ll
+waller through snow-drifts, they''ll swim rivers with the ice runnin'',
+they''ll crawl through canyons and over trails on their hands and knees,
+they''ll starve and they''ll freeze, they''ll work till the blood runs from
+their blistered hands, they''ll kill their horses and their pardners, for
+gold! And they''ll do it for love. Yes, I''ve seen it a-plenty, me--Smith.
 
-"Things I''''ve done, I''''ve done, and they don''''t worry me none," he went on,
-"but lately I''''ve thought of Dutch Joe. I worked him over for singin'''' a
-love-song, and I wisht I hadn''''t. He''''d held up a stage, and was cached in
-my camp till things simmered down. It was lonesome, and I''''d want to talk;
-but he''''d sit back in the dark, away from the camp-fire, and sing to
-himself about ''''ridin'''' to Annie.'''' How the miles wasn''''t long or the trail
-rough if only he was ''''ridin'''' to Annie.'''' Sittin'''' back there in the brush,
-he sounded like a sick coyote a-hollerin''''. It hadn''''t no tune, and I
-thought it was the damnedest fool song I ever heard. After he''''d sung it
-more''''n five hundred times, I hit him on the head with a six-shooter, and
-we mixed. He quit singin'''', but he held that gretch against me as long as
+"Things I''ve done, I''ve done, and they don''t worry me none," he went on,
+"but lately I''ve thought of Dutch Joe. I worked him over for singin'' a
+love-song, and I wisht I hadn''t. He''d held up a stage, and was cached in
+my camp till things simmered down. It was lonesome, and I''d want to talk;
+but he''d sit back in the dark, away from the camp-fire, and sing to
+himself about ''ridin'' to Annie.'' How the miles wasn''t long or the trail
+rough if only he was ''ridin'' to Annie.'' Sittin'' back there in the brush,
+he sounded like a sick coyote a-hollerin''. It hadn''t no tune, and I
+thought it was the damnedest fool song I ever heard. After he''d sung it
+more''n five hundred times, I hit him on the head with a six-shooter, and
+we mixed. He quit singin'', but he held that gretch against me as long as
 he lived.
 
-"I thought it was because he was Dutch, but it wasn''''t. ''''Twas love. Why,
-girl, I''''d ride as long as my horse could stand up under me, and then I''''d
-hoof it, just to hear you say, ''''Smith, do you think it will rain?''''"
+"I thought it was because he was Dutch, but it wasn''t. ''Twas love. Why,
+girl, I''d ride as long as my horse could stand up under me, and then I''d
+hoof it, just to hear you say, ''Smith, do you think it will rain?''"
 
 "Oh, I never thought of this!" cried Dora, as Smith paused.
 
 Her face was full of distress, and her hands lay tightly clenched in her
 lap.
 
-"Do you mean I haven''''t any show--no show at all?" The color fading from
-Smith''''s face left it a peculiar yellow.
+"Do you mean I haven''t any show--no show at all?" The color fading from
+Smith''s face left it a peculiar yellow.
 
 "It never occurred to me that you would misunderstand, or think anything
 but that I wanted to help you. I thought that you wanted to learn so that
 you would have a better chance in life."
 
 "Did you--honest? Are you as innocent as that, girl?" he asked in savage
-scepticism. "Did you believe that I''''d set and study them damned verbs just
-so I''''d have a better chanct in life?"
+scepticism. "Did you believe that I''d set and study them damned verbs just
+so I''d have a better chanct in life?"
 
 "You said so."
 
 "Oh, yes, maybe I _said_ so."
 
-"Surely, _surely_, you don''''t think I would intentionally mislead you?"
+"Surely, _surely_, you don''t think I would intentionally mislead you?"
 
 "When a woman wants a man to dress or act or talk different, she generally
 cares some."
 
-"And I do ''''care some''''!" Dora cried impulsively. "I believe that you are
+"And I do ''care some''!" Dora cried impulsively. "I believe that you are
 not making the best of yourself, of your life; that you are better than
 your surroundings; and because I do believe in you, I want to help you.
-Don''''t you understand?"
+Don''t you understand?"
 
 Her explanation was not convincing to Smith.
 
-"Is it because I don''''t talk grammar, and you think you''''d have to live in a
+"Is it because I don''t talk grammar, and you think you''d have to live in a
 log-house and hang out your own wash?"
 
 Dora considered.
@@ -3683,18 +3684,18 @@ and I know it is temporary; but if I were asked to live here always, as
 you suggest, in a log-house and hang out my own wash, I should have to
 care a great deal."
 
-"It''''s because I haven''''t a stake, then," he said bitterly.
+"It''s because I haven''t a stake, then," he said bitterly.
 
-"No, not because you haven''''t a stake. I merely say that extreme poverty
+"No, not because you haven''t a stake. I merely say that extreme poverty
 would be an objection."
 
 "But if I should get the _dinero_--me, Smith--plenty of it? Tell me," he
-demanded fiercely--"it''''s the time to talk now--is there any one else? It''''s
-me for the devil straight if you throw me! You''''d better take this gun
-here, plant it on my heart, and pull the trigger. Because if I live--I''''m
-talkin'''' straight--what I have done will be just a kid''''s play to what I''''ll
-do, if I ever cut loose for fair. Don''''t throw me, girl! Give me a show--if
-there ain''''t any one else! If there is, I''''m quittin'''' the flat to-day."
+demanded fiercely--"it''s the time to talk now--is there any one else? It''s
+me for the devil straight if you throw me! You''d better take this gun
+here, plant it on my heart, and pull the trigger. Because if I live--I''m
+talkin'' straight--what I have done will be just a kid''s play to what I''ll
+do, if I ever cut loose for fair. Don''t throw me, girl! Give me a show--if
+there ain''t any one else! If there is, I''m quittin'' the flat to-day."
 
 Dora was silent, panic-stricken with the responsibility which he seemed
 to have thrust upon her, almost terrified by the thought that he was
@@ -3711,7 +3712,7 @@ replied:
 "No, there is no one."
 
 And Ralston, fording the stream, lifted his eyes midway and saw Smith
-raise Dora''''s hand to his lips.
+raise Dora''s hand to his lips.
 
 
 
@@ -3739,7 +3740,7 @@ again as she decided that this must be so, since there could be no other
 explanation. Before she finally slept, she had fully made up her mind that
 she would show him by added reserve and dignity of manner that she was not
 the forward hoyden he undoubtedly believed her. And as a result of this
-midnight decision, the Schoolmarm''''s "Good-morning, Mr. Ralston," chilled
+midnight decision, the Schoolmarm''s "Good-morning, Mr. Ralston," chilled
 that person like a draught from cold storage.
 
 Susie noticed the absence of their former cordiality toward each other;
@@ -3747,9 +3748,9 @@ and the obvious lack of warmth filled Smith with keen satisfaction. He had
 no notion of its cause; it was sufficient that it was so.
 
 As their conversation daily became more forced, the estrangement more
-marked, Ralston''''s wretchedness increased in proportion. He brooded
+marked, Ralston''s wretchedness increased in proportion. He brooded
 miserably over the scene he had witnessed; troubled, aside from his own
-interest in Dora, that she should be misled by a man of Smith''''s moral
+interest in Dora, that she should be misled by a man of Smith''s moral
 calibre. While he had delighted in her unworldly, childlike belief in
 people and things, in this instance he deeply regretted it.
 
@@ -3777,7 +3778,7 @@ wishes. Although she did not show it, she must have thought him a bumpkin,
 an oaf, an underbred cur. He groaned as he ransacked his vocabulary for
 fitting words.
 
-If only something would arise to reveal Smith''''s character to her in its
+If only something would arise to reveal Smith''s character to her in its
 true light! But this was too much to hope. In his depression, it seemed to
 Ralston that the sun would never shine for him again, that failure was
 written on him like an I. D. brand, that sorrow everlasting would eat and
@@ -3797,12 +3798,12 @@ is over there in the pasture."
 
 For reply, both Ralston and Smith swung into their saddles.
 
-"I aims to get that horse. There''''s no call for you to go, feller."
+"I aims to get that horse. There''s no call for you to go, feller."
 
 Above all else, it was odious to Ralston to be addressed by Smith
 "feller."
 
-"If you happen to get to him first," he answered curtly. "And I''''d like to
+"If you happen to get to him first," he answered curtly. "And I''d like to
 suggest that my name is Ralston."
 
 By way of answer, Smith dug the spurs cruelly into the thin-skinned
@@ -3821,9 +3822,9 @@ three-quarters of a mile in length, at the end of which was another gate,
 opening into the pasture where the runaway pony had crawled through the
 loose wire fence.
 
-The brown mare had responded to Ralston''''s signal like the loyal, honest
+The brown mare had responded to Ralston''s signal like the loyal, honest
 little brute she was. The gravel flew behind them, and the rat-a-tat-tat
-of the horses'''' hoofs on the hard road was like the roll of a drum. They
+of the horses'' hoofs on the hard road was like the roll of a drum. They
 were running neck and neck, but Ralston had little fear of the result,
 unless the gray had phenomenal speed.
 
@@ -3840,8 +3841,8 @@ and the face of each rider was set in lines of determination. Ralston
 quickly saw that in the short stretch he would be unable to get
 sufficiently in the lead to open the gate in safety. So he pulled his
 horse a little, wondering if Smith would do the same. But he did not.
-Instead, he spurred viciously, and, to Ralston''''s amazement, he went at the
-gate hard. Lifting the gray horse''''s head, he went over and on without a
+Instead, he spurred viciously, and, to Ralston''s amazement, he went at the
+gate hard. Lifting the gray horse''s head, he went over and on without a
 break!
 
 It was a chance, but Smith had taken it! He never had tried the horse, but
@@ -3855,7 +3856,7 @@ gray might not have the wind or the endurance. The little mare stood
 still, her nose out, her soft eyes shining. As he lifted the reins, he
 patted her neck and cried, breathing hard:
 
-"Molly, old girl, if you win, it''''s oats and a rest all your life!"
+"Molly, old girl, if you win, it''s oats and a rest all your life!"
 
 He could have sworn the mare shared his humiliation.
 
@@ -3872,20 +3873,20 @@ under her feet. When Ralston thought she had done her best, given all
 that was in her, she did a little more.
 
 Smith knew, too, that she was gaining, though he would not turn his head
-to look. When her nose was at his horse''''s rump, he had it in his heart to
+to look. When her nose was at his horse''s rump, he had it in his heart to
 turn and shoot her as she ran. She crept up and up, and both Smith and
 Ralston knew that the straining, pounding gray had done its best. The work
 was too rough for its feet. There was too much thoroughbred in it for
 lava-rock and sage-brush hummocks. Blind rage consumed Smith as he felt
 the increasing effort of each stride and knew that it was going "dead"
-under him. He used his spurs with savage brutality, but the brown mare''''s
+under him. He used his spurs with savage brutality, but the brown mare''s
 breath was coming hot on his leg. The gray horse stumbled; its breath came
 and went in sobs. Now they were neck and neck again. Then it was over, the
-little brown mare swept by, and Ralston''''s rope, cutting the air, dropped
+little brown mare swept by, and Ralston''s rope, cutting the air, dropped
 about the neck of the insignificant, white "digger" that had caused it
 all.
 
-"I guess you''''re ridin'''' the best horse to-day," said Smith, as he dropped
+"I guess you''re ridin'' the best horse to-day," said Smith, as he dropped
 from the saddle to retie his latigo.
 
 He gave the words a peculiar emphasis and inflection which made the other
@@ -3897,20 +3898,20 @@ quietly.
 "It happens frequent that a feller has to get over his prejudices out in
 this country."
 
-"That depends a little upon the fellow;" and he turned Molly''''s head toward
+"That depends a little upon the fellow;" and he turned Molly''s head toward
 the ranch, with the pony in tow.
 
 Smith said nothing more, but rode off across the hills with all the evil
 in his nature showing in his lowering countenance.
 
-Dora''''s eyes were brilliant as they always were under excitement; and when
-Ralston dismounted she stroked Molly''''s nose, saying in a voice which was
+Dora''s eyes were brilliant as they always were under excitement; and when
+Ralston dismounted she stroked Molly''s nose, saying in a voice which was
 more natural than it had been for days when addressing him, "It was
 splendid! _She_ is splendid!" and he glowed, feeling that perhaps he was
 included a little in her praise.
 
-"You want to watch out now," said Susie soberly. "Smith''''ll never rest till
-he''''s ''''hunks.''''"
+"You want to watch out now," said Susie soberly. "Smith''ll never rest till
+he''s ''hunks.''"
 
 Ralston thought the Schoolmarm hesitated, as if she were waiting for him
 to join them, or were going to ask him to do so; but she did not, and,
@@ -3937,14 +3938,14 @@ jamb of the kitchen door.
 "Have the makings, Ling?" He passed his tobacco-sack and paper to the
 cook.
 
-"Sure!" said Ling jauntily. "I like ''''em cigilette."
+"Sure!" said Ling jauntily. "I like ''em cigilette."
 
 And as they smoked fraternally together, they talked of food and its
-preparation--subjects from which Ling''''s thoughts seldom wandered far. When
+preparation--subjects from which Ling''s thoughts seldom wandered far. When
 the advantages of soda and sour milk over baking powder were thoroughly
 exhausted as a topic, Ralston asked casually:
 
-"Who killed your last beef, Ling? It''''s hard to beat."
+"Who killed your last beef, Ling? It''s hard to beat."
 
 "Yellow Bird," he replied. "Him good butcher."
 
@@ -3960,30 +3961,30 @@ remarkable skull."
 
 Tubbs, visibly flattered, smirked.
 
-"It''''s claimed that it''''s double by people what have tried to work me over.
-Onct I crawled in a winder and et up a batch of ''''son-of-a-gun-in-a-sack''''
+"It''s claimed that it''s double by people what have tried to work me over.
+Onct I crawled in a winder and et up a batch of ''son-of-a-gun-in-a-sack''
 that the feller who lived there had jest made. He come in upon me suddent,
-and the way he hammered me over the head with the stove-lifter didn''''t
+and the way he hammered me over the head with the stove-lifter didn''t
 trouble _him_, but," declared Tubbs proudly, "he never even knocked me to
 my knees."
 
 "It is of the type of dolichocephalic," mused McArthur.
 
 "A barber told me that same thing the last time I had a hair-cut,"
-observed Tubbs blandly. "''''Tubbs,'''' says he, ''''you ought to have a massaj
-every week, and lay the b''''ar-ile on a-plenty.''''"
+observed Tubbs blandly. "''Tubbs,'' says he, ''you ought to have a massaj
+every week, and lay the b''ar-ile on a-plenty.''"
 
 "It is remarkably suggestive of the skulls found in the ancient paraderos
 of Patagonia. Very similar in contour--very similar."
 
-"There''''s no Irish in me," Tubbs declared with a touch of resentment. "I''''m
+"There''s no Irish in me," Tubbs declared with a touch of resentment. "I''m
 pure mungrel--English and Dutch."
 
-"It is an extremely curious skull--most peculiar." He felt of Tubbs''''s head
+"It is an extremely curious skull--most peculiar." He felt of Tubbs''s head
 with growing interest. "This bump behind the ear, if the system of
 phrenology has any value, would indicate unusual pugnacity."
 
-"That''''s where a mule kicked me and put his laig out of joint," said Tubbs
+"That''s where a mule kicked me and put his laig out of joint," said Tubbs
 humorously.
 
 "Ah, that renders the skull pathological; but, even so, it is an
@@ -3992,7 +3993,7 @@ be to me, illustrating as it does certain features in dispute, for which I
 have stubbornly contended in controversies with the Preparator of
 Anthropology at the École des Haute Études in Paris."
 
-"Why don''''t you sell it to him, Tubbs?" suggested Ralston, who had listened
+"Why don''t you sell it to him, Tubbs?" suggested Ralston, who had listened
 in unfeigned amusement.
 
 Tubbs, startled, clasped both hands over the top of his head and backed
@@ -4001,9 +4002,9 @@ off.
 "Why, I need it myself."
 
 "Certainly--we understand that; but supposing you were to die--supposing
-something happened to you, as is liable to happen out here--you wouldn''''t
+something happened to you, as is liable to happen out here--you wouldn''t
 care what became of your skull, once you were good and dead. If it were
-sold, you''''d be just that much in, besides making an invaluable
+sold, you''d be just that much in, besides making an invaluable
 contribution to science," Ralston urged persuasively.
 
 "It not infrequently happens that paupers, and prisoners sentenced to
@@ -4013,36 +4014,36 @@ Tubbs," declared McArthur earnestly, "my superficial examination of your
 head has so impressed me that upon the chance of some day adding it to my
 collection I am willing to offer you a reasonable sum for it."
 
-"It''''s on bi-products that the money is made," declared Ralston soberly,
+"It''s on bi-products that the money is made," declared Ralston soberly,
 "and I advise you not to let this chance pass. You can raise money on the
 rest of your anatomy any time; but selling your head separately like
-this--don''''t miss it, Tubbs!"
+this--don''t miss it, Tubbs!"
 
-"Don''''t I git the money till you git my head?" Tubbs demanded
+"Don''t I git the money till you git my head?" Tubbs demanded
 suspiciously.
 
 "I could make a first payment to you, and the remainder could be paid to
 your heirs."
 
-"My heirs! Say, all that I''''ll ever git for my head wouldn''''t be a smell
+"My heirs! Say, all that I''ll ever git for my head wouldn''t be a smell
 amongst my heirs. A round-up of my heirs would take in the hull of North
-Dakoty. Not aimin'''' to brag, I got mavericks runnin'''' on that range what
+Dakoty. Not aimin'' to brag, I got mavericks runnin'' on that range what
 must be twelve-year-old."
 
-McArthur looked the disgust he felt at Tubbs''''s ribald humor.
+McArthur looked the disgust he felt at Tubbs''s ribald humor.
 
 "Your jests are exceedingly distasteful to me, Tubbs."
 
-"That ain''''t no jest. Onct I----"
+"That ain''t no jest. Onct I----"
 
-"Let''''s get down to business," interrupted Ralston. "What do you consider
+"Let''s get down to business," interrupted Ralston. "What do you consider
 your skull worth?"
 
-"It''''s wuth considerable to me. I don''''t know as I''''m so turrible anxious to
-sell. I can eat with it, and it gits me around." Tubbs''''s tone took on the
-assumed indifference of an astute horse trader. "I''''ve always held my head
+"It''s wuth considerable to me. I don''t know as I''m so turrible anxious to
+sell. I can eat with it, and it gits me around." Tubbs''s tone took on the
+assumed indifference of an astute horse trader. "I''ve always held my head
 high, as you might say, and it looks to me like it ought to bring a
-hunderd dollars in the open market. No, I couldn''''t think of lettin'''' it go
+hunderd dollars in the open market. No, I couldn''t think of lettin'' it go
 for less than a hundred--cash."
 
 McArthur considered.
@@ -4060,18 +4061,18 @@ readily see, if it were badly crushed, it would be worthless for my
 purpose, or that of the scientific body to whom I intend to bequeath my
 interest in it, should I die before yourself."
 
-"I wasn''''t aimin'''' to lay it in a vise," remarked Tubbs.
+"I wasn''t aimin'' to lay it in a vise," remarked Tubbs.
 
-While McArthur was drawing up the agreement between them, Tubbs''''s face
+While McArthur was drawing up the agreement between them, Tubbs''s face
 brightened with a unique thought.
 
-"Say," he suggested, "why don''''t you leave word in them instructions for me
+"Say," he suggested, "why don''t you leave word in them instructions for me
 to be mounted? I know a taxidermist over there near the Yellowstone Park
-what can put up a b''''ar or a timber wolf so natural you wouldn''''t know ''''twas
-dead. Wouldn''''t it be kinda nice to see me settin'''' around the house with my
-teeth showin'''' and an ear of corn in my mouth? I''''ll tell you what I''''ll do:
-I''''ll sell you my hull hide for a hundred more. It might cost two dollars
-to have me tanned, and with a nice felt linin'''' you could have a good rug
+what can put up a b''ar or a timber wolf so natural you wouldn''t know ''twas
+dead. Wouldn''t it be kinda nice to see me settin'' around the house with my
+teeth showin'' and an ear of corn in my mouth? I''ll tell you what I''ll do:
+I''ll sell you my hull hide for a hundred more. It might cost two dollars
+to have me tanned, and with a nice felt linin'' you could have a good rug
 out of me for a very little money."
 
 McArthur replied ironically:
@@ -4080,7 +4081,7 @@ McArthur replied ironically:
 
 Tubbs looked at the check McArthur handed him, with satisfaction.
 
-"That''''s what I call clear velvet!" he declared, and went off chuckling to
+"That''s what I call clear velvet!" he declared, and went off chuckling to
 show it to his friends.
 
 "When you think of it, this is a very singular transaction," observed
@@ -4097,8 +4098,8 @@ XII
 SMITH GETS "HUNKS"
 
 
-Smith''''s ugly mood was still upon him when he picked up his grammar that
-evening. Jealous, humiliated by the loss of the morning''''s race, full
+Smith''s ugly mood was still upon him when he picked up his grammar that
+evening. Jealous, humiliated by the loss of the morning''s race, full
 of revengeful thoughts and evil feelings, he wanted to hurt
 somebody--something--even Dora. He had a vague, sullen notion that she
 was to blame because Ralston was in love with her. She could have
@@ -4115,7 +4116,7 @@ Dora found him a dense and disagreeable pupil, and one who seemingly had
 forgotten everything he had learned during previous lessons. His replies
 at times were so curt as to be uncivil, and a feeling of indignation
 gradually rose within her. She was at a loss to understand his mood,
-unless it was due to the result of the morning''''s race; yet she could
+unless it was due to the result of the morning''s race; yet she could
 scarcely believe that his disappointment, perhaps chagrin, could account
 for his rudeness to her.
 
@@ -4126,7 +4127,7 @@ When the useless lesson was finished, she closed the book and asked:
 With an expression upon his face which both startled and shocked her he
 snarled:
 
-"I''''m sick of seein'''' that lady-killer hangin'''' around here!"
+"I''m sick of seein'' that lady-killer hangin'' around here!"
 
 "You mean----?"
 
@@ -4139,7 +4140,7 @@ Dora had never looked at Smith as she looked at him now.
 Smith had not dreamed that the gentle, girlish voice could take on such a
 quality. It cut him, stung him, until he felt hot and cold by turns.
 
-"Oh, I didn''''t know he was such a friend," he sneered.
+"Oh, I didn''t know he was such a friend," he sneered.
 
 "Yes"--her eyes did not quail before the look that flamed in his--"he is
 _just_ such a friend!"
@@ -4156,7 +4157,7 @@ He stumbled rather than walked toward the door.
 She stared at the door as it closed behind him. She had something of the
 feeling of one who, making a pet of a tiger, feels its claws for the first
 time, sees the first indication of its ferocious nature. This new phase of
-Smith''''s character, while it angered, also filled her with uneasiness.
+Smith''s character, while it angered, also filled her with uneasiness.
 
 It was later than usual when Smith came in to say a word to the Indian
 woman, after Dora and Susie had retired. He did not bring with him the
@@ -4171,7 +4172,7 @@ The Indian woman sniffed imperceptibly.
 
 His look was evil as he answered:
 
-"Me? I''''ve been payin'''' my debts, me--Smith."
+"Me? I''ve been payin'' my debts, me--Smith."
 
 He took her impassive hand in both of his and pressed it against his
 heart.
@@ -4202,8 +4203,8 @@ out of his sight.
 
 Smith had not spoken to the man whom he had come to regard as his rival
 since he had ridden away from him the morning before. He had ignored
-Ralston''''s conversation at the table and avoided him in the bunk-house.
-Now, engaged in trimming his horse''''s fetlocks, Smith did not look up as
+Ralston''s conversation at the table and avoided him in the bunk-house.
+Now, engaged in trimming his horse''s fetlocks, Smith did not look up as
 the other man passed, but his eyes followed him with a triumphant gleam as
 he went into the stable to saddle Molly.
 
@@ -4214,18 +4215,18 @@ low door-sill and all but fell again. He led her a step or two further,
 and she went almost to her knees. The mare was lame in every leg--she
 could barely stand; yet there was not a mark on her--not ever so slight a
 bruise! Her slender legs were as free from swellings as when they had
-carried her past Smith''''s gray; her feet looked to be in perfect condition;
+carried her past Smith''s gray; her feet looked to be in perfect condition;
 yet, save for the fact that she could stand up, she was as crippled as if
 the bones of every leg were shattered.
 
 It is doubtful if any but steel-colored eyes can take on the look which
-Ralston''''s contained as they met Smith''''s. His skin was gray as he
+Ralston''s contained as they met Smith''s. His skin was gray as he
 straightened himself and drew a hand which shook noticeably the length of
 his cheek and across his mouth.
 
 In great anger, anger which precedes some quick and desperate act, almost
 every person has some gesture peculiar to himself, and this was
-Ralston''''s.
+Ralston''s.
 
 A less guilty man than Smith might have flinched at that moment. The
 half-grin on his face faded, and he waited for a torrent of accusations
@@ -4233,34 +4234,34 @@ and oaths. But Ralston, in a voice so low that it barely reached him, a
 voice so ominous, so fraught with meaning, that the dullest could not have
 misunderstood, said:
 
-"I''''ll borrow your horse, Smith."
+"I''ll borrow your horse, Smith."
 
 Smith, like one hypnotized, heard himself saying:
 
 "Sure! Take him."
 
 Ralston knew as well as though he had witnessed the act that Smith had
-hammered the frogs of Molly''''s feet until they were bruised and sore as
+hammered the frogs of Molly''s feet until they were bruised and sore as
 boils. Her lameness would not be permanent--she would recover in a week or
 two; but the abuse of, the cruelty to, the little mare he loved filled
-Ralston with a hatred for Smith as relentless and deep as Smith''''s own.
+Ralston with a hatred for Smith as relentless and deep as Smith''s own.
 
 "A man who could do a thing like that," said Ralston through his set
-teeth, "is no common cur! He''''s wolf--all wolf! He isn''''t staying here for
-love, alone. There''''s something else. And I swear before the God that made
-me, I''''ll find out what it is, and land him, before I quit!"
+teeth, "is no common cur! He''s wolf--all wolf! He isn''t staying here for
+love, alone. There''s something else. And I swear before the God that made
+me, I''ll find out what it is, and land him, before I quit!"
 
 
 
 
 XIII
 
-SUSIE''''S INDIAN BLOOD
+SUSIE''S INDIAN BLOOD
 
 
 Coming leisurely up the path from the corrals, Smith saw Susie sitting on
-the cottonwood log, wrapped in her mother''''s blanket. She was huddled in a
-squaw''''s attitude. He eyed her; he never had seen her like that before.
+the cottonwood log, wrapped in her mother''s blanket. She was huddled in a
+squaw''s attitude. He eyed her; he never had seen her like that before.
 But, knowing Indians better, possibly, than he knew his own race, Smith
 understood. He recognized the mood. Her Indian blood was uppermost. It
 rose in most half-breeds upon occasion. Sometimes under the influence of
@@ -4270,7 +4271,7 @@ seen it often--this heavy, smouldering sullenness.
 Smith stood with his hands in his pockets, looking at her. He felt more at
 ease with her than ever before.
 
-"What are you sullin'''' about, Susie?"
+"What are you sullin'' about, Susie?"
 
 She did not answer. Her pertness, her Anglo-Saxon vivacity, were gone; her
 face was wooden, expressionless; her restless eyes slow-moving and dull;
@@ -4282,7 +4283,7 @@ was satisfaction in his face.
 
 It was something to know that, after all, Susie was "Injun"--"pure
 Injun." The scheme which had lain dormant in his brain now took active
-shape. He had wanted Susie''''s help, but each time that he had tried to
+shape. He had wanted Susie''s help, but each time that he had tried to
 conciliate her, his overtures had ended in a fresh rupture. Now her
 stinging tongue was dumb, and there was no aggressiveness in her manner.
 
@@ -4292,7 +4293,7 @@ she did not move or change expression.
 
 He said in a low voice:
 
-"What you need is stirrin'''' up, Susie."
+"What you need is stirrin'' up, Susie."
 
 He watched her narrowly, and continued:
 
@@ -4303,9 +4304,9 @@ Without looking at him she asked:
 
 "What kind of a game?" Her voice was lifeless, guttural.
 
-"It''''s agin my principles to empty my sack to a woman; but you''''re
-diff''''rent--you''''re game--you are, Susie." His voice dropped to a whisper,
-and the weight of his hand made her shoulder sag. "Let''''s you and me rustle
+"It''s agin my principles to empty my sack to a woman; but you''re
+diff''rent--you''re game--you are, Susie." His voice dropped to a whisper,
+and the weight of his hand made her shoulder sag. "Let''s you and me rustle
 a bunch of horses."
 
 Susie did not betray surprise at the startling proposition by so much as
@@ -4320,56 +4321,56 @@ Smith replied:
 She grunted, but neither in assent nor dissent; so Smith went on in an
 eager, persuasive whisper:
 
-"There''''s Injun enough in you, girl, to make horse-stealin'''' all the same as
-breathin''''. You jump in with me on this deal and see how easy you lose that
-sull. Don''''t you ever have a feelin'''' take holt of you that you want to do
-something onery--steal something, mix with somebody? I do. I''''ve had that
-notorious feelin'''' workin'''' on me strong for days now, and I''''ve got to get
-rid of it. If you''''ll come in on this, we''''ll have the excitement and make a
+"There''s Injun enough in you, girl, to make horse-stealin'' all the same as
+breathin''. You jump in with me on this deal and see how easy you lose that
+sull. Don''t you ever have a feelin'' take holt of you that you want to do
+something onery--steal something, mix with somebody? I do. I''ve had that
+notorious feelin'' workin'' on me strong for days now, and I''ve got to get
+rid of it. If you''ll come in on this, we''ll have the excitement and make a
 stake, too. Talk up, girl--show your sand! Be game!"
 
 "What horses do you aim to steal?"
 
-"Reservation horses. Say, the way I can burn their brands and fan ''''em over
-the line won''''t trouble _me_. I''''ll come back with a wad--me, Smith--and
-I''''ll whack up even. What do you say?"
+"Reservation horses. Say, the way I can burn their brands and fan ''em over
+the line won''t trouble _me_. I''ll come back with a wad--me, Smith--and
+I''ll whack up even. What do you say?"
 
 "What for a hand do I take in it?"
 
-A smile of triumph lifted the corners of Smith''''s mouth.
+A smile of triumph lifted the corners of Smith''s mouth.
 
-"You gather ''''em up and run ''''em into a coulee, that''''s all. I''''ll do the
+"You gather ''em up and run ''em into a coulee, that''s all. I''ll do the
 rest."
 
 "What do you want _me_ to do it for?"
 
-"Nobody''''d think anything of it if they saw you runnin'''' horses, because
-you''''re always doin'''' it; but they''''d notice me."
+"Nobody''d think anything of it if they saw you runnin'' horses, because
+you''re always doin'' it; but they''d notice me."
 
-"Where''''s the coulee?"
+"Where''s the coulee?"
 
-"I''''ve picked it. I located my plant long ago. I''''ve found the best spot in
+"I''ve picked it. I located my plant long ago. I''ve found the best spot in
 the State to make a plant."
 
-"Where are you goin'''' to sell?"
+"Where are you goin'' to sell?"
 
 Smith eyed her inscrutable face suspiciously.
 
-"You''''re askin'''' lots of questions, girl. I tips my hand too far to no
-petticoat. You trusts me or you don''''t. Will you come in?"
+"You''re askin'' lots of questions, girl. I tips my hand too far to no
+petticoat. You trusts me or you don''t. Will you come in?"
 
-"All right," said Susie after a silence; "I''''ll come in--''''just for the hell
-of it.''''"
+"All right," said Susie after a silence; "I''ll come in--''just for the hell
+of it.''"
 
 "Shake!"
 
 She looked at his extended hand and wrapped her own in her blanket.
 
-"There''''s no call to shake."
+"There''s no call to shake."
 
-"Is your heart mixed, Susie?" he demanded. "Ain''''t it right toward me?"
+"Is your heart mixed, Susie?" he demanded. "Ain''t it right toward me?"
 
-"It''''ll be right enough when the time comes," she answered.
+"It''ll be right enough when the time comes," she answered.
 
 The reply did not satisfy Smith, but he told himself that, once she was
 committed, he could manage her, for, after all, Susie was little more than
@@ -4381,18 +4382,18 @@ only one to whom it gave pleasure. She viewed the altered relations with
 satisfaction, since it removed the only obstacle, as she believed, to a
 speedy marriage with Smith.
 
-"Didn''''t I tell you he smart white man?" she asked complacently of Susie.
+"Didn''t I tell you he smart white man?" she asked complacently of Susie.
 
-"Oh, yes, he''''s awful smart," Susie answered with sarcasm.
+"Oh, yes, he''s awful smart," Susie answered with sarcasm.
 
 Ralston, more than any one else, was puzzled by their apparent friendship.
-He had believed that Susie''''s antipathy for Smith was as deep as his own,
+He had believed that Susie''s antipathy for Smith was as deep as his own,
 and he wondered what could have happened to bring about such a sudden and
 complete revulsion of feeling. He was disappointed in her. He felt that
 she had weakly gone over to the enemy; and it shook his confidence in her
 sturdy honesty more than anything she could have done. He believed that no
 person who understood Smith, as Susie undoubtedly did, could make a friend
-and confidant of him and be "right." But sometimes he caught Susie''''s eyes
+and confidant of him and be "right." But sometimes he caught Susie''s eyes
 fixed upon him in a kind of wistful, inquiring scrutiny, which left the
 impression that something was troubling her, something that she longed to
 confide in some one upon whom she could rely; but his past experience had
@@ -4400,47 +4401,47 @@ taught him the futility of attempting to force her confidence, of trying
 to learn more than she volunteered.
 
 Smith and Susie rode the surrounding country and selected horses from the
-various bands. Three or four bore Bear Chief''''s brand, there were a pinto
-and a black buckskin in Running Rabbit''''s herd, and a sorrel or two that
+various bands. Three or four bore Bear Chief''s brand, there were a pinto
+and a black buckskin in Running Rabbit''s herd, and a sorrel or two that
 belonged to Yellow Bird. A couple of bays here were singled out, a brown
 and black there, until they had the pick of the range.
 
-"We don''''t want to get more nor you can cut out alone and handle," warned
-Smith. "We don''''t want no slip-up on the start."
+"We don''t want to get more nor you can cut out alone and handle," warned
+Smith. "We don''t want no slip-up on the start."
 
-"I don''''t aim to make no slip-up."
+"I don''t aim to make no slip-up."
 
-"We''''ve got lookers, we have," declared Smith. "And them chunky ones go off
+"We''ve got lookers, we have," declared Smith. "And them chunky ones go off
 quickest at a forced sale. I know a horse when I meet up with it,
 me--Smith."
 
-"But where you goin'''' to cache ''''em?" insisted Susie.
+"But where you goin'' to cache ''em?" insisted Susie.
 
-"Girl, I ain''''t been ridin'''' this range for my health. I''''ll show you a blind
-canyon where a regiment of soldiers couldn''''t find a hundred head of horses
-in a year; and over there in the Bad Lands there''''s a spring breakin'''' out
-where a man dyin'''' of thirst would never think of lookin'''' for it. We''''re all
-right. You''''re a head-worker, and so am I." Smith chuckled. "We''''ll set some
+"Girl, I ain''t been ridin'' this range for my health. I''ll show you a blind
+canyon where a regiment of soldiers couldn''t find a hundred head of horses
+in a year; and over there in the Bad Lands there''s a spring breakin'' out
+where a man dyin'' of thirst would never think of lookin'' for it. We''re all
+right. You''re a head-worker, and so am I." Smith chuckled. "We''ll set some
 of these Injuns afoot, and make a clean-get-away."
 
 Smith was more than satisfied with the zest with which Susie now entered
 into the plot, and the shrewdness which she showed in planning details
 that he himself had overlooked.
 
-"You work along with me, kid, and I''''ll make a dead-game one out of you!"
-he declared with enthusiasm. "When we make a stake, we''''ll go to Billings
+"You work along with me, kid, and I''ll make a dead-game one out of you!"
+he declared with enthusiasm. "When we make a stake, we''ll go to Billings
 and rip up the sod!"
 
-"I''''ll like that," said Susie dryly.
+"I''ll like that," said Susie dryly.
 
-"When the right time comes, I''''ll know it," Smith went on. "When I wakes up
-some mornin'''' with a feelin'''' that it''''s the day to get action on, I always
-follows that feelin''''--if it takes holt of me anyways strong. I has to do
+"When the right time comes, I''ll know it," Smith went on. "When I wakes up
+some mornin'' with a feelin'' that it''s the day to get action on, I always
+follows that feelin''--if it takes holt of me anyways strong. I has to do
 certain things on certain days. I hates a chilly day worse nor anything. I
 wants to hole up, and I feels mean enough to bite myself. But when the sun
 shines, it thaws me; it draws the frost out of my heart, like. I hates to
-let anybody''''s blood when the sun shines. I likes to lie out on a rock like
-a lizard, and I feels kind. I''''m cur''''ous that way, about sun, me--Smith."
+let anybody''s blood when the sun shines. I likes to lie out on a rock like
+a lizard, and I feels kind. I''m cur''ous that way, about sun, me--Smith."
 
 
 
@@ -4457,53 +4458,53 @@ short, quick step which, she had learned, with him denoted mental
 activity.
 
 "This is the day for it," he said decisively. "I had that notorious
-feelin'''' take holt of me when I got awake. How''''s your heart, girl?"
+feelin'' take holt of me when I got awake. How''s your heart, girl?"
 
-It had given a thump at Smith''''s approach, and Susie''''s tawny skin had paled
+It had given a thump at Smith''s approach, and Susie''s tawny skin had paled
 under its tan, but by way of reply she gave the suggestive Indian sign of
 strength.
 
-"Good!" he nodded. "You''''ll need a strong heart for the ridin'''' you''''ve got
-to do to-day; but I''''m not a worryin'''' that you can''''t do it, kid, for I''''ve
+"Good!" he nodded. "You''ll need a strong heart for the ridin'' you''ve got
+to do to-day; but I''m not a worryin'' that you can''t do it, kid, for I''ve
 watched you close."
 
-"Guess I could ride a flyin'''' squirrel if I had to," Susie replied shortly,
-"but Teacher wanted me to go with her to get flowers. She doesn''''t like to
+"Guess I could ride a flyin'' squirrel if I had to," Susie replied shortly,
+"but Teacher wanted me to go with her to get flowers. She doesn''t like to
 go alone."
 
-"There''''s no call for her to go alone. I''''ll go with her. It''''s no use for me
-to get to the plant before afternoon. I''''ll go on this flower-pickin''''
+"There''s no call for her to go alone. I''ll go with her. It''s no use for me
+to get to the plant before afternoon. I''ll go on this flower-pickin''
 spree, and be at the mouth of the canyon in time to hold the first bunch
-of horses you bring in. They''''re pretty much scattered, you know. What for
-an outfit you goin'''' to wear? You don''''t want no flappin'''' skirts to
+of horses you bring in. They''re pretty much scattered, you know. What for
+an outfit you goin'' to wear? You don''t want no flappin'' skirts to
 advertise you."
 
 Susie answered curtly:
 
 "I got some sense."
 
-"You''''re a sassy side-kicker," he observed good-humoredly.
+"You''re a sassy side-kicker," he observed good-humoredly.
 
 She pouted.
 
-"I don''''t care, I wanted to pick flowers."
+"I don''t care, I wanted to pick flowers."
 
 Smith said mockingly, "So do I, angel child. I jest worships flowers!"
 
-"From pickin'''' flowers to stealin'''' horses is some of a jump."
+"From pickin'' flowers to stealin'' horses is some of a jump."
 
 "I holds a record for long jumps." As a final warning Smith said: "Now,
-don''''t make no mistake in cuttin'''' out, for we''''ve picked the top horses of
-the range. And remember, once you get ''''em strung out, haze ''''em along--for
-there''''ll be hell a-poppin'''' on the reservation when they''''re missed."
+don''t make no mistake in cuttin'' out, for we''ve picked the top horses of
+the range. And remember, once you get ''em strung out, haze ''em along--for
+there''ll be hell a-poppin'' on the reservation when they''re missed."
 
 Susie had disappeared when the Schoolmarm came out with her basket and
 knife, prepared to start, and Smith gave some plausible excuse for her
 change of plan.
 
 "She told me to go in her place," said Smith eagerly, "and I know a gulch
-where there''''s a barrel of them Mormon lilies, and rock-roses, and a
-reg''''lar carpet of these here durn little blue flowers that look so nice
+where there''s a barrel of them Mormon lilies, and rock-roses, and a
+reg''lar carpet of these here durn little blue flowers that look so nice
 and smell like a Chinese laundry. I can dig like a badger, too."
 
 Dora laughed, and, looking at him, noticed, as she often had before, the
@@ -4513,12 +4514,12 @@ face, completely altering his expression.
 He looked boyish, brimming with the buoyant spirits of youth. His skin had
 unwonted clearness, his eyes were bright, his face was animated; he seemed
 to radiate exuberant good-humor. Even his voice was different and his
-laugh was less hard. As he walked away with the Schoolmarm''''s basket
+laugh was less hard. As he walked away with the Schoolmarm''s basket
 swinging on his arm, he was for the time what he should have been always.
 He had long since made ample apology to Dora for his offense and there had
 been no further outbreak from him of which to complain.
 
-The day''''s work was cut out for Ralston also, when he saw Yellow Bird and
+The day''s work was cut out for Ralston also, when he saw Yellow Bird and
 another Indian ride away, each leading a pack-horse, and learned from Ling
 that they had gone to butcher. They started off over the reservation, in
 the direction in which the MacDonald cattle ranged; with the intention,
@@ -4527,13 +4528,13 @@ thought that by keeping well to the draws and gulches he could remain
 fairly well hidden and yet keep them in sight.
 
 He heard voices, and turned a hill just in time to see Smith take a flower
-gently from Dora''''s hand and, with some significant word, lay it with care
+gently from Dora''s hand and, with some significant word, lay it with care
 between the leaves of a pocket note-book.
 
 Though it looked more to Ralston, all that Smith had said was, "It might
 bring me luck." And Dora had smiled at his superstition.
 
-Ralston would have turned back had it not been too late: his horse''''s feet
+Ralston would have turned back had it not been too late: his horse''s feet
 among the rocks had caused them to look up. As he passed Dora replied to
 some commonplace, with heightened color, and Smith stared in silent
 triumph.
@@ -4541,7 +4542,7 @@ triumph.
 Ralston cursed himself and the mischance which had taken him to that
 spot.
 
-"She''''ll think I was spying upon her, like some ignorant, jealous fool!" he
+"She''ll think I was spying upon her, like some ignorant, jealous fool!" he
 told himself savagely. "Why, why, is it that I must always blunder upon
 such scenes, to make me miserable for days! Can it be--can it possibly
 be," he asked himself--"that she cares for the man; that she encourages
@@ -4552,12 +4553,12 @@ Was there really good in the man which he, Ralston, was unable to see? Was
 he too much in love with Dora himself to be just to Smith, he wondered.
 
 "No, no!" he reiterated vehemently. "No man who would abuse a horse is fit
-for a good woman to marry. I''''m right about him--I know I am. But can I
-prove it in time to save her?--not for myself, for I guess I''''ve no show;
+for a good woman to marry. I''m right about him--I know I am. But can I
+prove it in time to save her?--not for myself, for I guess I''ve no show;
 but from him?"
 
 With a heartache which seemed to have become chronic of late, Ralston
-followed the Indians'''' lead up hill and down, through sand coulees and
+followed the Indians'' lead up hill and down, through sand coulees and
 between cut-banks, at a leisurely pace. They seemed in no hurry, nor did
 they make any apparent effort to conceal themselves. They rode through
 several herds of cattle, and passed on, drifting gradually toward the
@@ -4584,7 +4585,7 @@ he rode closer, that one Indian was not on guard. Still, it was probable
 that they had grown careless through past successes. He was within a
 hundred yards of the butchers before they saw him.
 
-"Hello!" Yellow Bird''''s voice was friendly.
+"Hello!" Yellow Bird''s voice was friendly.
 
 "Hello!" Ralston answered.
 
@@ -4592,14 +4593,14 @@ hundred yards of the butchers before they saw him.
 
 "Fine beef," agreed Ralston. "Can I help you?"
 
-The MacDonald brand stood out boldly on the cow''''s flank!
+The MacDonald brand stood out boldly on the cow''s flank!
 
 Ralston watched them until they had loaded their meat upon the pack-horses
 and started homeward. One thing was certain: if Running Rabbit had
-butchered the Bar C cattle, he had done so under a white man''''s
-supervision. In this instance, with an Indian''''s usual economy in the
+butchered the Bar C cattle, he had done so under a white man''s
+supervision. In this instance, with an Indian''s usual economy in the
 matter of meat, he had left little but the horns and hoofs. The Bar C
-cattle had been butchered with the white man''''s indifference to waste.
+cattle had been butchered with the white man''s indifference to waste.
 
 Any one of the bunk-house crowd, except McArthur, Ralston believed to be
 quite capable of stealing cattle for beef purposes. But if they had been
@@ -4608,7 +4609,7 @@ cattle to-day? Ralston still regarded the affair of the fresh hide as too
 suspicious a circumstance to be overlooked, and he meant to learn which of
 the white grub-liners had been absent. He reasoned that the Indians had a
 wholesome fear of Colonel Tolman, and that it was unlikely they would
-venture upon his range for such a purpose without a white man''''s moral
+venture upon his range for such a purpose without a white man''s moral
 support.
 
 Smith had been missing frequently of late and for so long as two days at
@@ -4629,7 +4630,7 @@ about him crept into his soul.
 
 Upon one thing he was determined, and that was, come what might, to be a
 _man_--a gentleman. If in his conceit and eagerness he had misunderstood
-the softness of Dora''''s eyes, her shy tremulousness, as he now believed he
+the softness of Dora''s eyes, her shy tremulousness, as he now believed he
 had, he could take his medicine like a man, and go when the time came,
 without whimpering, without protest or reproach. He wanted to go away
 feeling that he had her respect, at least; go knowing that there was not a
@@ -4645,35 +4646,35 @@ Smith in the light of a rival--a successful rival.
 "By Gad!" he cried aloud, and with a heat which belied his
 self-abnegation. "If he were only a _decent_ white man! But to be let down
 and out by the only woman I ever gave a whoop for in all my life, for a
-fellow like that! Say, it''''s tough!"
+fellow like that! Say, it''s tough!"
 
-Ralston''''s newly acquired serenity, the depth of which he had reason to
+Ralston''s newly acquired serenity, the depth of which he had reason to
 doubt, was further disturbed by a distant clatter of hoofs. He sat up and
 watched the oncoming of the angriest-looking Indian that ever quirted a
 cayuse over a reservation. It was Bear Chief, whom he knew slightly.
-Seeing Ralston''''s saddled horse, the Indian pulled up a little, which was
+Seeing Ralston''s saddled horse, the Indian pulled up a little, which was
 as well, since the white man was immediately in his path.
 
 As the Indian came back, Ralston, who had rolled over to let him pass,
 remarked dryly:
 
-"The country is getting so crowded, it''''s hardly safe for a man to sit
-around like this. What''''s the excitement, Bear Chief?"
+"The country is getting so crowded, it''s hardly safe for a man to sit
+around like this. What''s the excitement, Bear Chief?"
 
 "Horse-thief steal Indian horses!" he cried, pointing toward the Bad
 Lands.
 
 Ralston was instantly alert.
 
-"Him ridin'''' my race-pony--fastest pony on de reservation. Got big bunch.
-Runnin'''' ''''em off!"
+"Him ridin'' my race-pony--fastest pony on de reservation. Got big bunch.
+Runnin'' ''em off!"
 
 Fast moving specks that rose and fell among the hills of the Bad Lands
-bore out the Indian''''s words.
+bore out the Indian''s words.
 
 "Did you see him?"
 
-Ralston was slipping the bit back in his horse''''s mouth and tightening the
+Ralston was slipping the bit back in his horse''s mouth and tightening the
 cinch.
 
 "Yas, I see him. Long way off, but I see him."
@@ -4684,7 +4685,7 @@ cinch.
 
 "Who was it?" Ralston was in the saddle now.
 
-"Little white man--what you call him ''''bug-hunter''''--at de MacDonald
+"Little white man--what you call him ''bug-hunter''--at de MacDonald
 ranch."
 
 "McArthur!" Their horses were gathering speed as they turned them toward
@@ -4692,17 +4693,17 @@ the Bad Lands.
 
 "Yas. Little; hair on face--so; wear what you call dem sawed-off pants."
 
-From the description, Ralston recognized McArthur''''s English
+From the description, Ralston recognized McArthur''s English
 riding-breeches, which had added zest to life for the bunk-house crowd
 when he had appeared in them. The deputy-sheriff was bewildered. It seemed
 incredible, yet there, still in sight, was the flying band of horses, and
-Bear Chief''''s positiveness seemed to leave no room for doubt.
+Bear Chief''s positiveness seemed to leave no room for doubt.
 
 "Oh, him one heap good thief," panted Bear Chief, in unwilling admiration,
-as their horses ran side by side. "He work fast. No ''''fraid. Cut ''''em
-out--head ''''em off--turn ''''em--ride through big brush--jump de gulch--yell
-and swing de quirt, and do him all ''''lone! Dat no easy work--cut out horses
-all ''''lone. Him heap good horse-thief!"
+as their horses ran side by side. "He work fast. No ''fraid. Cut ''em
+out--head ''em off--turn ''em--ride through big brush--jump de gulch--yell
+and swing de quirt, and do him all ''lone! Dat no easy work--cut out horses
+all ''lone. Him heap good horse-thief!"
 
 What did it mean, anyhow? Ralston asked himself the question again and
 again. Was it possible that he had been deceived in McArthur? That, after
@@ -4719,7 +4720,7 @@ sundown. Ralston was still unconvinced that it was not a case of mistaken
 identity, and, hoping against hope, he asked some one loafing about while
 he and Bear Chief unsaddled if McArthur had returned.
 
-"He''''s been off prowlin'''' all day, and ain''''t in yet," was the answer; and
+"He''s been off prowlin'' all day, and ain''t in yet," was the answer; and
 Bear Chief grunted at this confirmation of his accusation.
 
 The Indian woman was waiting in the doorway when they came up the path.
@@ -4742,7 +4743,7 @@ you feeling worried about Susie?"
 It was the first evidence of maternal interest that Ralston ever had seen
 the stoical woman show.
 
-"If Ling will give me a bite to eat, I''''ll saddle another horse and ride
+"If Ling will give me a bite to eat, I''ll saddle another horse and ride
 down below. She may be spending the night with some of her friends."
 
 "She no do that without tell me," declared the woman positively. "Susie no
@@ -4755,7 +4756,7 @@ What was in the wind, Ralston asked himself, that Susie, McArthur, and
 Smith should disappear in this fashion on the same day? It was a singular
 coincidence. Like her mother, Ralston had no notion that Susie was
 stopping the night at any ranch or lodge below. He, too, shared the Indian
-woman''''s misgivings.
+woman''s misgivings.
 
 He had finished and was reaching for his hat when footsteps were heard on
 the hard-beaten dooryard. They were slow, lagging, unfamiliar to the
@@ -4771,12 +4772,12 @@ dust and grime, and her thin shoulders drooped wearily.
 "Where you been, Susie?" her mother asked sharply.
 
 "Teacher said," she made a pitiful attempt to laugh, to speak
-lightly--"Teacher said ridin'''' horseback would keep you from gettin'''' fat.
-I--I''''ve been reducin'''' my hips."
+lightly--"Teacher said ridin'' horseback would keep you from gettin'' fat.
+I--I''ve been reducin'' my hips."
 
-"Don''''t you do dis no more!"
+"Don''t you do dis no more!"
 
-"Don''''t worry--I shan''''t!" And as if her mother''''s reproach was the last
+"Don''t worry--I shan''t!" And as if her mother''s reproach was the last
 straw, Susie covered her face with the crook of her elbow and cried
 hysterically.
 
@@ -4793,14 +4794,14 @@ thought that there was something peculiar in the absence of Smith just at
 this time, nor could he entirely abandon the belief that McArthur would
 yet come straggling in, with an explanation of the whole affair. He could
 not think of any that would be satisfactory, but an underlying faith in
-the little scientist''''s honesty persisted.
+the little scientist''s honesty persisted.
 
 Toward morning he slept, and day was breaking when a step on the door-sill
 of the bunk-house awakened him. He raised himself slightly on his elbow
 and stared at McArthur, looming large in the gray dawn, with a skull
 carried carefully in both hands.
 
-"Ah, I''''m glad to find you awake!" He tiptoed across the floor.
+"Ah, I''m glad to find you awake!" He tiptoed across the floor.
 
 His clothing was wrinkled with the damp, night air, and his face looked
 haggard in the cold light, but the fire of enthusiasm burned undimmed
@@ -4834,9 +4835,9 @@ gulch. I wandered all night--or until Fate guided me into a barbed wire
 fence, where, as you will observe, I tore my trousers. I followed the
 fence, and here I am--I and my companion"--McArthur patted the skull
 lovingly--"this giant--the slayer of mastodons--whose history lies
-concealed in ''''the dark backward and abysm of time''''!"
+concealed in ''the dark backward and abysm of time''!"
 
-As he looked into Ralston''''s non-committal eyes with his own burning orbs,
+As he looked into Ralston''s non-committal eyes with his own burning orbs,
 he realized that great joy, like great sorrow, is something which cannot
 well be shared.
 
@@ -4846,7 +4847,7 @@ have no interest in such things."
 "You are mistaken. I wanted to hear."
 
 After McArthur had retired to his pneumatic mattress, Ralston lay
-wide-eyed, more mystified than before. Had Bear Chief''''s eyes deceived him,
+wide-eyed, more mystified than before. Had Bear Chief''s eyes deceived him,
 or was McArthur the cleverest of rogues?
 
 Breakfast was done when Ralston said:
@@ -4870,13 +4871,13 @@ Ralston bluntly.
 "What!"
 
 "You slick little horse-thief, but I see you good. Where you cache my
-race-pony?" The Indian''''s demand was a threat.
+race-pony?" The Indian''s demand was a threat.
 
 For reply, McArthur walked over and sat down on the edge of a bunk, as if
 his legs of a sudden were too weak to support him.
 
-"Bear Chief swears he saw you, McArthur." Ralston''''s tone was not
-unfriendly now, for something within him pleaded the bug-hunter''''s cause
+"Bear Chief swears he saw you, McArthur." Ralston''s tone was not
+unfriendly now, for something within him pleaded the bug-hunter''s cause
 with irritating persistence.
 
 "Me a horse-thief? Running off race-ponies?" McArthur found himself able
@@ -4905,7 +4906,7 @@ feet.
 McArthur mechanically did as she bade him, and his riding-breeches dropped
 from the sack.
 
-"I hope you''''ll ''''scuse me for makin'''' so free with your clothes, like," she
+"I hope you''ll ''scuse me for makin'' so free with your clothes, like," she
 said, "but I just naturally had to have them yesterday."
 
 A light broke in upon Ralston.
@@ -4913,91 +4914,91 @@ A light broke in upon Ralston.
 "You!"
 
 "Yep, I did it, me--Susie." Her tone and manner were a ludicrous imitation
-of Smith''''s. She added: "I saw you all pikin'''' in here, so I tagged."
+of Smith''s. She added: "I saw you all pikin'' in here, so I tagged."
 
 "But why"--Ralston stared at her in incredulity--"why should _you_ steal
 horses?"
 
-"It''''s this way," Susie explained, in a loud, confidential whisper: "I''''ve
-been playin'''' a little game of my own. When the right time came, I meant to
-let Mr. Ralston in on it, but when Bear Chief saw me, I knew I''''d have to
-tell, to keep my pardner here from gettin'''' the blame."
+"It''s this way," Susie explained, in a loud, confidential whisper: "I''ve
+been playin'' a little game of my own. When the right time came, I meant to
+let Mr. Ralston in on it, but when Bear Chief saw me, I knew I''d have to
+tell, to keep my pardner here from gettin'' the blame."
 
 "But the beard,"--Ralston still looked sceptical.
 
-"Shucks! That''''s easy. I saw Bear Chief before he saw me, and I just took
+"Shucks! That''s easy. I saw Bear Chief before he saw me, and I just took
 the black silk hankerchief from my neck and tied it hold-up fashion around
 the lower part of my face. Bear Chief was excited when he saw his running
-horse travelling out of the country at the gait we was goin'''' then."
+horse travelling out of the country at the gait we was goin'' then."
 
-"I don''''t see yet, Susie?"
+"I don''t see yet, Susie?"
 
 She turned upon Ralston in good-natured contempt.
 
-"Goodness, but you''''re slow! Don''''t you understand? Smith''''s my pal; we''''re
-workin'''' together. He cooked this up--him takin'''' the safe and easy end of
-it himself. He sprung it on me that day I had a sull on. Don''''t you see his
+"Goodness, but you''re slow! Don''t you understand? Smith''s my pal; we''re
+workin'' together. He cooked this up--him takin'' the safe and easy end of
+it himself. He sprung it on me that day I had a sull on. Don''t you see his
 game? He thinks if he can get me mixed up in something crooked, he can
-manage me. He''''s noticed, maybe, that I''''m not halter-broke. So I pretended
-to fall right in with his plans, once I had promised, meanin'''' all the time
-to turn state''''s evidence, or whatever you call it, and send him over the
+manage me. He''s noticed, maybe, that I''m not halter-broke. So I pretended
+to fall right in with his plans, once I had promised, meanin'' all the time
+to turn state''s evidence, or whatever you call it, and send him over the
 road. I wanted to show Mother and everybody else what kind of a man he
-is. I don''''t want no step-papa named Smith."
+is. I don''t want no step-papa named Smith."
 
 The three men stared in amazement at the intrepid little creature with her
 canny Scotch eyes.
 
-"And do you mean to say," Ralston asked, "that you''''ve held your tongue and
+"And do you mean to say," Ralston asked, "that you''ve held your tongue and
 played your part so well that Smith has no suspicions?"
 
-"Hatin'''' makes you smart," she answered, "and I hate Smith so hard I can''''t
-sleep nights. No, I don''''t think he is suspicious; because I''''m to pack grub
-to him this morning, and if he was afraid of me, he''''d never let me know
-where he was camped. He''''s holdin'''' the horses over there in a blind canyon,
-and when I go over I''''m to help him blotch the brands."
+"Hatin'' makes you smart," she answered, "and I hate Smith so hard I can''t
+sleep nights. No, I don''t think he is suspicious; because I''m to pack grub
+to him this morning, and if he was afraid of me, he''d never let me know
+where he was camped. He''s holdin'' the horses over there in a blind canyon,
+and when I go over I''m to help him blotch the brands."
 
-"We want to get the drop on him when he''''s using the branding-iron."
+"We want to get the drop on him when he''s using the branding-iron."
 
 "And you want to see that he shoves up his hands and keeps them there,"
-suggested Susie further, "for he''''ll take big chances rather than have the
-Schoolmarm see him ridin'''' to the Agency with his wrists tied to the
+suggested Susie further, "for he''ll take big chances rather than have the
+Schoolmarm see him ridin'' to the Agency with his wrists tied to the
 saddle-horn."
 
 "I know." Ralston knew even better than Susie that Smith would fight like
 a rat in a corner to avoid this possibility.
 
-"My!" and Susie gave an explosive sigh, "but it''''s an awful relief not to
-have that secret to pack around any longer, and to feel that I''''ve got
+"My!" and Susie gave an explosive sigh, "but it''s an awful relief not to
+have that secret to pack around any longer, and to feel that I''ve got
 somebody to back me up."
 
-A lump rose in Ralston''''s throat, and, taking her brown little paws in both
+A lump rose in Ralston''s throat, and, taking her brown little paws in both
 of his, he said:
 
 "To the limit, Susie--to the end of the road."
 
-"And my pardner''''s in on it, too, if he wants to be," she declared loyally,
-slipping her arm through McArthur''''s.
+"And my pardner''s in on it, too, if he wants to be," she declared loyally,
+slipping her arm through McArthur''s.
 
 "To be sure," Ralston seconded cordially. "It will be an adventure for
-your diary." He added, laying his hand upon McArthur''''s shoulder: "I''''m more
+your diary." He added, laying his hand upon McArthur''s shoulder: "I''m more
 than sorry about the mistake this morning, old man. Will you forgive Bear
 Chief and me?"
 
-In all McArthur''''s studious, lonely life, no person ever had put his hand
+In all McArthur''s studious, lonely life, no person ever had put his hand
 upon his shoulder and called him "old man." The quick tears filled his
 eyes, and a glow, tingling in its warmth, rushed over him. The simple,
-manly act made him Ralston''''s slave for life, but he answered in his quiet
+manly act made him Ralston''s slave for life, but he answered in his quiet
 voice:
 
 "The mistake was natural, my dear sir."
 
-"Smith will be gettin'''' restless," Susie suggested, "for his breakfast must
-have been pretty slim. We''''d better be startin''''.
+"Smith will be gettin'' restless," Susie suggested, "for his breakfast must
+have been pretty slim. We''d better be startin''.
 
-"Now, I''''ll take straight across the hills in a bee-line, and the rest of
+"Now, I''ll take straight across the hills in a bee-line, and the rest of
 you keep me in sight, but follow the draws. When I drop into the canyon,
-you cache yourselves until I come up and swing my hat. I''''ll do my best to
-separate Smith from his gun, but if I can''''t, I''''ll throw you the sign to
+you cache yourselves until I come up and swing my hat. I''ll do my best to
+separate Smith from his gun, but if I can''t, I''ll throw you the sign to
 jump him."
 
 "I shall arm myself with a pistol, and, if the occasion demands, I shall
@@ -5007,7 +5008,7 @@ firmness.
 Bear Chief was given a rifle, and then there was a scurrying about for
 cartridges. When they were saddled, each rode in a different direction, to
 meet again when out of sight of the ranch. With varied emotions, they soon
-were following Susie''''s lead, and it was no easy task to keep the flying
+were following Susie''s lead, and it was no easy task to keep the flying
 figure in sight.
 
 McArthur, panting, perspiring, choking his saddle-horn to death, wondered
@@ -5018,11 +5019,11 @@ owing to the proximity of a she-bear, and McArthur always had mildly
 envied him the adventure, but now, he felt, if he lived to tell the tale,
 he had no further cause for envy.
 
-Bear Chief''''s eyes were gleaming with the fires of other days, while the
+Bear Chief''s eyes were gleaming with the fires of other days, while the
 faded overalls and flannel shirt of civilization seemed to take on a look
 of savagery.
 
-Only Ralston''''s eyes were sombre. He had no thought of weakening, but he
+Only Ralston''s eyes were sombre. He had no thought of weakening, but he
 had no feeling of elation; though, for the sake of his own self-respect,
 he was glad to know that his suspicions of Smith were not inspired by
 jealousy or malice. Now that the opportunity for which he had hoped and
@@ -5042,12 +5043,12 @@ knew she had reached the rendezvous. Dismounting, they tied their horses
 in a deep draw, and crawled to the top, where they could watch for her
 signal.
 
-"She''''ll give him plenty of time," said Ralston.
+"She''ll give him plenty of time," said Ralston.
 
 He had barely finished speaking when they saw Susie at the top of the
 canyon wall waving her hat.
 
-"Something''''s gone wrong," said Ralston quickly.
+"Something''s gone wrong," said Ralston quickly.
 
 With rifles ready for action, the three of them ran toward Susie.
 
@@ -5074,16 +5075,16 @@ for their home range, although he kept the mare who led the band on the
 picket rope when they were not travelling. His own horse, always saddled,
 was picketed close.
 
-"I''''ll never make a turn like this alone again," he muttered
-discontentedly. "It''''s too much like work to suit me, and I ain''''t in shape
-to make a hard ride. I''''ve got soft layin'''' around the ranch." He stretched
-his stiff muscles and made a wry face. Then he smiled. "I''''d like to see
-that brat''''s face when she comes with my grub this mornin''''." He looked off
+"I''ll never make a turn like this alone again," he muttered
+discontentedly. "It''s too much like work to suit me, and I ain''t in shape
+to make a hard ride. I''ve got soft layin'' around the ranch." He stretched
+his stiff muscles and made a wry face. Then he smiled. "I''d like to see
+that brat''s face when she comes with my grub this mornin''." He looked off
 again to the skyline.
 
-"I ketched her eyein'''' me once or twice in a way that didn''''t look good to
-me; and I had that notorious strong feelin'''' take holt of me that she
-wasn''''t on the square. I''''d better be sure nor sorry;--that''''s no josh. I
+"I ketched her eyein'' me once or twice in a way that didn''t look good to
+me; and I had that notorious strong feelin'' take holt of me that she
+wasn''t on the square. I''d better be sure nor sorry;--that''s no josh. I
 takes no chances, me--Smith; I tips my hand to no petticoat."
 
 He noted with relief that the wind was rising. He was glad, for it would
@@ -5092,42 +5093,42 @@ rocks, as the unshod and now foot-sore horses bore evidence, but, even so,
 there was always a chance of tell-tale prints.
 
 "I can take it easy after I get to water," he told himself. "This water
-business is ser''''ous"--he looked uneasily at the stretch of desolation
-ahead of him--"but unless the Injuns lied, they''''s _some_.
+business is ser''ous"--he looked uneasily at the stretch of desolation
+ahead of him--"but unless the Injuns lied, they''s _some_.
 
-"I hope the boys are to home," he went on, "for if they are it won''''t take
-us long to work these brands over. When they take ''''em off my hands and I
-gets my wad, I''''ll soak it away, me--Smith. I''''ll hand it in at the bank,
-and I''''ll say to the dude at the winder, ''''Feller,'''' I''''ll say, ''''me and a
-little Schoolmarm are goin'''' to housekeepin'''' after while, so just hang on
-to that till I calls.''''" Smith grinned appreciatively at the picture.
+"I hope the boys are to home," he went on, "for if they are it won''t take
+us long to work these brands over. When they take ''em off my hands and I
+gets my wad, I''ll soak it away, me--Smith. I''ll hand it in at the bank,
+and I''ll say to the dude at the winder, ''Feller,'' I''ll say, ''me and a
+little Schoolmarm are goin'' to housekeepin'' after while, so just hang on
+to that till I calls.''" Smith grinned appreciatively at the picture.
 
-"His eyes will stick out till you could snare ''''em with a log-chain, for I
-ain''''t known as a marryin'''' man." His face sobered. "I''''ve got to get to work
-and get a wad--she shot that into me straight; and she''''s right. I couldn''''t
+"His eyes will stick out till you could snare ''em with a log-chain, for I
+ain''t known as a marryin'' man." His face sobered. "I''ve got to get to work
+and get a wad--she shot that into me straight; and she''s right. I couldn''t
 ask no woman like her to hang out her own wash in front of a two-roomed
 shack. I got to get the _dinero_, and between man and man, Smith, like you
-and me, I''''m nowise particular how I gets it, so long as she don''''t know.
-I''''ll take any old chance, me--Smith. And dead men''''s eyes hasn''''t got the
-habit of follerin'''' me around in the dark, like some I''''ve knowed. She''''d
-think I was a horrible feller if--but shucks! What''''s done''''s done."
+and me, I''m nowise particular how I gets it, so long as she don''t know.
+I''ll take any old chance, me--Smith. And dead men''s eyes hasn''t got the
+habit of follerin'' me around in the dark, like some I''ve knowed. She''d
+think I was a horrible feller if--but shucks! What''s done''s done."
 
 He lifted his arms and stretched them toward the skyline, and his voice
 vibrated:
 
-"I love you, girl! I love you, and I couldn''''t hurt you no more nor a
+"I love you, girl! I love you, and I couldn''t hurt you no more nor a
 baby!"
 
 Before he coiled the picket-ropes and started the horses moving, he got
 down on his knees and took a mouthful of water from a lukewarm pool. He
 spat it upon the ground in disgust.
 
-"That''''s worse nor pizen," he declared with a grimace. "You bet I''''ve got to
-strike water to-day somehow. The horses won''''t hardly touch this, and
-they''''re all ga''''nted up for the want of it. There ought to be water over
+"That''s worse nor pizen," he declared with a grimace. "You bet I''ve got to
+strike water to-day somehow. The horses won''t hardly touch this, and
+they''re all ga''nted up for the want of it. There ought to be water over
 there in some of them gulches, seems-like"--he looked anxiously at the
-expanse stretching interminably to the northeast--"and I''''ll have to haze
-''''em along until we hit it."
+expanse stretching interminably to the northeast--"and I''ll have to haze
+''em along until we hit it."
 
 His tired horse seemed to sag beneath his weight as he landed heavily in
 the saddle; and the band of foot-sore horses, the hair of their necks and
@@ -5148,25 +5149,25 @@ water, but always he was disappointed. Between the alkali dust and the
 heat of the midday sun, which was unusually hot for the time of year, his
 lips were cracked and his throat dry.
 
-"Ain''''t this hell!" he finally muttered fretfully. "And no more jump in
+"Ain''t this hell!" he finally muttered fretfully. "And no more jump in
 this horse nor a cow. I can do without grub, but water! Oh, Lord! I could
 lap up a gallon."
 
 The slight motion of his lips started them bleeding. He wiped the blood
 away on the back of his hand and continued:
 
-"This is a reg''''lar stretch of Bad Lands. If them blamed Injuns hadn''''t
-lied, I could have packed water easy enough. They don''''t seem to be no end
-to it, and I must have come forty mile. You''''re in for it, Smith. It''''s
-goin'''' to be worse before it''''s better. If I could only lay in a crick--roll
-in it--douse my face in it--soak my clothes in it! God! I''''m dry!"
+"This is a reg''lar stretch of Bad Lands. If them blamed Injuns hadn''t
+lied, I could have packed water easy enough. They don''t seem to be no end
+to it, and I must have come forty mile. You''re in for it, Smith. It''s
+goin'' to be worse before it''s better. If I could only lay in a crick--roll
+in it--douse my face in it--soak my clothes in it! God! I''m dry!"
 
 He spurred his horse, but there was no response from it. It was dead on
 its feet, between the hard travel of the previous day and night and
 another day without water. He cursed the horses ahead as they lagged and
 necessitated extra steps.
 
-He rode for awhile longer, until he realized that at the snail''''s pace they
+He rode for awhile longer, until he realized that at the snail''s pace they
 were moving he was making little headway. A rest would pay better in the
 long run, although there was some two hours of daylight left.
 
@@ -5178,12 +5179,12 @@ After Smith had unsaddled, he opened the grain-sack which contained his
 provisions. Spreading them out, he stood and eyed them with contempt.
 
 "And I calls myself a prairie man," he said aloud, in self-disgust.
-"Swine-buzzom--when I''''m perishin'''' of thirst! If only I''''d put in a couple
-of air-tights. Pears is better nor anything; they ain''''t so blamed sweet,
-they''''re kind of cool, and they has juice you can drink. And tomaters--if
-only I had tomaters! This here dude-food, this strawberry jam, is goin'''' to
+"Swine-buzzom--when I''m perishin'' of thirst! If only I''d put in a couple
+of air-tights. Pears is better nor anything; they ain''t so blamed sweet,
+they''re kind of cool, and they has juice you can drink. And tomaters--if
+only I had tomaters! This here dude-food, this strawberry jam, is goin'' to
 make me thirstier than ever. No water to mix the flour with, nothing to
-cook in but salt grease. Smith, you''''re up against it, you are."
+cook in but salt grease. Smith, you''re up against it, you are."
 
 He built a little sage-brush fire, over which he cooked his bacon, and
 with it he ate a dry biscuit, but his thirst was so great that it
@@ -5251,10 +5252,10 @@ swallowed liquid poison--nothing less. The result was inevitable. He was
 going to be ill--excruciatingly, terribly ill, alone in the Bad Lands!
 This was as certain as was the fact that night had come.
 
-"I was so dry," he whimpered, "I couldn''''t help it! I was so dry!" He
+"I was so dry," he whimpered, "I couldn''t help it! I was so dry!" He
 scrambled to his feet.
 
-"I gotta get back to camp. This water''''s goin'''' to raise thunder when it
+"I gotta get back to camp. This water''s goin'' to raise thunder when it
 begins to get in its work. I gotta get back to my blankets and lay down."
 
 Before he reached the heap of ashes which he called camp, the first
@@ -5284,13 +5285,13 @@ hell he now endured would pass.
 He wallowed and threshed about like a suffering animal, beating the earth
 with his clenched fists, during the paroxysms of cutting, wrenching pain.
 His suffering was supreme. All else in the world shrank into
-insignificance beside it. No thoughts of Dora fortified him; no mother''''s
+insignificance beside it. No thoughts of Dora fortified him; no mother''s
 face came to comfort him; nor that of any human being he had ever known.
 He was just Smith--self-centred--alone; just Smith, fighting and suffering
 and struggling for his life. His anguish found expression in the single
 sentence:
 
-"I''''m sick! I''''m sick! Oh, God! I''''m sick!" He repeated it in every key with
+"I''m sick! I''m sick! Oh, God! I''m sick!" He repeated it in every key with
 every inflection, and his moans lost themselves in the silence of the
 desert.
 
@@ -5306,7 +5307,7 @@ remain motionless until the flies and insects of the sand roused him to
 the fact that another day had come.
 
 He was incredibly weak, and it took all his remaining strength to throw
-his forty-pound cow-saddle upon his horse''''s back. His knees shook under
+his forty-pound cow-saddle upon his horse''s back. His knees shook under
 him, and he had to rest before he could lift his foot to the stirrup and
 pull himself into the seat.
 
@@ -5325,18 +5326,18 @@ his stiff and lifeless horse without pity, but he spurred uselessly. It
 stumbled under him as he drove the spiritless band toward the hopeless
 waste ahead of him.
 
-"Unless I''''m turned around, we ought to get out of this to-day," he
+"Unless I''m turned around, we ought to get out of this to-day," he
 thought. The effort of speaking aloud was too great to be made. "Unless
-I''''m lost, or fall off my horse, we ought to make it sure."
+I''m lost, or fall off my horse, we ought to make it sure."
 
 Distance had meant nothing to him during the first evening and night of
 his ride. He had fixed his eye upon the furthermost object within his
-range of vision and ridden for it--buoyant, confident, as his horse''''s
+range of vision and ridden for it--buoyant, confident, as his horse''s
 flying feet ate up the intervening miles. Now he shrank from looking
 ahead. He dreaded to lift his eyes to the interminable desolation
 stretching before him. The minutes seemed hours long; time was protracted
 as though he had been eating hasheesh. He felt as if he had ridden for a
-week, before his horse''''s shadow told him that noon had come. The jar of
+week, before his horse''s shadow told him that noon had come. The jar of
 his horse hurt him, and it all seemed unreal at times, like a torturing
 nightmare from which he must soon awake. He rode long distances with
 closed eyes as the day wore on. The world, red and wavering, swung around
@@ -5354,7 +5355,7 @@ kept his horse plodding onward, ever onward, through the heavy sand and
 blistering alkali dust, and always to the northeast, where somewhere there
 was relief which somehow he must reach.
 
-Mile after mile crept under his horse''''s lagging feet. The midday sun beat
+Mile after mile crept under his horse''s lagging feet. The midday sun beat
 down upon him, drying the very blood in his veins, scorching him,
 shrivelling him, and yet there seemed no end to the waterless gulches, to
 the sand, the cactuses, the stunted sage-brush. His horse was stumbling
@@ -5393,13 +5394,13 @@ foe? He reined his horse, and, drawing his rifle from its scabbard,
 waited; for the stranger had seen him and was riding toward him down the
 ridge.
 
-"If he ain''''t my kind, I''''ll have to stop him," Smith muttered.
+"If he ain''t my kind, I''ll have to stop him," Smith muttered.
 
 The strength of excitement came to him, and once more he sat erect in the
 saddle, fingering the trigger as the horseman came steadily on.
 
 "He rides like a Texican," Smith thought. There was something familiar in
-the stranger''''s outlines, the way he threw his weight in one stirrup, but
+the stranger''s outlines, the way he threw his weight in one stirrup, but
 Smith was taking no chances. He put out a hand in warning, and the other
 man stopped.
 
@@ -5416,7 +5417,7 @@ to Smith, and they each advanced.
 The stranger glanced at the barebacked horses, and then at the shimmering
 heat waves of the desert.
 
-"Just around the ridge," he answered. "My God, man, didn''''t you pack
+"Just around the ridge," he answered. "My God, man, didn''t you pack
 water?"
 
 But Smith was already out of hearing.
@@ -5434,15 +5435,15 @@ enough to work for it, or to hoard it when he had it. Yet perhaps even
 more than most persons he loved the feel of it in his fingers, the
 sensation of having it in his pocket. Smith was vain, in his way, and
 money satisfied his vanity. It gave him prestige, power, the attention he
-craved. He could call any flashy talker''''s bluff when his pockets were full
+craved. He could call any flashy talker''s bluff when his pockets were full
 of money. It imparted self-assurance. He could the better indulge his
 propensity for resenting slights, either real or fancied. Money would buy
 him out of trouble. Yes, Smith liked the feel of money. He took a roll of
 banknotes from the belt pocket of his leather chaps and counted them for
 the third time.
 
-"I''''ll buy a few drinks, flash this wad on them pinheads in town, and then
-I''''ll soak it away." He returned the roll to his pocket with an expression
+"I''ll buy a few drinks, flash this wad on them pinheads in town, and then
+I''ll soak it away." He returned the roll to his pocket with an expression
 of satisfaction upon his face.
 
 He had done well with the horses. The "boys" had paid him a third more
@@ -5450,15 +5451,15 @@ than he had expected; they had done so, he knew, as an incentive to
 further transactions. And Smith had outlined a plan to them which had made
 their eyes sparkle.
 
-"It''''s risky, but if you can do it----" they had said.
+"It''s risky, but if you can do it----" they had said.
 
-"Sure, I can do it, and I''''ll start as soon as it''''s safe after I get back
+"Sure, I can do it, and I''ll start as soon as it''s safe after I get back
 to the ranch. I gotta get to work and make a stake--_me_," he had
 declared.
 
 They had looked at him quizzically.
 
-"The fact is, I''''m tired of livin'''' under my hat. I aims to settle down."
+"The fact is, I''m tired of livin'' under my hat. I aims to settle down."
 
 "And reform?" They had laughed uproariously.
 
@@ -5477,50 +5478,50 @@ Tinhorn Frank, resting the small of his back against a monument of elk and
 buffalo horns in front of his log saloon, was the first to spy Smith
 ambling leisurely into town.
 
-"There''''s Smithy!" he exclaimed to the man who loafed beside him, "and he''''s
+"There''s Smithy!" he exclaimed to the man who loafed beside him, "and he''s
 got a roll!"
 
 His fellow lounger looked at him curiously.
 
-"Tinhorn, I b''''lieve you kin _smell_ money; and I swear they''''s kind of a
-scum comes over your eyes when you see it. How do you know he''''s carryin'''' a
+"Tinhorn, I b''lieve you kin _smell_ money; and I swear they''s kind of a
+scum comes over your eyes when you see it. How do you know he''s carryin'' a
 roll?"
 
 Tinhorn Frank laughed.
 
 "I know Smithy as well as if I had made him. I kin tell by the way he
-rides. I always could. When he''''s broke he''''s slouchy-like. He don''''t take no
-pride in coilin'''' his rope, and he jams his hat over his eyes--tough. Look
-at him now--settin'''' square in the saddle, his rope coiled like a top
-Californy cowboy on a Fourth of July. That''''s how I know. Hello, Smithy!
+rides. I always could. When he''s broke he''s slouchy-like. He don''t take no
+pride in coilin'' his rope, and he jams his hat over his eyes--tough. Look
+at him now--settin'' square in the saddle, his rope coiled like a top
+Californy cowboy on a Fourth of July. That''s how I know. Hello, Smithy!
 Fall off and arrigate."
 
 "Hullo!" Smith answered deliberately.
 
-"How''''s she comin''''?"
+"How''s she comin''?"
 
 "Slow." He swung his leg over the cantle of the saddle.
 
-"What''''ll you have?" Tinhorn slapped Smith''''s back so hard that the dust
+"What''ll you have?" Tinhorn slapped Smith''s back so hard that the dust
 rose.
 
-"Get me out somethin'''' stimulating, somethin'''' fur-reachin'''', somethin'''' that
+"Get me out somethin'' stimulating, somethin'' fur-reachin'', somethin'' that
 you can tell where it stops. I want a drink that feels like a yard of
-barb-wire goin'''' down." Smith was tying his horse.
+barb-wire goin'' down." Smith was tying his horse.
 
-"Here''''s somethin'''' special," said Tinhorn, when Smith went inside. "I keeps
+"Here''s somethin'' special," said Tinhorn, when Smith went inside. "I keeps
 it for my friends."
 
 Smith swallowed nearly a tumblerful.
 
-"When I drinks, I drinks, and I likes somethin'''' I can notice." He wiped
+"When I drinks, I drinks, and I likes somethin'' I can notice." He wiped
 the tears out of his eyes with the back of his hand.
 
-"I guarantee you kin notice that in about five minutes. It''''s a never
+"I guarantee you kin notice that in about five minutes. It''s a never
 failing remedy for man and beast--not meaning to claim that its horse
-liniment at all. Put it back, Smithy; your money ain''''t good here!"
+liniment at all. Put it back, Smithy; your money ain''t good here!"
 
-Tinhorn Frank''''s dark eyes gleamed with an avaricious light at sight of the
+Tinhorn Frank''s dark eyes gleamed with an avaricious light at sight of the
 roll of yellow banknotes which Smith flung carelessly upon the bar, but he
 had earned his living by his wits too long to betray eagerness. He masked
 the adamantine hardness of his grasping nature beneath an air of generous
@@ -5535,7 +5536,7 @@ blackmailer; the keeper of a notorious road-house; a petty grafter in a
 small political office in the little cow-town. Smith understood perfectly
 the source of his present interest, yet it flattered him almost as much as
 if it had been sincere, it pleased him as if he had been the object of a
-gentleman''''s attentions. When he had money, Smith demanded satellites,
+gentleman''s attentions. When he had money, Smith demanded satellites,
 sycophants who would laugh boisterously at his jokes, praise him in broad
 compliments, and follow him like a paid retinue from saloon to saloon.
 This was enjoying life! And upon this weakness, the least clever, the
@@ -5548,7 +5549,7 @@ Smith held the centre of the stage, he was the conspicuous figure, the
 magnet which drew them all. He gloried in it, revelled in his popularity;
 and the "special brand" was beginning to sizzle in his veins.
 
-"I''''m feelin'''' lucky to-day, me--Smith!" he cried exultantly. "I has a
+"I''m feelin'' lucky to-day, me--Smith!" he cried exultantly. "I has a
 notorious idea that I can buck the wheel and win!"
 
 He had not meant to gamble--he had told himself that he would not; but his
@@ -5559,11 +5560,11 @@ black, and with throbbing pulses watched the wheel go round.
 
 Again and again he won. It seemed as if he could not lose.
 
-"I told you!" he cried. "I''''m feelin'''' lucky!"
+"I told you!" he cried. "I''m feelin'' lucky!"
 
 When he finally stopped, his winnings were the envy of many eyes.
 
-"Set ''''em up, Tinhorn! Everybody drink! Bring in the horses!"
+"Set ''em up, Tinhorn! Everybody drink! Bring in the horses!"
 
 Bedlam reigned. It was "Smithy this" and "Smithy that," and it was all as
 the breath of life to Smith.
@@ -5571,35 +5572,35 @@ the breath of life to Smith.
 "Tinhorn"--he leaned heavily on the bar--"when I feels lucky like this, I
 makes it a rule to crowd my luck. Are you game for stud?"
 
-The film which the lounger had mentioned seemed to cover Tinhorn''''s eyes.
+The film which the lounger had mentioned seemed to cover Tinhorn''s eyes.
 
-"I''''m locoed to set agin such luck as yours, but I like to be sociable, and
-you don''''t come often."
+"I''m locoed to set agin such luck as yours, but I like to be sociable, and
+you don''t come often."
 
 "I likes a swift game," said Smith, as he pulled a chair from the pine
-table. "Draw is good enough for kids and dudes, but stud''''s the only play
+table. "Draw is good enough for kids and dudes, but stud''s the only play
 for men."
 
-"Now you''''ve talked!" declared the admiring throng.
+"Now you''ve talked!" declared the admiring throng.
 
-"Keep ''''em movin'''', Tinhorn! Deal ''''em out fast."
+"Keep ''em movin'', Tinhorn! Deal ''em out fast."
 
-"Smithy, you''''re a cyclone!"
+"Smithy, you''re a cyclone!"
 
-A hundred of Smith''''s money went for chips.
+A hundred of Smith''s money went for chips.
 
 "Dough is jest like mud to some fellers," said a voice enviously.
 
-"I likes a game where you make or break on a hand. I''''ve lost thousands
+"I likes a game where you make or break on a hand. I''ve lost thousands
 while you could spit, me--Smith!"
 
-"It''''s like a chinook in winter just to see you in town agin, Smithy."
+"It''s like a chinook in winter just to see you in town agin, Smithy."
 
 The "hole" card was not promising--it was only a six-spot; but, backing
 his luck, Smith bet high on it. Tinhorn came back at him strong. He wanted
-Smith''''s money, and he wanted it quick.
+Smith''s money, and he wanted it quick.
 
-Smith''''s next card was a jack, and he bet three times its value. When
+Smith''s next card was a jack, and he bet three times its value. When
 Tinhorn dealt him another jack he bought more chips and backed his pair,
 for Tinhorn, as yet, had none in sight. The next turn showed up a queen
 for Tinhorn and a three-spot for Smith. And they bet and raised, and
@@ -5610,8 +5611,8 @@ in the "hole"? Smith believed he was bluffing, but there was an equal
 chance that he was not. While he hesitated, the other watched him like a
 hungry mountain lion.
 
-"Are you gettin'''' cold feet, Smithy?" There was the suspicion of a sneer in
-the satellite''''s voice. "Did you say you liked to make or break on a
+"Are you gettin'' cold feet, Smithy?" There was the suspicion of a sneer in
+the satellite''s voice. "Did you say you liked to make or break on a
 hand?"
 
 "I thought you liked a swift game," gibed Tinhorn.
@@ -5622,7 +5623,7 @@ The taunt settled it.
 into the centre of the table with both hands. "Come again!"
 
 Tinhorn did come again; and again, and again, and again. He bet with the
-confidence of knowledge--with a confidence that put the fear in Smith''''s
+confidence of knowledge--with a confidence that put the fear in Smith''s
 heart. But he could not, and he would not, quit now. His jaw was set as he
 pulled off banknote after banknote in the tense silence which had fallen.
 
@@ -5635,7 +5636,7 @@ money and chips with his arm, he swept them toward him.
 
 Smith rose and kicked the chair out of his way.
 
-"That''''s the end of my rope," he said, with a hard laugh. "I''''m done."
+"That''s the end of my rope," he said, with a hard laugh. "I''m done."
 
 "Have a drink," urged Tinhorn.
 
@@ -5651,7 +5652,7 @@ His satellites stood in the bar-room door, loungers loafed on the
 curbstone, a woman or two drifted into the General Merchandise Store. The
 Postmaster was eying him idly through his fly-specked window, and a group
 of boys, who had been drawing pictures with their bare toes in the deep
-white dust of the street, scowled after him because his horse''''s feet had
+white dust of the street, scowled after him because his horse''s feet had
 spoiled their work. His advent had left no more impression than the tiny
 whirlwind in its erratic and momentary flurry. The money for which he had
 sweat blood was gone. Mechanically he jambed his hands into his empty
@@ -5667,21 +5668,21 @@ XVII
 SUSIE HUMBLES HERSELF TO SMITH
 
 
-Smith''''s return to the ranch was awaited with keen interest by several
+Smith''s return to the ranch was awaited with keen interest by several
 persons, though for different reasons.
 
 Bear Chief wanted to learn the whereabouts of his race-horse, and seemed
-to find small comfort in Ralston''''s assurance that the proper authorities
+to find small comfort in Ralston''s assurance that the proper authorities
 had been notified and that every effort would be made to locate the stolen
 ponies.
 
-Dora was troubled that Smith''''s educational progress should have come to
+Dora was troubled that Smith''s educational progress should have come to
 such an abrupt stop; and she felt not a little hurt that he should
 disappear for such a length of time without having told her of his going,
 and disappointed in him, also, that he would permit anything to interfere
 with the improvement of his mind.
 
-Susie''''s impatience for his return increased daily. Her chagrin over being
+Susie''s impatience for his return increased daily. Her chagrin over being
 outwitted by Smith was almost comical. She considered it a reflection upon
 her own intelligence, and tears of mortification came to her eyes each
 time she discussed it with Ralston. He urged her to be patient, and tried
@@ -5693,39 +5694,39 @@ to comfort her by saying:
 
 "The situation is different now."
 
-"But maybe he''''ll reform and we''''ll never get another crack at him," she
+"But maybe he''ll reform and we''ll never get another crack at him," she
 said dolefully.
 
 Ralston shook his head.
 
-"Don''''t let that disturb you. Take certain natures under given
+"Don''t let that disturb you. Take certain natures under given
 circumstances, and you can come pretty near foretelling results. Smith
 will do the same thing again, only on a bigger scale; that is, unless he
-learns that he has been found out. He won''''t be afraid of you, because he
+learns that he has been found out. He won''t be afraid of you, because he
 will think that you are as deep in the mire as he is; but if he thought I
 suspected him, or the Indians, it would make him cautious."
 
-"You don''''t think he''''s charmed, or got such a stout medicine that nobody
+"You don''t think he''s charmed, or got such a stout medicine that nobody
 can catch him?"
 
 Ralston could not refrain from smiling at the Indian superstition which
 cropped out at times in Susie.
 
 "Not for a moment," he answered positively. "He appears to have been
-fortunate--lucky--but in a case like this, I don''''t believe there''''s any
+fortunate--lucky--but in a case like this, I don''t believe there''s any
 luck can win, in the long run, against vigilance, patience, and
 determination; and the greatest of these is patience." Ralston, waxing
-philosophical went on: "It''''s a great thing to be able to wait,
+philosophical went on: "It''s a great thing to be able to wait,
 Susie--coolly, smilingly, to wait--providing, as the phrase goes, you
-hustle while you wait. One victory for your enemy doesn''''t mean defeat for
-yourself. It''''s usually the last trick that counts, and sometimes games are
-long in the playing. Wait for your enemy''''s head, and when it comes up,
+hustle while you wait. One victory for your enemy doesn''t mean defeat for
+yourself. It''s usually the last trick that counts, and sometimes games are
+long in the playing. Wait for your enemy''s head, and when it comes up,
 _whack it_! Neither you nor I, Susie, have been reared to believe that
 when we are swatted on one cheek we should turn the other."
 
-"No;" Susie shook her head gravely. "That ain''''t sense."
+"No;" Susie shook her head gravely. "That ain''t sense."
 
-The person who took Smith''''s absence most deeply to heart was the Indian
+The person who took Smith''s absence most deeply to heart was the Indian
 woman. She missed him, and, besides, she was tormented with jealous
 suspicions. She knew nothing of his life beyond what she had seen at the
 ranch. There might be another woman. She suffered from the ever-present
@@ -5744,7 +5745,7 @@ willows, looked good to Smith. It looked peaceful, and quiet, and
 inviting; yet Smith knew that the whole Indian police force might be there
 to greet him. He had been gone many days, and much might have happened in
 the interim. It was characteristic of Smith that he did not slacken his
-horse''''s pace--he could squirm out somehow.
+horse''s pace--he could squirm out somehow.
 
 It gave him no concern that he had not a dollar to divide with Susie, as
 he had promised, and his chagrin over the loss of the money had vanished
@@ -5758,10 +5759,10 @@ the path to meet him.
 
 There was no response, and he scowled.
 
-"The old woman''''s got her sull on," he muttered, but his voice was pleasant
-enough when he asked: "Ain''''t you glad to see me, Prairie Flower?"
+"The old woman''s got her sull on," he muttered, but his voice was pleasant
+enough when he asked: "Ain''t you glad to see me, Prairie Flower?"
 
-The woman''''s face did not relax.
+The woman''s face did not relax.
 
 "Where you been?" she demanded.
 
@@ -5771,7 +5772,7 @@ He stopped unsaddling and looked at her.
 
 "You got a woman!" she burst out fiercely.
 
-Smith''''s brow cleared.
+Smith''s brow cleared.
 
 "Sure I got a woman."
 
@@ -5793,7 +5794,7 @@ She looked puzzled.
 
 "I not know you have business."
 
-"Oh, yes; I do a rushin'''' business--by spells."
+"Oh, yes; I do a rushin'' business--by spells."
 
 She persisted, unsatisfied:
 
@@ -5816,17 +5817,17 @@ not answer, so she said in a tone of mingled fear and reproach:
 
 She grasped his coat-sleeve.
 
-"Don''''t do dat no more! De Indians'''' hearts are stirred. Dey mad. Dis time
+"Don''t do dat no more! De Indians'' hearts are stirred. Dey mad. Dis time
 maybe dey not ketch you, but some time, yes! You get more brave and you
-steal from white man. You steal two, t''''ree cow, maybe all right, but when
-you steal de white man''''s horses de rope is on your neck. I know--I have
+steal from white man. You steal two, t''ree cow, maybe all right, but when
+you steal de white man''s horses de rope is on your neck. I know--I have
 seen. Some time de thief he swing in de wind, and de magpie pick at him,
 and de coyote jump at him. Yes, I have seen it like dat."
 
 Smith shivered.
 
-"Don''''t talk about them things," he said impatiently. "I''''ve been near
-lynchin'''' twice, and I hates the looks of a slip-noose yet; but I gotta
+"Don''t talk about them things," he said impatiently. "I''ve been near
+lynchin'' twice, and I hates the looks of a slip-noose yet; but I gotta
 have money."
 
 As he stood above her, looking down upon her anxious face, a thought came
@@ -5839,22 +5840,22 @@ her cattle and horses were free of mortgages, and there was the coming
 crop of hay. She had promised him the proceeds from that, if he would
 stay, but the sale of it was still months away.
 
-"If I had a stake, Prairie Flower," he said mournfully, "I''''d cut out this
-crooked work and quit takin'''' chances. But a feller like me has got pride:
-he can''''t go around without two bits in his pocket, and feel like a man. If
-I had the price, I''''d buy me a good bunch of cattle, get a permit, and
-range ''''em on the reserve."
+"If I had a stake, Prairie Flower," he said mournfully, "I''d cut out this
+crooked work and quit takin'' chances. But a feller like me has got pride:
+he can''t go around without two bits in his pocket, and feel like a man. If
+I had the price, I''d buy me a good bunch of cattle, get a permit, and
+range ''em on the reserve."
 
 "When we get tied right," said the woman eagerly, "I give you de stake
 _quick_."
 
 Smith shook his head.
 
-"Do you think I''''m goin'''' to have the whole country sayin'''' I just married
-you for what you got? I''''ve got some feelin''''s, me--Smith, and before I
-marry a rich woman, I want to have a little somethin'''' of my own."
+"Do you think I''m goin'' to have the whole country sayin'' I just married
+you for what you got? I''ve got some feelin''s, me--Smith, and before I
+marry a rich woman, I want to have a little somethin'' of my own."
 
-She looked pleased, for Susie''''s words had rankled.
+She looked pleased, for Susie''s words had rankled.
 
 "How big bunch cattle you like buy? How much money you want?"
 
@@ -5862,70 +5863,70 @@ He shook his head dejectedly.
 
 "More money nor I can raise, Prairie Flower. Five--ten thousand
 dollars--maybe more." He watched the effect of his words narrowly. She did
-not seem startled by the size of the sums he mentioned. He added: "There''''s
-nothin'''' in monkeyin'''' with just a few."
+not seem startled by the size of the sums he mentioned. He added: "There''s
+nothin'' in monkeyin'' with just a few."
 
 "I got de money, and I gift it to you. My heart is right to you, white
 man!" she said passionately.
 
 "Do you mean it, Prairie Flower?"
 
-"Yas, but don''''t tell Susie."
+"Yas, but don''t tell Susie."
 
 He watched her going up the path, her hips wobbling, her step heavy, and
 he hated her. Her love irritated him; her devotion was ridiculous. He saw
 in her only a means to an end, and he was without scruples or pity.
 
-"She ain''''t no more to me nor a dumb brute," he said contemptuously.
+"She ain''t no more to me nor a dumb brute," he said contemptuously.
 
 Smith felt that he was able to foretell with considerable accuracy the
 nature of his interview with Susie upon their meeting, and her opening
 words did not fall short of his expectations.
 
-"You''''re all right, you are!" she said in her high voice. "I''''d stick to a
+"You''re all right, you are!" she said in her high voice. "I''d stick to a
 pal like you through thick and thin, I would! What did you pull out like
 that for anyhow?"
 
 Smith chuckled.
 
-"Well, sir, Susie, it fair broke my heart to start off without seein'''' your
-pretty face and hearin'''' your sweet voice again, but the fact is, I got so
-lonesome awaitin'''' for you that I just naturally had to be travellin''''. I
+"Well, sir, Susie, it fair broke my heart to start off without seein'' your
+pretty face and hearin'' your sweet voice again, but the fact is, I got so
+lonesome awaitin'' for you that I just naturally had to be travellin''. I
 ups and hits the breeze, and I has no pencil or paper to leave a note
-behind. It wasn''''t perlite, Susie, I admits," he said mockingly.
+behind. It wasn''t perlite, Susie, I admits," he said mockingly.
 
-"Dig up that money you''''re goin'''' to divide." Susie looked like a young
+"Dig up that money you''re goin'' to divide." Susie looked like a young
 wildcat that has been poked with a stick.
 
 Smith drew an exaggerated sigh and shook his head lugubriously.
 
-"Child, I''''m the only son of Trouble. I gets in a game and I loses every
-one of our honest, hard-earned dollars. The tears has been pilin'''' out of
-my eyes and down my cheeks for forty miles, thinkin'''' how I''''d have to break
+"Child, I''m the only son of Trouble. I gets in a game and I loses every
+one of our honest, hard-earned dollars. The tears has been pilin'' out of
+my eyes and down my cheeks for forty miles, thinkin'' how I''d have to break
 the news to you."
 
-"Smith, you''''re just a common, _common_ thief!" All the scorn of which she
+"Smith, you''re just a common, _common_ thief!" All the scorn of which she
 was capable was in her voice. "To steal from your own pal!"
 
-"Thief?" Smith put his fingers in his ears. "Don''''t use that word, Susie.
-It sounds horrid, comin'''' from a child you love as if she was your own
+"Thief?" Smith put his fingers in his ears. "Don''t use that word, Susie.
+It sounds horrid, comin'' from a child you love as if she was your own
 step-daughter."
 
-The muscles of Susie''''s throat contracted so it hurt her; her face drew up
-in an unbecoming grimace; she cried with a child''''s abandon, indifferent to
+The muscles of Susie''s throat contracted so it hurt her; her face drew up
+in an unbecoming grimace; she cried with a child''s abandon, indifferent to
 the fact that her tears made her ludicrously ugly.
 
-"Smith," she sobbed, "don''''t you ever feel sorry for anybody? Couldn''''t you
-ever pity anybody? Couldn''''t you pity me?"
+"Smith," she sobbed, "don''t you ever feel sorry for anybody? Couldn''t you
+ever pity anybody? Couldn''t you pity me?"
 
 Smith made no reply, so she went on brokenly;
 
-"Can''''t you remember that you was a kid once, too, and didn''''t know how, and
-couldn''''t, fight grown up people that was mean to you?--and how you felt? I
-know you don''''t _have_ to do anything for me--you don''''t _have_ to--but
-won''''t you? Won''''t you do somethin'''' good when you''''ve got a chance--just this
-once, Smith? Won''''t you go away from here? You don''''t care anything at all
-for Mother, Smith, and she''''s all I''''ve got!" She stretched her hands toward
+"Can''t you remember that you was a kid once, too, and didn''t know how, and
+couldn''t, fight grown up people that was mean to you?--and how you felt? I
+know you don''t _have_ to do anything for me--you don''t _have_ to--but
+won''t you? Won''t you do somethin'' good when you''ve got a chance--just this
+once, Smith? Won''t you go away from here? You don''t care anything at all
+for Mother, Smith, and she''s all I''ve got!" She stretched her hands toward
 him appealing, while the hot tears wet her cheeks. She was the picture of
 childish humiliation and misery.
 
@@ -5937,22 +5938,22 @@ Through a blur of tears, Susie read something of this in his face, and her
 hands dropped limply to her sides. Her appeal was useless.
 
 It was not that Smith did not understand her feelings. He did--perfectly.
-He knew how deep a child''''s hurt is. He had been hurt himself, and the scar
+He knew how deep a child''s hurt is. He had been hurt himself, and the scar
 was still there. It was only that he did not care. He had lived through
 his hurt, and so would she. It was to his interest to stay, and first and
 always he considered Smith.
 
-"You needn''''t say anything," Susie said slowly, and there was no more
+"You needn''t say anything," Susie said slowly, and there was no more
 supplication in her voice. "I thought I knew you before, Smith, but I know
-you better now. When a white man is onery, he''''s meaner than an Injun, and
-that''''s the kind of a white man you are. I''''ll never forget this. I''''ll never
-forget that I''''ve crawled to you, and you listened like a stone."
+you better now. When a white man is onery, he''s meaner than an Injun, and
+that''s the kind of a white man you are. I''ll never forget this. I''ll never
+forget that I''ve crawled to you, and you listened like a stone."
 
 Smith answered in a voice that was not unkind--as he would have warned her
 of a sink-hole or a bad crossing:
 
-"You can''''t buck me, Susie, and you''''d better not try. You''''re game, but
-you''''re just a kid."
+"You can''t buck me, Susie, and you''d better not try. You''re game, but
+you''re just a kid."
 
 "Kids grow up sometimes;" and she turned away.
 
@@ -5963,17 +5964,17 @@ he saw her swollen eyes.
 
 "Why, Susie, are you ill?"
 
-"Yes, I''''m sick here." She laid her hand upon her heart.
+"Yes, I''m sick here." She laid her hand upon her heart.
 
 He sat down beside her and stroked the streaked brown hair timidly.
 
-"I''''m sorry," he said gently.
+"I''m sorry," he said gently.
 
 She felt the sympathy in his touch, and was quick to respond to it.
 
 "Oh, pardner," she said, "I just feel awful!"
 
-"I''''m sorry, Susie," he said again.
+"I''m sorry, Susie," he said again.
 
 "Did _your_ mother ever go back on you, pardner?"
 
@@ -5981,37 +5982,37 @@ McArthur shook his head gravely.
 
 "No, Susie."
 
-"It''''s terrible. I can''''t tell you hardly how it is; but it''''s like everybody
-that you ever cared for in the world had died. It''''s like standin'''' over a
-quicksand and feelin'''' yourself goin'''' down. It''''s like the dreams when you
-wake up screamin'''' and you have to tell yourself over and over it isn''''t
+"It''s terrible. I can''t tell you hardly how it is; but it''s like everybody
+that you ever cared for in the world had died. It''s like standin'' over a
+quicksand and feelin'' yourself goin'' down. It''s like the dreams when you
+wake up screamin'' and you have to tell yourself over and over it isn''t
 so--except that I have to tell myself over and over it _is_ so."
 
-"Susie, I think you''''re wrong."
+"Susie, I think you''re wrong."
 
 She shook her head sadly.
 
-"I wish I was wrong, but I''''m not."
+"I wish I was wrong, but I''m not."
 
 "She worries when you are late getting home, or are not well."
 
-"Yes, she''''s like that," she nodded. "Mother would fight for me like a bear
+"Yes, she''s like that," she nodded. "Mother would fight for me like a bear
 with cubs if anybody would hurt me so she could see it, but the worst
-hurt--the kind that doesn''''t show--I guess she don''''t understand. Before now
-I could tell anybody that come on the ranch and wasn''''t nice to me to
-''''git,'''' and mother would back me up. Even yet I could tell you or Tubbs or
-Mr. Ralston to leave, and they''''d have to go. But Smith?--no! He''''s come
-back to stay. And she''''ll let him stay, if she knows it will drive me away
-from home. Mother''''s Injun, and she can only read a little and write a
+hurt--the kind that doesn''t show--I guess she don''t understand. Before now
+I could tell anybody that come on the ranch and wasn''t nice to me to
+''git,'' and mother would back me up. Even yet I could tell you or Tubbs or
+Mr. Ralston to leave, and they''d have to go. But Smith?--no! He''s come
+back to stay. And she''ll let him stay, if she knows it will drive me away
+from home. Mother''s Injun, and she can only read a little and write a
 little that my Dad taught her, and she wears blankets and moccasins, but I
-never was ''''shamed of Mother before. If she marries Smith, what can I do?
-Where can I go? I could take my pack outfit and start out to hunt Dad''''s
-folks, but if Mother marries Smith, she''''ll need me after a while. Yet how
+never was ''shamed of Mother before. If she marries Smith, what can I do?
+Where can I go? I could take my pack outfit and start out to hunt Dad''s
+folks, but if Mother marries Smith, she''ll need me after a while. Yet how
 can I stay? I feel sometimes like they was two of me--one was good and one
 was bad; and if Mother lets Smith turn me out, maybe all the bad in me
-would come to the top. But there''''s one thing I couldn''''t forget. Dad used
+would come to the top. But there''s one thing I couldn''t forget. Dad used
 to say to me lots of times when we were alone--oh, often he said it:
-''''Susie, girl, never forget you''''re a MacDonald!''''"
+''Susie, girl, never forget you''re a MacDonald!''"
 
 McArthur turned quickly and looked at her.
 
@@ -6039,42 +6040,42 @@ seeing her for the first time.
 A rifle-shot broke the stillness of the droning afternoon. Susie was on
 her feet the instant. There was another--then a fusillade!
 
-"It''''s the Indians after Smith!" she cried. "They promised me they
-wouldn''''t! Come--stand up here where you can see."
+"It''s the Indians after Smith!" she cried. "They promised me they
+wouldn''t! Come--stand up here where you can see."
 
 McArthur took a place beside her on a knoll and watched the scene with
 horrified eyes. The Indians were grouped, with Bear Chief in advance.
 
-"They''''re shootin'''' into the stable! They''''ve got him cornered," Susie
-explained excitedly. "No--look! He''''s comin'''' out! He''''s goin'''' to make a run
-for it! He''''s headed for the house. He can run like a scared wolf!"
+"They''re shootin'' into the stable! They''ve got him cornered," Susie
+explained excitedly. "No--look! He''s comin'' out! He''s goin'' to make a run
+for it! He''s headed for the house. He can run like a scared wolf!"
 
 "Do they mean to kill him?" McArthur asked in a shocked voice.
 
-"Sure they mean to kill him. Do you think that''''s target practice? But look
-where the dust flies up--they''''re striking all around him--behind
-him--beside him--everywhere but in him! They''''re so anxious that they''''re
-shootin'''' wild. Runnin'''' Rabbit ought to get him--he''''s a good shot! He
-_did_! No, he stumbled. He''''s charmed--that Smith. He''''s got a strong
+"Sure they mean to kill him. Do you think that''s target practice? But look
+where the dust flies up--they''re striking all around him--behind
+him--beside him--everywhere but in him! They''re so anxious that they''re
+shootin'' wild. Runnin'' Rabbit ought to get him--he''s a good shot! He
+_did_! No, he stumbled. He''s charmed--that Smith. He''s got a strong
 medicine."
 
-"He''''s not too brave to run," said McArthur, but added: "I ran, myself,
+"He''s not too brave to run," said McArthur, but added: "I ran, myself,
 when they were after me."
 
-"He''''d better run," Susie replied. "But he''''s after his gun; he means to
+"He''d better run," Susie replied. "But he''s after his gun; he means to
 fight."
 
-"He''''ll make it!" McArthur cried.
+"He''ll make it!" McArthur cried.
 
-Susie''''s voice suddenly rang out in an ascending, staccato-like shriek.
+Susie''s voice suddenly rang out in an ascending, staccato-like shriek.
 
-"Oh! Oh! Oh! Mother, go back!" but the cracking rifles drowned Susie''''s
+"Oh! Oh! Oh! Mother, go back!" but the cracking rifles drowned Susie''s
 shrill cry of entreaty.
 
 The Indian woman, with her hands high above her head, the palms open as if
 to stop the singing bullets, rushed from the house and stopped only when
 she had passed Smith and stood between him and danger. She stood erect,
-unflinching, and while the Indians'''' fire wavered Smith gained the
+unflinching, and while the Indians'' fire wavered Smith gained the
 doorway.
 
 Gasping for breath, his short upper lip drawn back from his protruding
@@ -6085,7 +6086,7 @@ The Indian woman was directly in line between him and his enemies.
 
 "Get out of the way!" he yelled, but she did not hear him.
 
-"The fool!" he snarled. "The fool! I''''ll have to crease her."
+"The fool!" he snarled. "The fool! I''ll have to crease her."
 
 He lifted his rifle and deliberately shot her in the fleshy part of her
 arm near the shoulder. She whirled with the shock of it, and dropped.
@@ -6107,7 +6108,7 @@ higher it would have shattered her shoulder. It was a shot which told
 Smith that he had lost none of his accuracy of aim.
 
 He always carried a small roll of bandages in his hip-pocket, and with
-these he dressed the woman''''s arm with surprising skill.
+these he dressed the woman''s arm with surprising skill.
 
 "When you needs a bandage, you generally needs it bad," he explained.
 
@@ -6115,21 +6116,21 @@ He wondered if she knew that it was his shot which had struck her. If she
 did know, she said nothing, though her eyes, bright with pain, followed
 his every movement.
 
-"Looks like somebody''''s squeaked," Smith said meaningly to Susie.
+"Looks like somebody''s squeaked," Smith said meaningly to Susie.
 
-"Nobody''''s squeaked," she lied glibly. "They''''re mad, and they''''re
-suspicious, but they didn''''t see you."
+"Nobody''s squeaked," she lied glibly. "They''re mad, and they''re
+suspicious, but they didn''t see you."
 
-"If they''''d go after me like that on suspicion," said Smith dryly, "looks
-like they''''d be plumb hos-tile if they was sure. Is this here war goin'''' to
+"If they''d go after me like that on suspicion," said Smith dryly, "looks
+like they''d be plumb hos-tile if they was sure. Is this here war goin'' to
 keep up, or has they had satisfaction?"
 
 Through Susie, a kind of armistice was arranged between Smith and the
 Indians. It took much argument to induce them to defer their vengeance and
 let the law take its course.
 
-"You''''ll only get in trouble," she urged, "and Mr. Ralston will see that
-Smith gets all that''''s comin'''' to him when he has enough proof. He''''s stole
+"You''ll only get in trouble," she urged, "and Mr. Ralston will see that
+Smith gets all that''s comin'' to him when he has enough proof. He''s stole
 more than horses from me," she said bitterly, "and if I can wait and trust
 the white man to handle him as he thinks best, you can, too."
 
@@ -6137,7 +6138,7 @@ So the Indians reluctantly withdrew, but both Smith and Susie knew that
 their smouldering resentment was ready to break out again upon the
 slightest provocation.
 
-Susie''''s assurance that the attack of the Indians was due only to suspicion
+Susie''s assurance that the attack of the Indians was due only to suspicion
 did not convince Smith. He noticed that, with the exception of Yellow
 Bird, there was not a single Indian stopping at the ranch, and Yellow Bird
 not only refused to be drawn into friendly conversation, but distinctly
@@ -6145,7 +6146,7 @@ avoided him.
 
 Smith knew that he was now upon dangerous ground, yet, with his
 unfaltering faith in himself and his luck, he continued to walk with a
-firm tread. If he could make one good turn and get the Indian woman''''s
+firm tread. If he could make one good turn and get the Indian woman''s
 stake, he told himself, then he and Dora could look for a more healthful
 clime.
 
@@ -6154,7 +6155,7 @@ desirable, than when in her clean, white shirt-waist and well-cut skirt
 she stepped forward to greet him with a friendly, outstretched hand. His
 heart beat wildly as he took it.
 
-"I was afraid you had gone ''''for keeps,''''" she said.
+"I was afraid you had gone ''for keeps,''" she said.
 
 "Were you _afraid_?" he asked eagerly.
 
@@ -6166,14 +6167,14 @@ She smiled up into his face with her frank, ingenuous smile.
 "You were getting along so well with your lessons. Besides, I should have
 thought it unfriendly of you to go without saying good-by."
 
-"Unfriendly?" Smith laughed shortly. "Me unfriendly! Why, girl, you''''re
-like a mountain to me. When I''''m tired and hot and all give out, I raises
+"Unfriendly?" Smith laughed shortly. "Me unfriendly! Why, girl, you''re
+like a mountain to me. When I''m tired and hot and all give out, I raises
 my eyes and sees you there above me--quiet and cool and comfortable,
 like--and I takes a fresh grip."
 
-"I''''m glad I help you," Dora replied gently. "I want to."
+"I''m glad I help you," Dora replied gently. "I want to."
 
-"I''''m in the way of makin'''' a stake now," Smith went on, "and when I gets
+"I''m in the way of makin'' a stake now," Smith went on, "and when I gets
 it"--he hesitated--"well, when I gets it I aims to let you know."
 
 When Dora went into the house, to her own room, Smith stepped into the
@@ -6182,32 +6183,32 @@ living-room, where the Indian woman sat by the window.
 "You like dat white woman better den me?" she burst out as he entered.
 
 "Prairie Flower," he replied wearily, "if I had a dollar for every time
-I''''ve answered that question, I wouldn''''t be lookin'''' for no stake to buy
+I''ve answered that question, I wouldn''t be lookin'' for no stake to buy
 cattle with."
 
-"De white woman couldn''''t give you no stake."
+"De white woman couldn''t give you no stake."
 
 He made no reply to her taunt. He was thinking. The words of a cowpuncher
 came back to him as he sat and regarded with unseeing eyes the Indian
 woman. The cowpuncher had said: "When a feller rides the range month in
-and month out, and don''''t see nobody but other punchers and Injuns, some
+and month out, and don''t see nobody but other punchers and Injuns, some
 Mary Moonbeam or Sally Star-eyes begins to look kind of good to him when
 he rides into camp and she smiles as if she was glad he had come. He gits
-used to seein'''' her sittin'''' on an antelope hide, beadin'''' moccasins, and the
+used to seein'' her sittin'' on an antelope hide, beadin'' moccasins, and the
 country where they wear pointed-toed shoes and sit in chairs gits farther
-and farther away. And after awhile he tells himself that he don''''t mind
+and farther away. And after awhile he tells himself that he don''t mind
 smoke and the smell of buckskin, and a tepee is a better home nor none,
 and that he thinks as much of this here Mary Moonbeam or Sally Star-eyes
 as he could think of any woman, and he wonders when the priest could come.
-And while he''''s studyin'''' it over, some white girl cuts across his trail,
+And while he''s studyin'' it over, some white girl cuts across his trail,
 and, with the sight of her, Mary Moonbeam or Sally Star-eyes looks like a
-dirty two-spot in a clean deck." The cowpuncher''''s words came back to
+dirty two-spot in a clean deck." The cowpuncher''s words came back to
 Smith as though they had been said only yesterday.
 
-"Why don''''t you say what you think?" the woman asked, uneasy under his long
+"Why don''t you say what you think?" the woman asked, uneasy under his long
 stare.
 
-"No," said Smith, rousing himself; "the Schoolmarm couldn''''t give me no
+"No," said Smith, rousing himself; "the Schoolmarm couldn''t give me no
 stake; and money talks."
 
 "When you want your money?"
@@ -6221,24 +6222,24 @@ mood to finesse.
 
 "Eight--nine thousand."
 
-"If I''''m goin'''' to do anything with cattle this year, I want to get at it."
+"If I''m goin'' to do anything with cattle this year, I want to get at it."
 
 "I give you de little paper MacDonald call check. I know how to write
 check," she said with pride.
 
 Smith shook his head. A check was evidence.
 
-"It''''s better for you to go to the bank and get the cash yourself.
-Meeteetse can hitch up and take you. It won''''t bother your arm none, for
-you ain''''t bad hurt. Nine thousand is quite a wad to get without givin''''
+"It''s better for you to go to the bank and get the cash yourself.
+Meeteetse can hitch up and take you. It won''t bother your arm none, for
+you ain''t bad hurt. Nine thousand is quite a wad to get without givin''
 notice, and I doubt if you gets it, but draw all you can. Take a
 flour-sack along and put the stuff in it; then when you gets home, pass it
-over to me first chance. Don''''t let ''''em load you down with silver--I hates
+over to me first chance. Don''t let ''em load you down with silver--I hates
 to pack silver on horseback."
 
 To all of which instructions the woman agreed.
 
-That she might avoid Susie''''s questions, she did not start the next morning
+That she might avoid Susie''s questions, she did not start the next morning
 until Susie was well on her way to school. Then, dressed in her gaudiest
 skirt, her widest brass-studded belt, her best and hottest blanket, she
 was ready for the long drive.
@@ -6257,51 +6258,51 @@ day when she would be envied by the women who had married only "bloods" or
 Smith, as it happened, was remarking contemptuously to Tubbs, as he nodded
 after the disappearing wagon:
 
-"Don''''t that look like a reg''''lar Injun outfit? One old white horse and a
+"Don''t that look like a reg''lar Injun outfit? One old white horse and a
 spotted buzzard-head; harness wired up with Mormon beeswax; a lopsided
 spring seat; one side-board gone and no paint on the wagon."
 
-"You''''d think Meeteetse''''d think more of hisself than to go ridin'''' around
+"You''d think Meeteetse''d think more of hisself than to go ridin'' around
 with a blanket-squaw."
 
 "He _said_ he was out of tobacer, but he probably aims to get drunk."
 
-"More''''n likely," Tubbs agreed. "Meeteetse''''s gittin'''' to be a reg''''lar
-squawman anyhow, hangin'''' around Injuns so much and runnin'''' with ''''em. He
-believes in signs and dreams, and he ain''''t washed his neck for six
+"More''n likely," Tubbs agreed. "Meeteetse''s gittin'' to be a reg''lar
+squawman anyhow, hangin'' around Injuns so much and runnin'' with ''em. He
+believes in signs and dreams, and he ain''t washed his neck for six
 weeks."
 
-"Associatin'''' too much with Injuns will spile a good man. Tubbs," Smith
-went on solemnly, "you ain''''t the feller you was when you come."
+"Associatin'' too much with Injuns will spile a good man. Tubbs," Smith
+went on solemnly, "you ain''t the feller you was when you come."
 
-"I knows it," Tubbs agreed plaintively. "I hain''''t half the gumption I
+"I knows it," Tubbs agreed plaintively. "I hain''t half the gumption I
 had."
 
-"It hurts me to see a bright mind like yours goin'''' to seed, and there''''s
-nothin''''ll do harm to a feller quicker nor associatin'''' with them as ain''''t
+"It hurts me to see a bright mind like yours goin'' to seed, and there''s
+nothin''ll do harm to a feller quicker nor associatin'' with them as ain''t
 his equal. Tubbs, like you was my own brother, I says that bug-hunter
-ain''''t no man for you to run with."
+ain''t no man for you to run with."
 
-"He ain''''t vicious and the likes o'''' that," said Tubbs, in mild defense of
+"He ain''t vicious and the likes o'' that," said Tubbs, in mild defense of
 his employer.
 
-"What''''s ''''vicious'''' anyhow?" demanded Smith. "Who''''s goin'''' to say what''''s
-vicious and what ain''''t? I says it''''s vicious to lie like he does about them
-idjot skulls and ham-bones he digs out and brings home, makin'''' out that
+"What''s ''vicious'' anyhow?" demanded Smith. "Who''s goin'' to say what''s
+vicious and what ain''t? I says it''s vicious to lie like he does about them
+idjot skulls and ham-bones he digs out and brings home, makin'' out that
 they might be pieces of fellers what could use one of them cotton-woods
-for a walkin'''' stick and et animals the size of that meat-house at a
+for a walkin'' stick and et animals the size of that meat-house at a
 meal."
 
 "He never said jest that."
 
-"He might as well. What I''''m aimin'''' at is that it''''s demoralizin'''' to get
-interested in things like that and spend your life diggin'''' up the dead.
-It''''s too tame for a feller of any spirit."
+"He might as well. What I''m aimin'' at is that it''s demoralizin'' to get
+interested in things like that and spend your life diggin'' up the dead.
+It''s too tame for a feller of any spirit."
 
-"It''''s nowise dang''''rous," Tubbs admitted.
+"It''s nowise dang''rous," Tubbs admitted.
 
-"If I thought you was my kind, Tubbs, I''''d give you a chance. I''''d let you
-in on a deal that''''d be the makin'''' of you."
+"If I thought you was my kind, Tubbs, I''d give you a chance. I''d let you
+in on a deal that''d be the makin'' of you."
 
 "All I needs is a chanct," Tubbs declared eagerly.
 
@@ -6309,16 +6310,16 @@ in on a deal that''''d be the makin'''' of you."
 
 A disturbing thought made Tubbs inquire anxiously:
 
-"This here chanct your speakin'''' of--it ain''''t work, is it?--real right-down
+"This here chanct your speakin'' of--it ain''t work, is it?--real right-down
 work?"
 
-"Not degradin'''' work, like pitchin'''' hay or plowin''''."
+"Not degradin'' work, like pitchin'' hay or plowin''."
 
 "I hates low-down work, where you gits out and sweats."
 
-"I see where you''''re right. There''''s no call for a man of your sand and
-_sabe_ to do day''''s work. Let them as hasn''''t neither and is afraid to take
-chances pitch hay and do plowin'''' for wages."
+"I see where you''re right. There''s no call for a man of your sand and
+_sabe_ to do day''s work. Let them as hasn''t neither and is afraid to take
+chances pitch hay and do plowin'' for wages."
 
 Tubbs looked a little startled.
 
@@ -6326,11 +6327,11 @@ Tubbs looked a little startled.
 
 Smith looked at Tubbs before he lowered his voice and asked:
 
-"Wasn''''t you ever on the rustle none?"
+"Wasn''t you ever on the rustle none?"
 
 Tubbs reflected.
 
-"Onct back east, in I-ó-wa, I rustled me a set of underwear off''''n a
+"Onct back east, in I-ó-wa, I rustled me a set of underwear off''n a
 clothes-line."
 
 Smith eyed Tubbs in genuine disgust. He had all the contempt for a
@@ -6338,9 +6339,9 @@ petty-larceny thief that the skilled safe-breaker has for the common
 purse-snatcher. The line between pilfering and legitimate stealing was
 very clear in his mind. He said merely,
 
-"Tubbs, I believe you''''re a bad _hombre_."
+"Tubbs, I believe you''re a bad _hombre_."
 
-"They _is_ worse, I s''''pose," said Tubbs modestly, "but I''''ve been pretty
+"They _is_ worse, I s''pose," said Tubbs modestly, "but I''ve been pretty
 rank in my time."
 
 "Can you ride? Can you rope? Can you cut out a steer and burn a brand?
@@ -6349,42 +6350,42 @@ Are you a stayer?"
 
 "Try me," said Tubbs, swelling.
 
-"Shake," said Smith. "I wisht we''''d got acquainted sooner."
+"Shake," said Smith. "I wisht we''d got acquainted sooner."
 
-"And mebby I kin tell you somethin'''' about brands," Tubbs went on
+"And mebby I kin tell you somethin'' about brands," Tubbs went on
 boastfully.
 
-"More''''n likely."
+"More''n likely."
 
 "I kin take a wet blanket and a piece of copper wire and put an addition
-to an old brand so it''''ll last till you kin git the stock off''''n your hands.
-I''''ve never done it, but I''''ve see it done."
+to an old brand so it''ll last till you kin git the stock off''n your hands.
+I''ve never done it, but I''ve see it done."
 
-"I''''ve heard tell of somethin'''' like that," Smith replied dryly.
+"I''ve heard tell of somethin'' like that," Smith replied dryly.
 
-"Er you kin draw out a brand so you never would know nothin'''' was there.
+"Er you kin draw out a brand so you never would know nothin'' was there.
 You take a chunk of green cottonwood, and saw it off square; then you bile
-it and bile it, and when it''''s hot through, you slaps it on the brand, and
+it and bile it, and when it''s hot through, you slaps it on the brand, and
 when you lifts it up after while the brand is drawed out."
 
 "Did you dream that, Tubbs?"
 
-"I b''''leeve it''''ll work," declared Tubbs stoutly.
+"I b''leeve it''ll work," declared Tubbs stoutly.
 
 "Maybe it would work in I-ó-wa," said Smith, "but I doubts if it would
-work here. Any way," he added conciliatingly, "we''''ll give it a try."
+work here. Any way," he added conciliatingly, "we''ll give it a try."
 
-"And this chanct--it''''s tolable safe?"
+"And this chanct--it''s tolable safe?"
 
-"Same as if you was home in bed. When I says ''''ready,'''' will you come?"
+"Same as if you was home in bed. When I says ''ready,'' will you come?"
 
 "Watch my smoke," answered Tubbs.
 
-Smith''''s eyes followed Tubbs''''s hulking figure as he shambled off, and his
+Smith''s eyes followed Tubbs''s hulking figure as he shambled off, and his
 face was full of derision.
 
 "Say"--he addressed the world in general--"you show me a man from I-ó-wa
-or Nebrasky and I''''ll show you a son-of-a-gun."
+or Nebrasky and I''ll show you a son-of-a-gun."
 
 Tubbs was putty in the hands of Smith, who could play upon his vanity and
 ignorance to any degree--though he believed that beyond a certain point
@@ -6392,11 +6393,11 @@ Tubbs was an arrant coward. But Smith had a theory regarding the
 management of cowards. He believed that on the same principle that one
 uses a whip on a scared horse--to make it more afraid of that which is
 behind than of that which is ahead--he could by threats and intimidations
-force Tubbs to do his bidding if the occasion arose. Tubbs''''s mental
+force Tubbs to do his bidding if the occasion arose. Tubbs''s mental
 calibre was 22-short; but Smith needed help, and Tubbs seemed the most
 pliable material at hand. That Tubbs had pledged himself to something the
 nature of which he knew only vaguely, was in itself sufficient to receive
-Smith''''s contempt. He had learned from observation that little dependence
+Smith''s contempt. He had learned from observation that little dependence
 can be placed upon those who accept responsibilities too readily and
 lightly, but he was confident that he could utilize Tubbs as long as he
 should need him, and after that--Smith shrugged his shoulders--what was an
@@ -6409,15 +6410,15 @@ When Susie came home from school, Smith was looking through the
 corral-fence at a few ponies which Ralston had bought and driven in, to
 give color to his story.
 
-"See anything there you''''d like?" she inquired, with significant emphasis.
+"See anything there you''d like?" she inquired, with significant emphasis.
 
-"I''''d buy the bunch if I was goin'''' to set me some bear-traps." Smith could
+"I''d buy the bunch if I was goin'' to set me some bear-traps." Smith could
 see nothing to praise in anything which belonged to Ralston.
 
 Susie missed her mother immediately upon going into the house, and in
 their sleeping-room she saw every sign of a hurried departure.
 
-"Where''''s mother gone?" she asked Ling.
+"Where''s mother gone?" she asked Ling.
 
 "Town."
 
@@ -6429,9 +6430,9 @@ their sleeping-room she saw every sign of a hurried departure.
 
 "Blue beads, gleen beads. She no have enough beads for finish moccasin."
 
-"When''''s she comin'''' home?"
+"When''s she comin'' home?"
 
-"She come ''''night."
+"She come ''night."
 
 Forty miles over a rough road, with her bandaged arm, for beads! It did
 not sound reasonable to Susie, but since Smith was accounted for, and her
@@ -6467,7 +6468,7 @@ The Indian woman was restless; she had been so from the time they had lost
 sight of the town, but her restlessness had increased as the daylight
 faded and night fell.
 
-"You''''re goin'''' to bust this seat in if you don''''t quit jammin'''' around,"
+"You''re goin'' to bust this seat in if you don''t quit jammin'' around,"
 Meeteetse Ed warned her peevishly.
 
 Meeteetse was irritable, a state due largely to the waning exhilaration of
@@ -6476,31 +6477,31 @@ a short and unsatisfactory spree.
 The woman clucked at the horses, and, to the great annoyance of her
 driver, reached for the reins and slapped them on the back.
 
-"They''''re about played out," he growled. "Forty miles is a awful trip for
-these buzzard-heads to make in a day. We orter have put up some''''eres
+"They''re about played out," he growled. "Forty miles is a awful trip for
+these buzzard-heads to make in a day. We orter have put up some''eres
 overnight."
 
-"I could have stayed with Little Coyote''''s woman."
+"I could have stayed with Little Coyote''s woman."
 
-"We orter have done it, too. Look at them cayuses stumblin'''' along! Say, we
-won''''t git in before ''''leven or twelve at this gait, and I''''m so hungry I
-don''''t know where I''''m goin'''' to sleep to-night."
+"We orter have done it, too. Look at them cayuses stumblin'' along! Say, we
+won''t git in before ''leven or twelve at this gait, and I''m so hungry I
+don''t know where I''m goin'' to sleep to-night."
 
-"Little Coyote''''s woman gifted me some sa''''vis berries."
+"Little Coyote''s woman gifted me some sa''vis berries."
 
-"Aw, sa''''vis berries! I can''''t go sa''''vis berries," growled Meeteetse.
-"They''''re too sweet. The only way they''''re fit to eat is to dry ''''em and
-pound ''''em up with jerked elk--then they ain''''t bad eatin''''. I''''ve et ''''most
-ev''''ry thing in my day. I''''ve et wolf, and dog, and old mountain billy-goat,
-and bull-snakes, and grasshoppers, so you kin see I ain''''t finnicky, but I
-can''''t stummick sa''''vis berries." He asked querulously: "What''''s ailin'''' of
+"Aw, sa''vis berries! I can''t go sa''vis berries," growled Meeteetse.
+"They''re too sweet. The only way they''re fit to eat is to dry ''em and
+pound ''em up with jerked elk--then they ain''t bad eatin''. I''ve et ''most
+ev''ry thing in my day. I''ve et wolf, and dog, and old mountain billy-goat,
+and bull-snakes, and grasshoppers, so you kin see I ain''t finnicky, but I
+can''t stummick sa''vis berries." He asked querulously: "What''s ailin'' of
 you?"
 
 The Indian woman, who had been studying the black clouds as they drifted
 across the sky to dim the starlight, said in a half-whisper:
 
-"The clouds no look good to me. They look like enemies playin'''' wolf. I
-feel as if somethin'''' goin'''' happen."
+"The clouds no look good to me. They look like enemies playin'' wolf. I
+feel as if somethin'' goin'' happen."
 
 The bare suggestion of the supernatural was sufficient to alarm Meeteetse.
 He asked in a startled voice:
@@ -6508,7 +6509,7 @@ He asked in a startled voice:
 "How do you feel?"
 
 "I feel sad. My heart drags down to de ground, and it seem like de dark
-hide somethin''''."
+hide somethin''."
 
 Meeteetse elongated his neck and peered fearfully into the darkness.
 
@@ -6516,64 +6517,64 @@ Meeteetse elongated his neck and peered fearfully into the darkness.
 
 She shook her head.
 
-"I don''''t know, but I have de bad feelin''''."
+"I don''t know, but I have de bad feelin''."
 
 "I forgot to sleep with my feet crossed last night," said Meeteetse, "and
-I dreamed horrible dreams all night long. Maybe they was warnin''''s. I can''''t
+I dreamed horrible dreams all night long. Maybe they was warnin''s. I can''t
 think of anything much that could happen to us though," he went on, having
 forgotten some of his ill-nature in his alarm for his personal safety.
-"These here horses ain''''t goin'''' to run away--I wisht they would, fer ''''t
-would git us quite a piece on our road. We ain''''t no enemies worth
-mentionin'''', and we ain''''t worth stealin'''', so I don''''t hardly think your
-feelin'''' means any wrong for us. More''''n likely it''''s jest somebody dead."
+"These here horses ain''t goin'' to run away--I wisht they would, fer ''t
+would git us quite a piece on our road. We ain''t no enemies worth
+mentionin'', and we ain''t worth stealin'', so I don''t hardly think your
+feelin'' means any wrong for us. More''n likely it''s jest somebody dead."
 
 This thought, slightly consoling to Meeteetse, did not seem to comfort the
 Indian woman, who continued to squirm on the rickety seat and to strain
 her eyes into the darkness.
 
 "If anybody ud come along and want to mix with me--say, do you see that
-fist? If ever I hit anybody with that fist, they''''ll have to have it dug
-out of ''''em. I don''''t row often, but when I does--oh, lordy! lordy! I jest
+fist? If ever I hit anybody with that fist, they''ll have to have it dug
+out of ''em. I don''t row often, but when I does--oh, lordy! lordy! I jest
 raves and caves. I was home on a visit onct, and my old-maid aunt gits a
-notion of pickin'''' on me. Say, I ups and runs her all over the house with
-an axe! I''''m more er less a dang''''rous character when I''''m on the peck. Is
-that feelin'''' workin off of you any?" he inquired anxiously.
+notion of pickin'' on me. Say, I ups and runs her all over the house with
+an axe! I''m more er less a dang''rous character when I''m on the peck. Is
+that feelin'' workin off of you any?" he inquired anxiously.
 
 "It comes stronger," she answered, and her grip tightened on the
 flour-sack she held under her blanket.
 
-"I wisht I knowed what it was. I''''m gittin'''' all strung up myself." His
+"I wisht I knowed what it was. I''m gittin'' all strung up myself." His
 popping eyes ached from trying to see into the darkness around them. "If
 we kin git past them gulches onct! That ud be a dum bad place to roll off
-the side. We''''d go kerplunk into the crick-bottom. Gosh! what was that?" He
+the side. We''d go kerplunk into the crick-bottom. Gosh! what was that?" He
 stopped the weary horses with a terrific jerk.
 
-It was only a little night prowler which had scurried under the horses''''
+It was only a little night prowler which had scurried under the horses''
 feet and rustled into the brush.
 
-"You see how on aidge I am! I''''ll tell you," he went on garrulously--the
+"You see how on aidge I am! I''ll tell you," he went on garrulously--the
 sound of his own voice was always pleasant to Meeteetse: "I take more
-stock in signs and feelin''''s than most people, for I''''ve seen ''''em work out.
-Down there in Hermosy there was a feller made a stake out''''n a silver
+stock in signs and feelin''s than most people, for I''ve seen ''em work out.
+Down there in Hermosy there was a feller made a stake out''n a silver
 prospect, and he takes it into his head to go back to Nebrasky and hunt up
-his wife, that he''''d run off and left some time prev''''ous. As the date gits
-clost for him to leave, he got glummer and glummer. He''''d skerce crack a
-smile. The night before the stage was comin'''' to git him, he was settin'''' in
-a ''''dobe with a dirt roof, rared back on the hind legs of his chair, with
+his wife, that he''d run off and left some time prev''ous. As the date gits
+clost for him to leave, he got glummer and glummer. He''d skerce crack a
+smile. The night before the stage was comin'' to git him, he was settin'' in
+a ''dobe with a dirt roof, rared back on the hind legs of his chair, with
 his hands in his pockets.
 
-"''''Boys,'''' he says, ''''I''''ll never git back to Genevieve. I feels it; I knows
-it; I''''ll bet you any amount I''''m goin'''' to cash in between here and
-Nebrasky. I''''ve seen myself in my coffin four times hand-runnin'''', when I
-was wide awake.''''
+"''Boys,'' he says, ''I''ll never git back to Genevieve. I feels it; I knows
+it; I''ll bet you any amount I''m goin'' to cash in between here and
+Nebrasky. I''ve seen myself in my coffin four times hand-runnin'', when I
+was wide awake.''
 
 "Everybody had their mouths open to let out a holler and laff when jest
-then one of the biggest terrantuler that I ever see dropped down out''''n the
-dirt and straw and lands on his bald head. It hangs on and bites ''''fore
-anybody kin bresh it off, and, ''''fore Gawd, he ups and dies while the
-medicine shark is comin'''' from the next town!"
+then one of the biggest terrantuler that I ever see dropped down out''n the
+dirt and straw and lands on his bald head. It hangs on and bites ''fore
+anybody kin bresh it off, and, ''fore Gawd, he ups and dies while the
+medicine shark is comin'' from the next town!"
 
-His companion did not find Meeteetse''''s reminiscence specially interesting,
+His companion did not find Meeteetse''s reminiscence specially interesting,
 possibly because she had heard it before, so at its conclusion she made no
 comment, but continued to watch with anxious eyes the clouds and the road
 ahead.
@@ -6590,9 +6591,9 @@ high and so hard that he lost his equilibrium, and, as a result, the
 ill-balanced seat went over, carrying with it Meeteetse and the Indian
 woman.
 
-The latter''''s mind acted quickly. She knew that her errand to the bank had
+The latter''s mind acted quickly. She knew that her errand to the bank had
 become known. Undoubtedly they had been followed from town. As soon as she
-could disentangle herself from Meeteetse''''s convulsive embrace, she threw
+could disentangle herself from Meeteetse''s convulsive embrace, she threw
 the flour-sack from her with all her strength, hoping it would drop out of
 sight in the sage-brush. It was caught in mid-air by a tall figure at the
 wagon-side.
@@ -6609,7 +6610,7 @@ and vanishing hoof-beats told them the thieves were on their way to town.
 
 "Well, sir!" He picked up the reins and clucked to the horses.
 
-"Well, sir! I know ''''em. Them''''s the fellers that held up the Great
+"Well, sir! I know ''em. Them''s the fellers that held up the Great
 Northern!"
 
 The Indian woman said not a word. Her heart was filled with despair. What
@@ -6625,7 +6626,7 @@ or speaking to Susie, crept between her blankets like a frightened child.
 
 Smith, in his dreams, had heard the rumble of the wagon as it crossed the
 ford, and he awoke the next morning with a sensation of pleasurable
-anticipation. In his mind''''s eye, he saw the banknotes in a heap before
+anticipation. In his mind''s eye, he saw the banknotes in a heap before
 him. There were all kinds in the picture--greasy ones, crisp ones,
 tattered bills pasted together with white strips of paper. He rather liked
 these best, because the care with which they had been preserved conveyed
@@ -6666,26 +6667,26 @@ She was on the ground when Susie came out.
 
 The woman blinked up at her.
 
-"I slip. I gettin'''' too fat," she said, and struggled to her feet.
+"I slip. I gettin'' too fat," she said, and struggled to her feet.
 
 Elsewhere, with great minuteness of detail, Meeteetse was describing the
 exciting incident of the night, and what would have happened if only he
 could have laid hold of his gun.
 
-"Maybe they wouldn''''t ''''a'''' split the wind if I could have jest drawed my
-automatic in time! As ''''twas, I put up the best fight I could, with a woman
-screamin'''' and hangin'''' to me for pertection. I rastled the big feller
+"Maybe they wouldn''t ''a'' split the wind if I could have jest drawed my
+automatic in time! As ''twas, I put up the best fight I could, with a woman
+screamin'' and hangin'' to me for pertection. I rastled the big feller
 around in the road there for some time, neither of us able to git a good
-holt. He was glad enough to break away, I kin tell you. They''''s no manner
-o'''' doubt in my mind but them was the Great Northern hold-ups."
+holt. He was glad enough to break away, I kin tell you. They''s no manner
+o'' doubt in my mind but them was the Great Northern hold-ups."
 
 "But what would they tackle _you_ for?" demanded Old Man Rulison.
-"Everybody knows _you_ ain''''t got nothin'''', and you say all they took from
-the old woman was a flour-sack full of dried sa''''vis berries. It''''s some of
-a come-down, looks to me, from robbing trains to stealin'''' stewin''''-fruit."
+"Everybody knows _you_ ain''t got nothin'', and you say all they took from
+the old woman was a flour-sack full of dried sa''vis berries. It''s some of
+a come-down, looks to me, from robbing trains to stealin'' stewin''-fruit."
 
-"Well, there you are." Meeteetse shrugged his shoulders. "That''''s your
-mystery. All I knows is, that I pulled ha''''r every jump in the road to save
+"Well, there you are." Meeteetse shrugged his shoulders. "That''s your
+mystery. All I knows is, that I pulled ha''r every jump in the road to save
 them berries."
 
 
@@ -6711,7 +6712,7 @@ Still breathing hard, Smith hunted Tubbs.
 "Right." Tubbs winked knowingly, and immediately after breakfast started
 to do as he was bid.
 
-Smith''''s face was not good to look upon as he sat at the table. He took no
+Smith''s face was not good to look upon as he sat at the table. He took no
 part in the conversation, and scarcely touched the food before him. His
 disappointment was so deep that it actually sickened him, and his
 unreasoning anger toward the woman was so great that he wanted to get out
@@ -6749,44 +6750,44 @@ plans. He wanted money, and he wanted Dora. The combination was sufficient
 to nerve him to take chances.
 
 Tubbs was waiting in the gulch. Smith looked at the spot where White
-Antelope''''s body had lain, and reflected that it was curious how long the
+Antelope''s body had lain, and reflected that it was curious how long the
 black stain of blood would stay on sand and gravel. He had been lucky to
 get out of that scrape so easily, he told himself as he rode by.
 
-"I guess you know what you''''re up against, feller," he said bluntly, as he
+"I guess you know what you''re up against, feller," he said bluntly, as he
 and Tubbs met.
 
-"I inclines to the opinion that it''''s a little cattle deal," Tubbs replied
+"I inclines to the opinion that it''s a little cattle deal," Tubbs replied
 facetiously.
 
-"You inclines right. Now, here''''s our play--listen. The Bar C outfit is
-workin'''' up in the mountains, so they won''''t interfere with us none, and
-about three or three and a half days'''' drive from here there''''s some fellers
-what''''ll take ''''em off our hands. We gets our wad and divvies."
+"You inclines right. Now, here''s our play--listen. The Bar C outfit is
+workin'' up in the mountains, so they won''t interfere with us none, and
+about three or three and a half days'' drive from here there''s some fellers
+what''ll take ''em off our hands. We gets our wad and divvies."
 
 "What for a hand do I take?"
 
-"By rights, maybe, we ought to do our work at night, but I''''ve rode over
-the country, and it looks safe enough to drive ''''em into the gulch to-day.
-They isn''''t a human in sight, and if one shows up, I reckon you know what
+"By rights, maybe, we ought to do our work at night, but I''ve rode over
+the country, and it looks safe enough to drive ''em into the gulch to-day.
+They isn''t a human in sight, and if one shows up, I reckon you know what
 to do."
 
 "It sounds easy enough, if it works," said Tubbs dubiously.
 
-"If it works? Feller, if you''''ve got a yeller streak, you better quit right
+"If it works? Feller, if you''ve got a yeller streak, you better quit right
 here."
 
 "I merely means," Tubbs hastened to explain, "that it sounds so easy that
-it makes me sore we wasn''''t doin'''' it before."
+it makes me sore we wasn''t doin'' it before."
 
 The reply appeared to pacify Smith.
 
-"I hates to fool with cattle," he admitted, "''''specially these here Texas
-brutes that spread out, leavin'''' tracks all over the flat, and they can''''t
-make time just off green grass. Gimme horses--but horses ain''''t safe right
+"I hates to fool with cattle," he admitted, "''specially these here Texas
+brutes that spread out, leavin'' tracks all over the flat, and they can''t
+make time just off green grass. Gimme horses--but horses ain''t safe right
 now, with the Injuns riled up. Now, you start out and gather up what you
-can, and hold ''''em here till I get back. I''''ll go to the ranch and get a
-little grub together and get here as quick as it''''s safe."
+can, and hold ''em here till I get back. I''ll go to the ranch and get a
+little grub together and get here as quick as it''s safe."
 
 Smith galloped back to the ranch, to learn that Dora had ridden to the
 Agency to spend the day. He was keenly disappointed that he had missed the
@@ -6798,7 +6799,7 @@ might write. He was delighted with the idea, and undoubtedly Dora would be
 equally delighted to receive a letter from him. It would show her that he
 remembered his promise, and also give her a chance to note his progress.
 Since Smith had learned that a capital letter is used to designate the
-personal pronoun, and that a period is placed at such points as one''''s
+personal pronoun, and that a period is placed at such points as one''s
 breath gives out, he had begun to think himself something of a scholar.
 
 His enthusiasm grew as he thought of it, and he decided that while he was
@@ -6824,8 +6825,8 @@ Bearing in mind that the superlative of dear is dearest, he wrote:
 The perspiration stood out on his forehead, and he wiped it away with his
 ink-stained fingers.
 
-"Writin'''' is harder work nor shoein'''' a horse," he observed to Ling, and
-added for the Indian woman''''s benefit, "I''''m sendin'''' off to get me a pair of
+"Writin'' is harder work nor shoein'' a horse," he observed to Ling, and
+added for the Indian woman''s benefit, "I''m sendin'' off to get me a pair of
 them Angory saddle-pockets."
 
 His explanation did not deceive the person for whom it was intended. With
@@ -6834,7 +6835,7 @@ which he would not have her see. She meant to know, if possible, to whom
 he was writing, and what. Although she did not raise her eyes from her
 work when he replaced the pen and ink, she did not let him out of her
 sight. She believed that he had written to Dora, and she was sure of it
-when, thinking himself unobserved, he crept to Dora''''s open window, outside
+when, thinking himself unobserved, he crept to Dora''s open window, outside
 of the house, and dropped the letter into the top drawer of her bureau,
 which stood close.
 
@@ -6847,16 +6848,16 @@ seeking cover.
 The woman could read a little--not much, but better than she could write.
 She had been to the Mission when she was younger, and MacDonald had
 labored patiently to teach her more. Now, concealed among the willows,
-sitting cross-legged on the ground, she spelled out Smith''''s letter word by
+sitting cross-legged on the ground, she spelled out Smith''s letter word by
 word,
 
-I love you. I hates everyboddy else when I think of you. I don''''t love no
+I love you. I hates everyboddy else when I think of you. I don''t love no
 other woman but you. Nor never did.
 
 She read it slowly, carefully, each word sinking deep. Then she stroked
 her hair with long, deliberate strokes, and read it again.
 
-I don''''t love no other woman but you. Nor never did.
+I don''t love no other woman but you. Nor never did.
 
 She laid the letter on the ground, and, folding her arms, rocked her body
 to and fro, as though in physical agony. When she shut her lips they
@@ -6872,7 +6873,7 @@ she sprinkled a few leaves over the spot.
 She looked old and ugly when she went into the house, seeming, for the
 first time, the woman of middle-age that she was. Quietly, purposefully,
 she drew out a chair, and, standing upon it, took down from the rafters
-the plant which Little Coyote''''s woman, the Mandan, had given her. It had
+the plant which Little Coyote''s woman, the Mandan, had given her. It had
 hung there a long time, and the leaves crumpled and dropped off at her
 touch. She filled a basin with water and put the plant and root to soak,
 while she searched for a sharp knife. Turning her back to the room and
@@ -6883,7 +6884,7 @@ smallest particles, and laid it upon a paper. When she had it all, she
 burned the plant; but the red inner bark she put in a tin cup and covered
 it with boiling water, to steep.
 
-"Don''''t touch dat," she warned Ling.
+"Don''t touch dat," she warned Ling.
 
 The afternoon was waning when she went again to the willows, but the air
 was still hot, for the rocks and sand held the heat until well after
@@ -6913,7 +6914,7 @@ She put the head in a square of cloth and continued her search. After a
 time, she found another, and when she went down the hill there were three
 heads in the blood-soaked square of cloth. She hid them in the willows,
 and went into the house to stir the contents of the tin cup. She noted
-with evident satisfaction that it had thickened somewhat. Little Coyote''''s
+with evident satisfaction that it had thickened somewhat. Little Coyote''s
 woman had told her it would do so. She found a bottle which had contained
 lemon extract, and this she rinsed. She measured a teaspoonful of the
 thick, reddish-brown liquid and poured it into the bottle, filling it
@@ -6932,7 +6933,7 @@ she dipped the point of it into the concoction--blowing upon it until it
 dried, then repeating the process. When the point of the blade was well
 discolored, she muttered:
 
-"Dat''''s de strong medicine!"
+"Dat''s de strong medicine!"
 
 Her eyes glittered like the eyes of the snakes among the rocks, and they
 seemed smaller. Their roundness and the liquid softness of them was gone.
@@ -6940,17 +6941,17 @@ She looked "pure Injun," as Smith would have phrased it, with murder in
 her heart. Deliberately, malevolently, she spat upon the earth beneath
 which the letter lay, before she returned to the house.
 
-She heard Susie''''s voice in the Schoolmarm''''s room, and quickly hid the
+She heard Susie''s voice in the Schoolmarm''s room, and quickly hid the
 knife behind a mirror in the living-room, where she hid everything which
 she wished to conceal, imagining, for some unknown reason, that no one but
 herself would ever think of looking there. Susie often had thought
-laughingly that it looked like a pack-rat''''s nest.
+laughingly that it looked like a pack-rat''s nest.
 
 The woman poured the liquid which remained in the tin cup into another
 bottle, frowning when she spilled a few precious drops upon her hand.
 This bottle she also hid behind the mirror.
 
-In Dora Marshall''''s room, Susie was examining the teacher''''s toilette
+In Dora Marshall''s room, Susie was examining the teacher''s toilette
 articles, which held an unfailing interest for her. She meant to have an
 exact duplicate of the manicure set and of the hairbrush with the heavy
 silver back. To Susie, these things, along with side-combs and petticoats
@@ -6979,32 +6980,32 @@ wondered?
 
 She sat on the edge of the bed and swung her feet.
 
-"My, but won''''t it seem lonesome here without Mr. Ralston?" Susie sighed
+"My, but won''t it seem lonesome here without Mr. Ralston?" Susie sighed
 deeply.
 
 "Is he going away?" Dora asked quickly.
 
-"He''''ll be goin'''' pretty soon now, because he''''s found most of his strays and
+"He''ll be goin'' pretty soon now, because he''s found most of his strays and
 bought all the ponies he wants."
 
 "I suppose he will be glad to get back among his friends."
 
 Susie thought Teacher looked a little pale.
 
-"Maybe he''''ll go back and get married."
+"Maybe he''ll go back and get married."
 
 "Did he say so?"
 
 Susie was _sure_ she was paler.
 
-"No," she replied nonchalantly. "I just thought so, because anybody that''''s
-as good-looking as he is, gets gobbled up quick. Don''''t you think he is
+"No," she replied nonchalantly. "I just thought so, because anybody that''s
+as good-looking as he is, gets gobbled up quick. Don''t you think he is
 good-looking?"
 
 "Oh, he does very well."
 
-"Gee whiz, I wish he''''d ask me to marry him!" said Susie unblushingly. "You
-couldn''''t see me for dust, the way I''''d travel. But there''''s no danger. Look
+"Gee whiz, I wish he''d ask me to marry him!" said Susie unblushingly. "You
+couldn''t see me for dust, the way I''d travel. But there''s no danger. Look
 at them there skinny arms!"
 
 "Susie! What grammar!"
@@ -7015,13 +7016,13 @@ at them there skinny arms!"
 
 "Those skinny arms; those hair; those eyes--soft and gentle like a couple
 of augers, Meeteetse says." Susie shook her head in mock despondency.
-"I''''ve tried to be beautiful, too. Once I cut a piece out of a newspaper
+"I''ve tried to be beautiful, too. Once I cut a piece out of a newspaper
 that told how you could get rosy cheeks. It gave all the different things
-to put in, so I sent off and got ''''em. I mixed ''''em like it said and rubbed
-it on my face. There wasn''''t any mistake about my rosy cheeks, but you
+to put in, so I sent off and got ''em. I mixed ''em like it said and rubbed
+it on my face. There wasn''t any mistake about my rosy cheeks, but you
 ought to have seen the blisters on my cheek-bones--big as dollars!"
 
-"I''''m sure you will not be so thin when you are older," Dora said
+"I''m sure you will not be so thin when you are older," Dora said
 consolingly, "and your hair would be a very pretty color if only you would
 wear a hat and take a little care of it."
 
@@ -7036,24 +7037,24 @@ Dora put buttons in her shirt-waist sleeves in silence.
 
 "I quarrelled with him?"
 
-"Oh, didn''''t you?" Susie was innocence itself. "You treat him so polite, I
+"Oh, didn''t you?" Susie was innocence itself. "You treat him so polite, I
 thought you must have quarrelled--such a chilly polite," she explained.
 
-"I don''''t think _he_ has observed it," Dora answered coldly.
+"I don''t think _he_ has observed it," Dora answered coldly.
 
 "Oh, yes, he has." Susie waited discreetly.
 
 "How do you know?"
 
 "When you come to the table and say, Good-morning, and look at him without
-seeing him, I know he''''d a lot rather you cuffed him."
+seeing him, I know he''d a lot rather you cuffed him."
 
 "What a dreadful word, Susie, and what an absurd idea!"
 
-Susie noted that Teacher''''s eyes brightened.
+Susie noted that Teacher''s eyes brightened.
 
-"_You''''ll_ be goin'''' away, too, pretty soon, and I s''''pose you''''ll be glad you
-will never see him again. But," she added dolefully, "ain''''t it awful the
+"_You''ll_ be goin'' away, too, pretty soon, and I s''pose you''ll be glad you
+will never see him again. But," she added dolefully, "ain''t it awful the
 way people just meets and parts?"
 
 Dora was a long time finding that for which she was searching among the
@@ -7063,31 +7064,31 @@ with the frilly ruffle of a petticoat before she turned around.
 
 "When did he say he was going?"
 
-"He didn''''t say; but to-day or to-morrow, I should think."
+"He didn''t say; but to-day or to-morrow, I should think."
 
 "If he cared so much because I am cool to him, he certainly would have
-asked me why I treated him so. But he didn''''t care enough to ask."
+asked me why I treated him so. But he didn''t care enough to ask."
 
-Teacher''''s voice sounded queer even to herself, and she seemed intensely
+Teacher''s voice sounded queer even to herself, and she seemed intensely
 interested in buttoning her boots.
 
-"Pooh! I know why. It''''s because he thinks you like that Smith."
+"Pooh! I know why. It''s because he thinks you like that Smith."
 
 "Smith!"
 
 "Yes, Smith."
 
-The jangle of Ling''''s triangle interrupted the fascinating conversation.
+The jangle of Ling''s triangle interrupted the fascinating conversation.
 
 "How perfectly foolish!" gasped Dora.
 
 "Not to Smith," Susie replied dryly, "nor to Mr. Ralston."
 
 Susie looked at the unoccupied chairs at the table as she and Dora seated
-themselves. Ralston''''s, Tubbs''''s, Smith''''s, and McArthur''''s chairs were
+themselves. Ralston''s, Tubbs''s, Smith''s, and McArthur''s chairs were
 vacant.
 
-"Looks like you''''re losin'''' your boarders fast, Ling," she remarked.
+"Looks like you''re losin'' your boarders fast, Ling," she remarked.
 
 "Good thing," Ling answered candidly.
 
@@ -7095,18 +7096,18 @@ The Indian woman gulped her coffee, but refused the food which was passed
 to her. A strange faintness, accompanied by nausea, was creeping upon her.
 Her vision was blurred, and she saw Meeteetse Ed, at the opposite end of
 the table, as through a fog. She pushed back her chair and went into the
-living-room, swaying a little as she walked. A faint moan caught Susie''''s
+living-room, swaying a little as she walked. A faint moan caught Susie''s
 ear, and she hastened to her mother.
 
 The woman was lying on the floor by the bench where she sewed, her head
 pillowed on her rag-rug.
 
-"Mother! Why, what''''s the matter with your hand? It''''s swelled!"
+"Mother! Why, what''s the matter with your hand? It''s swelled!"
 
 "I heap sick, Susie!" she moaned. "My arm aches me."
 
 "Look!" cried Susie, who had turned back her sleeve. "Her arm is black--a
-purple black, and it''''s swellin'''' up!"
+purple black, and it''s swellin'' up!"
 
 "Oh, I heap sick!"
 
@@ -7118,7 +7119,7 @@ A paroxysm of pain seized the woman, and she writhed.
 
 "It looks exactly like a rattlesnake bite! I saw a fellow once that was
 bit in the ankle, and it swelled up and turned a color like that,"
-declared Susie in horror. "Mother, you haven''''t been foolin'''' with snakes,
+declared Susie in horror. "Mother, you haven''t been foolin'' with snakes,
 or been bit?"
 
 The woman shook her head.
@@ -7128,47 +7129,47 @@ of a sick spaniel.
 
 Dora and Susie helped her to her room, and though they tried every simple
 remedy of which they had ever heard, to reduce the rapidly swelling arm,
-all seemed equally unavailing. The woman''''s convulsions hourly became more
+all seemed equally unavailing. The woman''s convulsions hourly became more
 violent and frequent, while her arm was frightful to behold--black, as it
 was, from hand to shoulder with coagulated blood.
 
 "If only we had an idea of the cause!" cried Dora, distracted.
 
-"Mother, can''''t you imagine anything that would make your arm bad like
+"Mother, can''t you imagine anything that would make your arm bad like
 this? Try to think."
 
-But though drops of perspiration stood on the woman''''s forehead, and her
+But though drops of perspiration stood on the woman''s forehead, and her
 grip tore the pillow, she obstinately shook her head.
 
 "I be better pretty soon," was all she would say, and tried to smile at
 Susie.
 
 "If only some one would come!" Dora went to the open window often and
-listened for Ralston''''s voice or McArthur''''s--the latter having gone for his
+listened for Ralston''s voice or McArthur''s--the latter having gone for his
 mail.
 
-The strain of watching the woman''''s suffering told on both of the girls,
+The strain of watching the woman''s suffering told on both of the girls,
 and the night by her bedside seemed centuries long. Toward morning the
 paroxysms appeared to reach a climax and then to subside. They were of
 shorter duration, and the intervals between were longer.
 
-"She''''s better, I''''m sure," Dora said hopefully, but Susie shook her head.
+"She''s better, I''m sure," Dora said hopefully, but Susie shook her head.
 
-"I don''''t think so; she''''s worse. There''''s that look behind, back of her
-eyes--that dead look--can''''t you see it? And it''''s in her face, too. I don''''t
-know how to say what I mean, but it''''s there, and it makes me shiver like
+"I don''t think so; she''s worse. There''s that look behind, back of her
+eyes--that dead look--can''t you see it? And it''s in her face, too. I don''t
+know how to say what I mean, but it''s there, and it makes me shiver like
 cold." The girl looked in mingled awe and horror at the first human being
 she ever had seen die.
 
 Unable to endure the strain any longer, Dora went into the fresh air, and
-Susie dropped on her knees by the bedside and took her mother''''s limp hand
+Susie dropped on her knees by the bedside and took her mother''s limp hand
 in both of hers.
 
-"Oh, Mother," she begged pitifully, "say something. Don''''t go away without
-sayin'''' something to Susie!"
+"Oh, Mother," she begged pitifully, "say something. Don''t go away without
+sayin'' something to Susie!"
 
 With an effort of will, the woman slowly opened her dull eyes and fixed
-them upon the child''''s face.
+them upon the child''s face.
 
 "Yas," she breathed; "I _want_ to say something."
 
@@ -7186,38 +7187,38 @@ I take de money--out of de bank dat MacDonald leave us--to give to Smith.
 De hold-ups steal de money on--de road. I have de bad heart--Susie--to do
 dat. I know now."
 
-"You mustn''''t talk like that, Mother!" cried Susie, gripping her hand
-convulsively. "You thought you''''d get it again and put it back. You didn''''t
-mean to steal from me. I know all about it. And I''''ve got the money. Mr.
-Ralston found a check you had thrown away--you''''d signed your name on it in
+"You mustn''t talk like that, Mother!" cried Susie, gripping her hand
+convulsively. "You thought you''d get it again and put it back. You didn''t
+mean to steal from me. I know all about it. And I''ve got the money. Mr.
+Ralston found a check you had thrown away--you''d signed your name on it in
 the wrong place. When we saw the date, and what a lot of money it was, and
 found you had gone to town, we guessed the rest. It was easy to see Smith
 in that. So we held you up, and got it back. We knew there was no danger
 to anybody, but, of course, we felt bad to worry and frighten you."
 
-"I''''m glad," said the woman simply. She had no strength or breath or time
-to spare. "Dey''''s more. I tell you--I kill Smith--if he lie. He lie. He
+"I''m glad," said the woman simply. She had no strength or breath or time
+to spare. "Dey''s more. I tell you--I kill Smith--if he lie. He lie. He
 bull-dog white man. I make de strong medicine to kill him--and I get de
 poison in my arm when de bandage slip. Get de bottles and de knife behind
-de lookin''''-glass--I show you."
+de lookin''-glass--I show you."
 
 Susie quickly did as she was bid.
 
 "De lemon bottle is de love-charm of de Sioux. One teaspoonful--no more,
-Little Coyote''''s woman say. De other bottle is de bad medicine. Be careful.
+Little Coyote''s woman say. De other bottle is de bad medicine. Be careful.
 Smith--make fool--of me--Susie." What else she would have said ended in a
-gurgle. Her jaw dropped, and she died with her glazing eyes upon Susie''''s
+gurgle. Her jaw dropped, and she died with her glazing eyes upon Susie''s
 face.
 
-Susie pulled the gay Indian blanket gently over her mother''''s shoulders, as
+Susie pulled the gay Indian blanket gently over her mother''s shoulders, as
 if afraid she would be cold. Then she slipped a needle and some beads and
 buckskin, to complete an unfinished moccasin, underneath the blanket. Her
 mother was going on a long journey, and would want occupation. There were
-no tears in Susie''''s eyes when she replaced the bottles and the skinning
+no tears in Susie''s eyes when she replaced the bottles and the skinning
 knife with the discolored blade behind the mirror.
 
 The wan little creature seemed to have no tears to shed. She was
-unresponsive to Dora''''s broken words of sympathy, and the grub-liners''''
+unresponsive to Dora''s broken words of sympathy, and the grub-liners''
 awkward condolences--they seemed not to reach her heart at all. She heard
 them without hearing, for her mind was chaos as she moved silently from
 room to room, or huddled, a forlorn figure, on the bench where her mother
@@ -7230,7 +7231,7 @@ little cow-pony stood munching hay.
 
 In her sorrow, the dumb animal was the one thing to which she turned. He
 lifted his head when she went in, and threw his cropped ears forward,
-while his eyes grew limpid as a horse''''s eyes will at the approach of some
+while his eyes grew limpid as a horse''s eyes will at the approach of some
 one it knows well and looks to for food and affection.
 
 They had almost grown up together, and the time Susie had spent on his
@@ -7238,8 +7239,8 @@ back, or with him in the corral or stall, formerly had been half her
 waking hours. They had no fear of each other; only deep love and mutual
 understanding.
 
-"Oh, Croppy! Croppy!" her childish voice quavered. "Oh, Croppy, you''''re all
-I''''ve got left!" She slipped her arms around his thick neck and hid her
+"Oh, Croppy! Croppy!" her childish voice quavered. "Oh, Croppy, you''re all
+I''ve got left!" She slipped her arms around his thick neck and hid her
 face in his mane.
 
 He stopped eating and stood motionless while she clung to him, his ears
@@ -7247,15 +7248,15 @@ alert at the sound of the familiar voice.
 
 "What _shall_ I do!" she wailed in an abandonment of grief.
 
-In her inexperience, it seemed to Susie, that with her mother''''s death all
+In her inexperience, it seemed to Susie, that with her mother''s death all
 the world had come to an end for her. Undemonstrative as they were, and
 meagre as had been any spoken words of affection, the bond of natural love
-between them had seemed strong and unbreakable until Smith''''s coming. They
+between them had seemed strong and unbreakable until Smith''s coming. They
 had been all in all to each other in their unemotional way; and now this
 unexpected tragedy seemed to crush the child, because it was something
 which never had entered her thoughts. It was a crisis with which she did
 not know how to cope or to bear. The world could never be blacker for her
-than it was when she clung sobbing to the little sorrel pony''''s thick neck
+than it was when she clung sobbing to the little sorrel pony''s thick neck
 that morning. The future looked utterly cheerless and impossible to
 endure. She had not learned that no tragedy is so blighting that there is
 not a way out--a way which the sufferer makes himself, which comes to him,
@@ -7281,20 +7282,20 @@ Listening, he knew it came from somewhere in the stable, so he left his
 horse and went inside.
 
 It was Susie, as he had thought. She lifted her tear-stained face from the
-pony''''s mane when he spoke, and he knew that she was glad to see him.
+pony''s mane when he spoke, and he knew that she was glad to see him.
 
-"Oh, pardner, I thought you''''d _never_ come!"
+"Oh, pardner, I thought you''d _never_ come!"
 
 "The mail was late, and I stayed with the Major to wait for it. What has
 gone wrong?"
 
-"Mother''''s dead," she said. "She was poisoned accidentally."
+"Mother''s dead," she said. "She was poisoned accidentally."
 
 "Susie! And there was no one here?" The news seemed incredible.
 
 "Only Teacher and me--no one that knew what to do. We sent Meeteetse for a
-doctor, but he hasn''''t come yet. He probably got drunk and forgot what he
-went for. It''''s been a terrible night, pardner, and a terrible day!"
+doctor, but he hasn''t come yet. He probably got drunk and forgot what he
+went for. It''s been a terrible night, pardner, and a terrible day!"
 
 McArthur looked at her with troubled eyes, and once more he stroked her
 hair with his gentle, timid touch.
@@ -7304,7 +7305,7 @@ here alone on this big ranch, with only Ling and grub-liners. And to think
 of it all the rest of my life like this--with nobody that I belong to, or
 that belongs to me!"
 
-Something was recalled to McArthur with a start by Susie''''s words. He had
+Something was recalled to McArthur with a start by Susie''s words. He had
 forgotten!
 
 "Come, Susie, come with me."
@@ -7318,15 +7319,15 @@ to Susie she had to hold it slanting in the light to see the picture.
 
 She looked at McArthur with eyes wide in wonder.
 
-"Donald MacDonald, my aunt Harriet''''s brother, who went north to buy furs
-for the Hudson Bay Company!" McArthur''''s eyes were smiling through the
+"Donald MacDonald, my aunt Harriet''s brother, who went north to buy furs
+for the Hudson Bay Company!" McArthur''s eyes were smiling through the
 moisture in them.
 
-"We''''ve got one just like it!" Susie cried, still half unable to believe
+"We''ve got one just like it!" Susie cried, still half unable to believe
 her eyes and ears.
 
-"I was sure that day you mimicked your father when he said, ''''Never forget
-you are a MacDonald!'''' for I have heard my aunt say that a thousand times,
+"I was sure that day you mimicked your father when he said, ''Never forget
+you are a MacDonald!'' for I have heard my aunt say that a thousand times,
 and in just that way. But I wanted to be surer before I said anything to
 you, so I sent for this."
 
@@ -7345,94 +7346,94 @@ THE MURDERER OF WHITE ANTELOPE
 
 It was nearly dusk, and Ralston was only a few hundred yards from the Bar
 C gate, when he met Babe, highly perfumed and with his hair suspiciously
-slick, coming out. Babe''''s look of disappointment upon seeing him was not
+slick, coming out. Babe''s look of disappointment upon seeing him was not
 flattering, but Ralston ignored it in his own delight at the meeting.
 
-"What was your rush? I was just goin'''' over to see you," was Babe''''s glum
+"What was your rush? I was just goin'' over to see you," was Babe''s glum
 greeting.
 
-"And I''''m here to see you," Ralston returned, "but I forgot to perfume
+"And I''m here to see you," Ralston returned, "but I forgot to perfume
 myself and tallow my hair."
 
-"Aw-w-w," rumbled Babe, sheepishly. "What''''d you want?"
+"Aw-w-w," rumbled Babe, sheepishly. "What''d you want?"
 
-"You know what I''''m in the country for?"
+"You know what I''m in the country for?"
 
 Babe nodded.
 
-"I''''ve located my man, and he''''s going to drive off a big bunch to-night.
-There''''s two of them in fact, and I''''ll need help. Are you game for it?"
+"I''ve located my man, and he''s going to drive off a big bunch to-night.
+There''s two of them in fact, and I''ll need help. Are you game for it?"
 
 "Oh, mamma!" Babe rolled his eyes in ecstasy.
 
 "He has a horror of doing time," Ralston went on, "and if he has any show
-at all, he''''s going to put up a hard fight. I''''d like the satisfaction of
-bringing them both in, single-handed, but it isn''''t fair to the Colonel to
+at all, he''s going to put up a hard fight. I''d like the satisfaction of
+bringing them both in, single-handed, but it isn''t fair to the Colonel to
 take any chances of their getting away."
 
 "Who is it?"
 
 "Smith."
 
-"That bastard with his teeth stickin'''' out?"
+"That bastard with his teeth stickin'' out?"
 
 Ralston laughed assent.
 
-"Pickin''''s!" cried Babe, with gusto. "I''''d like to kill that feller every
-mornin'''' before breakfast. Will I go? Will I? _Will_ I?" Babe''''s crescendo
+"Pickin''s!" cried Babe, with gusto. "I''d like to kill that feller every
+mornin'' before breakfast. Will I go? Will I? _Will_ I?" Babe''s crescendo
 ended in a joyous whoop of exultation. "Wait till I ride back and tell the
-Colonel, and git my ca''''tridge belt. I take it off of an evenin'''' these
+Colonel, and git my ca''tridge belt. I take it off of an evenin'' these
 tranquil times."
 
 Ralston turned his horse and started back, so engrossed in thoughts of the
 work ahead of him that it was not until Babe overtook him that he
-remembered he had forgotten to ask Babe''''s business with him.
+remembered he had forgotten to ask Babe''s business with him.
 
-"Well, I guess the old Colonel was tickled when he heard you''''d spotted the
+"Well, I guess the old Colonel was tickled when he heard you''d spotted the
 rustlers," said Babe, as he reined in beside him. "He wanted to come
-along--did for a fact, and him nearly seventy. He''''d push the lid off his
-coffin and climb out at his own funeral if somebody''''d happen to mention
-that thieves was brandin'''' his calves."
+along--did for a fact, and him nearly seventy. He''d push the lid off his
+coffin and climb out at his own funeral if somebody''d happen to mention
+that thieves was brandin'' his calves."
 
 "You said you had started to the ranch to see me."
 
 "Oh, yes--I forgot. Your father sent word to the Colonel that he was
-sellin'''' off his cattle and goin'''' into sheep, and wanted the Colonel to
+sellin'' off his cattle and goin'' into sheep, and wanted the Colonel to
 let you know."
 
-"The poor old Governor! It''''ll about break his heart, I know; and I should
-be there. At his time of life it''''s a pretty hard and galling thing to quit
-cattle--to be forced out of the business into sheep. It''''s like bein'''' made
+"The poor old Governor! It''ll about break his heart, I know; and I should
+be there. At his time of life it''s a pretty hard and galling thing to quit
+cattle--to be forced out of the business into sheep. It''s like bein'' made
 to change your politics or religion against your will."
 
-"''''Fore I''''d wrangle woolers," declared Babe, "I''''d hold up trains or rob
-dudes or do ''''most any old thing. Say, I''''ve rid by sheep-wagons when I was
-durn near starvin'''' ruther than eat with a sheep-herder or owe one a favor.
+"''Fore I''d wrangle woolers," declared Babe, "I''d hold up trains or rob
+dudes or do ''most any old thing. Say, I''ve rid by sheep-wagons when I was
+durn near starvin'' ruther than eat with a sheep-herder or owe one a favor.
 Where do you find a man like the Colonel in sheep?" demanded Babe. "You
-don''''t find ''''em. Nothin'''' but a lot of upstart sheep-herders, that''''s got
-rich in five years and don''''t know how to act."
+don''t find ''em. Nothin'' but a lot of upstart sheep-herders, that''s got
+rich in five years and don''t know how to act."
 
-"Oh, you''''re prejudiced, Babe. Not all sheepmen are muckers any more than
+"Oh, you''re prejudiced, Babe. Not all sheepmen are muckers any more than
 all cattlemen are gentlemen."
 
-"I''''m not prejudiced a-_tall_!" declared Babe excitedly. "I''''m perfectly
-fair and square. Woolers is demoralizin''''. Associate with woolers, and it
-takes the spirit out of a feller quicker''''n cookin.'''' In five years you
-won''''t be half the man you are now if you go into sheep. I''''ll sure hate to
-see it!" His voice was all but pathetic as he contemplated Ralston''''s
+"I''m not prejudiced a-_tall_!" declared Babe excitedly. "I''m perfectly
+fair and square. Woolers is demoralizin''. Associate with woolers, and it
+takes the spirit out of a feller quicker''n cookin.'' In five years you
+won''t be half the man you are now if you go into sheep. I''ll sure hate to
+see it!" His voice was all but pathetic as he contemplated Ralston''s
 downfall.
 
 "I think you will, though, Babe, if I get out of this with a whole hide."
 
-"You''''ll be so well fixed you can git married then?" There was some
-constraint in Babe''''s tone, which he meant to be casual.
+"You''ll be so well fixed you can git married then?" There was some
+constraint in Babe''s tone, which he meant to be casual.
 
-Ralston''''s heart gave him a twinge of pain.
+Ralston''s heart gave him a twinge of pain.
 
-"I s''''pose you''''ve had every chance to git acquainted with the Schoolmarm,"
+"I s''pose you''ve had every chance to git acquainted with the Schoolmarm,"
 he observed, since Ralston did not reply.
 
-"She doesn''''t like me, Babe."
+"She doesn''t like me, Babe."
 
 "_What_!" yelled Babe, screwing up his face in a grimace of surprise and
 unbelief.
@@ -7442,15 +7443,15 @@ friendly to any one else than to me."
 
 "Say, she must be loony not to like you!"
 
-Ralston could not help laughing outright at Babe''''s vigorous loyalty.
+Ralston could not help laughing outright at Babe''s vigorous loyalty.
 
-"It''''s not necessarily a sign of insanity to dislike me."
+"It''s not necessarily a sign of insanity to dislike me."
 
-"She doesn''''t go that far, does she?" demanded Babe.
+"She doesn''t go that far, does she?" demanded Babe.
 
 "Sometimes I think so."
 
-"You don''''t care a-tall, do you?"
+"You don''t care a-tall, do you?"
 
 "Yes," Ralston replied quietly; "I care a great deal. It hurts me more
 than I ever was hurt before; because, you see, Babe, I never loved a woman
@@ -7479,26 +7480,26 @@ terror.
 "Gee! I wisht I was out of this onct!" burst from him when the howl of a
 wolf set his nerves jangling.
 
-"What''''d you say?" Smith stopped in the middle of a song he was singing.
+"What''d you say?" Smith stopped in the middle of a song he was singing.
 
-"I said I wisht I was down where the monkeys are throwin'''' nuts! I''''m
+"I said I wisht I was down where the monkeys are throwin'' nuts! I''m
 chilly," declared Tubbs.
 
-"Chilly? It''''s hot!"
+"Chilly? It''s hot!"
 
 Smith was light-hearted, sanguine. He told himself that perhaps it was as
-well, after all, that the hold-ups had got off with the "old woman''''s"
+well, after all, that the hold-ups had got off with the "old woman''s"
 money. She might have made trouble when she found that he meant to go or
 had gone with Dora.
 
-"You can''''t tell about women," Smith said to himself. "They''''re like ducks:
+"You can''t tell about women," Smith said to himself. "They''re like ducks:
 no two fly alike."
 
 He felt secure, yet from force of habit his hand frequently sought his
 cartridge-belt, his rifle in its scabbard, his six-shooter in the holster
 under his arm. And while he serenely hummed the songs of the dance-halls
 and round-up camps, two silent figures, so close that they heard the
-clacking of the cattle''''s split hoofs, Tubbs''''s vacuous oaths, Smith''''s
+clacking of the cattle''s split hoofs, Tubbs''s vacuous oaths, Smith''s
 contented voice, were following with the business-like persistency of the
 law.
 
@@ -7506,41 +7507,41 @@ The four mounted men rode all night, speaking seldom, each thinking his
 own thoughts, dreaming his own dreams. Not until the faintest light grayed
 the east did the pursuers fall behind.
 
-"We''''re not more''''n a mile to water now"--Smith had made sure of his country
-this time--"and we''''ll hold the cattle in the brush and take turns
-watchin''''."
+"We''re not more''n a mile to water now"--Smith had made sure of his country
+this time--"and we''ll hold the cattle in the brush and take turns
+watchin''."
 
-"It''''s a go with me," answered Tubbs, yawning until his jaws cracked. "I''''m
+"It''s a go with me," answered Tubbs, yawning until his jaws cracked. "I''m
 asleep now."
 
 Ralston and Babe knew that Smith would camp for several hours in the
 creek-bottom, so they dropped into a gulch and waited.
 
-"They''''ll picket their horses first, then one of them will keep watch while
+"They''ll picket their horses first, then one of them will keep watch while
 the other sleeps. Very likely Tubbs will be the first guard, and, unless
-I''''m mistaken, Tubbs will be dead to the world in fifteen minutes--though,
-maybe, he''''s too scared to sleep." Ralston''''s surmise proved to be correct
+I''m mistaken, Tubbs will be dead to the world in fifteen minutes--though,
+maybe, he''s too scared to sleep." Ralston''s surmise proved to be correct
 in every particular.
 
 After they had picketed their horses, Smith told Tubbs to keep watch for a
 couple of hours, while he slept.
 
-"Couldn''''t we jest switch that programme around?" inquired Tubbs
-plaintively. "I can''''t hardly keep my eyes open."
+"Couldn''t we jest switch that programme around?" inquired Tubbs
+plaintively. "I can''t hardly keep my eyes open."
 
 "Do as I tell you," Smith returned sharply.
 
-Tubbs eyed him with envy as he spread down his own and Tubbs''''s
+Tubbs eyed him with envy as he spread down his own and Tubbs''s
 saddle-blankets.
 
-"I ain''''t what you''''d call ''''crazy with the heat.''''" Tubbs shivered. "Couldn''''t
+"I ain''t what you''d call ''crazy with the heat.''" Tubbs shivered. "Couldn''t
 I crawl under one of them blankets with you?"
 
-"You bet you can''''t. I''''d jest as lief sleep with a bull-snake as a man,"
+"You bet you can''t. I''d jest as lief sleep with a bull-snake as a man,"
 snorted Smith in disgust, and, pulling the blankets about his ears, was
 lost in oblivion.
 
-"I kin look back upon times when I''''ve enj''''yed myself more," muttered Tubbs
+"I kin look back upon times when I''ve enj''yed myself more," muttered Tubbs
 disconsolately, as he paced to and fro, or at intervals climbed wearily
 out of the creek-bottom to look and listen.
 
@@ -7550,8 +7551,8 @@ and for the guard to grow sleepy and careless. With little more emotion
 than hunters waiting in a blind for the birds to go over, the two men
 examined their rifles and six-shooters. They talked in undertones,
 laughing a little at some droll observation or reminiscence. Only by a
-sparkle of deviltry in Babe''''s blue eyes, and an added gravity of
-expression upon Ralston''''s face, at moments, would the closest observer
+sparkle of deviltry in Babe''s blue eyes, and an added gravity of
+expression upon Ralston''s face, at moments, would the closest observer
 have known that anything unusual was about to take place. Yet each
 realized to the fullest extent the possible dangers ahead of them. Smith,
 they knew to be resourceful, he would be desperate, and Tubbs, ignorant
@@ -7572,7 +7573,7 @@ for what, as each well knew, might be their last sunrise.
 Ralston finally crawled to the top of the cut-bank and looked cautiously
 about.
 
-"It''''s time," he said briefly.
+"It''s time," he said briefly.
 
 "_Bueno_." Babe gave an extra twitch to the silk handkerchief knotted
 about his neck, which, with him, signified a readiness for action.
@@ -7582,16 +7583,16 @@ He joined Ralston at the top of the cut-bank.
 "Not a sign!" he whispered. "Looks like you and me owned the world,
 Dick."
 
-"We''''ll lead the horses a little closer, in case we need them quick. Then,
-we''''ll keep that bunch of brush between us and them, till we get close
-enough. You take Tubbs, and I''''ll cover Smith--I want that satisfaction,"
+"We''ll lead the horses a little closer, in case we need them quick. Then,
+we''ll keep that bunch of brush between us and them, till we get close
+enough. You take Tubbs, and I''ll cover Smith--I want that satisfaction,"
 he added grimly.
 
-It was a typical desert morning, redolent with sage, which the night''''s dew
+It was a typical desert morning, redolent with sage, which the night''s dew
 brought out strongly. The pink light changing rapidly to crimson was
 seeking out the draws and coulees where the purple shadows of night still
 lay. The only sound was the cry of the mourning doves, answering each
-other''''s plaintive calls. And across the panorama of yellow sand, green
+other''s plaintive calls. And across the panorama of yellow sand, green
 sage-brush, burning cactus flowers, distant peaks of purple, all bathed
 alike in the gorgeous crimson light of morning, two dark figures crept
 with the stealthiness of Indians.
@@ -7601,8 +7602,8 @@ and see the cattle moving in the brush below; then a horse on picket
 snorted, and as they slid quietly down the bank they heard a sound which
 made Babe snicker.
 
-"Is that a cow chokin'''' to death," he whispered, "or one of them cherubs
-merely sleepin''''?"
+"Is that a cow chokin'' to death," he whispered, "or one of them cherubs
+merely sleepin''?"
 
 In sight of the prone figures, they halted.
 
@@ -7612,10 +7613,10 @@ fallen over on the ground with his knees drawn to his chin. His mouth,
 from which frightful sounds of strangulation were issuing, was wide open,
 and he showed a little of the whites of his eyes as he slumbered.
 
-"Ain''''t he a dream?" breathed Babe in Ralston''''s ear. "How I''''d like a
+"Ain''t he a dream?" breathed Babe in Ralston''s ear. "How I''d like a
 picture of that face to keep in the back of my watch!"
 
-Smith''''s rifle was under the edge of his blanket, and his six-shooter in
+Smith''s rifle was under the edge of his blanket, and his six-shooter in
 its holster lay by his head; but Tubbs, with the carelessness of a green
 hand and the over-confidence which had succeeded his nervousness, had
 leaned his rifle against a tree and laid his six-shooter and
@@ -7627,18 +7628,18 @@ viewed the prostrate forms along the barrels.
 "Put up your hands, men!"
 
 The quick command, sharp, stern, penetrated the senses of the men inert in
-heavy sleep. Instantly Smith''''s hand was upon his gun. He had reached for
+heavy sleep. Instantly Smith''s hand was upon his gun. He had reached for
 it instinctively even before he sat up.
 
-"Drop it!" There was no mistaking the intention expressed in Ralston''''s
-voice, and the gun fell from Smith''''s hand.
+"Drop it!" There was no mistaking the intention expressed in Ralston''s
+voice, and the gun fell from Smith''s hand.
 
-The red of Smith''''s skin changed to a curious yellow, not unlike the yellow
+The red of Smith''s skin changed to a curious yellow, not unlike the yellow
 of the slicker rolled on the back of his saddle. Panic-stricken for the
 moment, he grinned, almost foolishly; then his hands shot above his head.
 
 A line of sunlight dropped into the creek-bottom, and a ray was caught by
-the deputy''''s badge which shone on Ralston''''s breast. The glitter of it
+the deputy''s badge which shone on Ralston''s breast. The glitter of it
 seemed to fascinate Smith.
 
 "You"--he drawled a vile name. "I orter have known!"
@@ -7648,7 +7649,7 @@ that he had been advised to put up his hands, and that a stranger had
 drawn an uncommonly fine bead on the head which he was in honor bound to
 preserve from mutilation, Tubbs blinked at Babe and inquired peevishly:
 
-"What''''s the matter with you?" He had forgotten that he was a thief.
+"What''s the matter with you?" He had forgotten that he was a thief.
 
 "Shove up your hands!" yelled Babe.
 
@@ -7659,15 +7660,15 @@ again upon seeing Ralston.
 
 "Put them hands back!" Babe waved his rifle-barrel significantly.
 
-"What''''s the matter with you, feller?" inquired Tubbs crossly. Though he
-now recollected the circumstances under which they were found, Ralston''''s
+"What''s the matter with you, feller?" inquired Tubbs crossly. Though he
+now recollected the circumstances under which they were found, Ralston''s
 presence robbed the situation of any seriousness for him. It did not occur
 to Tubbs that any one who knew him could possibly do him harm.
 
 "Keep your hands up, Tubbs," said Ralston curtly, "and, Babe, take the
 guns."
 
-"What for a josh is this anyhow?"--in an aggrieved tone. "Ain''''t we all
+"What for a josh is this anyhow?"--in an aggrieved tone. "Ain''t we all
 friends?"
 
 "Shut up, you idjot!" snapped Smith irritably. His glance was full of
@@ -7681,23 +7682,23 @@ head that they lifted him to tiptoe, and they shook as with palsy.
 
 "Stack the guns and get our horses, Babe," said Ralston.
 
-"Mine''''s hard for a stranger to ketch," said Smith surlily. "I''''ll get him,
-for I don''''t aim to walk."
+"Mine''s hard for a stranger to ketch," said Smith surlily. "I''ll get him,
+for I don''t aim to walk."
 
-"All right; but don''''t make any break, Smith," Ralston warned.
+"All right; but don''t make any break, Smith," Ralston warned.
 
-"I''''m not a fool," Smith answered gruffly.
+"I''m not a fool," Smith answered gruffly.
 
-Ralston''''s face relaxed as Smith sauntered toward his horse. He was glad
-that they had been taken without bloodshed, and, now the prisoners'''' guns
+Ralston''s face relaxed as Smith sauntered toward his horse. He was glad
+that they had been taken without bloodshed, and, now the prisoners'' guns
 had been removed, that possibility was passed.
 
-Smith''''s horse was a newly broken bronco, and he was a wild beggar, as
+Smith''s horse was a newly broken bronco, and he was a wild beggar, as
 Smith had said; but he talked to him reassuringly as the horse jumped to
 the end of his picket-rope and stood snorting and trembling in fright, and
 finally laid his hand upon his neck and back. The fingers of one hand were
-entwined in the horse''''s mane, and suddenly, with a cat-like spring made
-possible only by his desperation, Smith landed on the bronco''''s back. With
+entwined in the horse''s mane, and suddenly, with a cat-like spring made
+possible only by his desperation, Smith landed on the bronco''s back. With
 a yell of defiance which Ralston and Babe remembered for many a day, he
 kicked the animal in the ribs, and, as it reared in fright, it pulled
 loose from the picket-stake. Smith reached for the trailing rope, and they
@@ -7716,7 +7717,7 @@ less than thirty seconds behind Smith.
 
 Babe knew that he must secure Tubbs before he joined in the pursuit, and
 he was pulling the rawhide riata from his saddle when Tubbs, inspired by
-Smith''''s example and imbued with the hysterical courage which sometimes
+Smith''s example and imbued with the hysterical courage which sometimes
 comes to men of his type in desperate straits, made a dash for his rifle,
 and reached it. He threw it to his shoulder, but, quick as he was, Babe
 was quicker.
@@ -7731,7 +7732,7 @@ blankets, and, even as he dropped, Babe was in the saddle and away.
 It was a desperate race that was on, between desperate men; for if Smith
 was desperate, Ralston was not less so. Every fibre of his being was
 concentrated in the determination to recapture the man who had twice
-outwitted him. The deputy sheriff''''s reputation was at stake; his pride and
+outwitted him. The deputy sheriff''s reputation was at stake; his pride and
 self-respect as well; and the blood-thirst was rising in him with each
 jump of his horse. Every other emotion paled, every other interest faded,
 beside the intensity of his desire to stop the man ahead of him.
@@ -7742,7 +7743,7 @@ could see it, and he was riding the little brown mare whose swiftness
 Smith had reason to remember.
 
 But he had the start, his bronco was young, its wind of the best, and it
-might have speed. The country was rough, Ralston''''s horse might fall with
+might have speed. The country was rough, Ralston''s horse might fall with
 him. So long as Smith was at liberty there was a fighting chance, and as
 always, he took it.
 
@@ -7753,15 +7754,15 @@ jack-rabbit, followed its lead.
 The race was like a steeple-chase, with boulders and brush and fallen logs
 to be hurdled, and gullies and washouts to complicate the course. And at
 every outward curve the _pin-n-gg!_ of a bullet told Smith of his
-pursuer''''s nearness. Lying flat on the barebacked horse, he hung well to
+pursuer''s nearness. Lying flat on the barebacked horse, he hung well to
 the side until he was again out of sight. The lead plowed up the dirt
 ahead of him and behind him, and flattened itself against rocks; and at
 each futile shot Smith looked over his shoulder and grinned in derision,
 though his skin had still the curious yellowness of fear.
 
 The race was lasting longer than Smith had dared hope. It began to look as
-if it were to narrow to a test of endurance, for although Ralston''''s shots
-missed by only a hair''''s breadth at times, still, they missed. If Smith
+if it were to narrow to a test of endurance, for although Ralston''s shots
+missed by only a hair''s breadth at times, still, they missed. If Smith
 ever had prayed, he would have prayed then; but he had neither words nor
 faith, so he only hoped and rode.
 
@@ -7770,36 +7771,36 @@ was unexpected to himself. A wave of exultation which seemed to come from
 without swept over him. He touched the mare with the spur, and she skimmed
 the rocks as if his weight on her back were nothing. It was smoother, and
 he was close enough now to use his best weapon. He thrust the empty rifle
-into its scabbard, and shot at Smith''''s horse with his six-shooter. It
+into its scabbard, and shot at Smith''s horse with his six-shooter. It
 stumbled; then its knees doubled under it, and Smith turned in the air.
 The game was up; Smith was afoot.
 
 He picked up his hat and dusted his coat-sleeve while he waited, and his
 face was yellow and evil.
 
-"That was a dum good horse," was Babe''''s single comment as he rode up.
+"That was a dum good horse," was Babe''s single comment as he rode up.
 
 "Get back to camp!" said Ralston peremptorily, and Smith, in his
 high-heeled, narrow-soled boots, stumbled ahead of them without a word.
 
-He looked at Tubbs''''s body without surprise. Sullen and surly, he felt no
+He looked at Tubbs''s body without surprise. Sullen and surly, he felt no
 regret that Tubbs, braggart and fool though he was, was dead. Smith had no
 conscience to remind him that he himself was responsible.
 
-Babe shook out Smith''''s blue army blanket and rolled Tubbs in it. Smith had
+Babe shook out Smith''s blue army blanket and rolled Tubbs in it. Smith had
 bought it from a drunken soldier, and he had owned it a long time. It was
-light and almost water-proof; he liked it, and he eyed Babe''''s action with
+light and almost water-proof; he liked it, and he eyed Babe''s action with
 disfavor.
 
 "I reckon this gent will have to spend the day in a tree," said Babe
 prosaically.
 
-"Couldn''''t you use no other blanket nor that?" demanded Smith.
+"Couldn''t you use no other blanket nor that?" demanded Smith.
 
 It was the first time he had spoken.
 
-"Don''''t take on so," Babe replied comfortingly. "They furnish blankets
-where you''''re goin''''."
+"Don''t take on so," Babe replied comfortingly. "They furnish blankets
+where you''re goin''."
 
 He went on with his work of throwing a hitch around Tubbs with his
 picket-rope.
@@ -7808,19 +7809,19 @@ Ralston divided the scanty rations which Smith and Tubbs, and he and Babe,
 had brought with them. He made coffee, and handed a cup to Smith first.
 The latter arose and changed his seat.
 
-"I never could eat with a corp'''' settin'''' around," he said disagreeably.
+"I never could eat with a corp'' settin'' around," he said disagreeably.
 
-Smith''''s fastidiousness made Babe''''s jaw drop, and a piece of biscuit which
+Smith''s fastidiousness made Babe''s jaw drop, and a piece of biscuit which
 had made his cheek bulge inadvertently rolled out, but was skillfully
 intercepted before it reached the ground.
 
-"I hope you''''ll excuse us, Mr. Smith," said Babe, bowing as well as he
-could sitting cross-legged on the ground. "I hope you''''ll overlook our
-forgittin'''' the napkins and toothpicks."
+"I hope you''ll excuse us, Mr. Smith," said Babe, bowing as well as he
+could sitting cross-legged on the ground. "I hope you''ll overlook our
+forgittin'' the napkins and toothpicks."
 
-When they had finished, they slung Tubbs''''s body into a tree, beyond the
+When they had finished, they slung Tubbs''s body into a tree, beyond the
 reach of coyotes. The cattle they left to drift back to their range.
-Tubbs''''s horse was saddled for Smith, and, with Ralston holding the lead
+Tubbs''s horse was saddled for Smith, and, with Ralston holding the lead
 rope and Babe in the rear, the procession started back to the ranch.
 
 Smith had much time to think on the homeward ride. He based his hopes upon
@@ -7841,37 +7842,37 @@ put him under guard in the bunk-house.
 Susie, McArthur, and Dora were at the door of the ranch-house, and Susie
 stepped out and stopped them when they would have passed.
 
-"You can''''t take him there; that place is for our _friends_. There''''s the
-harness-house below. The dogs sleep there. There''''ll be room for one
+"You can''t take him there; that place is for our _friends_. There''s the
+harness-house below. The dogs sleep there. There''ll be room for one
 more."
 
 The insult stung Smith to the quick.
 
-"What _you_ got to say about it? Where''''s your mother?"
+"What _you_ got to say about it? Where''s your mother?"
 
 With narrowed eyes she looked for a moment into his ugly visage, then she
 laid her hand upon the rope and led his horse close to the open window of
 the bedroom.
 
 "There," and she pointed to the still figure on its improvised bier.
-"There''''s my mother!"
+"There''s my mother!"
 
 Smith looked in silence, and once more showed by his yellowing skin the
 fear within him. The avenue of escape upon which he had counted almost
 with certainty, was closed to him. At that moment the harsh, high walls of
 the penitentiary loomed close; the doors looked wide open to receive him;
-but, after an instant''''s hesitation, he only shrugged his shoulders and
+but, after an instant''s hesitation, he only shrugged his shoulders and
 said:
 
 "Hell! I sleeps good anywhere."
 
-In deference to Susie''''s wishes, Ralston and Babe had swung their horses to
+In deference to Susie''s wishes, Ralston and Babe had swung their horses to
 go back down the path when Smith turned in his saddle and looked at Dora.
 She was regarding him sorrowfully, her eyes misty with disappointment in
 him; and Smith misunderstood. A rush of feeling swept over him, and he
 burst out impulsively:
 
-"Don''''t go back on me! I done it for you, girl! I done it to make _our
+"Don''t go back on me! I done it for you, girl! I done it to make _our
 stake_!"
 
 Dora stood speechless, bewildered, confused under the astonished eyes upon
@@ -7884,7 +7885,7 @@ harness-house a bit for his occupancy.
 
 "Throw down some straw and rustle up a blanket or two," said Babe; and
 McArthur pulled his saddle-blankets apart to contribute the cleanest
-toward Smith''''s bed.
+toward Smith''s bed.
 
 Something in the alacrity the "bug-hunter" displayed angered Smith. He
 always had despised the little man in a general way. He uncinched his
@@ -7897,16 +7898,16 @@ swift, characteristic transitions of mood, Smith turned to the Indians who
 guarded him.
 
 "You never could find out who killed White Antelope--you smart-Alec
-Injuns!" he sneered contemptuously. "And you''''ve always wanted to know,
-haven''''t you?" He eyed them one by one. "Why, you don''''t know straight up,
-you women warriors! I''''ve a notion to tell you who killed White
+Injuns!" he sneered contemptuously. "And you''ve always wanted to know,
+haven''t you?" He eyed them one by one. "Why, you don''t know straight up,
+you women warriors! I''ve a notion to tell you who killed White
 Antelope--just for fun--just because I want to laugh, me--Smith!"
 
 The Indians drew closer.
 
-"You think you''''re scouts," he went on tauntingly, "and you never saw White
-Antelope''''s blanket right under your nose! Put it back, feller"--he nodded
-at McArthur. "I don''''t aim to sleep on dead men''''s clothes!"
+"You think you''re scouts," he went on tauntingly, "and you never saw White
+Antelope''s blanket right under your nose! Put it back, feller"--he nodded
+at McArthur. "I don''t aim to sleep on dead men''s clothes!"
 
 The Indians looked at the blanket, and at McArthur, whom they had grown to
 like and trust. They recognized it now, and in the corner they saw the
@@ -7918,16 +7919,16 @@ always had attended to such things.
 
 No one spoke in the grave silence, and Smith leered.
 
-"I likes company," he said. "I''''m sociable inclined. Put him in the
+"I likes company," he said. "I''m sociable inclined. Put him in the
 dog-house with me."
 
 Susie had listened with the Indians; she had looked at the blanket, the
-stain, the holes; she saw the blank consternation in McArthur''''s face, the
-gathering storm in the Indians'''' eyes. She stepped out a little from the
+stain, the holes; she saw the blank consternation in McArthur''s face, the
+gathering storm in the Indians'' eyes. She stepped out a little from the
 rest.
 
 "Mister _Smith_!" she said. "_Mister_ Smith"--with oily, sarcastic
-emphasis--"how did you know that was White Antelope''''s blanket, when you
+emphasis--"how did you know that was White Antelope''s blanket, when you
 never _saw_ White Antelope?"
 
 
@@ -7940,12 +7941,12 @@ A MONGOLIAN CUPID
 
 With his hands thrust deep in his trousers pockets, Ralston leaned against
 the corner of the bunk-house, from which point of vantage he could catch a
-glimpse of the Schoolmarm''''s white-curtained window. He now had no feeling
-of elation over his success. Smith was a victorious captive. Ralston''''s
+glimpse of the Schoolmarm''s white-curtained window. He now had no feeling
+of elation over his success. Smith was a victorious captive. Ralston''s
 heart ached miserably, and he wished that the day was ended and the
 morning come, that he might go, never to return.
 
-He too had seen the mist in Dora''''s eyes; and, with Smith''''s words, the
+He too had seen the mist in Dora''s eyes; and, with Smith''s words, the
 air-castles which had persistently built themselves without volition on
 his part, crumbled. There was nothing for him to do but to efface himself
 as quickly and as completely as possible. The sight of him could only be
@@ -7975,12 +7976,12 @@ dreadful!"
 
 She covered her burning face with her hands.
 
-"There isn''''t the slightest doubt," she went on, "but that he thinks I knew
+"There isn''t the slightest doubt," she went on, "but that he thinks I knew
 all about it. Perhaps"--she paused in front of the mirror and stared into
 her own horrified eyes--"perhaps he thinks I belong to a gang of robbers!
-Maybe he thinks I am Smith''''s tool, or that Smith is my tool, or something
-like that! Oh, whatever made him say such a thing! ''''Our stake--_our_
-stake''''--and--''''I done it for you!''''"
+Maybe he thinks I am Smith''s tool, or that Smith is my tool, or something
+like that! Oh, whatever made him say such a thing! ''Our stake--_our_
+stake''--and--''I done it for you!''"
 
 Another thought, still more terrifying occurred to her excited mind:
 
@@ -7989,15 +7990,15 @@ Another thought, still more terrifying occurred to her excited mind:
 She sat down weakly on the edge of the bed.
 
 "Oh," and she rocked to and fro in misery, "if only I never had tried to
-improve Smith''''s mind!"
+improve Smith''s mind!"
 
-The tears slipped from under the Schoolmarm''''s lashes, and her chin
+The tears slipped from under the Schoolmarm''s lashes, and her chin
 quivered.
 
-Worn out by the all night''''s vigil at her mother''''s bedside, and the
+Worn out by the all night''s vigil at her mother''s bedside, and the
 exciting events of the morning, Susie finally succumbed to the strain and
 slept the sleep of exhaustion. It was almost supper-time when she
-awakened. Passing the Schoolmarm''''s door, she heard a sound at which she
+awakened. Passing the Schoolmarm''s door, she heard a sound at which she
 stopped and frankly listened. Teacher was crying!
 
 "Ling, this is an awful world. Everything seems to be upside down and
@@ -8006,16 +8007,16 @@ inside out!"
 "Plenty tlouble," agreed Ling, stepping briskly about as he collected
 ingredients for his biscuits.
 
-"Don''''t seem to make much difference whether you love people or hate ''''em;
+"Don''t seem to make much difference whether you love people or hate ''em;
 it all ends the same way--in tears."
 
 "Plitty bad thing--love." Ling solemnly measured baking-powder. "Make
 people cly."
 
-Susie surmised correctly that Ling''''s ears also had been close to a nearby
+Susie surmised correctly that Ling''s ears also had been close to a nearby
 keyhole.
 
-"There''''d ''''a'''' been fewer tears on this ranch if it hadn''''t been for Smith."
+"There''d ''a'' been fewer tears on this ranch if it hadn''t been for Smith."
 
 "Many devils--Smith."
 
@@ -8027,11 +8028,11 @@ biscuits were slammed in the oven.
 
 Ling wagged his head dolorously.
 
-"And they''''ll never see each other again."
+"And they''ll never see each other again."
 
 His head continued to wag.
 
-"Ling," Susie whispered, "we''''ve got to _do_ something." She stepped
+"Ling," Susie whispered, "we''ve got to _do_ something." She stepped
 lightly to the open door and closed it.
 
                    *       *       *       *       *
@@ -8048,24 +8049,24 @@ her. Even Meeteetse Ed shared in the general depression, and therefore it
 was in no spirit of flippancy that he observed as he replaced his cup
 violently in its saucer:
 
-"Gosh A''''mighty, Ling, you must have biled a gum-boot in this here tea!"
+"Gosh A''mighty, Ling, you must have biled a gum-boot in this here tea!"
 
 Dora, who had drank nearly half of hers, was unable to account for the
 peculiar tang which destroyed its flavor, and Ralston eyed the contents of
 his cup doubtfully after each swallow.
 
-"Like as not the water''''s gittin'''' alkali," ventured Old Man Rulison.
+"Like as not the water''s gittin'' alkali," ventured Old Man Rulison.
 
-"Alkali nothin''''. That''''s gum-boot, or else a plug of Battle Ax fell in."
+"Alkali nothin''. That''s gum-boot, or else a plug of Battle Ax fell in."
 
-Ling bore Meeteetse''''s criticisms with surprising equanimity.
+Ling bore Meeteetse''s criticisms with surprising equanimity.
 
 A moment later the lights blurred for Dora.
 
 "I--I feel faint," she whispered, striving to rise.
 
 Ralston, who had already noted her increasing pallor, hastened around the
-table and helped her into the air. Ling''''s immobile face was a study as he
+table and helped her into the air. Ling''s immobile face was a study as he
 saw them leave the room together, but satisfaction was the most marked of
 its many expressions. He watched them from the pantry window as they
 walked to the cottonwood log which served as a garden-seat for all.
@@ -8091,16 +8092,16 @@ that our friendship might end differently.
 good-night--and good-by." He arose and put out his hand. "Shall I send
 Susie to you?"
 
-The lump in Dora''''s throat hurt her.
+The lump in Dora''s throat hurt her.
 
 "Wait a minute," she whispered in a strained voice. "I want to say
-something, too, before you go. I don''''t want you to go away thinking that I
-knew anything of Smith''''s plans; that I knew he was going to steal cattle;
-that he was trying to make a ''''stake'''' for us--for _me_. It is all a
+something, too, before you go. I don''t want you to go away thinking that I
+knew anything of Smith''s plans; that I knew he was going to steal cattle;
+that he was trying to make a ''stake'' for us--for _me_. It is all a
 misunderstanding."
 
 Dora was looking straight ahead of her, and did not see the change which
-came over Ralston''''s face.
+came over Ralston''s face.
 
 "I never thought of Smith in any way except to help him," she went on. "He
 seemed different from most that stopped here, and I thought if I could
@@ -8110,16 +8111,16 @@ intentions were wasted. He deceived me in making me think that he too
 wanted to make more of his life, and that he was trying. And then to make
 such a speech before you all!"
 
-"Don''''t think about it--or Smith," Ralston answered. "He has come to his
-inevitable end. When there''''s bad blood, mistaken ideals, and wrong
-standards of living, you can''''t do much--you can''''t do anything. There is
+"Don''t think about it--or Smith," Ralston answered. "He has come to his
+inevitable end. When there''s bad blood, mistaken ideals, and wrong
+standards of living, you can''t do much--you can''t do anything. There is
 only one thing which controls men of his type, and that is fear--fear of
 the law. His love for you is undoubtedly the best, the whitest, thing that
-ever came into his life, but it couldn''''t keep him straight, and never
-would. Don''''t worry. Your efforts haven''''t hurt him, or you. You are wiser,
+ever came into his life, but it couldn''t keep him straight, and never
+would. Don''t worry. Your efforts haven''t hurt him, or you. You are wiser,
 and maybe he is better."
 
-"It''''s awfully good of you to comfort me," said Dora gratefully.
+"It''s awfully good of you to comfort me," said Dora gratefully.
 
 "Good of me?" he laughed softly. "Little Schoolmarm"--he laid a hand upon
 each shoulder and looked into her eyes--"I love you."
@@ -8148,7 +8149,7 @@ all offers to relieve her.
 
 She was glad to see McArthur when he tapped on the door.
 
-"I thought you''''d like to read the letter that came with the picture," he
+"I thought you''d like to read the letter that came with the picture," he
 said, as he pulled up a chair beside her. "I want you to know how welcome
 you will be."
 
@@ -8157,32 +8158,32 @@ primness a little tremulous from the excitement of the writer at the time
 she had penned it. Susie read it carefully, and when she had finished she
 looked up at him with softened, grateful eyes.
 
-"Isn''''t she good!"
+"Isn''t she good!"
 
 "The kindest of gentlewomen--your Aunt Harriet."
 
 "My Aunt Harriet!" Susie said it to herself rapturously.
 
-"She hasn''''t much in her life now--_she''''s_ lonely, too--and if you can be
+"She hasn''t much in her life now--_she''s_ lonely, too--and if you can be
 spoiled, Susie, you soon will be well on the way--between Aunt Harriet and
 me." He stroked her hair fondly.
 
-"And I''''m to go to school back there and live with her. I can''''t believe it
+"And I''m to go to school back there and live with her. I can''t believe it
 yet!" Susie declared. "So much has happened in the last twenty-four hours
-that I don''''t know what to think about first. More things have happened in
+that I don''t know what to think about first. More things have happened in
 this little time than in all my life put together."
 
-"That''''s the way life seems to be," McArthur said musingly--"a few hours at
+"That''s the way life seems to be," McArthur said musingly--"a few hours at
 a tension, and long, dull stretches in between."
 
 "Does she know--does Aunt Harriet know--how _green_ I am?"
 
 McArthur laughed at her anxiety.
 
-"I am sure," he replied reassuringly, "that she isn''''t expecting a young
+"I am sure," he replied reassuringly, "that she isn''t expecting a young
 lady of fashion."
 
-"Oh, I''''ve got clothes," said Susie. "Mother made me a dress that will be
+"Oh, I''ve got clothes," said Susie. "Mother made me a dress that will be
 just the thing to wear in that--what do you call it?--train. She made it
 out of two shawls that she bought at the Agency."
 
@@ -8191,11 +8192,11 @@ which Susie took from a nail behind the door.
 
 "The colors seem a little--a little----"
 
-"If that black was yellow, it _would_ look better," Susie admitted. "I''''ve
+"If that black was yellow, it _would_ look better," Susie admitted. "I''ve
 got a new Stetson, too."
 
 "It will take some little time to arrange your affairs out here, and in
-the meantime I''''ll write Aunt Harriet to choose a wardrobe for you and send
+the meantime I''ll write Aunt Harriet to choose a wardrobe for you and send
 it. It will give her the greatest pleasure."
 
 "Can I take Croppy and Daisy May?"
@@ -8204,28 +8205,28 @@ it. It will give her the greatest pleasure."
 
 "The pet badger," she explained. "I named her after a Schoolmarm we
 had--she looks so solemn and important. I can keep her on a chain, and she
-needn''''t eat until we get there," Susie pleaded.
+needn''t eat until we get there," Susie pleaded.
 
 Trying not to smile at the mental picture of himself arriving in the staid
 college town, with a tawny-skinned child in a red, green, and black frock,
 a crop-eared cayuse, and a badger on a chain, McArthur ventured it as his
-opinion that the climate would be detrimental to Daisy May''''s health.
+opinion that the climate would be detrimental to Daisy May''s health.
 
 "You undoubtedly will prefer to spend your summers here, and it will be
 pleasant to have Croppy and Daisy May home to welcome you."
 
-Susie''''s face sobered.
+Susie''s face sobered.
 
-"Oh, yes, I must come back when school is over. I wouldn''''t feel it was
+"Oh, yes, I must come back when school is over. I wouldn''t feel it was
 right to go away for always and leave Dad and Mother here. Besides, I
-guess I''''d _want_ to come back; because, after all, you know, I''''m half
+guess I''d _want_ to come back; because, after all, you know, I''m half
 Injun."
 
-"I wish you''''d try and sleep, and let me sit here," urged McArthur kindly.
+"I wish you''d try and sleep, and let me sit here," urged McArthur kindly.
 
 Susie shook her head.
 
-"No; Ling will stay after awhile, and I''''m not sleepy or tired now."
+"No; Ling will stay after awhile, and I''m not sleepy or tired now."
 
 "Well, good-night, little sister." He patted her head, while all the
 kindliness of his gentle nature shone from his eyes.
@@ -8250,7 +8251,7 @@ _was_ dead. He knew that Susie would sit by her mother; probably in the
 chair with the cushion of goose-feathers. It was his favorite chair,
 though it went over backwards when he rocked too hard. Ralston--curse
 him!--was sitting on one of the benches outside the bunk-house, telling
-the grub-liners of Smith''''s capture, and the bug-hunter was making notes of
+the grub-liners of Smith''s capture, and the bug-hunter was making notes of
 the story in his journal. But, alas! as is usual with the pictures one
 conjures, nothing at all took place as Smith fancied.
 
@@ -8258,14 +8259,14 @@ When all the lights, save the one in the living-room, had gone out, there
 was nothing to divert his thoughts. Babe, who was on guard outside,
 refused to converse with him, and he finally lay down, only to toss
 restlessly upon the blankets. The night seemed unusually still and the
-stillness made him nervous; even the sound of Babe''''s back rubbing against
-the door when he shifted his position was company. Smith''''s uneasiness was
+stillness made him nervous; even the sound of Babe''s back rubbing against
+the door when he shifted his position was company. Smith''s uneasiness was
 unlike him, and he wondered at it, while unable to conquer it. It must
 have been nearly midnight when, staring into the darkness with sleepless
 eyes, he felt, rather than heard, something move outside. It came from the
 rear, and Babe was at the door for only a moment before he had struck a
 match on a log to light a cigarette. The sound was so slight that only a
-trained ear like Smith''''s would have detected it.
+trained ear like Smith''s would have detected it.
 
 It had sounded like the scraping of the leg of an overall against a
 sage-brush, and yet it was so trifling, so indistinct, that a field mouse
@@ -8275,7 +8276,7 @@ conviction grew upon him that there was movement and life outside. He was
 convinced that something was going to happen.
 
 His judgment told him that the prowlers were more likely to be enemies
-than friends--he was in the enemies'''' country. But, on the other hand,
+than friends--he was in the enemies'' country. But, on the other hand,
 there was always the chance that unexpected help had arrived. Smith still
 believed in his luck. The grub-liners might come to his rescue, or "the
 boys," who had been waiting at the rendezvous, might have learned in some
@@ -8290,23 +8291,23 @@ breathless, his nerves at a tension, his heart pounding in his breast, he
 interpreted the sounds which followed as correctly as if he had been an
 eye-witness to the scene.
 
-He could hear Babe''''s heels strike the ground as he kicked and threshed,
+He could hear Babe''s heels strike the ground as he kicked and threshed,
 and the inarticulate epithets told Smith that his guard was gagged. He
 knew, too, that the attack was made by more than two men, for Babe was a
 young Hercules in strength.
 
 Were they friends or foes? Were they Bar C cowpunchers come to take the
 law into their own hands, or were they his hoped-for rescuers? The
-suspense sent the perspiration out in beads on Smith''''s forehead, and he
+suspense sent the perspiration out in beads on Smith''s forehead, and he
 wiped his moist face with his shirt-sleeve. Then he heard the shoulders
 against the door, the heavy breathing, the strain of muscles, and the
-creaking timber. It crashed in, and for a second Smith''''s heart ceased to
+creaking timber. It crashed in, and for a second Smith''s heart ceased to
 beat. He sniffed--and he knew! He smelled buckskin and the smoke of
 tepees. He spoke a word or two in their own tongue. They laughed softly,
 without answering. From instinct, he backed into a corner, and they groped
 for him in the darkness.
 
-"The rat is hiding. Shall we get the cat?" The voice was Bear Chief''''s.
+"The rat is hiding. Shall we get the cat?" The voice was Bear Chief''s.
 
 Running Rabbit spoke as he struck a match.
 
@@ -8319,7 +8320,7 @@ Smith recovered himself, and said as he stepped forward:
 They tied his hands and pushed him into the open air. Babe squirmed in
 impotent rage as he passed. Dark shadows were gliding in and out of the
 stable and corrals, and when they led him to a saddled horse they motioned
-him to mount. He did so, and they tied his feet under the horse''''s belly,
+him to mount. He did so, and they tied his feet under the horse''s belly,
 his wrists to the saddle-horn. Seeing the thickness of the rope, he
 jested:
 
@@ -8347,8 +8348,8 @@ winning their admiration, if possible; and in devising means by which to
 gain time. He knew that as soon as his absence was discovered an effort
 would be made to rescue him. He found some little comfort, too, in telling
 himself that these reservation Indians, broken in spirit by the white
-man''''s laws and restrictions, were not the Indians of the old days on the
-Big Muddy and the Yellowstone. The fear of the white man''''s vengeance would
+man''s laws and restrictions, were not the Indians of the old days on the
+Big Muddy and the Yellowstone. The fear of the white man''s vengeance would
 keep them from going too far. And so, as he rode, his hopes rose
 gradually; his confidence, to a degree, returned; and he even began to
 have a kind of curiosity as to what form their attempted revenge would
@@ -8362,7 +8363,7 @@ they had some definite destination, for when the horses veered somewhat to
 the south, Running Rabbit motioned them northward.
 
 "He was there yesterday; Running Rabbit knows," said Bear Chief, in answer
-to an Indian''''s question; and Smith, listening, wondered where "there"
+to an Indian''s question; and Smith, listening, wondered where "there"
 might be, and what it was that Running Rabbit knew.
 
 He asked himself if it could be that they were taking him to some desert
@@ -8375,7 +8376,7 @@ they feared pursuit, and were anxious to reach their objective point
 before the sun rose. He knew this from the manner in which they watched
 the east.
 
-Somehow, as the miles sped under their horses'''' feet, the ride became more
+Somehow, as the miles sped under their horses'' feet, the ride became more
 and more unreal to Smith. The moon, big, glorious, and late in rising,
 silvered the desert with its white light until they looked to be riding
 into an ocean. It made Smith think of the Big Water, by moonlight, over
@@ -8389,7 +8390,7 @@ DIRECTION OF THE BAD LANDS.]
 
 There were times when he felt as if he were floating. His sensations were
 like the hallucinations of fever, and then he would find himself called
-back to a realization of facts by the swish of leather thongs on a horse''''s
+back to a realization of facts by the swish of leather thongs on a horse''s
 flank, or some smothered, half-uttered imprecation when a horse stumbled.
 The air of the coming morning fanned his cheeks, its coolness stimulated
 him, and something of the fairy-like beauty of the white world around him
@@ -8403,9 +8404,9 @@ pace, riding one behind the other, Indian file.
 Running Rabbit reined in where the moonlight turned a limestone hill to
 silver, and threw up his hand to halt.
 
-He untied the rope which bound Smith''''s hands and feet.
+He untied the rope which bound Smith''s hands and feet.
 
-"You can''''t coil a rope no more nor a gopher," said Smith, watching him.
+"You can''t coil a rope no more nor a gopher," said Smith, watching him.
 
 "The white man does many things better than the Indian." Running Rabbit
 went on coiling the rope.
@@ -8414,7 +8415,7 @@ He motioned Smith to follow, and led the way on foot.
 
 "I dotes on these moonlight picnics," said Smith sardonically, as he
 panted up the steep hills, his high-heeled boots clattering among the
-rocks in contrast to the silent footsteps of the Indian''''s moccasined
+rocks in contrast to the silent footsteps of the Indian''s moccasined
 feet.
 
 Running Rabbit stopped where the limestone hill had cracked, leaving a
@@ -8433,7 +8434,7 @@ Chief dropped cross-legged near them.
 "Or for those whose forked tongue talks love to two women at once to use
 it for himself." The voice was sneering.
 
-"Smith, you''''re up against it!" the prisoner said to himself.
+"Smith, you''re up against it!" the prisoner said to himself.
 
 As the others came up the hill, they enlarged the half-circle which now
 faced him. Recovering himself, he eyed them indifferently, one by one.
@@ -8444,7 +8445,7 @@ faced him. Recovering himself, he eyed them indifferently, one by one.
 
 "The Indian woman had no enemies," said Running Rabbit.
 
-"It is our friends who steal our horses"--Bear Chief''''s voice was even and
+"It is our friends who steal our horses"--Bear Chief''s voice was even and
 unemotional.
 
 Their behavior puzzled Smith. They seemed now to be in no hurry. Without
@@ -8456,7 +8457,7 @@ fulsome as has own. All the knowledge, the tact, the wit, of which he was
 possessed, he used to gain time. If only he could hold them until the sun
 rose. But why had they brought him there? With all his adroitness and
 subtlety, he could get no inkling of their intentions. The suspense got on
-Smith''''s nerves, though he gave no outward sign. The first gray light of
+Smith''s nerves, though he gave no outward sign. The first gray light of
 morning came, and still they waited. The east flamed.
 
 "It will be hot to-day," said Running Rabbit. "The sky is red."
@@ -8483,7 +8484,7 @@ time, white man!" He swung his gaunt arm to the west.
 "You make the big talk, Injun," sneered Smith, but his mouth was dry.
 
 "Up there is the sky where the clouds send messages, where the sun shines
-to warm us and the moon to light us. There''''s antelope over there in the
+to warm us and the moon to light us. There''s antelope over there in the
 foothills, and elk in the mountains, and sheep on the peaks. You like to
 hunt, white man, same as us. Look long time on all--for you will never see
 it again!"
@@ -8499,7 +8500,7 @@ they waited on the limestone hill! An odor, scarcely perceptible as yet,
 but which, faint as it was, sickened him, told him his fate. It was the
 unmistakable odor of rattlesnakes!
 
-The crevice below was a breeding-place, a rattlesnakes'''' den. Smith had
+The crevice below was a breeding-place, a rattlesnakes'' den. Smith had
 seen such places often, and the stench which came from them when the sun
 was hot was like nothing else in the world. The recollection alone was
 almost enough to nauseate him, and he always had ridden a wide circle at
@@ -8513,7 +8514,7 @@ a room where snake-rattles decorated the parlor mantel or the organ. A
 curiosity as to how they had learned his peculiarity crept through the
 paralyzing horror which numbed him, and as if in answer the scene in the
 dining-room of the ranch rose before him. "I hates snakes and mouse-traps
-goin'''' off," he had said. Yes, he remembered.
+goin'' off," he had said. Yes, he remembered.
 
 The Indians looked at his yellow skin and at his eyes in which the horror
 stayed, and laughed. He did not struggle when they stood him, mute, upon
@@ -8525,7 +8526,7 @@ muscles of his arms and legs.
 "He dances," said Yellow Bird.
 
 As the sun rose higher and streamed into the crevice, the overpowering
-odor increased with the heat. The yellow of Smith''''s skin took on a
+odor increased with the heat. The yellow of Smith''s skin took on a
 greenish tinge.
 
 "Ugh!" An Indian laid his hand upon his stomach. "Me sick!"
@@ -8544,10 +8545,10 @@ every shading, every size--Smith saw them all with his bulging, fascinated
 eyes. The Indians stoned them until a forked tongue darted from every
 mouth and every wicked eye flamed red.
 
-The thick rope was tied under Smith''''s arms, and a noose thrown over a huge
+The thick rope was tied under Smith''s arms, and a noose thrown over a huge
 rock. They shoved him over the edge--slowly--looking at him and each
 other, laughing a little at the sound of reptile fury from below. It was
-the end. Smith''''s eyes opened before they let him drop, and his lips drew
+the end. Smith''s eyes opened before they let him drop, and his lips drew
 back from his white, slightly protruding teeth. They thought he meant to
 beg at last, and, rejoicing, waited. He looked like a coyote, a coyote
 when its ribs are crushed, its legs broken; when its eyes are blurred with
@@ -8561,9 +8562,9 @@ me--Smith!"
 
 
 
-TITLES SELECTED FROM GROSSET & DUNLAP''''S LIST
+TITLES SELECTED FROM GROSSET & DUNLAP''S LIST
 
-May be had wherever books are sold. Ask for Grosset & Dunlap''''s list.
+May be had wherever books are sold. Ask for Grosset & Dunlap''s list.
 
 THE SECOND WIFE. By Thompson Buchanan. Illustrated by W. W. Fawcett.
 Harrison Fisher wrapper printed in four colors and gold.
@@ -8601,7 +8602,7 @@ THE HIGHWAYMAN. By Guy Rawlence. Illustrated by Will Grefe.
 
 A French beauty of mysterious antecedents wins the love of an Englishman
 of title. Developments of a startling character and a clever untangling of
-affairs hold the reader''''s interest.
+affairs hold the reader''s interest.
 
 THE PURPLE STOCKINGS. By Edward Salisbury Field. Illustrated in colors;
 marginal illustrations.
@@ -8617,7 +8618,7 @@ Grosset & Dunlap, 526 West 26th St., New York
 
 
 
-THE MASTER''''S VIOLIN By MYRTLE REED
+THE MASTER''S VIOLIN By MYRTLE REED
 
 [Illustration]
 
@@ -8663,13 +8664,13 @@ Clinging to the Judge closer than a brother, is Solomon Mahaffy--fallible
 and failing like the rest of us, but with a sublime capacity for
 friendship; and closer still, perhaps, clings little Hannibal, a boy about
 whose parentage nothing is known until the end of the story. Hannibal is
-charmed into tolerance of the Judge''''s picturesque vices, while Miss Betty,
+charmed into tolerance of the Judge''s picturesque vices, while Miss Betty,
 lovely and capricious, is charmed into placing all her affairs, both
 material and sentimental, in the hands of this delightful old vagabond.
 
 The Judge will be a fixed star in the firmament of fictional characters as
 surely as David Harum or Col. Sellers. He is a source of infinite delight,
-while this story of Mr. Kester''''s is one of the finest examples of American
+while this story of Mr. Kester''s is one of the finest examples of American
 literary craftmanship.
 
 Ask for a complete free list of G. & D. Popular Copyrighted Fiction.
@@ -8678,7 +8679,7 @@ Grosset & Dunlap, 526 West 26th St., New York
 
 
 
-A Few Of Grosset & Dunlap''''s GREAT BOOKS AT LITTLE PRICES
+A Few Of Grosset & Dunlap''s GREAT BOOKS AT LITTLE PRICES
 
 WHEN A MAN MARRIES. By Mary Roberts Rinehart. Illustrated by Harrison
 Fisher and Mayo Bunker.
@@ -8720,7 +8721,7 @@ KATRINE. By Elinor Macartney Lane. With frontispiece.
 Katrine, the heroine of this story, is a lovely Irish girl, of lowly
 birth, but gifted with a beautiful voice.
 
-The narrative is based on the facts of an actual singer''''s career, and the
+The narrative is based on the facts of an actual singer''s career, and the
 viewpoint throughout is a most exalted one.
 
 THE FORTUNES OF FIFI. By Molly Elliot Seawell Illustrated by T. de
@@ -8744,13 +8745,13 @@ Grosset & Dunlap, 526 West 26th St., New York
 
 
 
-TITLES SELECTED FROM GROSSET & DUNLAP''''S LIST
+TITLES SELECTED FROM GROSSET & DUNLAP''S LIST
 
-May be had wherever books are sold. Ask for Grosset & Dunlap''''s list.
+May be had wherever books are sold. Ask for Grosset & Dunlap''s list.
 
 A CERTAIN RICH MAN. By William Allen White.
 
-A vivid, startling portrayal of one man''''s financial greed, its wide
+A vivid, startling portrayal of one man''s financial greed, its wide
 spreading power, its action in Wall Street, and its effect on the three
 women most intimately in his life. A splendid, entertaining American
 novel.
@@ -8784,7 +8785,7 @@ A jolly company of six artists, writers and other clever folks take a trip
 through the National Park, and tell stories around camp fire at night.
 Brilliantly clever and original.
 
-THE PROFESSOR''''S MYSTERY. By Wells Hastings and Brian Hooker. Illustrated
+THE PROFESSOR''S MYSTERY. By Wells Hastings and Brian Hooker. Illustrated
 by Hanson Booth.
 
 A young college professor, missing his steamer for Europe, has a romantic
@@ -8797,14 +8798,14 @@ Grosset & Dunlap, 526 West 26th St., New York
 
 
 
-B. M. BOWER''''S NOVELS THRILLING WESTERN ROMANCES
+B. M. BOWER''S NOVELS THRILLING WESTERN ROMANCES
 
 Large 12 mos. Handsomely bound in cloth. Illustrated
 
 CHIP, OF THE FLYING U
 
 A breezy wholesome tale, wherein the love affairs of Chip and Delia
-Whitman are charmingly and humorously told. Chip''''s jealousy of Dr. Cecil
+Whitman are charmingly and humorously told. Chip''s jealousy of Dr. Cecil
 Grantham, who turns out to be a big, blue eyed young woman is very
 amusing. A clever, realistic story of the American Cow-puncher.
 
@@ -8858,9 +8859,9 @@ Grosset & Dunlap, 526 West 26th St., New York
 
 
 
-End of the Project Gutenberg EBook of ''''Me-Smith'''', by Caroline Lockhart
+End of the Project Gutenberg EBook of ''Me-Smith'', by Caroline Lockhart
 
-*** END OF THIS PROJECT GUTENBERG EBOOK ''''ME-SMITH'''' ***
+*** END OF THIS PROJECT GUTENBERG EBOOK ''ME-SMITH'' ***
 
 ***** This file should be named 27438-8.txt or 27438-8.zip *****
 This and all associated files of various formats will be found in:
@@ -9094,7 +9095,7 @@ is also defective, you may demand a refund in writing without further
 opportunities to fix the problem.
 
 1.F.4.  Except for the limited right of replacement or refund set forth
-in paragraph 1.F.3, this work is provided to you ''''AS-IS'''' WITH NO OTHER
+in paragraph 1.F.3, this work is provided to you ''AS-IS'' WITH NO OTHER
 WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
 WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
 
@@ -9127,7 +9128,7 @@ because of the efforts of hundreds of volunteers and donations from
 people in all walks of life.
 
 Volunteers and financial support to provide volunteers with the
-assistance they need, is critical to reaching Project Gutenberg-tm''''s
+assistance they need, is critical to reaching Project Gutenberg-tm''s
 goals and ensuring that the Project Gutenberg-tm collection will
 remain freely available for generations to come.  In 2001, the Project
 Gutenberg Literary Archive Foundation was created to provide a secure
@@ -9143,18 +9144,18 @@ Foundation
 The Project Gutenberg Literary Archive Foundation is a non profit
 501(c)(3) educational corporation organized under the laws of the
 state of Mississippi and granted tax exempt status by the Internal
-Revenue Service.  The Foundation''''s EIN or federal tax identification
+Revenue Service.  The Foundation''s EIN or federal tax identification
 number is 64-6221541.  Its 501(c)(3) letter is posted at
 http://pglaf.org/fundraising.  Contributions to the Project Gutenberg
 Literary Archive Foundation are tax deductible to the full extent
-permitted by U.S. federal laws and your state''''s laws.
+permitted by U.S. federal laws and your state''s laws.
 
-The Foundation''''s principal office is located at 4557 Melan Dr. S.
+The Foundation''s principal office is located at 4557 Melan Dr. S.
 Fairbanks, AK, 99712., but its volunteers and employees are scattered
 throughout numerous locations.  Its business office is located at
 809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
 business@pglaf.org.  Email contact links and up to date contact
-information can be found at the Foundation''''s web site and official
+information can be found at the Foundation''s web site and official
 page at http://pglaf.org
 
 For additional contact information:
@@ -9220,4 +9221,4 @@ Most people start at our Web site which has the main PG search facility:
 This Web site includes information about Project Gutenberg-tm,
 including how to make donations to the Project Gutenberg Literary
 Archive Foundation, how to help produce our new eBooks, and how to
-subscribe to our email newsletter to hear about new eBooks.
+subscribe to our email newsletter to hear about new eBooks.');
