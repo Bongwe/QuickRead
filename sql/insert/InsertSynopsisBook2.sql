@@ -1,7 +1,5 @@
 UPDATE Book
 SET synopses ='
-Chapter 1
-
 It was in 1590--winter. Austria was far away from the world, and asleep;
 it was still the Middle Ages in Austria, and promised to remain so
 forever. Some even set it away back centuries upon centuries and said

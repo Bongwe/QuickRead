@@ -1,4 +1,4 @@
-UPDATE Book
+UPDATE book
 SET synopses = '
 That human art in which it is most difficult to achieve this end (and
 in which it is far easier to neglect it than in any other) is the art
@@ -13,4 +13,4 @@ piece of work should achieve its end. But in either character, the
 character of survival or the character of intrinsic excellence,
 construction deliberate and successful is the fundamental condition.'
 
-WHERE ID = 3;
+WHERE ID = 1;

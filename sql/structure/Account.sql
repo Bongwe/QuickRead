@@ -1,4 +1,4 @@
-CREATE TABLE Account(
+CREATE TABLE account(
 	id INT NOT NULL IDENTITY(1,1),
 	health INT NULL,
 	name VARCHAR(128) NOT NULL,

@@ -3,7 +3,7 @@ package za.co.quick.read.obomvu.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Book")
+@Table(name = "book")
 public class Book {
 
 	private Long id;

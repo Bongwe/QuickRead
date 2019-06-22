@@ -1,4 +1,4 @@
-INSERT INTO BOOK ( title, author,content)
+INSERT INTO book ( title, author,content)
 VALUES ('The Mysterious Stranger and Other Stories','Mark Twain','Project Gutenberg''s The Mysterious Stranger and Other Stories, by Mark Twain
 
 This eBook is for the use of anyone anywhere at no cost and with
