@@ -1,0 +1,9 @@
+drop table Account;
+drop table Book;
+drop table BOOKSECTION;
+drop table BOOKSHELF;
+drop table GAMESTATE;
+drop table OPPONENT;
+drop table SELECTEDOPPONENT;
+drop table SETTINGS;
+drop table Person;
