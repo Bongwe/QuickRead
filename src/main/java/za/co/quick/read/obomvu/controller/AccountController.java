@@ -22,6 +22,7 @@ import za.co.quick.read.obomvu.exception.ResourceNotFoundException;
 import za.co.quick.read.obomvu.model.Account;
 import za.co.quick.read.obomvu.model.Settings;
 import za.co.quick.read.obomvu.repository.AccountRepository;
+import za.co.quick.read.obomvu.repository.PlayerRepository;
 import za.co.quick.read.obomvu.repository.SettingsRepository;
 
 
@@ -34,6 +35,8 @@ public class AccountController {
 	private AccountRepository accountRepository;
 	@Autowired
 	private SettingsRepository settingsRepository;
+	@Autowired
+	private PlayerRepository playerRepository;
 
 	@GetMapping("/accounts")
 	public List<Account> getAllAccounts() {

@@ -43,7 +43,12 @@ public class GameStateController {
 				return ResponseEntity.ok(save);
 			} else {
 				GameState gameState1 = isGameState(gameState);
-				return ResponseEntity.ok(gameState1);
+				gameState1.setDay(gameState.getDay());
+				gameState1.setHour(gameState.getHour());
+				gameState1.setMinute(gameState.getMinute());
+				gameState1.setSecond(gameState.getSecond());
+				@Valid GameState save = gameStateRepository.save(gameState1);
+				return ResponseEntity.ok(save);
 			}
 		} catch (Exception error){
 			ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.CONFLICT);

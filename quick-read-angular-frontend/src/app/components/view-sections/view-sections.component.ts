@@ -31,6 +31,7 @@ import {READ_EVERY_DAY, READ_EVERY_MINUTE} from "../../models/Messages";
 import {SelectedOpponent} from "../../models/SelectedOpponent";
 import {UpdateOpponentAction} from "../../store/actions/book-shelf.actions";
 import {UpdateAccountAction} from "../../store/actions/account.actions";
+import {ClearNotificationMessageAction} from "../../store/actions/notofication.actions";
 
 @Component({
   selector: 'app-reading',
@@ -49,11 +50,12 @@ export class ViewSectionsComponent implements OnInit {
 
   public bookSectionCompleteness: number = 0;
   public totalCompletedSections: number = 0;
+  public totalNumberOfSections: number = 0;
 
-  public selectedAccount: qrAccount;
+  public selectedAccount: qrAccount = new qrAccount();
   public gameState: GameState;
   public settings: Settings;
-  public currentOpponent: SelectedOpponent;
+  public currentOpponent: SelectedOpponent = new SelectedOpponent();
 
   @ViewChild('inaccessibleSection') inaccessibleSection;
   @ViewChild('bookCompleteMessage') bookCompleteMessage;
@@ -104,12 +106,16 @@ export class ViewSectionsComponent implements OnInit {
     });
 
     this.currentOpponent = this.getCurrentOpponent();
+    if(this.currentOpponent == null){
+      this.currentOpponent = new SelectedOpponent();
+    }
 
     let completePercent = this.calculateSectionCompleteness();
 
     if(completePercent >= 100) {
       this.openBooksCompleteModal();
     }
+    this.updateGameState();
     this.manageGameSate();
   }
 
@@ -117,12 +123,13 @@ export class ViewSectionsComponent implements OnInit {
     if (this.bookSections) {
       for(let sectionGroup of this.bookSections) {
         for(let section of sectionGroup.sectionList){
+          this.totalNumberOfSections++;
           if(section.status == BookStatus.COMPLETE){
             this.totalCompletedSections++;
           }
         }
       }
-      this.bookSectionCompleteness = this.totalCompletedSections / this.bookSections.length;
+      this.bookSectionCompleteness = this.totalCompletedSections / this.totalNumberOfSections;
       this.bookSectionCompleteness = this.bookSectionCompleteness * 100;
       return this.bookSectionCompleteness;
     }
@@ -130,7 +137,7 @@ export class ViewSectionsComponent implements OnInit {
   }
 
   readSelectedSection(section: BookSection, groupIndex: number, sectionIndex: number) {
-    let prevIndex = section.section_index - 1;
+    let prevIndex = sectionIndex - 1;
     if(prevIndex == -1){
       this.updateGameState();
       this.store.dispatch(new ReadSectionAction(section));
@@ -232,13 +239,13 @@ export class ViewSectionsComponent implements OnInit {
         if(this.isReadingEveryDay()) {
           this.dealDamageToOpponent();
         } else{
-          //this.dealDamageToPlayer();
+          this.dealDamageToPlayer();
         }
       } else if (this.settings && this.settings.read_every == READ_EVERY_MINUTE) {
         if(this.isReadingEveryMinute()) {
           this.dealDamageToOpponent();
         } else{
-          //this.dealDamageToPlayer();
+          this.dealDamageToPlayer();
         }
       }
     }
@@ -251,8 +258,11 @@ export class ViewSectionsComponent implements OnInit {
 
   private isReadingEveryMinute() {
     let currentMinute = moment().minute();
-    return currentMinute >= (this.gameState.minute) && currentMinute <= (this.gameState.minute + 1);
-
+    if(this.gameState.minute){
+      return currentMinute >= (this.gameState.minute) && currentMinute <= (this.gameState.minute + 1);
+    } else{
+     return true;
+    }
   }
 
   private dealDamageToOpponent() {
@@ -261,10 +271,12 @@ export class ViewSectionsComponent implements OnInit {
     for(let index = 0; index < this.bookSections.length && dealtDamage == false; index++) {
       for(let section of this.bookSections[index].sectionList) {
         if(this.currentSection && this.currentSection.id == section.id && section.status === BookStatus.COMPLETE){
-          this.bookSections[index].opponent.health = this.bookSections[index].opponent.health - 25;
-          this.store.dispatch(new UpdateOpponentAction(this.bookSections[index].opponent));
-          this.openDealOpponentDamageModal();
-          dealtDamage = true;
+          if(this.bookSections[index].opponent.health > 0 && section.new_completions == true){
+            this.bookSections[index].opponent.health = this.bookSections[index].opponent.health - 25;
+            this.store.dispatch(new UpdateOpponentAction(this.bookSections[index].opponent));
+            this.openDealOpponentDamageModal();
+            dealtDamage = true;
+          }
           break;
         }
       }
@@ -281,9 +293,11 @@ export class ViewSectionsComponent implements OnInit {
   }
 
   private dealDamageToPlayer() {
-    this.selectedAccount.health = this.selectedAccount.health - 25;
-    this.store.dispatch(new UpdateAccountAction(this.selectedAccount));
-    this.openDealPlayerDamage();
+    if(this.selectedAccount.health > 0){
+      this.selectedAccount.health = this.selectedAccount.health - 25;
+      this.store.dispatch(new UpdateAccountAction(this.selectedAccount));
+      this.openDealPlayerDamage();
+    }
   }
 
   getPlayerHealth() {

@@ -1,6 +1,5 @@
 CREATE TABLE account(
 	id INT NOT NULL IDENTITY(1,1),
-	health INT NULL,
 	name VARCHAR(128) NOT NULL,
 	username VARCHAR(128) NOT NULL,
 	email VARCHAR(128) NOT NULL,

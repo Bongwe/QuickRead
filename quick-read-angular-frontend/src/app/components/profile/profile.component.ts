@@ -55,6 +55,10 @@ export class ProfileComponent implements OnInit, OnDestroy {
     });
   }
 
+  ngOnDestroy(): void {
+    this.store.dispatch(new ClearNotificationMessageAction());
+  }
+
   onUpdateAccount(){
 
   }
@@ -74,10 +78,6 @@ export class ProfileComponent implements OnInit, OnDestroy {
 
   onChangeReadingFrequency(readFrequency: string){
     this.settingsForm.controls['readFrequency'].setValue(readFrequency) ;
-  }
-
-  ngOnDestroy(): void {
-    this.store.dispatch( new ClearNotificationMessageAction());
   }
 
   getAvatarSrc(): string {

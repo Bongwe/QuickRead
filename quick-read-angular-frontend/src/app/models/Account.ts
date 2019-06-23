@@ -6,5 +6,5 @@ export class qrAccount {
   email: string;
   password: string;
   interests: string;
-  profile_picture: string
+  profile_picture: string = null;
 }

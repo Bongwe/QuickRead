@@ -7,4 +7,5 @@ export class BookSection {
   index: number;
   section_index: number;
   status_picture: string;
+  new_completions: boolean = false;
 }

@@ -36,11 +36,14 @@ export class AvatarComponent implements OnInit, OnDestroy {
         this.profilePicture = _.cloneDeep(state.profilePicture);
         this.selectedAccount = _.cloneDeep(state.selectedAccount);
 
-        this.store.select(selectNotifications).subscribe((state: INotification) =>{
+        if(this.selectedAccount.profile_picture != null){
+          this.router.navigate(['/search']);
+        }
+       /* this.store.select(selectNotifications).subscribe((state: INotification) =>{
           if(state && state.notification && state.notification.message == this.updateMessage) {
             this.router.navigate(['/search']);
           }
-        });
+        });*/
 
       }
     });

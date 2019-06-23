@@ -75,7 +75,8 @@ export class SectionComponent implements OnInit,OnDestroy {
 
   closeSection() {
     //if(this.currentSeconds >= (this.settings.min_read_time * 60) || this.currentSection.status == BookStatus.COMPLETE) {
-      if( this.currentSection.status == BookStatus.COMPLETE){
+      if(this.currentSection.status == BookStatus.COMPLETE){
+        this.currentSection.new_completions = false;
         this.store.dispatch(new UpdateSectionAction(this.currentSection));
       } else {
         this.openReadingCompleteModal();
@@ -143,6 +144,11 @@ export class SectionComponent implements OnInit,OnDestroy {
   }
 
   onSectionComplete() {
+    if(this.currentSection.status == BookStatus.IN_PROGRESS || this.currentSection.status == BookStatus.UN_READ){
+      this.currentSection.new_completions = true;
+    }  else {
+      this.currentSection.new_completions = false;
+    }
     this.currentSection.status = BookStatus.COMPLETE;
     this.currentSection.status_picture = "sectionCompleteIcon.png";
     this.store.dispatch(new UpdateSectionAction(this.currentSection));
@@ -153,7 +159,7 @@ export class SectionComponent implements OnInit,OnDestroy {
   startTimer() {
     this.timeOutHandle = setInterval(() => {
       this.currentSeconds++;
-      console.log(this.currentSeconds);
+      //console.log(this.currentSeconds);
     },1000)
   }
 

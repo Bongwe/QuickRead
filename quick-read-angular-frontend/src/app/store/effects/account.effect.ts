@@ -57,9 +57,8 @@ export class AccountEffects {
       ofType(EProfileAction.UpdateAccount),
       mergeMap((accounts: CreateAccountAction) => this.profileService.updateAccount(accounts.payload)
         .pipe(
-          //map(result => ({ type: EProfileAction.UpdateAccountSuccess, payload: result })),
           map((result: AccountDTO) => {
-            this.store.dispatch(new SetNotificationMessageAction(new NotificationObj('Account updated successfully', true)));
+            //this.store.dispatch(new SetNotificationMessageAction(new NotificationObj('Account updated successfully', true)));
             return { type: EProfileAction.UpdateAccountSuccess, payload: result }
           }),
           catchError((error: HttpErrorResponse) => of({ type: EProfileAction.UpdateAccountError, payload: error}))
