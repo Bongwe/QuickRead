@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {Book} from "../../models/Book";
 import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
@@ -11,6 +11,7 @@ import {selectAccounts} from "../../store/selectors/app.selectors";
 import {IAccountState} from "../../store/reducers/account.reducer";
 
 import * as _ from 'lodash';
+import {ModalManager} from "ngb-modal";
 
 @Component({
   selector: 'app-suggested-books',
@@ -21,8 +22,15 @@ export class SuggestedBooksComponent implements OnInit {
 
   books: Book[];
   private account: qrAccount;
+  selectedBook: Book = new Book();
 
-  constructor(private store: Store<IAppState>) { }
+  modalRef;
+  modalHeader: string = "Registration";
+  modalContent: string = "Your account has been successfully created.";
+  @ViewChild('myModal') myModal;
+
+  constructor(private store: Store<IAppState>,
+              private modalService: ModalManager) { }
 
   ngOnInit() {
     this.store.select(selectAccounts).subscribe((account: IAccountState) =>{
@@ -42,7 +50,29 @@ export class SuggestedBooksComponent implements OnInit {
     bookShelf.book_id = id;
     bookShelf.account_id = this.account.id;
     this.store.dispatch(new AddToBookShelfAction(bookShelf));
-    //this.store.dispatch(new GetBooksInBookshelfAction(this.account.id));
   }
 
+  //---Modal Stuff---
+  openModal(){
+    this.modalRef = this.modalService.open(this.myModal, {
+      size: "md",
+      modalClass: 'mymodal',
+      hideCloseButton: false,
+      centered: false,
+      backdrop: true,
+      animation: true,
+      keyboard: false,
+      closeOnOutsideClick: true,
+      backdropClass: "modal-backdrop"
+    })
+  }
+
+  closeModal(){
+    this.modalService.close(this.modalRef);
+  }
+
+  onSelectBook(book: Book) {
+    this.selectedBook = book;
+    this.openModal();
+  }
 }

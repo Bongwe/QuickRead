@@ -9,7 +9,7 @@
         <div class="caption">
           <h4>Author: {{book.author}}</h4>
           <h4>Title: {{book.title}}</h4>
-          <p>{{book.shortSynopses}} <a data-toggle="modal" data-target="#myModal"> Read more...</a></p>
+          <p>{{book.shortSynopses}} <a (click)="onSelectBook(book)"> Read more...</a></p>
           <p>
             <span class="btn btn-primary" role="button" (click)="addBookToShelve(book.id)">
               Add to shelf
@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <!-- Modal -->
+     <!-- &lt;!&ndash; Modal &ndash;&gt;
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -36,7 +36,27 @@
             </div>
           </div>
         </div>
+      </div>-->
+
+      <div class="row">
+        <modal #myModal>
+          <modal-header>
+            <h4 class="modal-title" >Author: {{selectedBook.author}}</h4>
+            <h4 class="modal-title" >Title: {{selectedBook.title}}</h4>
+          </modal-header>
+          <modal-content>
+            <div class="row">
+              <div class="col-md-12">
+                {{selectedBook.synopses}}
+              </div>
+            </div>
+          </modal-content>
+          <modal-footer>
+            <button class="btn btn-primary" (click)="closeModal()">Close</button>
+          </modal-footer>
+        </modal>
       </div>
+
 
     </div>
   </div>
