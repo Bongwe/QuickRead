@@ -27,35 +27,42 @@ public class GenerateBookSections {
     @Autowired
     private SelectedOpponentRepository selectedOpponentRepository;
 
-    public static final int SECTION_LENGTH = 2000;
     private List<Opponent> opponents;
 
     public GenerateBookSections() {
     }
 
     public List<BookSection> generateSections(Book book){
+        //the formula we use
+        //14 words per line
+        //142 words per section
+        //14 (words per line) * 142(number number of line) = 1988 (words in total)
         this.opponents = opponentRepository.findAll();
         List<BookSection> booksSectionList = new ArrayList<>();
-        int startIndex = 0;
         Long index = 0L;
-        String[] content = book.getContent().split("\\s+");
-        int sectionLength  = SECTION_LENGTH;
-        if(content.length < sectionLength){
-            sectionLength = content.length;
-        }
+        String[] content = book.getContent().split("\\r\\n");
+        int strartIndex = 0;
 
-        for(int endIndex = sectionLength; endIndex <= content.length; endIndex = endIndex + SECTION_LENGTH){
-            BookSection bookSection = new BookSection();
-            bookSection.setContent(buildContent(startIndex,endIndex, content));
-            bookSection.setBook_id(book.getId());
-            bookSection.setStatus(BookStatus.Status.UN_READ.toString());
-            bookSection.setSection_index(index);
-            bookSection.setStatus_picture("sectionIcon.png");
-            booksSectionList.add(bookSection);
-            startIndex = endIndex;
-            index++;
+        for(int endIndex = 142; endIndex < content.length ; endIndex = endIndex + 142){
+            String sectionContent = buildContent(strartIndex, endIndex, content);
+            booksSectionList.add(createBookSection(book, sectionContent ,booksSectionList.size()));
+            strartIndex = endIndex;
+            if((endIndex + 142) > content.length){
+                sectionContent = buildContent(strartIndex, content.length, content);
+                booksSectionList.add(createBookSection(book, sectionContent ,booksSectionList.size()));
+            }
         }
         return booksSectionList;
+    }
+
+    private BookSection createBookSection(Book book, String content,int index) {
+        BookSection bookSection = new BookSection();
+        bookSection.setContent(content);
+        bookSection.setBook_id(book.getId());
+        bookSection.setStatus(BookStatus.Status.UN_READ.toString());
+        bookSection.setSection_index((long)index);
+        bookSection.setStatus_picture("sectionIcon.png");
+        return bookSection;
     }
 
     public List<SelectedOpponent> generateOpponents(List<BookSection> sections) {
@@ -91,11 +98,12 @@ public class GenerateBookSections {
         return save;
     }
 
-    private String buildContent(int startIndex, int endIndex, String[] content) {
-        StringBuilder stringBuilder = new StringBuilder();
-        for(int index = startIndex; index < endIndex; index++){
+    private String buildContent(int strartIndex,int endIndex,String[] content) {
+         StringBuilder stringBuilder = new StringBuilder();
+        for(int index = strartIndex; index < endIndex; index++){
             stringBuilder.append(content[index]);
-            stringBuilder.append(" ");
+            stringBuilder.append("\r");
+            stringBuilder.append("\n");
         }
         return stringBuilder.toString();
     }

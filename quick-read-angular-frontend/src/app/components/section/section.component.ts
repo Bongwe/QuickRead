@@ -74,18 +74,16 @@ export class SectionComponent implements OnInit,OnDestroy {
   }
 
   closeSection() {
-    if(this.currentSeconds >= (this.settings.min_read_time * 60) || this.currentSection.status == BookStatus.COMPLETE) {
-    //if(true){
-    if( this.currentSection.status == BookStatus.COMPLETE){
+    //if(this.currentSeconds >= (this.settings.min_read_time * 60) || this.currentSection.status == BookStatus.COMPLETE) {
+      if( this.currentSection.status == BookStatus.COMPLETE){
         this.store.dispatch(new UpdateSectionAction(this.currentSection));
-        //this.store.dispatch(new ClearCurrentSectionAction());
       } else {
         this.openReadingCompleteModal();
       }
-    } else {
-      this.modalMessage = this.getMinimumTimeMessage();
-      this.openModal();
-    }
+    //} else {
+      //this.modalMessage = this.getMinimumTimeMessage();
+      //this.openModal();
+    //}
   }
 
   getMinimumTimeMessage() {

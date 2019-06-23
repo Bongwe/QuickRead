@@ -108,6 +108,7 @@ public class BookShelfController {
 			List<SectionDTO> sectionDTOList = generateBookSections.generateSectionGroups(savedBookSections, savedSelectedOpponents);
 
 			return ResponseEntity.ok(sectionDTOList);
+			//return null;
 		} catch (Exception error){
 				ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.BAD_REQUEST);
 			return responseEntity;

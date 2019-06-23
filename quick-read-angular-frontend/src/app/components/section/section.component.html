@@ -16,7 +16,9 @@
     <div class="col-md-8 col-md-offset-2"
          style="overflow:scroll; height:500px;"
          id="sectionContent">
-      {{currentSection.content}}
+      <pre>
+        {{currentSection.content}}
+      </pre>
       <div class="row action-buttons">
         <div class="col-md-3 col-md-offset-3">
           <button type="button"(click)="closeSection()" class="btn btn-primary">CLOSE SECTION</button>
