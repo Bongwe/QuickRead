@@ -10,7 +10,7 @@ import {HttpErrorResponse} from "@angular/common/http";
 import {
   AddToBookShelfAction,
   EBooksShelfAction,
-  GetBooksInBookshelfAction, UpdateOpponentAction,
+  GetBooksInBookshelfAction, ReadBookAction, UpdateOpponentAction, UpdatePlayerAction,
   UpdateSectionAction
 } from "../actions/book-shelf.actions";
 import {BookShelf} from "../../models/BookShelf";
@@ -66,7 +66,7 @@ export class BookEffects {
   readBookInShelf = this.actions$
     .pipe(
       ofType(EBooksShelfAction.ReadBook),
-      mergeMap((action: GetBooksInBookshelfAction) => this.bookService.getBookSections(action.payload)
+      mergeMap((action: ReadBookAction) => this.bookService.getBookSections(action.payload)
         .pipe(
           map(result => ({ type: EBooksShelfAction.ReadBookSuccess, payload: result })),
           catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.ReadBookError, payload: error}))
@@ -92,6 +92,17 @@ export class BookEffects {
         .pipe(
           map(result => ({ type: EBooksShelfAction.UpdateOpponentSuccess, payload: result })),
           catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.UpdateOpponentError, payload: error}))
+        ))
+    );
+
+  @Effect()
+  updatePlayer = this.actions$
+    .pipe(
+      ofType(EBooksShelfAction.UpdatePlayer),
+      mergeMap((updatePlayerAction: UpdatePlayerAction) => this.sectionService.updatePlayer(updatePlayerAction.player)
+        .pipe(
+          map(result => ({ type: EBooksShelfAction.UpdatePlayerSuccess, payload: result })),
+          catchError((error: HttpErrorResponse) => of({ type: EBooksShelfAction.UpdatePlayerError, payload: error}))
         ))
     );
 }

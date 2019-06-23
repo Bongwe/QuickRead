@@ -17,7 +17,19 @@
       <span *ngFor="let sectionGroups of bookSections;let groupIndex = index">
 
         <div class="row">
+
             <div class="col-md-6">
+              <div class="col-md-3">
+                <img [src]=enemyImageSrc(sectionGroups.player.avatar) class="imageSize">
+              </div>
+              <div class="col-md-8">
+                <div><label>Name: {{sectionGroups.player.name}}</label></div>
+                <progress-bar [progress]=sectionGroups.player.health [color]="'#d9534f'">
+                </progress-bar>
+              </div>
+            </div>
+
+            <!--<div class="col-md-6">
               <div class="col-md-3">
                 <img [src]=playerImageSrc class="imageSize">
               </div>
@@ -26,7 +38,7 @@
                 <progress-bar [progress]=getPlayerHealth() [color]="'#d9534f'">
                 </progress-bar>
               </div>
-            </div>
+            </div>-->
 
             <div class="col-md-6">
               <div class="col-md-3">

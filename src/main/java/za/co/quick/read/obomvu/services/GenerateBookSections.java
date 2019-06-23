@@ -3,11 +3,9 @@ package za.co.quick.read.obomvu.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import za.co.quick.read.obomvu.dto.SectionDTO;
-import za.co.quick.read.obomvu.model.Book;
-import za.co.quick.read.obomvu.model.BookSection;
-import za.co.quick.read.obomvu.model.Opponent;
-import za.co.quick.read.obomvu.model.SelectedOpponent;
+import za.co.quick.read.obomvu.model.*;
 import za.co.quick.read.obomvu.repository.OpponentRepository;
+import za.co.quick.read.obomvu.repository.PlayerRepository;
 import za.co.quick.read.obomvu.repository.SelectedOpponentRepository;
 import za.co.quick.read.obomvu.utils.BookStatus;
 
@@ -25,7 +23,11 @@ public class GenerateBookSections {
     private OpponentRepository opponentRepository;
 
     @Autowired
+    private PlayerRepository playerRepository;
+
+    @Autowired
     private SelectedOpponentRepository selectedOpponentRepository;
+
 
     private List<Opponent> opponents;
 
@@ -81,6 +83,22 @@ public class GenerateBookSections {
         return selectedOpponents;
     }
 
+    public List<Player> generatePlayers(List<BookSection> sections, Account account) {
+        int sectionCount = 0;
+        Player newPlayer;
+        List<Player> selectedPlayer = new ArrayList<>();
+
+        for(BookSection bookSection: sections){
+            if(sectionCount == SECTIONS_PER_GROUP || sectionCount == 0){
+                newPlayer = createNewPlayer(bookSection.getBook_id(), account);
+                selectedPlayer.add(newPlayer);
+                sectionCount = 0;
+            }
+            sectionCount++;
+        }
+        return selectedPlayer;
+    }
+
     private SelectedOpponent createNewOpponent(Long book_id) {
         int numberOfOpponents = 7;
         if(opponentCount >= numberOfOpponents)
@@ -98,6 +116,17 @@ public class GenerateBookSections {
         return save;
     }
 
+    private Player createNewPlayer(Long book_id,Account account) {
+        Player newPlayer = new Player();
+        newPlayer.setAvatar(account.getProfile_picture());
+        newPlayer.setHealth(100L);
+        newPlayer.setName(account.getName());
+        newPlayer.setPower("default power");
+        newPlayer.setBook_id(book_id);
+        Player save = playerRepository.save(newPlayer);
+        return save;
+    }
+
     private String buildContent(int strartIndex,int endIndex,String[] content) {
          StringBuilder stringBuilder = new StringBuilder();
         for(int index = strartIndex; index < endIndex; index++){
@@ -108,7 +137,7 @@ public class GenerateBookSections {
         return stringBuilder.toString();
     }
 
-    public List<SectionDTO> generateSectionGroups(List<BookSection> bookSections, List<SelectedOpponent> selectedOpponents) {
+    public List<SectionDTO> generateSectionGroups(List<BookSection> bookSections, List<SelectedOpponent> selectedOpponents, List<Player> selectedPlayers) {
         int sectionCount = 0;
         int opponentCount = 0;
         List<SectionDTO> sectionGroups = new ArrayList<>();
@@ -118,6 +147,7 @@ public class GenerateBookSections {
             BookSection bookSection = iterator.next();
             if(sectionCount == SECTIONS_PER_GROUP){
                 sectionDTO.setOpponent(selectedOpponents.get(opponentCount));
+                sectionDTO.setPlayer(selectedPlayers.get(opponentCount));
                 sectionGroups.add(sectionDTO);
                 opponentCount++;
                 sectionDTO = new SectionDTO();
@@ -126,6 +156,7 @@ public class GenerateBookSections {
             if(sectionCount < SECTIONS_PER_GROUP && !iterator.hasNext()){
                 sectionDTO.getSectionList().add(bookSection);
                 sectionDTO.setOpponent(selectedOpponents.get(opponentCount));
+                sectionDTO.setPlayer(selectedPlayers.get(opponentCount));
                 sectionGroups.add(sectionDTO);
             } else {
                 sectionDTO.getSectionList().add(bookSection);
@@ -135,19 +166,22 @@ public class GenerateBookSections {
         return sectionGroups;
     }
 
-    public List<BookSection> updateSectionsWithOpponentIds(List<BookSection> bookSections, List<SelectedOpponent> savedSelectedOpponents) {
+    public List<BookSection> updateSectionsWithOpponentIds(List<BookSection> bookSections, List<SelectedOpponent> savedSelectedOpponents,List<Player> savedPlayers) {
         int sectionCount = 0;
         int opponentCount = 0;
         SelectedOpponent opponent =  new SelectedOpponent();
+        Player player =  new Player();
         List<BookSection> updatedSections = new ArrayList<>();
 
         for(BookSection bookSection: bookSections){
             if(sectionCount == SECTIONS_PER_GROUP || sectionCount == 0){
                 opponent = savedSelectedOpponents.get(opponentCount);
+                player = savedPlayers.get(opponentCount);
                 opponentCount++;
                 sectionCount = 0;
             }
             bookSection.setOpponent_id(opponent.getId());
+            bookSection.setPlayer_id(player.getId());
             updatedSections.add(bookSection);
             sectionCount++;
         }

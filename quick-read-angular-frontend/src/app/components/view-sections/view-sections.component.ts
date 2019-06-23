@@ -29,7 +29,11 @@ import {Settings} from "../../models/Settings";
 import {ISettingsState} from "../../store/reducers/settings.reducer";
 import {READ_EVERY_DAY, READ_EVERY_MINUTE} from "../../models/Messages";
 import {SelectedOpponent} from "../../models/SelectedOpponent";
-import {UpdateOpponentAction} from "../../store/actions/book-shelf.actions";
+import {
+  UpdateOpponentAction,
+  UpdatePlayerAction,
+  UpdatePlayerSuccessAction
+} from "../../store/actions/book-shelf.actions";
 import {UpdateAccountAction} from "../../store/actions/account.actions";
 import {ClearNotificationMessageAction} from "../../store/actions/notofication.actions";
 
@@ -283,6 +287,30 @@ export class ViewSectionsComponent implements OnInit {
     }
   }
 
+  private dealDamageToPlayer() {
+    let dealtDamage = false;
+
+    for(let index = 0; index < this.bookSections.length && dealtDamage == false; index++) {
+      for(let section of this.bookSections[index].sectionList) {
+          if(this.bookSections[index].player.health > 0){
+            this.bookSections[index].player.health = this.bookSections[index].player.health - 25;
+            this.store.dispatch(new UpdatePlayerAction(this.bookSections[index].player));
+            this.openDealOpponentDamageModal();
+            dealtDamage = true;
+          }
+          break;
+        }
+      }
+  }
+
+  /*private dealDamageToPlayer() {
+    if(this.selectedAccount.health > 0){
+      this.selectedAccount.health = this.selectedAccount.health - 25;
+      this.store.dispatch(new UpdateAccountAction(this.selectedAccount));
+      this.openDealPlayerDamage();
+    }
+  }*/
+
   private updateGameState(): void {
     let gameSate = new GameState();
     gameSate.day =  moment().day(); //day of the week
@@ -290,14 +318,6 @@ export class ViewSectionsComponent implements OnInit {
     gameSate.second =  moment().second();
     gameSate.account_id = this.selectedAccount.id;
     this.store.dispatch(new UpdateGameStateAction(gameSate));
-  }
-
-  private dealDamageToPlayer() {
-    if(this.selectedAccount.health > 0){
-      this.selectedAccount.health = this.selectedAccount.health - 25;
-      this.store.dispatch(new UpdateAccountAction(this.selectedAccount));
-      this.openDealPlayerDamage();
-    }
   }
 
   getPlayerHealth() {

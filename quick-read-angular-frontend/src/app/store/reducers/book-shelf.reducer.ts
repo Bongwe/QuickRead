@@ -12,7 +12,7 @@ import {
   ReadBookSuccessAction,
   SetSelectedBookAction,
   UpdateOpponentErrorAction,
-  UpdateOpponentSuccessAction,
+  UpdateOpponentSuccessAction, UpdatePlayerErrorAction, UpdatePlayerSuccessAction,
   UpdateSectionErrorAction,
   UpdateSectionSuccessAction,
 } from "../actions/book-shelf.actions";
@@ -55,12 +55,32 @@ export function bookShelfReducer (state = initialBookShelfState, action: BookShe
       return clearBookShelf(state, action);
     case EBooksShelfAction.UpdateOpponentSuccess:
       return updateOpponentSuccess(state, action);
+    case EBooksShelfAction.UpdatePlayerSuccess:
+      return updatePlayerSuccess(state, action);
     case EBooksShelfAction.UpdateOpponentError:
       return updateOpponentError(state, action);
+    case EBooksShelfAction.UpdatePlayerError:
+      return updatePlayerError(state, action);
     default:
       return state;
   }
 };
+
+function updatePlayerSuccess(state: IBookShelfState, action: UpdatePlayerSuccessAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  for(let sectionGroups of newState.bookSections){
+    for (let section of sectionGroups.sectionList){
+      if(section.id === action.player.id){
+        sectionGroups.player = action.player;
+      }
+    }
+  }
+  return newState;
+}
+
 
 function updateOpponentSuccess(state: IBookShelfState, action: UpdateOpponentSuccessAction) {
   if(state == null) {
@@ -78,6 +98,15 @@ function updateOpponentSuccess(state: IBookShelfState, action: UpdateOpponentSuc
 }
 
 function updateOpponentError(state: IBookShelfState, action: UpdateOpponentErrorAction) {
+  if(state == null) {
+    state = createEmptyState();
+  }
+  let newState = _.cloneDeep(state);
+  //newState.bookSections = null;
+  return newState;
+}
+
+function updatePlayerError(state: IBookShelfState, action: UpdatePlayerErrorAction) {
   if(state == null) {
     state = createEmptyState();
   }
@@ -123,7 +152,7 @@ function setSelectedBook(state: IBookShelfState, action: SetSelectedBookAction) 
   }
   let newState = _.cloneDeep(state);
   if(state.booksInAccount){
-    newState.selectedBook = state.booksInAccount.find(a => a.id == action.payload);
+    newState.selectedBook = state.booksInAccount.find(a => a.id == action.bookId);
   }
   return newState;
 }

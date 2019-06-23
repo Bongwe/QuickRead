@@ -35,8 +35,6 @@ public class AccountController {
 	private AccountRepository accountRepository;
 	@Autowired
 	private SettingsRepository settingsRepository;
-	@Autowired
-	private PlayerRepository playerRepository;
 
 	@GetMapping("/accounts")
 	public List<Account> getAllAccounts() {

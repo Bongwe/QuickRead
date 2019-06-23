@@ -5,6 +5,7 @@ import {BookShelf} from "../models/BookShelf";
 import {Observable} from "rxjs";
 import {BookSection} from "../models/BookSection";
 import {SelectedOpponent} from "../models/SelectedOpponent";
+import {Player} from "../models/Player";
 
 @Injectable({providedIn: 'root'})
 
@@ -21,5 +22,10 @@ export class SectionService {
   updateOpponent(bookSection: SelectedOpponent): Observable<BookSection> {
     let url = this.baseUrl + '/api/v1/section/opponent';
     return this.http.post<any>(url, bookSection)
+  }
+
+  updatePlayer(player: Player): Observable<Player> {
+    let url = this.baseUrl + '/api/v1/section/player';
+    return this.http.post<any>(url, player)
   }
 }

@@ -8,6 +8,7 @@ public class BookSection {
 
     private Long id;
     private Long opponent_id;
+    private Long player_id;
     private Long book_id;
     private Long section_index;
     private String status;
@@ -91,11 +92,20 @@ public class BookSection {
         this.status_picture = status_picture;
     }
 
+    public Long getPlayer_id() {
+        return player_id;
+    }
+
+    public void setPlayer_id(Long player_id) {
+        this.player_id = player_id;
+    }
+
     @Override
     public String toString() {
         return "BookSection{" +
                 "id=" + id +
                 ", opponent_id=" + opponent_id +
+                ", player_id=" + player_id +
                 ", book_id=" + book_id +
                 ", section_index=" + section_index +
                 ", status='" + status + '\'' +

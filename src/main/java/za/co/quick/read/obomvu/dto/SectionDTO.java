@@ -1,6 +1,7 @@
 package za.co.quick.read.obomvu.dto;
 
 import za.co.quick.read.obomvu.model.BookSection;
+import za.co.quick.read.obomvu.model.Player;
 import za.co.quick.read.obomvu.model.SelectedOpponent;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ public class SectionDTO {
 
     List<BookSection> sectionList = new ArrayList<>();
     SelectedOpponent opponent;
+    Player player;
 
     public SectionDTO() {
     }
@@ -30,11 +32,20 @@ public class SectionDTO {
         this.opponent = opponent;
     }
 
+    public Player getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
+
     @Override
     public String toString() {
         return "SectionDTO{" +
                 "sectionList=" + sectionList +
                 ", opponent=" + opponent +
+                ", player=" + player +
                 '}';
     }
 }

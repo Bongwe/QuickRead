@@ -8,8 +8,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import za.co.quick.read.obomvu.model.BookSection;
+import za.co.quick.read.obomvu.model.Player;
 import za.co.quick.read.obomvu.model.SelectedOpponent;
 import za.co.quick.read.obomvu.repository.BookSectionRepository;
+import za.co.quick.read.obomvu.repository.PlayerRepository;
 import za.co.quick.read.obomvu.repository.SelectedOpponentRepository;
 
 import javax.validation.Valid;
@@ -21,6 +23,8 @@ public class BookSectionController {
     private BookSectionRepository bookSectionRepository;
     @Autowired
     private SelectedOpponentRepository selectedOpponentRepository;
+    @Autowired
+    private PlayerRepository playerRepository;
 
     @PostMapping(value = "/section/update")
     public ResponseEntity<BookSection> createAccount(@Valid @RequestBody BookSection bookSection) {
@@ -37,6 +41,17 @@ public class BookSectionController {
     public ResponseEntity<SelectedOpponent> updateOpponent(@Valid @RequestBody SelectedOpponent opponent) {
         try {
             @Valid SelectedOpponent save = selectedOpponentRepository.save(opponent);
+            return ResponseEntity.ok(save);
+        } catch (Exception error){
+            ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.CONFLICT);
+            return responseEntity;
+        }
+    }
+
+    @PostMapping(value = "/section/player")
+    public ResponseEntity<Player> updatePlayer(@Valid @RequestBody Player player) {
+        try {
+            @Valid Player save = playerRepository.save(player);
             return ResponseEntity.ok(save);
         } catch (Exception error){
             ResponseEntity responseEntity = new ResponseEntity(error.getMessage(), HttpStatus.CONFLICT);

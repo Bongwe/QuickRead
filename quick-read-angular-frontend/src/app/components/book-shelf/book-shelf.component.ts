@@ -50,7 +50,7 @@ export class BookShelfComponent implements OnInit {
   }
 
   readBook(bookId: number) {
-    this.store.dispatch(new ReadBookAction(bookId));
+    this.store.dispatch(new ReadBookAction(bookId, this.accountId));
     this.store.dispatch(new SetSelectedBookAction(bookId));
   }
 }

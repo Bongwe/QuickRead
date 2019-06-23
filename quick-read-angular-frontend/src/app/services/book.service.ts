@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
 import {BookShelf} from "../models/BookShelf";
 import {Observable} from "rxjs";
+import {ReadBookPayload} from "../store/actions/book-shelf.actions";
 
 @Injectable({providedIn: 'root'})
 
@@ -26,8 +27,8 @@ export class BookService {
     return objectObservable;
   }
 
-  getBookSections(bookId: number): Observable<Object> {
-    let url = this.baseUrl + '/api/v1/bookshelf/read/' + bookId;
+  getBookSections(readBookPayload: ReadBookPayload): Observable<Object> {
+    let url = this.baseUrl + '/api/v1/bookshelf/read/' + readBookPayload.bookId + '/' +  readBookPayload.accountId;
     let objectObservable = this.http.get(url);
     return objectObservable;
   }

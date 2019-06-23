@@ -5,6 +5,7 @@ import {BookSection} from "../../models/BookSection";
 import {HttpErrorResponse} from "@angular/common/http";
 import {SectionDTO} from "../../models/dto/SectionDTO";
 import {SelectedOpponent} from "../../models/SelectedOpponent";
+import {Player} from "../../models/Player";
 
 export enum EBooksShelfAction {
   AddToBookShelf = '[Book Shelf Component] Add to book shelf',
@@ -24,6 +25,27 @@ export enum EBooksShelfAction {
   UpdateOpponent = '[Section Component] Update opponent',
   UpdateOpponentSuccess = '[Section Component] Update opponent success',
   UpdateOpponentError = '[Section Component] Update opponent health error',
+  UpdatePlayer = '[Section Component] Update player',
+  UpdatePlayerSuccess = '[Section Component] Update player success',
+  UpdatePlayerError = '[Section Component] Update player health error',
+}
+
+export class UpdatePlayerAction implements Action {
+  readonly type = EBooksShelfAction.UpdatePlayer;
+  constructor(public player: Player){
+  }
+}
+
+export class UpdatePlayerErrorAction implements Action {
+  readonly type = EBooksShelfAction.UpdatePlayerError;
+  constructor(public payload: HttpErrorResponse){
+  }
+}
+
+export class UpdatePlayerSuccessAction implements Action {
+  readonly type = EBooksShelfAction.UpdatePlayerSuccess;
+  constructor(public player: Player){
+  }
 }
 
 export class UpdateOpponentSuccessAction implements Action {
@@ -72,7 +94,7 @@ export class UpdateSectionErrorAction implements Action {
 
 export class SetSelectedBookAction implements Action {
   readonly type = EBooksShelfAction.SetSelectedBook;
-  constructor(public payload: number){
+  constructor(public bookId: number){
   }
 }
 
@@ -88,9 +110,19 @@ export class ReadBookSuccessAction implements Action {
   }
 }
 
+export class ReadBookPayload {
+  bookId: number;
+  accountId: number;
+}
+
 export class ReadBookAction implements Action {
   readonly type = EBooksShelfAction.ReadBook;
-  constructor(public payload: number){
+  payload: ReadBookPayload;
+  constructor(public bookId: number,public  accountId: number){
+    this.payload = {
+      bookId: bookId,
+      accountId: accountId
+    }
   }
 }
 
@@ -124,4 +156,4 @@ export type BookShelfAction = AddToBookShelfAction | AddToBookShelfSuccessAction
   | GetBooksInBookshelfAction | GetBooksInBookshelfSuccessAction | ReadBookAction | ReadBookSErrorAction
   | ReadBookSuccessAction | SetSelectedBookAction | UpdateSectionAction | UpdateSectionSuccessAction
   | UpdateSectionErrorAction | ClearSectionsAction | ClearBookShelfAction | UpdateOpponentSuccessAction
-  | UpdateOpponentErrorAction | UpdateOpponentAction;
+  | UpdateOpponentErrorAction | UpdateOpponentAction | UpdatePlayerSuccessAction | UpdatePlayerErrorAction;
