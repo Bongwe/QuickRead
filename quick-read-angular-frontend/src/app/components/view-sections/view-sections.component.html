@@ -132,6 +132,16 @@
     </modal-header>
     <modal-content>
       <div class="row">
+        <div class="col-md-6">
+          <img [src]=attackImageSrc()>
+        </div>
+        <div class="col-md-6">
+          <img src="../../../assets/img/opponents2/evil-igor.png" class="opponentDamageImageSize">
+          <progress-bar [progress]=50 [color]="'#d9534f'">
+          </progress-bar>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-12">
           {{this.selectedAccount.name}} hits {{this.currentOpponent.name}} with a double punch combination attack!
           {{this.selectedAccount.name}} deals 25% damage to {{this.currentOpponent.name}}

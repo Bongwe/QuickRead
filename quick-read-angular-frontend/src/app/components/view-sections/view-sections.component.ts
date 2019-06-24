@@ -237,6 +237,10 @@ export class ViewSectionsComponent implements OnInit {
     return this.opponentImageSrc + avatar;
   }
 
+  attackImageSrc(): string {
+    return "../../../assets/img/attacks/kick.png";
+  }
+
   private manageGameSate() {
     if(this.gameState){
       if(this.settings && this.settings.read_every == READ_EVERY_DAY) {
