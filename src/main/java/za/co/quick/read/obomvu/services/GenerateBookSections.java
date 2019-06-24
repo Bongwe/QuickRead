@@ -34,7 +34,7 @@ public class GenerateBookSections {
     public GenerateBookSections() {
     }
 
-    public List<BookSection> generateSections(Book book){
+    public List<BookSection> generateSections(Book book, Long accountId){
         //the formula we use
         //14 words per line
         //142 words per section
@@ -47,34 +47,35 @@ public class GenerateBookSections {
 
         for(int endIndex = 142; endIndex < content.length ; endIndex = endIndex + 142){
             String sectionContent = buildContent(strartIndex, endIndex, content);
-            booksSectionList.add(createBookSection(book, sectionContent ,booksSectionList.size()));
+            booksSectionList.add(createBookSection(book, accountId, sectionContent ,booksSectionList.size()));
             strartIndex = endIndex;
             if((endIndex + 142) > content.length){
                 sectionContent = buildContent(strartIndex, content.length, content);
-                booksSectionList.add(createBookSection(book, sectionContent ,booksSectionList.size()));
+                booksSectionList.add(createBookSection(book, accountId,sectionContent ,booksSectionList.size()));
             }
         }
         return booksSectionList;
     }
 
-    private BookSection createBookSection(Book book, String content,int index) {
+    private BookSection createBookSection(Book book,Long accountId, String content,int index) {
         BookSection bookSection = new BookSection();
         bookSection.setContent(content);
         bookSection.setBook_id(book.getId());
+        bookSection.setAccount_id(accountId);
         bookSection.setStatus(BookStatus.Status.UN_READ.toString());
         bookSection.setSection_index((long)index);
         bookSection.setStatus_picture("sectionIcon.png");
         return bookSection;
     }
 
-    public List<SelectedOpponent> generateOpponents(List<BookSection> sections) {
+    public List<SelectedOpponent> generateOpponents(List<BookSection> sections, Long accountId) {
         int sectionCount = 0;
         SelectedOpponent newOpponent;
         List<SelectedOpponent> selectedOpponents = new ArrayList<>();
 
         for(BookSection bookSection: sections){
             if(sectionCount == SECTIONS_PER_GROUP || sectionCount == 0){
-                newOpponent = createNewOpponent(bookSection.getBook_id());
+                newOpponent = createNewOpponent(bookSection.getBook_id(), accountId);
                 selectedOpponents.add(newOpponent);
                 sectionCount = 0;
             }
@@ -99,7 +100,7 @@ public class GenerateBookSections {
         return selectedPlayer;
     }
 
-    private SelectedOpponent createNewOpponent(Long book_id) {
+    private SelectedOpponent createNewOpponent(Long book_id, Long accountId) {
         int numberOfOpponents = 7;
         if(opponentCount >= numberOfOpponents)
             opponentCount = 0;
@@ -110,6 +111,7 @@ public class GenerateBookSections {
         newOpponent.setName(randomOpponent.getName());
         newOpponent.setPower(randomOpponent.getPower());
         newOpponent.setBook_id(book_id);
+        newOpponent.setAccount_id(accountId);
         SelectedOpponent save = selectedOpponentRepository.save(newOpponent);
         opponentCount++;
 
@@ -123,6 +125,7 @@ public class GenerateBookSections {
         newPlayer.setName(account.getName());
         newPlayer.setPower("default power");
         newPlayer.setBook_id(book_id);
+        newPlayer.setAccount_id(account.getId());
         Player save = playerRepository.save(newPlayer);
         return save;
     }

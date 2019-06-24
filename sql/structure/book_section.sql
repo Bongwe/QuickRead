@@ -3,6 +3,7 @@ CREATE TABLE book_section(
 	opponent_id INT NULL,
 	player_id INT NULL,
 	book_id INT NULL,
+	account_id INT NULL,
 	section_index INT NULL,
 	status VARCHAR(128) NOT NULL,
 	content text NULL,

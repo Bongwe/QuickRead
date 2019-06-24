@@ -10,6 +10,7 @@ public class BookSection {
     private Long opponent_id;
     private Long player_id;
     private Long book_id;
+    private Long account_id;
     private Long section_index;
     private String status;
     private String content;
@@ -18,10 +19,12 @@ public class BookSection {
     public BookSection() {
     }
 
-    public BookSection(Long id, Long opponent_id, Long book_id, Long section_index, String status, String content, String status_picture) {
+    public BookSection(Long id, Long opponent_id, Long player_id, Long book_id, Long account_id, Long section_index, String status, String content, String status_picture) {
         this.id = id;
         this.opponent_id = opponent_id;
+        this.player_id = player_id;
         this.book_id = book_id;
+        this.account_id = account_id;
         this.section_index = section_index;
         this.status = status;
         this.content = content;
@@ -92,6 +95,14 @@ public class BookSection {
         this.status_picture = status_picture;
     }
 
+    public Long getAccount_id() {
+        return account_id;
+    }
+
+    public void setAccount_id(Long account_id) {
+        this.account_id = account_id;
+    }
+
     public Long getPlayer_id() {
         return player_id;
     }
@@ -107,6 +118,7 @@ public class BookSection {
                 ", opponent_id=" + opponent_id +
                 ", player_id=" + player_id +
                 ", book_id=" + book_id +
+                ", account_id=" + account_id +
                 ", section_index=" + section_index +
                 ", status='" + status + '\'' +
                 ", content='" + content + '\'' +

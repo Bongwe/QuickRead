@@ -3,7 +3,7 @@ import {Store} from "@ngrx/store";
 import {IAppState} from "../../store/state/app.state";
 import {FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
-import {selectAccounts, selectBookShelf, selectGameState} from "../../store/selectors/app.selectors";
+import {selectAccounts, selectBookShelf} from "../../store/selectors/app.selectors";
 import {IAccountState} from "../../store/reducers/account.reducer";
 import {GetBooksInBookshelfAction, ReadBookAction, SetSelectedBookAction} from "../../store/actions/book-shelf.actions";
 import {Book} from "../../models/Book";

@@ -8,6 +8,7 @@ public class SelectedOpponent {
     private Long id;
     private Long book_id;
     private Long health;
+    private Long account_id;
     private String name;
     private String avatar;
     private String power;
@@ -67,11 +68,22 @@ public class SelectedOpponent {
         this.power = power;
     }
 
+    @Column(name = "account_id", nullable = true)
+    public Long getAccount_id() {
+        return account_id;
+    }
+
+    public void setAccount_id(Long account_id) {
+        this.account_id = account_id;
+    }
+
     @Override
     public String toString() {
-        return "Opponent{" +
+        return "SelectedOpponent{" +
                 "id=" + id +
+                ", book_id=" + book_id +
                 ", health=" + health +
+                ", account_id=" + account_id +
                 ", name='" + name + '\'' +
                 ", avatar='" + avatar + '\'' +
                 ", power='" + power + '\'' +

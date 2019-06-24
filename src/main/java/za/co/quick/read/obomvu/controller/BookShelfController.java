@@ -88,11 +88,11 @@ public class BookShelfController {
 	@GetMapping("/bookshelf/read/{bookId}/{accountId}")
 	public ResponseEntity<List<SectionDTO>> readBook(@PathVariable(value = "bookId") Long bookId, @PathVariable(value = "accountId") Long accountId) {
 		try {
-			if (!getBooksSections(bookId).isEmpty()) {
-				List<BookSection> booksSections = getBooksSections(bookId);
+			if (!getBooksSections(bookId, accountId).isEmpty()) {
+				List<BookSection> booksSections = getBooksSections(bookId, accountId);
 
-				List<Player> players = getSelectedPlayers(bookId);
-				List<SelectedOpponent> selectedOpponentList = getSelectedOpponents(bookId);
+				List<Player> players = getSelectedPlayers(bookId, accountId);
+				List<SelectedOpponent> selectedOpponentList = getSelectedOpponents(bookId, accountId);
 
 				List<SectionDTO> sectionDTOList = generateBookSections.generateSectionGroups(booksSections, selectedOpponentList, players);
 
@@ -105,14 +105,14 @@ public class BookShelfController {
 			Optional<Book> bookOptional = bookRepository.findById(bookId);
 
 			//Sections
-			List<BookSection> bookSections = generateBookSections.generateSections(bookOptional.get());
+			List<BookSection> bookSections = generateBookSections.generateSections(bookOptional.get(), accountId);
 
 			//Player
 			List<Player> players = generateBookSections.generatePlayers(bookSections, accountOpt.get());
 			List<Player> savedPlayers = playerRepository.saveAll(players);
 
 			//Opponent
-			List<SelectedOpponent> selectedOpponents = generateBookSections.generateOpponents(bookSections);
+			List<SelectedOpponent> selectedOpponents = generateBookSections.generateOpponents(bookSections, accountId);
 			List<SelectedOpponent> savedSelectedOpponents = selectedOpponentRepository.saveAll(selectedOpponents);
 
 			//Opponent and player
@@ -130,7 +130,7 @@ public class BookShelfController {
 	}
 
 	@PostMapping(value = "/bookshelf/add")
-	public ResponseEntity<BookShelf> createAccount(@Valid @RequestBody BookShelf bookShelf) {
+	public ResponseEntity<BookShelf> addBookToShelf(@Valid @RequestBody BookShelf bookShelf) {
 		try {
 			if(isBookInShelf(bookShelf) == true){
 				return new ResponseEntity("Book already in shelf", HttpStatus.BAD_REQUEST);
@@ -158,38 +158,44 @@ public class BookShelfController {
 		}
 	}
 
-	private List<BookSection> getBooksSections(Long book_id) {
+	private List<BookSection> getBooksSections(Long book_id, Long accountId) {
 		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
 				.withMatcher("book_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+				.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
 				.withIgnorePaths("id");
 
 		BookSection bookSection = new BookSection();
 		bookSection.setBook_id(book_id);
+		bookSection.setAccount_id(accountId);
 
 		Example<BookSection> example = Example.of(bookSection, ignoringExampleMatcher);
 		return bookSectionRepository.findAll(example);
 	}
 
-	private List<SelectedOpponent> getSelectedOpponents(Long bookId) {
+	private List<SelectedOpponent> getSelectedOpponents(Long bookId, Long accountId) {
 		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
 				.withMatcher("book_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+				.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
 				.withIgnorePaths("id");
 
 		SelectedOpponent selectedOpponent = new SelectedOpponent();
 		selectedOpponent.setBook_id(bookId);
+		selectedOpponent.setAccount_id(accountId);
 
 		Example<SelectedOpponent> example = Example.of(selectedOpponent, ignoringExampleMatcher);
 		return selectedOpponentRepository.findAll(example);
 
 	}
 
-	private List<Player> getSelectedPlayers(Long bookId) {
+	private List<Player> getSelectedPlayers(Long bookId, Long accountId) {
 		ExampleMatcher ignoringExampleMatcher = ExampleMatcher.matchingAll()
 				.withMatcher("book_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
+				.withMatcher("account_id", ExampleMatcher.GenericPropertyMatchers.exact().ignoreCase())
 				.withIgnorePaths("id");
 
 		Player player = new Player();
 		player.setBook_id(bookId);
+		player.setAccount_id(accountId);
 
 		Example<Player> example = Example.of(player, ignoringExampleMatcher);
 		return playerRepository.findAll(example);
