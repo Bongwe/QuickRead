@@ -82,8 +82,8 @@ export class SectionComponent implements OnInit,OnDestroy {
         this.openReadingCompleteModal();
       }
     } else {
-      //this.modalMessage = this.getMinimumTimeMessage();
-      //this.openModal();
+      this.modalMessage = this.getMinimumTimeMessage();
+      this.openModal();
     }
   }
 
