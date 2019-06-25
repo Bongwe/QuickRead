@@ -19,6 +19,7 @@ import {
 import {Book} from "../../models/Book";
 import {BookShelf} from "../../models/BookShelf";
 import {SectionDTO} from "../../models/dto/SectionDTO";
+import {Player} from "../../models/Player";
 
 export interface IBookShelfState {
   bookShelf: Array<BookShelf>;
@@ -66,17 +67,20 @@ export function bookShelfReducer (state = initialBookShelfState, action: BookShe
   }
 };
 
-function updatePlayerSuccess(state: IBookShelfState, action: UpdatePlayerSuccessAction) {
+function updatePlayerSuccess(state: IBookShelfState, payload: UpdatePlayerSuccessAction) {
   if(state == null) {
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
   for(let sectionGroups of newState.bookSections){
-    for (let section of sectionGroups.sectionList){
-      if(section.id === action.player.id){
+    if(sectionGroups.player!= undefined && sectionGroups.player.id === payload.player.id){
+      sectionGroups.player = payload.player;
+    }
+    /*for (let aPlayer of sectionGroups.player){
+      if(aPlayer.id === player.id){
         sectionGroups.player = action.player;
       }
-    }
+    }*/
   }
   return newState;
 }

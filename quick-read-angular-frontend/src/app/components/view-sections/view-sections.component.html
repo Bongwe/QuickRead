@@ -23,31 +23,22 @@
                 <img [src]=enemyImageSrc(sectionGroups.player.avatar) class="imageSize">
               </div>
               <div class="col-md-8">
-                <div><label>Name: {{sectionGroups.player.name}}</label></div>
-                <progress-bar [progress]=sectionGroups.player.health [color]="'#d9534f'">
+                <label>Health:</label>
+                <progress-bar class="progressBar" [progress]=sectionGroups.player.health [color]="'#d9534f'">
                 </progress-bar>
+                <label>{{sectionGroups.player.name}}</label>
               </div>
             </div>
-
-            <!--<div class="col-md-6">
-              <div class="col-md-3">
-                <img [src]=playerImageSrc class="imageSize">
-              </div>
-              <div class="col-md-8">
-                <div><label>Name: {{this.selectedAccount.name}}</label></div>
-                <progress-bar [progress]=getPlayerHealth() [color]="'#d9534f'">
-                </progress-bar>
-              </div>
-            </div>-->
 
             <div class="col-md-6">
               <div class="col-md-3">
                 <img [src]=enemyImageSrc(sectionGroups.opponent.avatar) class="imageSize">
               </div>
               <div class="col-md-8">
-                <div><label>Name: {{sectionGroups.opponent.name}}</label></div>
+                <label>Health:</label>
                 <progress-bar [progress]=sectionGroups.opponent.health [color]="'#d9534f'">
                 </progress-bar>
+                <label>{{sectionGroups.opponent.name}}</label>
               </div>
             </div>
         </div>
@@ -125,27 +116,37 @@
   </modal>
 </div>
 
+<button (click)="openDealOpponentDamageModal()">Opponent</button>
+
 <div class="row">
   <modal #dealOpponentDamage>
-    <modal-header>
-      <h4>Section reading complete</h4>
-    </modal-header>
     <modal-content>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 center-block text-center">
           <img [src]=attackImageSrc()>
+
         </div>
-        <div class="col-md-6">
-          <img src="../../../assets/img/opponents2/evil-igor.png" class="opponentDamageImageSize">
-          <progress-bar [progress]=50 [color]="'#d9534f'">
-          </progress-bar>
+        <div class="col-md-6 center-block text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <label>{{currentOpponent.name}}</label>
+            </div>
+          </div>
+          <img [src]=enemyImageSrc(currentOpponent.avatar) class="opponentDamageImageSize">
+          <div class="row">
+            <div class="col-md-12 text-left">
+              <label>Health:</label>
+              <progress-bar [progress]=currentOpponent.health [color]="'#d9534f'">
+              </progress-bar>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-          {{this.selectedAccount.name}} hits {{this.currentOpponent.name}} with a double punch combination attack!
-          {{this.selectedAccount.name}} deals 25% damage to {{this.currentOpponent.name}}
-          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        <div class="col-md-12 text-center">
+          <h4>
+            {{selectedPlayerAttack.attackMessage}}
+          </h4>
         </div>
       </div>
     </modal-content>

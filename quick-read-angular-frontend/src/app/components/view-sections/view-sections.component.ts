@@ -32,10 +32,9 @@ import {SelectedOpponent} from "../../models/SelectedOpponent";
 import {
   UpdateOpponentAction,
   UpdatePlayerAction,
-  UpdatePlayerSuccessAction
 } from "../../store/actions/book-shelf.actions";
-import {UpdateAccountAction} from "../../store/actions/account.actions";
-import {ClearNotificationMessageAction} from "../../store/actions/notofication.actions";
+import {AttackType} from "../../models/AttackType";
+import {getAttackType} from "../../utils/generateAttacks";
 
 @Component({
   selector: 'app-reading',
@@ -60,6 +59,11 @@ export class ViewSectionsComponent implements OnInit {
   public gameState: GameState;
   public settings: Settings;
   public currentOpponent: SelectedOpponent = new SelectedOpponent();
+  public previouseOpponent: SelectedOpponent = new SelectedOpponent();
+
+
+  public selectedPlayerAttack: AttackType;
+
 
   @ViewChild('inaccessibleSection') inaccessibleSection;
   @ViewChild('bookCompleteMessage') bookCompleteMessage;
@@ -119,6 +123,8 @@ export class ViewSectionsComponent implements OnInit {
     if(completePercent >= 100) {
       this.openBooksCompleteModal();
     }
+
+    this.selectedPlayerAttack = getAttackType(this.selectedAccount.username, this.currentOpponent.name);
     this.updateGameState();
     this.manageGameSate();
   }
@@ -191,6 +197,7 @@ export class ViewSectionsComponent implements OnInit {
   }
 
   openDealOpponentDamageModal(){
+    this.selectedPlayerAttack = getAttackType(this.selectedAccount.username, this.currentOpponent.name);
     this.dealOpponentDamageModalRef = this.modalService.open(this.dealOpponentDamage, {
       size: "md",
       modalClass: 'dealOpponentDamage',
@@ -238,7 +245,7 @@ export class ViewSectionsComponent implements OnInit {
   }
 
   attackImageSrc(): string {
-    return "../../../assets/img/attacks/kick.png";
+    return "../../../assets/img/attacks/"+ this.selectedPlayerAttack.attackType +".png";
   }
 
   private manageGameSate() {
