@@ -78,21 +78,24 @@
 
 <div class="row">
   <modal #bookCompleteMessage>
-    <modal-header>
-      <h4>Book complete</h4>
-    </modal-header>
     <modal-content>
       <div class="row">
-        <div class="col-md-12">
-          &#11088; &#11088; &#11088;Well done!
-          You defeated your opponents and completed the book!
-          Awesome work and keep reading! &#11088; &#11088; &#11088;
+        <div class="col-md-12 center-block text-center">
+          <img src="../../../assets/img/congratulations/Congratulations.png">
         </div>
       </div>
-    </modal-content>
-    <modal-footer>
-      <button class="btn btn-primary" (click)="closeBookCompleteModal()">Close</button>
-    </modal-footer>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>
+            Well done, you have fought well, defeated your opponents and completed the book!
+            Amazing work keep reading!
+          </h4>
+        </div>
+      </div>
+      </modal-content>
+      <modal-footer>
+        <button class="btn btn-primary" (click)="closeBookCompleteModal()">Close</button>
+      </modal-footer>
   </modal>
 </div>
 
@@ -124,7 +127,6 @@
       <div class="row">
         <div class="col-md-6 center-block text-center">
           <img [src]=attackImageSrc()>
-
         </div>
         <div class="col-md-6 center-block text-center">
           <div class="row">

@@ -49,7 +49,6 @@ export class ViewSectionsComponent implements OnInit {
   public playerImageSrBase = "../../../assets/img/opponents2/" ;
   public opponentImageSrc = "../../../assets/img/opponents2/";
   public currentSection: BookSection;
-  public previousSection: BookSection;
 
   public bookSectionCompleteness: number = 0;
   public totalCompletedSections: number = 0;
@@ -59,7 +58,6 @@ export class ViewSectionsComponent implements OnInit {
   public gameState: GameState;
   public settings: Settings;
   public currentOpponent: SelectedOpponent = new SelectedOpponent();
-  public previouseOpponent: SelectedOpponent = new SelectedOpponent();
 
 
   public selectedPlayerAttack: AttackType;
