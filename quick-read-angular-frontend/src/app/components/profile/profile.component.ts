@@ -19,7 +19,7 @@ import {ClearNotificationMessageAction} from "../../store/actions/notofication.a
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit, OnDestroy {
-  private selectedAccount: qrAccount;
+  public selectedAccount: qrAccount;
   private settings: Settings;
   public updateForm: FormGroup;
   public settingsForm: FormGroup;
