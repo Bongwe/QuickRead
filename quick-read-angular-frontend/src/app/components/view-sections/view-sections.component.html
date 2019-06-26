@@ -109,14 +109,14 @@
         <div class="col-md-6 center-block text-center">
           <div class="row">
             <div class="col-md-12">
-              <label>{{selectedAccount.username}}</label>
+              <label>{{damagedPlayer.name}}</label>
             </div>
           </div>
-          <img [src]=enemyImageSrc(selectedAccount.profile_picture) class="opponentDamageImageSize">
+          <img [src]=enemyImageSrc(damagedPlayer.avatar) class="opponentDamageImageSize">
           <div class="row">
             <div class="col-md-12 text-left">
               <label>Health:</label>
-              <progress-bar [progress]=selectedAccount.health [color]="'#d9534f'">
+              <progress-bar [progress]=damagedPlayer.health [color]="'#d9534f'">
               </progress-bar>
             </div>
           </div>

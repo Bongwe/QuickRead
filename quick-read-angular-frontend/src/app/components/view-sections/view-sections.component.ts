@@ -35,6 +35,7 @@ import {
 } from "../../store/actions/book-shelf.actions";
 import {AttackType} from "../../models/AttackType";
 import {getAttackType} from "../../utils/generateAttacks";
+import {Player} from "../../models/Player";
 
 @Component({
   selector: 'app-reading',
@@ -73,6 +74,8 @@ export class ViewSectionsComponent implements OnInit {
   private bookCompleteModalRef;
   private dealOpponentDamageModalRef;
   private dealPlayerDamageModalRef;
+
+  public damagedPlayer: Player;
 
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
@@ -203,7 +206,7 @@ export class ViewSectionsComponent implements OnInit {
         if(this.bookSections[index].player.health > 0){
           this.bookSections[index].player.health = this.bookSections[index].player.health - 25;
           this.store.dispatch(new UpdatePlayerAction(this.bookSections[index].player));
-          this.openDealPlayerDamage();
+          this.openDealPlayerDamage(this.bookSections[index].player);
           dealtDamage = true;
         }
         break;
@@ -274,7 +277,8 @@ export class ViewSectionsComponent implements OnInit {
       backdropClass: "modal-backdrop"
     })
   }
-  openDealPlayerDamage(){
+  openDealPlayerDamage(damagedPlayer: Player){
+    this.damagedPlayer = damagedPlayer;
     //swap characters for player message
     this.selectedPlayerAttack = getAttackType(this.selectedAccount.username, this.currentOpponent.name);
     this.dealPlayerDamageModalRef = this.modalService.open(this.dealPlayerDamage, {

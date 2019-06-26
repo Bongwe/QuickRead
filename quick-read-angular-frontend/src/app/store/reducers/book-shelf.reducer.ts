@@ -73,14 +73,10 @@ function updatePlayerSuccess(state: IBookShelfState, payload: UpdatePlayerSucces
   }
   let newState = _.cloneDeep(state);
   for(let sectionGroups of newState.bookSections){
-    if(sectionGroups.player!= undefined && sectionGroups.player.id === payload.player.id){
+    if(sectionGroups.player != undefined && payload.player != undefined &&
+      sectionGroups.player.id === payload.player.id){
       sectionGroups.player = payload.player;
     }
-    /*for (let aPlayer of sectionGroups.player){
-      if(aPlayer.id === player.id){
-        sectionGroups.player = action.player;
-      }
-    }*/
   }
   return newState;
 }
