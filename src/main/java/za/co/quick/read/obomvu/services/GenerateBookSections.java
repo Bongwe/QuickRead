@@ -122,7 +122,7 @@ public class GenerateBookSections {
         Player newPlayer = new Player();
         newPlayer.setAvatar(account.getProfile_picture());
         newPlayer.setHealth(100L);
-        newPlayer.setName(account.getName());
+        newPlayer.setName(account.getUsername());
         newPlayer.setPower("default power");
         newPlayer.setBook_id(book_id);
         newPlayer.setAccount_id(account.getId());

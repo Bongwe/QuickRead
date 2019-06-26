@@ -8,7 +8,6 @@ import {ISectionState} from "../../store/reducers/section.reducer";
 import {BookSection} from "../../models/BookSection";
 import {IBookShelfState} from "../../store/reducers/book-shelf.reducer";
 import {Book} from "../../models/Book";
-import {ClearCurrentSectionAction} from "../../store/actions/section.actions";
 import {ModalManager} from "ngb-modal";
 import {ISettingsState} from "../../store/reducers/settings.reducer";
 import * as _ from "lodash";
@@ -25,12 +24,10 @@ export class SectionComponent implements OnInit,OnDestroy {
 
   public book: Book;
   public currentSection: BookSection;
-  public previousSection: BookSection;
   private timeOutHandle;
   private scrollResult = "0";
 
   public currentSeconds: number = 0;
-  public currentMinutes: number = 0;
   public bookSectionCompleteMessage:string = "How much progress have you made with this section of the book?";
 
   public modalMessage: string;
@@ -74,17 +71,17 @@ export class SectionComponent implements OnInit,OnDestroy {
   }
 
   closeSection() {
-    if(this.currentSeconds >= (this.settings.min_read_time * 60) || this.currentSection.status == BookStatus.COMPLETE) {
+    //if(this.currentSeconds >= (this.settings.min_read_time * 60) || this.currentSection.status == BookStatus.COMPLETE) {
       if(this.currentSection.status == BookStatus.COMPLETE){
         this.currentSection.new_completions = false;
         this.store.dispatch(new UpdateSectionAction(this.currentSection));
       } else {
         this.openReadingCompleteModal();
       }
-    } else {
+    /*} else {
       this.modalMessage = this.getMinimumTimeMessage();
       this.openModal();
-    }
+    }*/
   }
 
   getMinimumTimeMessage() {

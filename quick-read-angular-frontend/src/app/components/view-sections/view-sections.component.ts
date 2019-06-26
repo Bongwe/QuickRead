@@ -59,9 +59,8 @@ export class ViewSectionsComponent implements OnInit {
   public settings: Settings;
   public currentOpponent: SelectedOpponent = new SelectedOpponent();
 
-
   public selectedPlayerAttack: AttackType;
-
+  public selectedOpponentAttack: AttackType;
 
   @ViewChild('inaccessibleSection') inaccessibleSection;
   @ViewChild('bookCompleteMessage') bookCompleteMessage;
@@ -107,7 +106,7 @@ export class ViewSectionsComponent implements OnInit {
         this.bookSections = state.bookSections;
       }
       if(state && state.selectedBook){
-        this.book =  state.selectedBook;
+        this.book = state.selectedBook;
       }
     });
 
@@ -123,8 +122,28 @@ export class ViewSectionsComponent implements OnInit {
     }
 
     this.selectedPlayerAttack = getAttackType(this.selectedAccount.username, this.currentOpponent.name);
+    //swap characters for player message
+    this.selectedOpponentAttack = getAttackType(this.currentOpponent.name, this.selectedAccount.username);
     this.updateGameState();
     this.manageGameSate();
+  }
+
+  private manageGameSate() {
+    if(this.gameState){
+      if(this.settings && this.settings.read_every == READ_EVERY_DAY) {
+        if(this.isReadingEveryDay()) {
+          this.dealDamageToOpponent();
+        } else{
+          this.dealDamageToPlayer();
+        }
+      } else if (this.settings && this.settings.read_every == READ_EVERY_MINUTE) {
+        if(this.isReadingEveryMinute()) {
+          this.dealDamageToOpponent();
+        } else{
+          this.dealDamageToPlayer();
+        }
+      }
+    }
   }
 
   calculateSectionCompleteness(): number {
@@ -195,7 +214,7 @@ export class ViewSectionsComponent implements OnInit {
   }
 
   openDealOpponentDamageModal(){
-    this.selectedPlayerAttack = getAttackType(this.selectedAccount.username, this.currentOpponent.name);
+    this.selectedOpponentAttack = getAttackType(this.selectedAccount.username, this.currentOpponent.name);
     this.dealOpponentDamageModalRef = this.modalService.open(this.dealOpponentDamage, {
       size: "md",
       modalClass: 'dealOpponentDamage',
@@ -209,6 +228,8 @@ export class ViewSectionsComponent implements OnInit {
     })
   }
   openDealPlayerDamage(){
+    //swap characters for player message
+    this.selectedPlayerAttack = getAttackType(this.selectedAccount.username, this.currentOpponent.name);
     this.dealPlayerDamageModalRef = this.modalService.open(this.dealPlayerDamage, {
       size: "md",
       modalClass: 'dealPlayerDamage',
@@ -246,22 +267,8 @@ export class ViewSectionsComponent implements OnInit {
     return "../../../assets/img/attacks/"+ this.selectedPlayerAttack.attackType +".png";
   }
 
-  private manageGameSate() {
-    if(this.gameState){
-      if(this.settings && this.settings.read_every == READ_EVERY_DAY) {
-        if(this.isReadingEveryDay()) {
-          this.dealDamageToOpponent();
-        } else{
-          this.dealDamageToPlayer();
-        }
-      } else if (this.settings && this.settings.read_every == READ_EVERY_MINUTE) {
-        if(this.isReadingEveryMinute()) {
-          this.dealDamageToOpponent();
-        } else{
-          this.dealDamageToPlayer();
-        }
-      }
-    }
+  opponentAttackImageSrc(): string {
+    return "../../../assets/img/attacks/"+ this.selectedOpponentAttack.attackType +".png";
   }
 
   private isReadingEveryDay() {
@@ -280,7 +287,6 @@ export class ViewSectionsComponent implements OnInit {
 
   private dealDamageToOpponent() {
     let dealtDamage = false;
-
     for(let index = 0; index < this.bookSections.length && dealtDamage == false; index++) {
       for(let section of this.bookSections[index].sectionList) {
         if(this.currentSection && this.currentSection.id == section.id && section.status === BookStatus.COMPLETE){
@@ -298,27 +304,18 @@ export class ViewSectionsComponent implements OnInit {
 
   private dealDamageToPlayer() {
     let dealtDamage = false;
-
     for(let index = 0; index < this.bookSections.length && dealtDamage == false; index++) {
       for(let section of this.bookSections[index].sectionList) {
           if(this.bookSections[index].player.health > 0){
             this.bookSections[index].player.health = this.bookSections[index].player.health - 25;
             this.store.dispatch(new UpdatePlayerAction(this.bookSections[index].player));
-            this.openDealOpponentDamageModal();
+            this.openDealPlayerDamage();
             dealtDamage = true;
           }
           break;
         }
       }
   }
-
-  /*private dealDamageToPlayer() {
-    if(this.selectedAccount.health > 0){
-      this.selectedAccount.health = this.selectedAccount.health - 25;
-      this.store.dispatch(new UpdateAccountAction(this.selectedAccount));
-      this.openDealPlayerDamage();
-    }
-  }*/
 
   private updateGameState(): void {
     let gameSate = new GameState();
@@ -327,10 +324,6 @@ export class ViewSectionsComponent implements OnInit {
     gameSate.second =  moment().second();
     gameSate.account_id = this.selectedAccount.id;
     this.store.dispatch(new UpdateGameStateAction(gameSate));
-  }
-
-  getPlayerHealth() {
-    return this.selectedAccount.health;
   }
 
   private getCurrentOpponent(): SelectedOpponent {

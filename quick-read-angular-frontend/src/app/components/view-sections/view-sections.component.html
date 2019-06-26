@@ -101,15 +101,32 @@
 
 <div class="row">
   <modal #dealPlayerDamage>
-    <modal-header>
-      <h4>Section reading incomplete</h4>
-    </modal-header>
     <modal-content>
       <div class="row">
-        <div class="col-md-12">
-          {{this.currentOpponent.name}} attacks {{this.selectedAccount.name}} and lands a spinning kick!
-          {{this.selectedAccount.name}} takes 25% damage
-          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        <div class="col-md-6 center-block text-center">
+          <img [src]=opponentAttackImageSrc()>
+        </div>
+        <div class="col-md-6 center-block text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <label>{{selectedAccount.username}}</label>
+            </div>
+          </div>
+          <img [src]=enemyImageSrc(selectedAccount.profile_picture) class="opponentDamageImageSize">
+          <div class="row">
+            <div class="col-md-12 text-left">
+              <label>Health:</label>
+              <progress-bar [progress]=selectedAccount.health [color]="'#d9534f'">
+              </progress-bar>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4>
+            {{selectedOpponentAttack.attackMessage}}
+          </h4>
         </div>
       </div>
     </modal-content>
@@ -118,8 +135,6 @@
     </modal-footer>
   </modal>
 </div>
-
-<button (click)="openDealOpponentDamageModal()">Opponent</button>
 
 <div class="row">
   <modal #dealOpponentDamage>
