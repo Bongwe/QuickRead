@@ -48,7 +48,10 @@ export class ViewSectionsComponent implements OnInit {
   public playerImageSrc;
   public playerImageSrBase = "../../../assets/img/opponents2/" ;
   public opponentImageSrc = "../../../assets/img/opponents2/";
+
   public currentSection: BookSection;
+  public currentGroupIndex: number;
+  public currentSectionIndex: number;
 
   public bookSectionCompleteness: number = 0;
   public totalCompletedSections: number = 0;
@@ -98,6 +101,8 @@ export class ViewSectionsComponent implements OnInit {
     this.store.select(selectSection).subscribe((state: ISectionState) =>{
       if(state && state.currentSection){
         this.currentSection = state.currentSection;
+        this.currentGroupIndex = state.group_index;
+        this.currentSectionIndex = state.section_index;
       }
     });
 
@@ -128,6 +133,24 @@ export class ViewSectionsComponent implements OnInit {
     this.manageGameSate();
   }
 
+  readSelectedSection(section: BookSection, groupIndex: number, sectionIndex: number) {
+    let prevIndex = sectionIndex - 1;
+    if(prevIndex == -1){
+      this.updateGameState();
+      this.store.dispatch(new ReadSectionAction(section, sectionIndex, groupIndex));
+      this.router.navigate(['/readSection']);
+    } else if(prevIndex >= 0 ) {
+      let sectionDTO = this.bookSections[groupIndex].sectionList;
+      if(sectionDTO[prevIndex].status == BookStatus.COMPLETE){
+        this.updateGameState();
+        this.store.dispatch(new ReadSectionAction(section, sectionIndex, groupIndex));
+        this.router.navigate(['/readSection']);
+      } else {
+        this.openModal();
+      }
+    }
+  }
+
   private manageGameSate() {
     if(this.gameState){
       if(this.settings && this.settings.read_every == READ_EVERY_DAY) {
@@ -142,6 +165,48 @@ export class ViewSectionsComponent implements OnInit {
         } else{
           this.dealDamageToPlayer();
         }
+      }
+    }
+  }
+
+  private dealDamageToOpponent() {
+    let anOpponent = this.bookSections[this.currentGroupIndex].opponent;
+    let aSection = this.bookSections[this.currentGroupIndex].sectionList[this.currentSectionIndex];
+    if(anOpponent.health > 0 && aSection.new_completions == true){
+      anOpponent.health = anOpponent.health - 25;
+      this.store.dispatch(new UpdateOpponentAction(anOpponent));
+      this.openDealOpponentDamageModal();
+    }
+  }
+
+  /*private dealDamageToOpponent() {
+    let dealtDamage = false;
+    for(let index = 0; index < this.bookSections.length && dealtDamage == false; index++) {
+      for(let section of this.bookSections[index].sectionList) {
+        if(this.currentSection && this.currentSection.id == section.id && section.status === BookStatus.COMPLETE){
+          if(this.bookSections[index].opponent.health > 0 && section.new_completions == true){
+            this.bookSections[index].opponent.health = this.bookSections[index].opponent.health - 25;
+            this.store.dispatch(new UpdateOpponentAction(this.bookSections[index].opponent));
+            this.openDealOpponentDamageModal();
+            dealtDamage = true;
+          }
+          break;
+        }
+      }
+    }
+  }*/
+
+  private dealDamageToPlayer() {
+    let dealtDamage = false;
+    for(let index = 0; index < this.bookSections.length && dealtDamage == false; index++) {
+      for(let section of this.bookSections[index].sectionList) {
+        if(this.bookSections[index].player.health > 0){
+          this.bookSections[index].player.health = this.bookSections[index].player.health - 25;
+          this.store.dispatch(new UpdatePlayerAction(this.bookSections[index].player));
+          this.openDealPlayerDamage();
+          dealtDamage = true;
+        }
+        break;
       }
     }
   }
@@ -161,24 +226,6 @@ export class ViewSectionsComponent implements OnInit {
       return this.bookSectionCompleteness;
     }
     return 0;
-  }
-
-  readSelectedSection(section: BookSection, groupIndex: number, sectionIndex: number) {
-    let prevIndex = sectionIndex - 1;
-    if(prevIndex == -1){
-      this.updateGameState();
-      this.store.dispatch(new ReadSectionAction(section));
-      this.router.navigate(['/readSection']);
-    } else if(prevIndex >= 0 ) {
-      let sectionDTO = this.bookSections[groupIndex].sectionList;
-      if(sectionDTO[prevIndex].status == BookStatus.COMPLETE){
-        this.updateGameState();
-        this.store.dispatch(new ReadSectionAction(section));
-        this.router.navigate(['/readSection']);
-      } else {
-        this.openModal();
-      }
-    }
   }
 
   getSectionIconImage(section: BookSection) {
@@ -283,38 +330,6 @@ export class ViewSectionsComponent implements OnInit {
     } else{
      return true;
     }
-  }
-
-  private dealDamageToOpponent() {
-    let dealtDamage = false;
-    for(let index = 0; index < this.bookSections.length && dealtDamage == false; index++) {
-      for(let section of this.bookSections[index].sectionList) {
-        if(this.currentSection && this.currentSection.id == section.id && section.status === BookStatus.COMPLETE){
-          if(this.bookSections[index].opponent.health > 0 && section.new_completions == true){
-            this.bookSections[index].opponent.health = this.bookSections[index].opponent.health - 25;
-            this.store.dispatch(new UpdateOpponentAction(this.bookSections[index].opponent));
-            this.openDealOpponentDamageModal();
-            dealtDamage = true;
-          }
-          break;
-        }
-      }
-    }
-  }
-
-  private dealDamageToPlayer() {
-    let dealtDamage = false;
-    for(let index = 0; index < this.bookSections.length && dealtDamage == false; index++) {
-      for(let section of this.bookSections[index].sectionList) {
-          if(this.bookSections[index].player.health > 0){
-            this.bookSections[index].player.health = this.bookSections[index].player.health - 25;
-            this.store.dispatch(new UpdatePlayerAction(this.bookSections[index].player));
-            this.openDealPlayerDamage();
-            dealtDamage = true;
-          }
-          break;
-        }
-      }
   }
 
   private updateGameState(): void {

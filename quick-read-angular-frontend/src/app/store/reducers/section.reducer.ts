@@ -9,6 +9,8 @@ import {BookSection} from "../../models/BookSection";
 
 export interface ISectionState {
   currentSection: BookSection;
+  section_index: number;
+  group_index: number;
 }
 
 export const initialSectionState: ISectionState = null;
@@ -67,6 +69,8 @@ function clearCurrentSection(state: ISectionState, action: ClearCurrentSectionAc
   }
   let newState = _.cloneDeep(state);
   newState.currentSection = null;
+  newState.section_index = null;
+  newState.group_index = null;
   return newState;
 }
 
@@ -76,12 +80,16 @@ function setCurrentSection(state: ISectionState, action: ReadSectionAction) {
   }
   let newState = _.cloneDeep(state);
   newState.currentSection = action.payload;
+  newState.section_index = action.section_index;
+  newState.group_index = action.group_index;
   return newState;
 }
 
 function createEmptyState(){
   return {
     currentSection:  null,
+    section_index: null,
+    group_index: null
   };
 }
 

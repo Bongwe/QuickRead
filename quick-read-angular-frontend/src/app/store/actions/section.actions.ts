@@ -35,7 +35,7 @@ export class ClearCurrentSectionAction implements Action {
 
 export class ReadSectionAction implements Action {
   readonly type = ESectionAction.ReadSection;
-  constructor(public payload: BookSection){
+  constructor(public payload: BookSection, public section_index, public group_index){
   }
 }
 
