@@ -351,7 +351,13 @@ export class ViewSectionsComponent implements OnInit {
     if(this.bookSections[this.currentGroupIndex] != undefined){
       return this.bookSections[this.currentGroupIndex].opponent;
     } else {
-      return new SelectedOpponent();
+      for(let index = 0; index < this.bookSections.length; index++) {
+        for(let section of this.bookSections[index].sectionList) {
+          if(section.status === BookStatus.IN_PROGRESS || section.status === BookStatus.UN_READ){
+            return this.bookSections[index].opponent;
+          }
+        }
+      }
     }
   }
 }
