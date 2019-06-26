@@ -19,7 +19,7 @@ export class SectionService {
     return this.http.post<any>(url, bookSection)
   }
 
-  updateOpponent(bookSection: SelectedOpponent): Observable<BookSection> {
+  updateOpponent(bookSection: SelectedOpponent): Observable<SelectedOpponent> {
     let url = this.baseUrl + '/api/v1/section/opponent';
     return this.http.post<any>(url, bookSection)
   }

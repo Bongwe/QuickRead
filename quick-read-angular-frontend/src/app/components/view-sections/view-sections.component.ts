@@ -75,7 +75,7 @@ export class ViewSectionsComponent implements OnInit {
   private dealOpponentDamageModalRef;
   private dealPlayerDamageModalRef;
 
-  public damagedPlayer: Player;
+  public damagedPlayer: Player = new Player();
 
   constructor(private store: Store<IAppState>,
               private formBuilder: FormBuilder,
@@ -173,12 +173,14 @@ export class ViewSectionsComponent implements OnInit {
   }
 
   private dealDamageToOpponent() {
-    let anOpponent = this.bookSections[this.currentGroupIndex].opponent;
-    let aSection = this.bookSections[this.currentGroupIndex].sectionList[this.currentSectionIndex];
-    if(anOpponent.health > 0 && aSection.new_completions == true){
-      anOpponent.health = anOpponent.health - 25;
-      this.store.dispatch(new UpdateOpponentAction(anOpponent));
-      this.openDealOpponentDamageModal();
+    if(this.currentSection){
+      let anOpponent = this.bookSections[this.currentGroupIndex].opponent;
+      let aSection = this.bookSections[this.currentGroupIndex].sectionList[this.currentSectionIndex];
+      if(anOpponent.health > 0 && aSection.new_completions == true){
+        anOpponent.health = anOpponent.health - 25;
+        this.store.dispatch(new UpdateOpponentAction(anOpponent, this.currentSectionIndex, this.currentGroupIndex));
+        this.openDealOpponentDamageModal();
+      }
     }
   }
 
@@ -346,13 +348,14 @@ export class ViewSectionsComponent implements OnInit {
   }
 
   private getCurrentOpponent(): SelectedOpponent {
-    for(let index = 0; index < this.bookSections.length; index++) {
+    return this.bookSections[this.currentGroupIndex].opponent;
+    /*for(let index = 0; index < this.bookSections.length; index++) {
       for(let section of this.bookSections[index].sectionList) {
-        if(section.status === BookStatus.IN_PROGRESS || section.status === BookStatus.UN_READ){
+        if((section.status === BookStatus.COMPLETE && section.new_completions == true) ||section.status === BookStatus.IN_PROGRESS || section.status === BookStatus.UN_READ){
           return this.bookSections[index].opponent;
         }
       }
     }
-    return null;
+    return null;*/
   }
 }

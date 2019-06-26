@@ -50,7 +50,7 @@ export class UpdatePlayerSuccessAction implements Action {
 
 export class UpdateOpponentSuccessAction implements Action {
   readonly type = EBooksShelfAction.UpdateOpponentSuccess;
-  constructor(public payload: SelectedOpponent){
+  constructor(public payload: SelectedOpponent, public sectionIndex: number, public groupIndex: number){
   }
 }
 
@@ -62,7 +62,7 @@ export class UpdateOpponentErrorAction implements Action {
 
 export class UpdateOpponentAction implements Action {
   readonly type = EBooksShelfAction.UpdateOpponent;
-  constructor(public payload: SelectedOpponent){
+  constructor(public payload: SelectedOpponent, public sectionIndex, public groupIndex){
   }
 }
 

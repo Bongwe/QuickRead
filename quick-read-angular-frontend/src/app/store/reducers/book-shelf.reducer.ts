@@ -87,13 +87,14 @@ function updateOpponentSuccess(state: IBookShelfState, action: UpdateOpponentSuc
     state = createEmptyState();
   }
   let newState = _.cloneDeep(state);
-  for(let sectionGroups of newState.bookSections){
+  newState.bookSections[action.groupIndex].opponent = action.payload;
+  /*for(let sectionGroups of newState.bookSections){
     for (let section of sectionGroups.sectionList){
       if(section.id === action.payload.id){
         sectionGroups.opponent = action.payload;
       }
     }
-  }
+  }*/
   return newState;
 }
 
